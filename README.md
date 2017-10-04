@@ -1,5 +1,4 @@
-# Arty S7-50 Template <!-- Replace this line with the project name -->
+# Arty S7-50 Base System -- Real-time Processing Preset 
 Created for Vivado 2017.2
 
-[Link to the project wiki](https://reference.digilentinc.com/doku.php)
-
+This project is used for internal purposes and is not documented
