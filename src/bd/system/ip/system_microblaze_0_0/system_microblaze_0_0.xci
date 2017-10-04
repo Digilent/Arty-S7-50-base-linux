@@ -68,12 +68,12 @@
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_AXI_IC.HAS_QOS">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_AXI_IC.HAS_REGION">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_AXI_IC.HAS_RRESP">1</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_AXI_IC.MAX_BURST_LENGTH">4</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_AXI_IC.NUM_READ_OUTSTANDING">2</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_AXI_IC.MAX_BURST_LENGTH">8</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_AXI_IC.NUM_READ_OUTSTANDING">8</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_AXI_IC.NUM_WRITE_OUTSTANDING">2</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_AXI_IC.NUM_WRITE_THREADS">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_AXI_IC.PHASE">0.0</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ADDR_TAG_BITS">15</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ADDR_TAG_BITS">13</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ALLOW_DCACHE_WR">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ALLOW_ICACHE_WR">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_AREA_OPTIMIZED">0</spirit:configurableElementValue>
@@ -82,12 +82,12 @@
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_AVOID_PRIMITIVES">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_BASE_VECTORS">0x0000000000000000</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_BRANCH_TARGET_CACHE_SIZE">0</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_CACHE_BYTE_SIZE">8192</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_CACHE_BYTE_SIZE">32768</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_DADDR_SIZE">32</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_DCACHE_ADDR_TAG">15</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_DCACHE_ADDR_TAG">13</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_DCACHE_ALWAYS_USED">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_DCACHE_BASEADDR">0x0000000080000000</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_DCACHE_BYTE_SIZE">8192</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_DCACHE_BYTE_SIZE">32768</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_DCACHE_DATA_WIDTH">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_DCACHE_FORCE_TAG_LUTRAM">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_DCACHE_HIGHADDR">0x000000008fffffff</spirit:configurableElementValue>
@@ -112,7 +112,7 @@
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ENDIANNESS">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_FAMILY">spartan7</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_FAULT_TOLERANT">0</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_FPU_EXCEPTION">0</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_FPU_EXCEPTION">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_FREQ">100000000</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_FSL_EXCEPTION">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_FSL_LINKS">0</spirit:configurableElementValue>
@@ -122,9 +122,9 @@
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ICACHE_DATA_WIDTH">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ICACHE_FORCE_TAG_LUTRAM">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ICACHE_HIGHADDR">0x000000008fffffff</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ICACHE_LINE_LEN">4</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ICACHE_STREAMS">0</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ICACHE_VICTIMS">0</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ICACHE_LINE_LEN">8</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ICACHE_STREAMS">1</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ICACHE_VICTIMS">8</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ILL_OPCODE_EXCEPTION">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_IMPRECISE_EXCEPTIONS">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_INSTANCE">system_microblaze_0_0</spirit:configurableElementValue>
@@ -138,7 +138,7 @@
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_MMU_ITLB_SIZE">2</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_MMU_PRIVILEGED_INSTR">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_MMU_TLB_ACCESS">3</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_MMU_ZONES">16</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_MMU_ZONES">2</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_M_AXI_DC_ADDR_WIDTH">32</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_M_AXI_DC_DATA_WIDTH">32</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_M_AXI_DC_EXCLUSIVE_ACCESS">0</spirit:configurableElementValue>
@@ -152,8 +152,8 @@
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_M_AXI_IP_ADDR_WIDTH">32</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_M_AXI_I_BUS_EXCEPTION">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_NUMBER_OF_PC_BRK">2</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_NUMBER_OF_RD_ADDR_BRK">0</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_NUMBER_OF_WR_ADDR_BRK">0</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_NUMBER_OF_RD_ADDR_BRK">1</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_NUMBER_OF_WR_ADDR_BRK">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_NUM_SYNC_FF_CLK">2</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_NUM_SYNC_FF_CLK_DEBUG">2</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_NUM_SYNC_FF_CLK_IRQ">1</spirit:configurableElementValue>
@@ -163,7 +163,7 @@
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_OPTIMIZATION">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_PC_WIDTH">32</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_PIADDR_SIZE">32</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_PVR">0</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_PVR">2</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_PVR_USER1">0x00</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_PVR_USER2">0x00000000</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_RESET_MSR">0x00000000</spirit:configurableElementValue>
@@ -177,18 +177,18 @@
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_EXTENDED_FSL_INSTR">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_EXT_BRK">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_EXT_NM_BRK">0</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_FPU">0</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_HW_MUL">1</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_FPU">1</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_HW_MUL">2</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_ICACHE">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_INTERRUPT">2</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_MMU">0</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_MMU">3</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_MSR_INSTR">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_NON_SECURE">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_PCMP_INSTR">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_REORDER_INSTR">1</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_STACK_PROTECTION">1</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_USE_STACK_PROTECTION">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ADDR_SIZE">32</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ADDR_TAG_BITS">15</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ADDR_TAG_BITS">13</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ALLOW_DCACHE_WR">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ALLOW_ICACHE_WR">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_AREA_OPTIMIZED">0</spirit:configurableElementValue>
@@ -197,12 +197,12 @@
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_AVOID_PRIMITIVES">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_BASE_VECTORS">0x00000000</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_BRANCH_TARGET_CACHE_SIZE">0</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_CACHE_BYTE_SIZE">8192</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_CACHE_BYTE_SIZE">32768</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_DATA_SIZE">32</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_DCACHE_ADDR_TAG">15</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_DCACHE_ADDR_TAG">13</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_DCACHE_ALWAYS_USED">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_DCACHE_BASEADDR">0x0000000080000000</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_DCACHE_BYTE_SIZE">8192</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_DCACHE_BYTE_SIZE">32768</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_DCACHE_DATA_WIDTH">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_DCACHE_FORCE_TAG_LUTRAM">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_DCACHE_HIGHADDR">0x000000008FFFFFFF</spirit:configurableElementValue>
@@ -230,7 +230,7 @@
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ENABLE_DISCRETE_PORTS">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ENDIANNESS">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_FAULT_TOLERANT">0</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_FPU_EXCEPTION">0</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_FPU_EXCEPTION">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_FREQ">100000000</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_FSL_EXCEPTION">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_FSL_LINKS">0</spirit:configurableElementValue>
@@ -239,9 +239,9 @@
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ICACHE_DATA_WIDTH">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ICACHE_FORCE_TAG_LUTRAM">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ICACHE_HIGHADDR">0x000000008FFFFFFF</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ICACHE_LINE_LEN">4</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ICACHE_STREAMS">0</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ICACHE_VICTIMS">0</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ICACHE_LINE_LEN">8</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ICACHE_STREAMS">1</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ICACHE_VICTIMS">8</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_IC_AXI_MON">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ILL_OPCODE_EXCEPTION">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_IMPRECISE_EXCEPTIONS">0</spirit:configurableElementValue>
@@ -291,7 +291,7 @@
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_MMU_ITLB_SIZE">2</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_MMU_PRIVILEGED_INSTR">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_MMU_TLB_ACCESS">3</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_MMU_ZONES">16</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_MMU_ZONES">2</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_M_AXI_DC_ADDR_WIDTH">32</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_M_AXI_DC_ARUSER_WIDTH">5</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_M_AXI_DC_AWUSER_WIDTH">5</spirit:configurableElementValue>
@@ -321,8 +321,8 @@
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_M_AXI_IP_THREAD_ID_WIDTH">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_M_AXI_I_BUS_EXCEPTION">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_NUMBER_OF_PC_BRK">2</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_NUMBER_OF_RD_ADDR_BRK">0</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_NUMBER_OF_WR_ADDR_BRK">0</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_NUMBER_OF_RD_ADDR_BRK">1</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_NUMBER_OF_WR_ADDR_BRK">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_NUM_SYNC_FF_CLK">2</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_NUM_SYNC_FF_CLK_DEBUG">2</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_NUM_SYNC_FF_CLK_IRQ">1</spirit:configurableElementValue>
@@ -331,7 +331,7 @@
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_OPCODE_0x0_ILLEGAL">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_OPTIMIZATION">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_PC_WIDTH">32</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_PVR">0</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_PVR">2</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_PVR_USER1">0x00</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_PVR_USER2">0x00000000</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_RESET_MSR_BIP">0</spirit:configurableElementValue>
@@ -383,16 +383,16 @@
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_USE_EXTENDED_FSL_INSTR">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_USE_EXT_BRK">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_USE_EXT_NM_BRK">0</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_USE_FPU">0</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_USE_HW_MUL">1</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_USE_FPU">1</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_USE_HW_MUL">2</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_USE_ICACHE">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_USE_INTERRUPT">2</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_USE_MMU">0</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_USE_MMU">3</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_USE_MSR_INSTR">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_USE_NON_SECURE">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_USE_PCMP_INSTR">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_USE_REORDER_INSTR">1</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_USE_STACK_PROTECTION">1</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_USE_STACK_PROTECTION">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Component_Name">system_microblaze_0_0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.G_TEMPLATE_LIST">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.G_USE_EXCEPTIONS">1</spirit:configurableElementValue>
@@ -478,6 +478,7 @@
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_IC.NUM_WRITE_OUTSTANDING" xilinx:valueSource="default_prop"/>
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_IC.PHASE" xilinx:valueSource="ip_propagated"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_ADDR_TAG_BITS" xilinx:valueSource="user"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_AREA_OPTIMIZED" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_ASYNC_WAKEUP" xilinx:valueSource="propagated"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_CACHE_BYTE_SIZE" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_DCACHE_ADDR_TAG" xilinx:valueSource="user"/>
@@ -491,19 +492,27 @@
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_D_AXI" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_D_LMB" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_EDGE_IS_POSITIVE" xilinx:valueSource="propagated"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_FPU_EXCEPTION" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_FREQ" xilinx:valueSource="propagated"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_ICACHE_ALWAYS_USED" xilinx:valueSource="propagated"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_ICACHE_BASEADDR" xilinx:valueSource="propagated"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_ICACHE_HIGHADDR" xilinx:valueSource="propagated"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_ICACHE_LINE_LEN" xilinx:valueSource="user"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_ICACHE_STREAMS" xilinx:valueSource="user"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_ICACHE_VICTIMS" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_ILL_OPCODE_EXCEPTION" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_INTERRUPT_IS_EDGE" xilinx:valueSource="propagated"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_I_LMB" xilinx:valueSource="user"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_MMU_ZONES" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_M_AXI_DC_USER_SIGNALS" xilinx:valueSource="propagated"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_M_AXI_D_BUS_EXCEPTION" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_M_AXI_IC_USER_SIGNALS" xilinx:valueSource="propagated"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_M_AXI_I_BUS_EXCEPTION" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_NUMBER_OF_PC_BRK" xilinx:valueSource="user"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_NUMBER_OF_RD_ADDR_BRK" xilinx:valueSource="user"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_NUMBER_OF_WR_ADDR_BRK" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_OPCODE_0x0_ILLEGAL" xilinx:valueSource="user"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_PVR" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_UNALIGNED_EXCEPTIONS" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_USE_BARREL" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_USE_BRANCH_TARGET_CACHE" xilinx:valueSource="user"/>
@@ -515,6 +524,7 @@
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_USE_HW_MUL" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_USE_ICACHE" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_USE_INTERRUPT" xilinx:valueSource="propagated"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_USE_MMU" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_USE_MSR_INSTR" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_USE_NON_SECURE" xilinx:valueSource="propagated"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_USE_PCMP_INSTR" xilinx:valueSource="user"/>

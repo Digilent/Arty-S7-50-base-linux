@@ -1,7 +1,7 @@
 --Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2017.2.1 (win64) Build 1957588 Wed Aug  9 16:32:24 MDT 2017
---Date        : Mon Aug 28 12:48:13 2017
+--Date        : Tue Oct  3 18:08:04 2017
 --Host        : WK73 running 64-bit Service Pack 1  (build 7601)
 --Command     : generate_target system.bd
 --Design      : system
@@ -3103,6 +3103,7 @@ architecture STRUCTURE of system is
   component system_axi_smc_0 is
   port (
     aclk : in STD_LOGIC;
+    aclk1 : in STD_LOGIC;
     aresetn : in STD_LOGIC;
     S00_AXI_awaddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
     S00_AXI_awlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -3184,8 +3185,7 @@ architecture STRUCTURE of system is
     M00_AXI_rresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
     M00_AXI_rlast : in STD_LOGIC;
     M00_AXI_rvalid : in STD_LOGIC;
-    M00_AXI_rready : out STD_LOGIC;
-    aclk1 : in STD_LOGIC
+    M00_AXI_rready : out STD_LOGIC
   );
   end component system_axi_smc_0;
   component system_axi_timer_0_0 is

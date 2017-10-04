@@ -71,7 +71,7 @@
 /functional/S00_Entry/LIM_W_LEN/value=0;range=0,1,2,4;strength=0
 /functional/S00_Entry/PKT_R_THR/value=0;range=0,1,2,4,8,16,32;strength=0
 /functional/S00_Entry/PKT_W_THR/value=0;range=0,1,2,4,8,16,32;strength=0
-/functional/S01_Entry/LIM_R_LEN/value=0;range=0,1,2,4;strength=0
+/functional/S01_Entry/LIM_R_LEN/value=0;range=0,1,2,4,8;strength=0
 /functional/S01_Entry/PKT_R_THR/value=0;range=0,1,2,4,8,16,32;strength=0
 /functional/SW0/DATA_WIDTH/value=128;range=32,64,128,256,512,1024;strength=0
 /functional/M00_Buffer/AR_SIZE/value=32;range=16,32;strength=0

@@ -1,7 +1,7 @@
 --Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2017.2.1 (win64) Build 1957588 Wed Aug  9 16:32:24 MDT 2017
---Date        : Mon Aug 28 12:48:13 2017
+--Date        : Tue Oct  3 18:08:04 2017
 --Host        : WK73 running 64-bit Service Pack 1  (build 7601)
 --Command     : generate_target system_wrapper.bd
 --Design      : system_wrapper
@@ -66,16 +66,8 @@ end system_wrapper;
 architecture STRUCTURE of system_wrapper is
   component system is
   port (
-    CLK100MHZ : in STD_LOGIC;
-    reset : in STD_LOGIC;
-    rgb_led : out STD_LOGIC_VECTOR ( 5 downto 0 );
-    sys_clock : in STD_LOGIC;
     Vaux0_v_n : in STD_LOGIC;
     Vaux0_v_p : in STD_LOGIC;
-    Vaux10_v_n : in STD_LOGIC;
-    Vaux10_v_p : in STD_LOGIC;
-    Vaux11_v_n : in STD_LOGIC;
-    Vaux11_v_p : in STD_LOGIC;
     Vaux1_v_n : in STD_LOGIC;
     Vaux1_v_p : in STD_LOGIC;
     Vaux2_v_n : in STD_LOGIC;
@@ -86,13 +78,32 @@ architecture STRUCTURE of system_wrapper is
     Vaux8_v_p : in STD_LOGIC;
     Vaux9_v_n : in STD_LOGIC;
     Vaux9_v_p : in STD_LOGIC;
+    Vaux10_v_n : in STD_LOGIC;
+    Vaux10_v_p : in STD_LOGIC;
+    Vaux11_v_n : in STD_LOGIC;
+    Vaux11_v_p : in STD_LOGIC;
     Vp_Vn_v_n : in STD_LOGIC;
     Vp_Vn_v_p : in STD_LOGIC;
-    push_buttons_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    ddr3_sdram_dq : inout STD_LOGIC_VECTOR ( 15 downto 0 );
+    ddr3_sdram_dqs_p : inout STD_LOGIC_VECTOR ( 1 downto 0 );
+    ddr3_sdram_dqs_n : inout STD_LOGIC_VECTOR ( 1 downto 0 );
+    ddr3_sdram_addr : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    ddr3_sdram_ba : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    ddr3_sdram_ras_n : out STD_LOGIC;
+    ddr3_sdram_cas_n : out STD_LOGIC;
+    ddr3_sdram_we_n : out STD_LOGIC;
+    ddr3_sdram_reset_n : out STD_LOGIC;
+    ddr3_sdram_ck_p : out STD_LOGIC_VECTOR ( 0 to 0 );
+    ddr3_sdram_ck_n : out STD_LOGIC_VECTOR ( 0 to 0 );
+    ddr3_sdram_cke : out STD_LOGIC_VECTOR ( 0 to 0 );
+    ddr3_sdram_cs_n : out STD_LOGIC_VECTOR ( 0 to 0 );
+    ddr3_sdram_dm : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    ddr3_sdram_odt : out STD_LOGIC_VECTOR ( 0 to 0 );
+    dip_switches_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
     led_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
     led_4bits_tri_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
     led_4bits_tri_t : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    dip_switches_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    push_buttons_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
     qspi_flash_io0_i : in STD_LOGIC;
     qspi_flash_io0_o : out STD_LOGIC;
     qspi_flash_io0_t : out STD_LOGIC;
@@ -110,21 +121,10 @@ architecture STRUCTURE of system_wrapper is
     qspi_flash_ss_t : out STD_LOGIC;
     usb_uart_rxd : in STD_LOGIC;
     usb_uart_txd : out STD_LOGIC;
-    ddr3_sdram_dq : inout STD_LOGIC_VECTOR ( 15 downto 0 );
-    ddr3_sdram_dqs_p : inout STD_LOGIC_VECTOR ( 1 downto 0 );
-    ddr3_sdram_dqs_n : inout STD_LOGIC_VECTOR ( 1 downto 0 );
-    ddr3_sdram_addr : out STD_LOGIC_VECTOR ( 13 downto 0 );
-    ddr3_sdram_ba : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    ddr3_sdram_ras_n : out STD_LOGIC;
-    ddr3_sdram_cas_n : out STD_LOGIC;
-    ddr3_sdram_we_n : out STD_LOGIC;
-    ddr3_sdram_reset_n : out STD_LOGIC;
-    ddr3_sdram_ck_p : out STD_LOGIC_VECTOR ( 0 to 0 );
-    ddr3_sdram_ck_n : out STD_LOGIC_VECTOR ( 0 to 0 );
-    ddr3_sdram_cke : out STD_LOGIC_VECTOR ( 0 to 0 );
-    ddr3_sdram_cs_n : out STD_LOGIC_VECTOR ( 0 to 0 );
-    ddr3_sdram_dm : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    ddr3_sdram_odt : out STD_LOGIC_VECTOR ( 0 to 0 )
+    rgb_led : out STD_LOGIC_VECTOR ( 5 downto 0 );
+    reset : in STD_LOGIC;
+    CLK100MHZ : in STD_LOGIC;
+    sys_clock : in STD_LOGIC
   );
   end component system;
   component IOBUF is

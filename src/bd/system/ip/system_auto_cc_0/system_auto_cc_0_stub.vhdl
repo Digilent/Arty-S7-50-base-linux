@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.2.1 (win64) Build 1957588 Wed Aug  9 16:32:24 MDT 2017
--- Date        : Mon Aug 28 12:30:13 2017
+-- Date        : Tue Oct  3 18:10:04 2017
 -- Host        : WK73 running 64-bit Service Pack 1  (build 7601)
--- Command     : write_vhdl -force -mode synth_stub -rename_top system_auto_cc_0 -prefix
---               system_auto_cc_0_ system_auto_cc_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub
+--               c:/sam_work/git/digilent/Arty-S7-50-base-linux/src/bd/system/ip/system_auto_cc_0/system_auto_cc_0_stub.vhdl
 -- Design      : system_auto_cc_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7s50csga324-1

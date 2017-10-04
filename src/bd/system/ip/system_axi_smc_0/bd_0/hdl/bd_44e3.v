@@ -1,7 +1,7 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2017.2.1 (win64) Build 1957588 Wed Aug  9 16:32:24 MDT 2017
-//Date        : Mon Aug 28 12:48:17 2017
+//Date        : Tue Oct  3 18:08:05 2017
 //Host        : WK73 running 64-bit Service Pack 1  (build 7601)
 //Command     : generate_target bd_44e3.bd
 //Design      : bd_44e3
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "bd_44e3,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=bd_44e3,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=39,numReposBlks=31,numNonXlnxBlks=0,numHierBlks=8,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=SBD,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "system_axi_smc_0.hwdef" *) 
+(* CORE_GENERATION_INFO = "bd_44e3,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=bd_44e3,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=39,numReposBlks=31,numNonXlnxBlks=0,numHierBlks=8,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=SBD,synth_mode=Global}" *) (* HW_HANDOFF = "system_axi_smc_0.hwdef" *) 
 module bd_44e3
    (M00_AXI_araddr,
     M00_AXI_arburst,

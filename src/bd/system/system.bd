@@ -214,6 +214,35 @@
         <spirit:abstractionType spirit:library="interface" spirit:name="uart_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
       </spirit:busInterface>
       <spirit:busInterface>
+        <spirit:name>RST.RESET</spirit:name>
+        <spirit:displayName>Reset</spirit:displayName>
+        <spirit:description>Reset</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="reset" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="reset_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>RST</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>reset</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>POLARITY</spirit:name>
+            <spirit:value>ACTIVE_LOW</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="user"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:busInterface>
+      <spirit:busInterface>
         <spirit:name>CLK.CLK100MHZ</spirit:name>
         <spirit:displayName>Clk</spirit:displayName>
         <spirit:description>Clock</spirit:description>
@@ -255,35 +284,6 @@
             <spirit:vendorExtensions>
               <bd:configElementInfos>
                 <bd:configElementInfo bd:valueSource="default"/>
-              </bd:configElementInfos>
-            </spirit:vendorExtensions>
-          </spirit:parameter>
-        </spirit:parameters>
-      </spirit:busInterface>
-      <spirit:busInterface>
-        <spirit:name>RST.RESET</spirit:name>
-        <spirit:displayName>Reset</spirit:displayName>
-        <spirit:description>Reset</spirit:description>
-        <spirit:busType spirit:library="signal" spirit:name="reset" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-        <spirit:abstractionType spirit:library="signal" spirit:name="reset_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-        <spirit:slave/>
-        <spirit:portMaps>
-          <spirit:portMap>
-            <spirit:logicalPort>
-              <spirit:name>RST</spirit:name>
-            </spirit:logicalPort>
-            <spirit:physicalPort>
-              <spirit:name>reset</spirit:name>
-            </spirit:physicalPort>
-          </spirit:portMap>
-        </spirit:portMaps>
-        <spirit:parameters>
-          <spirit:parameter>
-            <spirit:name>POLARITY</spirit:name>
-            <spirit:value>ACTIVE_LOW</spirit:value>
-            <spirit:vendorExtensions>
-              <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="user"/>
               </bd:configElementInfos>
             </spirit:vendorExtensions>
           </spirit:parameter>
@@ -347,9 +347,13 @@
       </spirit:views>
       <spirit:ports>
         <spirit:port>
-          <spirit:name>CLK100MHZ</spirit:name>
+          <spirit:name>rgb_led</spirit:name>
           <spirit:wire>
-            <spirit:direction>in</spirit:direction>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>5</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
           </spirit:wire>
         </spirit:port>
         <spirit:port>
@@ -359,13 +363,9 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>rgb_led</spirit:name>
+          <spirit:name>CLK100MHZ</spirit:name>
           <spirit:wire>
-            <spirit:direction>out</spirit:direction>
-            <spirit:vector>
-              <spirit:left>5</spirit:left>
-              <spirit:right>0</spirit:right>
-            </spirit:vector>
+            <spirit:direction>in</spirit:direction>
           </spirit:wire>
         </spirit:port>
         <spirit:port>
@@ -494,6 +494,7 @@
         <spirit:componentRef spirit:library="ip" spirit:name="microblaze" spirit:vendor="xilinx.com" spirit:version="10.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_microblaze_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_AREA_OPTIMIZED">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_D_AXI">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_D_LMB">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_I_LMB">1</spirit:configurableElementValue>
@@ -502,24 +503,32 @@
           <spirit:configurableElementValue spirit:referenceId="C_USE_PCMP_INSTR">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_USE_BARREL">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_USE_DIV">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_USE_HW_MUL">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_USE_FPU">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_USE_HW_MUL">2</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_USE_FPU">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_UNALIGNED_EXCEPTIONS">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_ILL_OPCODE_EXCEPTION">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_M_AXI_I_BUS_EXCEPTION">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_M_AXI_D_BUS_EXCEPTION">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_DIV_ZERO_EXCEPTION">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_USE_STACK_PROTECTION">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_FPU_EXCEPTION">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_PVR">2</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_DEBUG_ENABLED">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_NUMBER_OF_PC_BRK">2</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_NUMBER_OF_RD_ADDR_BRK">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_NUMBER_OF_WR_ADDR_BRK">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_OPCODE_0x0_ILLEGAL">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_USE_ICACHE">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_ADDR_TAG_BITS">15</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_CACHE_BYTE_SIZE">8192</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_ADDR_TAG_BITS">13</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_CACHE_BYTE_SIZE">32768</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_ICACHE_LINE_LEN">8</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_ICACHE_VICTIMS">8</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_ICACHE_STREAMS">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_USE_DCACHE">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_DCACHE_ADDR_TAG">15</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_DCACHE_BYTE_SIZE">8192</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_DCACHE_ADDR_TAG">13</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_DCACHE_BYTE_SIZE">32768</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_DCACHE_USE_WRITEBACK">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_USE_MMU">3</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_MMU_ZONES">2</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_USE_BRANCH_TARGET_CACHE">0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
         <bd:hdl_attributes/>
@@ -734,6 +743,7 @@
         <spirit:internalPortReference spirit:componentRef="microblaze_0" spirit:portRef="Clk"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_intc" spirit:portRef="processor_clk"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_intc" spirit:portRef="s_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="rst_clk_wiz_0_100M" spirit:portRef="slowest_sync_clk"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="ACLK"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M01_ACLK"/>
@@ -744,7 +754,6 @@
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M07_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="S00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_local_memory" spirit:portRef="LMB_Clk"/>
-        <spirit:internalPortReference spirit:componentRef="rst_clk_wiz_0_100M" spirit:portRef="slowest_sync_clk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>microblaze_0_intr</spirit:name>
@@ -765,9 +774,9 @@
         <spirit:name>mig_7series_0_ui_clk</spirit:name>
         <spirit:internalPortReference spirit:componentRef="mig_7series_0" spirit:portRef="ui_clk"/>
         <spirit:internalPortReference spirit:componentRef="axi_smc" spirit:portRef="aclk1"/>
-        <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M06_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="rst_mig_7series_0_81M" spirit:portRef="slowest_sync_clk"/>
         <spirit:internalPortReference spirit:componentRef="xadc_wiz_0" spirit:portRef="s_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M06_ACLK"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>mig_7series_0_ui_clk_sync_rst</spirit:name>
@@ -820,9 +829,9 @@
         <spirit:name>rst_mig_7series_0_81M_peripheral_aresetn</spirit:name>
         <spirit:internalPortReference spirit:componentRef="rst_mig_7series_0_81M" spirit:portRef="peripheral_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="axi_smc" spirit:portRef="aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M06_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="mig_7series_0" spirit:portRef="aresetn"/>
         <spirit:internalPortReference spirit:componentRef="xadc_wiz_0" spirit:portRef="s_axi_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M06_ARESETN"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>sys_clk_i_1</spirit:name>
