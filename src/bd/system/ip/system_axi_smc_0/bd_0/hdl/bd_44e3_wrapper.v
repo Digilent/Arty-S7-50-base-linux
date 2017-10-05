@@ -1,8 +1,8 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2017.2.1 (win64) Build 1957588 Wed Aug  9 16:32:24 MDT 2017
-//Date        : Tue Oct  3 18:08:06 2017
-//Host        : WK73 running 64-bit Service Pack 1  (build 7601)
+//Date        : Wed Oct  4 22:38:31 2017
+//Host        : DESKTOP-9HMNAI5 running 64-bit major release  (build 9200)
 //Command     : generate_target bd_44e3_wrapper.bd
 //Design      : bd_44e3_wrapper
 //Purpose     : IP block netlist
@@ -150,15 +150,15 @@ module bd_44e3_wrapper
   input S00_AXI_bready;
   output [1:0]S00_AXI_bresp;
   output S00_AXI_bvalid;
-  output [31:0]S00_AXI_rdata;
+  output [127:0]S00_AXI_rdata;
   output S00_AXI_rlast;
   input S00_AXI_rready;
   output [1:0]S00_AXI_rresp;
   output S00_AXI_rvalid;
-  input [31:0]S00_AXI_wdata;
+  input [127:0]S00_AXI_wdata;
   input S00_AXI_wlast;
   output S00_AXI_wready;
-  input [3:0]S00_AXI_wstrb;
+  input [15:0]S00_AXI_wstrb;
   input S00_AXI_wvalid;
   input [31:0]S01_AXI_araddr;
   input [1:0]S01_AXI_arburst;
@@ -170,7 +170,7 @@ module bd_44e3_wrapper
   output S01_AXI_arready;
   input [2:0]S01_AXI_arsize;
   input S01_AXI_arvalid;
-  output [31:0]S01_AXI_rdata;
+  output [127:0]S01_AXI_rdata;
   output S01_AXI_rlast;
   input S01_AXI_rready;
   output [1:0]S01_AXI_rresp;
@@ -235,15 +235,15 @@ module bd_44e3_wrapper
   wire S00_AXI_bready;
   wire [1:0]S00_AXI_bresp;
   wire S00_AXI_bvalid;
-  wire [31:0]S00_AXI_rdata;
+  wire [127:0]S00_AXI_rdata;
   wire S00_AXI_rlast;
   wire S00_AXI_rready;
   wire [1:0]S00_AXI_rresp;
   wire S00_AXI_rvalid;
-  wire [31:0]S00_AXI_wdata;
+  wire [127:0]S00_AXI_wdata;
   wire S00_AXI_wlast;
   wire S00_AXI_wready;
-  wire [3:0]S00_AXI_wstrb;
+  wire [15:0]S00_AXI_wstrb;
   wire S00_AXI_wvalid;
   wire [31:0]S01_AXI_araddr;
   wire [1:0]S01_AXI_arburst;
@@ -255,7 +255,7 @@ module bd_44e3_wrapper
   wire S01_AXI_arready;
   wire [2:0]S01_AXI_arsize;
   wire S01_AXI_arvalid;
-  wire [31:0]S01_AXI_rdata;
+  wire [127:0]S01_AXI_rdata;
   wire S01_AXI_rlast;
   wire S01_AXI_rready;
   wire [1:0]S01_AXI_rresp;

@@ -115,7 +115,7 @@ input wire s_axi_arvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARREADY" *)
 output wire s_axi_arready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI RDATA" *)
-output wire [31 : 0] s_axi_rdata;
+output wire [127 : 0] s_axi_rdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI RRESP" *)
 output wire [1 : 0] s_axi_rresp;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI RLAST" *)
@@ -147,7 +147,7 @@ output wire m_axi_arvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI ARREADY" *)
 input wire m_axi_arready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RDATA" *)
-input wire [31 : 0] m_axi_rdata;
+input wire [127 : 0] m_axi_rdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RRESP" *)
 input wire [1 : 0] m_axi_rresp;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RLAST" *)
@@ -176,8 +176,8 @@ output wire m_axi_rready;
     .C_MSC_ROUTE_ARRAY(1'B1),
     .C_ADDR_WIDTH(32),
     .C_ID_WIDTH(0),
-    .C_RDATA_WIDTH(32),
-    .C_WDATA_WIDTH(32),
+    .C_RDATA_WIDTH(128),
+    .C_WDATA_WIDTH(128),
     .C_S_AWUSER_WIDTH(0),
     .C_S_ARUSER_WIDTH(0),
     .C_S_RUSER_WIDTH(0),
@@ -206,8 +206,8 @@ output wire m_axi_rready;
     .s_axi_awvalid(1'H0),
     .s_axi_awready(),
     .s_axi_wid(1'H0),
-    .s_axi_wdata(32'H00000000),
-    .s_axi_wstrb(4'HF),
+    .s_axi_wdata(128'H00000000000000000000000000000000),
+    .s_axi_wstrb(16'HFFFF),
     .s_axi_wlast(1'H1),
     .s_axi_wuser(1'H0),
     .s_axi_wvalid(1'H0),

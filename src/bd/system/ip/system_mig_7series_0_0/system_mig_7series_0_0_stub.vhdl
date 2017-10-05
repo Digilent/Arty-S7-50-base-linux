@@ -1,8 +1,8 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.2.1 (win64) Build 1957588 Wed Aug  9 16:32:24 MDT 2017
--- Date        : Tue Oct  3 18:12:57 2017
--- Host        : WK73 running 64-bit Service Pack 1  (build 7601)
+-- Date        : Wed Oct  4 20:49:12 2017
+-- Host        : DESKTOP-9HMNAI5 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               C:/sam_work/git/digilent/Arty-S7-50-base-linux/src/bd/system/ip/system_mig_7series_0_0/system_mig_7series_0_0_stub.vhdl
 -- Design      : system_mig_7series_0_0

@@ -53,7 +53,7 @@
 (* X_CORE_INFO = "sc_mmu_v1_0_4_top,Vivado 2017.2.1" *)
 (* CHECK_LICENSE_TYPE = "bd_44e3_s01mmu_0,sc_mmu_v1_0_4_top,{}" *)
 (* CORE_GENERATION_INFO = "bd_44e3_s01mmu_0,sc_mmu_v1_0_4_top,{x_ipProduct=Vivado 2017.2.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=sc_mmu,x_ipVersion=1.0,x_ipCoreRevision=4,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_FAMILY=spartan7,C_IS_CASCADED=0,C_ENABLE_PIPELINING=0x1,C_NUM_SEG=1,C_SEG_BASE_ADDR_ARRAY=0x0000000080000000,C_SEG_SIZE_ARRAY=0x0000001c,C_SEG_SEP_ROUTE_ARRAY=0x0000000000000000,C_SEG_SUPPORTS_READ_ARRAY=0x1,C_SEG_SUPPORTS_WRITE_ARRAY=0x1,C_SEG_SECURE_READ_ARRAY=0b0,C_SEG_SECURE_WRITE_ARRAY=0b0,C_NUM_MSC=\
-1,C_MSC_ROUTE_WIDTH=1,C_MSC_ROUTE_ARRAY=0b1,C_ADDR_WIDTH=32,C_ID_WIDTH=0,C_RDATA_WIDTH=32,C_WDATA_WIDTH=32,C_S_AWUSER_WIDTH=0,C_S_ARUSER_WIDTH=0,C_S_RUSER_WIDTH=0,C_S_WUSER_WIDTH=0,C_S_BUSER_WIDTH=0,C_S_PROTOCOL=0,C_READ_ACCEPTANCE=32,C_WRITE_ACCEPTANCE=32,C_SUPPORTS_WRAP=1,C_SUPPORTS_READ_DECERR=1,C_SUPPORTS_WRITE_DECERR=1}" *)
+1,C_MSC_ROUTE_WIDTH=1,C_MSC_ROUTE_ARRAY=0b1,C_ADDR_WIDTH=32,C_ID_WIDTH=0,C_RDATA_WIDTH=128,C_WDATA_WIDTH=128,C_S_AWUSER_WIDTH=0,C_S_ARUSER_WIDTH=0,C_S_RUSER_WIDTH=0,C_S_WUSER_WIDTH=0,C_S_BUSER_WIDTH=0,C_S_PROTOCOL=0,C_READ_ACCEPTANCE=32,C_WRITE_ACCEPTANCE=32,C_SUPPORTS_WRAP=1,C_SUPPORTS_READ_DECERR=1,C_SUPPORTS_WRITE_DECERR=1}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module bd_44e3_s01mmu_0 (
   aclk,
@@ -117,7 +117,7 @@ input wire s_axi_arvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARREADY" *)
 output wire s_axi_arready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI RDATA" *)
-output wire [31 : 0] s_axi_rdata;
+output wire [127 : 0] s_axi_rdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI RRESP" *)
 output wire [1 : 0] s_axi_rresp;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI RLAST" *)
@@ -149,7 +149,7 @@ output wire m_axi_arvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI ARREADY" *)
 input wire m_axi_arready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RDATA" *)
-input wire [31 : 0] m_axi_rdata;
+input wire [127 : 0] m_axi_rdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RRESP" *)
 input wire [1 : 0] m_axi_rresp;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RLAST" *)
@@ -178,8 +178,8 @@ output wire m_axi_rready;
     .C_MSC_ROUTE_ARRAY(1'B1),
     .C_ADDR_WIDTH(32),
     .C_ID_WIDTH(0),
-    .C_RDATA_WIDTH(32),
-    .C_WDATA_WIDTH(32),
+    .C_RDATA_WIDTH(128),
+    .C_WDATA_WIDTH(128),
     .C_S_AWUSER_WIDTH(0),
     .C_S_ARUSER_WIDTH(0),
     .C_S_RUSER_WIDTH(0),
@@ -208,8 +208,8 @@ output wire m_axi_rready;
     .s_axi_awvalid(1'H0),
     .s_axi_awready(),
     .s_axi_wid(1'H0),
-    .s_axi_wdata(32'H00000000),
-    .s_axi_wstrb(4'HF),
+    .s_axi_wdata(128'H00000000000000000000000000000000),
+    .s_axi_wstrb(16'HFFFF),
     .s_axi_wlast(1'H1),
     .s_axi_wuser(1'H0),
     .s_axi_wvalid(1'H0),

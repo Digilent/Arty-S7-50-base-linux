@@ -1,8 +1,8 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2017.2.1 (win64) Build 1957588 Wed Aug  9 16:32:24 MDT 2017
-//Date        : Tue Oct  3 18:08:05 2017
-//Host        : WK73 running 64-bit Service Pack 1  (build 7601)
+//Date        : Wed Oct  4 22:38:31 2017
+//Host        : DESKTOP-9HMNAI5 running 64-bit major release  (build 9200)
 //Command     : generate_target bd_44e3.bd
 //Design      : bd_44e3
 //Purpose     : IP block netlist
@@ -151,15 +151,15 @@ module bd_44e3
   input S00_AXI_bready;
   output [1:0]S00_AXI_bresp;
   output S00_AXI_bvalid;
-  output [31:0]S00_AXI_rdata;
+  output [127:0]S00_AXI_rdata;
   output S00_AXI_rlast;
   input S00_AXI_rready;
   output [1:0]S00_AXI_rresp;
   output S00_AXI_rvalid;
-  input [31:0]S00_AXI_wdata;
+  input [127:0]S00_AXI_wdata;
   input S00_AXI_wlast;
   output S00_AXI_wready;
-  input [3:0]S00_AXI_wstrb;
+  input [15:0]S00_AXI_wstrb;
   input S00_AXI_wvalid;
   input [31:0]S01_AXI_araddr;
   input [1:0]S01_AXI_arburst;
@@ -171,7 +171,7 @@ module bd_44e3
   output S01_AXI_arready;
   input [2:0]S01_AXI_arsize;
   input S01_AXI_arvalid;
-  output [31:0]S01_AXI_rdata;
+  output [127:0]S01_AXI_rdata;
   output S01_AXI_rlast;
   input S01_AXI_rready;
   output [1:0]S01_AXI_rresp;
@@ -203,15 +203,15 @@ module bd_44e3
   wire S00_AXI_1_BREADY;
   wire [1:0]S00_AXI_1_BRESP;
   wire S00_AXI_1_BVALID;
-  wire [31:0]S00_AXI_1_RDATA;
+  wire [127:0]S00_AXI_1_RDATA;
   wire S00_AXI_1_RLAST;
   wire S00_AXI_1_RREADY;
   wire [1:0]S00_AXI_1_RRESP;
   wire S00_AXI_1_RVALID;
-  wire [31:0]S00_AXI_1_WDATA;
+  wire [127:0]S00_AXI_1_WDATA;
   wire S00_AXI_1_WLAST;
   wire S00_AXI_1_WREADY;
-  wire [3:0]S00_AXI_1_WSTRB;
+  wire [15:0]S00_AXI_1_WSTRB;
   wire S00_AXI_1_WVALID;
   wire [31:0]S01_AXI_1_ARADDR;
   wire [1:0]S01_AXI_1_ARBURST;
@@ -223,7 +223,7 @@ module bd_44e3
   wire S01_AXI_1_ARREADY;
   wire [2:0]S01_AXI_1_ARSIZE;
   wire S01_AXI_1_ARVALID;
-  wire [31:0]S01_AXI_1_RDATA;
+  wire [127:0]S01_AXI_1_RDATA;
   wire S01_AXI_1_RLAST;
   wire S01_AXI_1_RREADY;
   wire [1:0]S01_AXI_1_RRESP;
@@ -419,17 +419,17 @@ module bd_44e3
   wire [1:0]s00_entry_pipeline_m_axi_BRESP;
   wire [1023:0]s00_entry_pipeline_m_axi_BUSER;
   wire s00_entry_pipeline_m_axi_BVALID;
-  wire [31:0]s00_entry_pipeline_m_axi_RDATA;
+  wire [127:0]s00_entry_pipeline_m_axi_RDATA;
   wire [1:0]s00_entry_pipeline_m_axi_RID;
   wire s00_entry_pipeline_m_axi_RLAST;
   wire s00_entry_pipeline_m_axi_RREADY;
   wire [1:0]s00_entry_pipeline_m_axi_RRESP;
   wire [1023:0]s00_entry_pipeline_m_axi_RUSER;
   wire s00_entry_pipeline_m_axi_RVALID;
-  wire [31:0]s00_entry_pipeline_m_axi_WDATA;
+  wire [127:0]s00_entry_pipeline_m_axi_WDATA;
   wire s00_entry_pipeline_m_axi_WLAST;
   wire s00_entry_pipeline_m_axi_WREADY;
-  wire [3:0]s00_entry_pipeline_m_axi_WSTRB;
+  wire [15:0]s00_entry_pipeline_m_axi_WSTRB;
   wire [1023:0]s00_entry_pipeline_m_axi_WUSER;
   wire s00_entry_pipeline_m_axi_WVALID;
   wire [0:0]s00_nodes_M_SC_AR_INFO;
@@ -467,7 +467,7 @@ module bd_44e3
   wire s01_entry_pipeline_m_axi_ARREADY;
   wire [1023:0]s01_entry_pipeline_m_axi_ARUSER;
   wire s01_entry_pipeline_m_axi_ARVALID;
-  wire [31:0]s01_entry_pipeline_m_axi_RDATA;
+  wire [127:0]s01_entry_pipeline_m_axi_RDATA;
   wire [1:0]s01_entry_pipeline_m_axi_RID;
   wire s01_entry_pipeline_m_axi_RLAST;
   wire s01_entry_pipeline_m_axi_RREADY;
@@ -531,15 +531,15 @@ module bd_44e3
   assign S00_AXI_1_AWVALID = S00_AXI_awvalid;
   assign S00_AXI_1_BREADY = S00_AXI_bready;
   assign S00_AXI_1_RREADY = S00_AXI_rready;
-  assign S00_AXI_1_WDATA = S00_AXI_wdata[31:0];
+  assign S00_AXI_1_WDATA = S00_AXI_wdata[127:0];
   assign S00_AXI_1_WLAST = S00_AXI_wlast;
-  assign S00_AXI_1_WSTRB = S00_AXI_wstrb[3:0];
+  assign S00_AXI_1_WSTRB = S00_AXI_wstrb[15:0];
   assign S00_AXI_1_WVALID = S00_AXI_wvalid;
   assign S00_AXI_arready = S00_AXI_1_ARREADY;
   assign S00_AXI_awready = S00_AXI_1_AWREADY;
   assign S00_AXI_bresp[1:0] = S00_AXI_1_BRESP;
   assign S00_AXI_bvalid = S00_AXI_1_BVALID;
-  assign S00_AXI_rdata[31:0] = S00_AXI_1_RDATA;
+  assign S00_AXI_rdata[127:0] = S00_AXI_1_RDATA;
   assign S00_AXI_rlast = S00_AXI_1_RLAST;
   assign S00_AXI_rresp[1:0] = S00_AXI_1_RRESP;
   assign S00_AXI_rvalid = S00_AXI_1_RVALID;
@@ -555,7 +555,7 @@ module bd_44e3
   assign S01_AXI_1_ARVALID = S01_AXI_arvalid;
   assign S01_AXI_1_RREADY = S01_AXI_rready;
   assign S01_AXI_arready = S01_AXI_1_ARREADY;
-  assign S01_AXI_rdata[31:0] = S01_AXI_1_RDATA;
+  assign S01_AXI_rdata[127:0] = S01_AXI_1_RDATA;
   assign S01_AXI_rlast = S01_AXI_1_RLAST;
   assign S01_AXI_rresp[1:0] = S01_AXI_1_RRESP;
   assign S01_AXI_rvalid = S01_AXI_1_RVALID;
@@ -1982,17 +1982,17 @@ module s00_entry_pipeline_imp_1BIQ3N0
   input [1:0]m_axi_bresp;
   input [1023:0]m_axi_buser;
   input m_axi_bvalid;
-  input [31:0]m_axi_rdata;
+  input [127:0]m_axi_rdata;
   input [1:0]m_axi_rid;
   input m_axi_rlast;
   output m_axi_rready;
   input [1:0]m_axi_rresp;
   input [1023:0]m_axi_ruser;
   input m_axi_rvalid;
-  output [31:0]m_axi_wdata;
+  output [127:0]m_axi_wdata;
   output m_axi_wlast;
   input m_axi_wready;
-  output [3:0]m_axi_wstrb;
+  output [15:0]m_axi_wstrb;
   output [1023:0]m_axi_wuser;
   output m_axi_wvalid;
   input [31:0]s_axi_araddr;
@@ -2018,15 +2018,15 @@ module s00_entry_pipeline_imp_1BIQ3N0
   input s_axi_bready;
   output [1:0]s_axi_bresp;
   output s_axi_bvalid;
-  output [31:0]s_axi_rdata;
+  output [127:0]s_axi_rdata;
   output s_axi_rlast;
   input s_axi_rready;
   output [1:0]s_axi_rresp;
   output s_axi_rvalid;
-  input [31:0]s_axi_wdata;
+  input [127:0]s_axi_wdata;
   input s_axi_wlast;
   output s_axi_wready;
-  input [3:0]s_axi_wstrb;
+  input [15:0]s_axi_wstrb;
   input s_axi_wvalid;
 
   wire aclk_1;
@@ -2057,16 +2057,16 @@ module s00_entry_pipeline_imp_1BIQ3N0
   wire [1:0]s00_mmu_M_AXI_BRESP;
   wire [1023:0]s00_mmu_M_AXI_BUSER;
   wire s00_mmu_M_AXI_BVALID;
-  wire [31:0]s00_mmu_M_AXI_RDATA;
+  wire [127:0]s00_mmu_M_AXI_RDATA;
   wire s00_mmu_M_AXI_RLAST;
   wire s00_mmu_M_AXI_RREADY;
   wire [1:0]s00_mmu_M_AXI_RRESP;
   wire [1023:0]s00_mmu_M_AXI_RUSER;
   wire s00_mmu_M_AXI_RVALID;
-  wire [31:0]s00_mmu_M_AXI_WDATA;
+  wire [127:0]s00_mmu_M_AXI_WDATA;
   wire s00_mmu_M_AXI_WLAST;
   wire s00_mmu_M_AXI_WREADY;
-  wire [3:0]s00_mmu_M_AXI_WSTRB;
+  wire [15:0]s00_mmu_M_AXI_WSTRB;
   wire [1023:0]s00_mmu_M_AXI_WUSER;
   wire s00_mmu_M_AXI_WVALID;
   wire [31:0]s00_si_converter_M_AXI_ARADDR;
@@ -2094,21 +2094,20 @@ module s00_entry_pipeline_imp_1BIQ3N0
   wire [1:0]s00_si_converter_M_AXI_BRESP;
   wire [1023:0]s00_si_converter_M_AXI_BUSER;
   wire s00_si_converter_M_AXI_BVALID;
-  wire [31:0]s00_si_converter_M_AXI_RDATA;
+  wire [127:0]s00_si_converter_M_AXI_RDATA;
   wire [1:0]s00_si_converter_M_AXI_RID;
   wire s00_si_converter_M_AXI_RLAST;
   wire s00_si_converter_M_AXI_RREADY;
   wire [1:0]s00_si_converter_M_AXI_RRESP;
   wire [1023:0]s00_si_converter_M_AXI_RUSER;
   wire s00_si_converter_M_AXI_RVALID;
-  wire [31:0]s00_si_converter_M_AXI_WDATA;
+  wire [127:0]s00_si_converter_M_AXI_WDATA;
   wire s00_si_converter_M_AXI_WLAST;
   wire s00_si_converter_M_AXI_WREADY;
-  wire [3:0]s00_si_converter_M_AXI_WSTRB;
+  wire [15:0]s00_si_converter_M_AXI_WSTRB;
   wire [1023:0]s00_si_converter_M_AXI_WUSER;
   wire s00_si_converter_M_AXI_WVALID;
   wire [31:0]s00_transaction_regulator_M_AXI_ARADDR;
-  wire [1:0]s00_transaction_regulator_M_AXI_ARBURST;
   wire [3:0]s00_transaction_regulator_M_AXI_ARCACHE;
   wire [1:0]s00_transaction_regulator_M_AXI_ARID;
   wire [7:0]s00_transaction_regulator_M_AXI_ARLEN;
@@ -2119,7 +2118,6 @@ module s00_entry_pipeline_imp_1BIQ3N0
   wire [1023:0]s00_transaction_regulator_M_AXI_ARUSER;
   wire s00_transaction_regulator_M_AXI_ARVALID;
   wire [31:0]s00_transaction_regulator_M_AXI_AWADDR;
-  wire [1:0]s00_transaction_regulator_M_AXI_AWBURST;
   wire [3:0]s00_transaction_regulator_M_AXI_AWCACHE;
   wire [1:0]s00_transaction_regulator_M_AXI_AWID;
   wire [7:0]s00_transaction_regulator_M_AXI_AWLEN;
@@ -2134,17 +2132,17 @@ module s00_entry_pipeline_imp_1BIQ3N0
   wire [1:0]s00_transaction_regulator_M_AXI_BRESP;
   wire [1023:0]s00_transaction_regulator_M_AXI_BUSER;
   wire s00_transaction_regulator_M_AXI_BVALID;
-  wire [31:0]s00_transaction_regulator_M_AXI_RDATA;
+  wire [127:0]s00_transaction_regulator_M_AXI_RDATA;
   wire [1:0]s00_transaction_regulator_M_AXI_RID;
   wire s00_transaction_regulator_M_AXI_RLAST;
   wire s00_transaction_regulator_M_AXI_RREADY;
   wire [1:0]s00_transaction_regulator_M_AXI_RRESP;
   wire [1023:0]s00_transaction_regulator_M_AXI_RUSER;
   wire s00_transaction_regulator_M_AXI_RVALID;
-  wire [31:0]s00_transaction_regulator_M_AXI_WDATA;
+  wire [127:0]s00_transaction_regulator_M_AXI_WDATA;
   wire s00_transaction_regulator_M_AXI_WLAST;
   wire s00_transaction_regulator_M_AXI_WREADY;
-  wire [3:0]s00_transaction_regulator_M_AXI_WSTRB;
+  wire [15:0]s00_transaction_regulator_M_AXI_WSTRB;
   wire [1023:0]s00_transaction_regulator_M_AXI_WUSER;
   wire s00_transaction_regulator_M_AXI_WVALID;
   wire [31:0]s_axi_1_ARADDR;
@@ -2170,15 +2168,15 @@ module s00_entry_pipeline_imp_1BIQ3N0
   wire s_axi_1_BREADY;
   wire [1:0]s_axi_1_BRESP;
   wire s_axi_1_BVALID;
-  wire [31:0]s_axi_1_RDATA;
+  wire [127:0]s_axi_1_RDATA;
   wire s_axi_1_RLAST;
   wire s_axi_1_RREADY;
   wire [1:0]s_axi_1_RRESP;
   wire s_axi_1_RVALID;
-  wire [31:0]s_axi_1_WDATA;
+  wire [127:0]s_axi_1_WDATA;
   wire s_axi_1_WLAST;
   wire s_axi_1_WREADY;
-  wire [3:0]s_axi_1_WSTRB;
+  wire [15:0]s_axi_1_WSTRB;
   wire s_axi_1_WVALID;
 
   assign aclk_1 = aclk;
@@ -2203,9 +2201,9 @@ module s00_entry_pipeline_imp_1BIQ3N0
   assign m_axi_awvalid = s00_si_converter_M_AXI_AWVALID;
   assign m_axi_bready = s00_si_converter_M_AXI_BREADY;
   assign m_axi_rready = s00_si_converter_M_AXI_RREADY;
-  assign m_axi_wdata[31:0] = s00_si_converter_M_AXI_WDATA;
+  assign m_axi_wdata[127:0] = s00_si_converter_M_AXI_WDATA;
   assign m_axi_wlast = s00_si_converter_M_AXI_WLAST;
-  assign m_axi_wstrb[3:0] = s00_si_converter_M_AXI_WSTRB;
+  assign m_axi_wstrb[15:0] = s00_si_converter_M_AXI_WSTRB;
   assign m_axi_wuser[1023:0] = s00_si_converter_M_AXI_WUSER;
   assign m_axi_wvalid = s00_si_converter_M_AXI_WVALID;
   assign s00_si_converter_M_AXI_ARREADY = m_axi_arready;
@@ -2214,7 +2212,7 @@ module s00_entry_pipeline_imp_1BIQ3N0
   assign s00_si_converter_M_AXI_BRESP = m_axi_bresp[1:0];
   assign s00_si_converter_M_AXI_BUSER = m_axi_buser[1023:0];
   assign s00_si_converter_M_AXI_BVALID = m_axi_bvalid;
-  assign s00_si_converter_M_AXI_RDATA = m_axi_rdata[31:0];
+  assign s00_si_converter_M_AXI_RDATA = m_axi_rdata[127:0];
   assign s00_si_converter_M_AXI_RID = m_axi_rid[1:0];
   assign s00_si_converter_M_AXI_RLAST = m_axi_rlast;
   assign s00_si_converter_M_AXI_RRESP = m_axi_rresp[1:0];
@@ -2241,15 +2239,15 @@ module s00_entry_pipeline_imp_1BIQ3N0
   assign s_axi_1_AWVALID = s_axi_awvalid;
   assign s_axi_1_BREADY = s_axi_bready;
   assign s_axi_1_RREADY = s_axi_rready;
-  assign s_axi_1_WDATA = s_axi_wdata[31:0];
+  assign s_axi_1_WDATA = s_axi_wdata[127:0];
   assign s_axi_1_WLAST = s_axi_wlast;
-  assign s_axi_1_WSTRB = s_axi_wstrb[3:0];
+  assign s_axi_1_WSTRB = s_axi_wstrb[15:0];
   assign s_axi_1_WVALID = s_axi_wvalid;
   assign s_axi_arready = s_axi_1_ARREADY;
   assign s_axi_awready = s_axi_1_AWREADY;
   assign s_axi_bresp[1:0] = s_axi_1_BRESP;
   assign s_axi_bvalid = s_axi_1_BVALID;
-  assign s_axi_rdata[31:0] = s_axi_1_RDATA;
+  assign s_axi_rdata[127:0] = s_axi_1_RDATA;
   assign s_axi_rlast = s_axi_1_RLAST;
   assign s_axi_rresp[1:0] = s_axi_1_RRESP;
   assign s_axi_rvalid = s_axi_1_RVALID;
@@ -2370,7 +2368,6 @@ module s00_entry_pipeline_imp_1BIQ3N0
         .m_axi_wuser(s00_si_converter_M_AXI_WUSER),
         .m_axi_wvalid(s00_si_converter_M_AXI_WVALID),
         .s_axi_araddr(s00_transaction_regulator_M_AXI_ARADDR),
-        .s_axi_arburst(s00_transaction_regulator_M_AXI_ARBURST),
         .s_axi_arcache(s00_transaction_regulator_M_AXI_ARCACHE),
         .s_axi_arid(s00_transaction_regulator_M_AXI_ARID),
         .s_axi_arlen(s00_transaction_regulator_M_AXI_ARLEN),
@@ -2381,7 +2378,6 @@ module s00_entry_pipeline_imp_1BIQ3N0
         .s_axi_aruser(s00_transaction_regulator_M_AXI_ARUSER),
         .s_axi_arvalid(s00_transaction_regulator_M_AXI_ARVALID),
         .s_axi_awaddr(s00_transaction_regulator_M_AXI_AWADDR),
-        .s_axi_awburst(s00_transaction_regulator_M_AXI_AWBURST),
         .s_axi_awcache(s00_transaction_regulator_M_AXI_AWCACHE),
         .s_axi_awid(s00_transaction_regulator_M_AXI_AWID),
         .s_axi_awlen(s00_transaction_regulator_M_AXI_AWLEN),
@@ -2413,7 +2409,6 @@ module s00_entry_pipeline_imp_1BIQ3N0
        (.aclk(aclk_1),
         .aresetn(aresetn_1),
         .m_axi_araddr(s00_transaction_regulator_M_AXI_ARADDR),
-        .m_axi_arburst(s00_transaction_regulator_M_AXI_ARBURST),
         .m_axi_arcache(s00_transaction_regulator_M_AXI_ARCACHE),
         .m_axi_arid(s00_transaction_regulator_M_AXI_ARID),
         .m_axi_arlen(s00_transaction_regulator_M_AXI_ARLEN),
@@ -2424,7 +2419,6 @@ module s00_entry_pipeline_imp_1BIQ3N0
         .m_axi_aruser(s00_transaction_regulator_M_AXI_ARUSER),
         .m_axi_arvalid(s00_transaction_regulator_M_AXI_ARVALID),
         .m_axi_awaddr(s00_transaction_regulator_M_AXI_AWADDR),
-        .m_axi_awburst(s00_transaction_regulator_M_AXI_AWBURST),
         .m_axi_awcache(s00_transaction_regulator_M_AXI_AWCACHE),
         .m_axi_awid(s00_transaction_regulator_M_AXI_AWID),
         .m_axi_awlen(s00_transaction_regulator_M_AXI_AWLEN),
@@ -2835,7 +2829,7 @@ module s01_entry_pipeline_imp_DDN1H4
   input m_axi_arready;
   output [1023:0]m_axi_aruser;
   output m_axi_arvalid;
-  input [31:0]m_axi_rdata;
+  input [127:0]m_axi_rdata;
   input [1:0]m_axi_rid;
   input m_axi_rlast;
   output m_axi_rready;
@@ -2852,7 +2846,7 @@ module s01_entry_pipeline_imp_DDN1H4
   output s_axi_arready;
   input [2:0]s_axi_arsize;
   input s_axi_arvalid;
-  output [31:0]s_axi_rdata;
+  output [127:0]s_axi_rdata;
   output s_axi_rlast;
   input s_axi_rready;
   output [1:0]s_axi_rresp;
@@ -2871,7 +2865,7 @@ module s01_entry_pipeline_imp_DDN1H4
   wire [2:0]s01_mmu_M_AXI_ARSIZE;
   wire [1023:0]s01_mmu_M_AXI_ARUSER;
   wire s01_mmu_M_AXI_ARVALID;
-  wire [31:0]s01_mmu_M_AXI_RDATA;
+  wire [127:0]s01_mmu_M_AXI_RDATA;
   wire s01_mmu_M_AXI_RLAST;
   wire s01_mmu_M_AXI_RREADY;
   wire [1:0]s01_mmu_M_AXI_RRESP;
@@ -2887,7 +2881,7 @@ module s01_entry_pipeline_imp_DDN1H4
   wire s01_si_converter_M_AXI_ARREADY;
   wire [1023:0]s01_si_converter_M_AXI_ARUSER;
   wire s01_si_converter_M_AXI_ARVALID;
-  wire [31:0]s01_si_converter_M_AXI_RDATA;
+  wire [127:0]s01_si_converter_M_AXI_RDATA;
   wire [1:0]s01_si_converter_M_AXI_RID;
   wire s01_si_converter_M_AXI_RLAST;
   wire s01_si_converter_M_AXI_RREADY;
@@ -2895,7 +2889,6 @@ module s01_entry_pipeline_imp_DDN1H4
   wire [1023:0]s01_si_converter_M_AXI_RUSER;
   wire s01_si_converter_M_AXI_RVALID;
   wire [31:0]s01_transaction_regulator_M_AXI_ARADDR;
-  wire [1:0]s01_transaction_regulator_M_AXI_ARBURST;
   wire [3:0]s01_transaction_regulator_M_AXI_ARCACHE;
   wire [1:0]s01_transaction_regulator_M_AXI_ARID;
   wire [7:0]s01_transaction_regulator_M_AXI_ARLEN;
@@ -2905,7 +2898,7 @@ module s01_entry_pipeline_imp_DDN1H4
   wire s01_transaction_regulator_M_AXI_ARREADY;
   wire [1023:0]s01_transaction_regulator_M_AXI_ARUSER;
   wire s01_transaction_regulator_M_AXI_ARVALID;
-  wire [31:0]s01_transaction_regulator_M_AXI_RDATA;
+  wire [127:0]s01_transaction_regulator_M_AXI_RDATA;
   wire [1:0]s01_transaction_regulator_M_AXI_RID;
   wire s01_transaction_regulator_M_AXI_RLAST;
   wire s01_transaction_regulator_M_AXI_RREADY;
@@ -2922,7 +2915,7 @@ module s01_entry_pipeline_imp_DDN1H4
   wire s_axi_1_ARREADY;
   wire [2:0]s_axi_1_ARSIZE;
   wire s_axi_1_ARVALID;
-  wire [31:0]s_axi_1_RDATA;
+  wire [127:0]s_axi_1_RDATA;
   wire s_axi_1_RLAST;
   wire s_axi_1_RREADY;
   wire [1:0]s_axi_1_RRESP;
@@ -2941,7 +2934,7 @@ module s01_entry_pipeline_imp_DDN1H4
   assign m_axi_arvalid = s01_si_converter_M_AXI_ARVALID;
   assign m_axi_rready = s01_si_converter_M_AXI_RREADY;
   assign s01_si_converter_M_AXI_ARREADY = m_axi_arready;
-  assign s01_si_converter_M_AXI_RDATA = m_axi_rdata[31:0];
+  assign s01_si_converter_M_AXI_RDATA = m_axi_rdata[127:0];
   assign s01_si_converter_M_AXI_RID = m_axi_rid[1:0];
   assign s01_si_converter_M_AXI_RLAST = m_axi_rlast;
   assign s01_si_converter_M_AXI_RRESP = m_axi_rresp[1:0];
@@ -2958,7 +2951,7 @@ module s01_entry_pipeline_imp_DDN1H4
   assign s_axi_1_ARVALID = s_axi_arvalid;
   assign s_axi_1_RREADY = s_axi_rready;
   assign s_axi_arready = s_axi_1_ARREADY;
-  assign s_axi_rdata[31:0] = s_axi_1_RDATA;
+  assign s_axi_rdata[127:0] = s_axi_1_RDATA;
   assign s_axi_rlast = s_axi_1_RLAST;
   assign s_axi_rresp[1:0] = s_axi_1_RRESP;
   assign s_axi_rvalid = s_axi_1_RVALID;
@@ -3018,7 +3011,6 @@ module s01_entry_pipeline_imp_DDN1H4
         .m_axi_ruser(s01_si_converter_M_AXI_RUSER),
         .m_axi_rvalid(s01_si_converter_M_AXI_RVALID),
         .s_axi_araddr(s01_transaction_regulator_M_AXI_ARADDR),
-        .s_axi_arburst(s01_transaction_regulator_M_AXI_ARBURST),
         .s_axi_arcache(s01_transaction_regulator_M_AXI_ARCACHE),
         .s_axi_arid(s01_transaction_regulator_M_AXI_ARID),
         .s_axi_arlen(s01_transaction_regulator_M_AXI_ARLEN),
@@ -3039,7 +3031,6 @@ module s01_entry_pipeline_imp_DDN1H4
        (.aclk(aclk_1),
         .aresetn(aresetn_1),
         .m_axi_araddr(s01_transaction_regulator_M_AXI_ARADDR),
-        .m_axi_arburst(s01_transaction_regulator_M_AXI_ARBURST),
         .m_axi_arcache(s01_transaction_regulator_M_AXI_ARCACHE),
         .m_axi_arid(s01_transaction_regulator_M_AXI_ARID),
         .m_axi_arlen(s01_transaction_regulator_M_AXI_ARLEN),

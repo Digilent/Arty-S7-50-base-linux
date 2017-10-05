@@ -68,8 +68,8 @@ ENTITY system_axi_smc_0 IS
     S00_AXI_awqos : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
     S00_AXI_awvalid : IN STD_LOGIC;
     S00_AXI_awready : OUT STD_LOGIC;
-    S00_AXI_wdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
-    S00_AXI_wstrb : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+    S00_AXI_wdata : IN STD_LOGIC_VECTOR(127 DOWNTO 0);
+    S00_AXI_wstrb : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     S00_AXI_wlast : IN STD_LOGIC;
     S00_AXI_wvalid : IN STD_LOGIC;
     S00_AXI_wready : OUT STD_LOGIC;
@@ -86,7 +86,7 @@ ENTITY system_axi_smc_0 IS
     S00_AXI_arqos : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
     S00_AXI_arvalid : IN STD_LOGIC;
     S00_AXI_arready : OUT STD_LOGIC;
-    S00_AXI_rdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    S00_AXI_rdata : OUT STD_LOGIC_VECTOR(127 DOWNTO 0);
     S00_AXI_rresp : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
     S00_AXI_rlast : OUT STD_LOGIC;
     S00_AXI_rvalid : OUT STD_LOGIC;
@@ -101,7 +101,7 @@ ENTITY system_axi_smc_0 IS
     S01_AXI_arqos : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
     S01_AXI_arvalid : IN STD_LOGIC;
     S01_AXI_arready : OUT STD_LOGIC;
-    S01_AXI_rdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    S01_AXI_rdata : OUT STD_LOGIC_VECTOR(127 DOWNTO 0);
     S01_AXI_rresp : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
     S01_AXI_rlast : OUT STD_LOGIC;
     S01_AXI_rvalid : OUT STD_LOGIC;
@@ -160,8 +160,8 @@ ARCHITECTURE system_axi_smc_0_arch OF system_axi_smc_0 IS
       S00_AXI_awqos : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
       S00_AXI_awvalid : IN STD_LOGIC;
       S00_AXI_awready : OUT STD_LOGIC;
-      S00_AXI_wdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
-      S00_AXI_wstrb : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+      S00_AXI_wdata : IN STD_LOGIC_VECTOR(127 DOWNTO 0);
+      S00_AXI_wstrb : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
       S00_AXI_wlast : IN STD_LOGIC;
       S00_AXI_wvalid : IN STD_LOGIC;
       S00_AXI_wready : OUT STD_LOGIC;
@@ -178,7 +178,7 @@ ARCHITECTURE system_axi_smc_0_arch OF system_axi_smc_0 IS
       S00_AXI_arqos : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
       S00_AXI_arvalid : IN STD_LOGIC;
       S00_AXI_arready : OUT STD_LOGIC;
-      S00_AXI_rdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+      S00_AXI_rdata : OUT STD_LOGIC_VECTOR(127 DOWNTO 0);
       S00_AXI_rresp : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
       S00_AXI_rlast : OUT STD_LOGIC;
       S00_AXI_rvalid : OUT STD_LOGIC;
@@ -193,7 +193,7 @@ ARCHITECTURE system_axi_smc_0_arch OF system_axi_smc_0 IS
       S01_AXI_arqos : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
       S01_AXI_arvalid : IN STD_LOGIC;
       S01_AXI_arready : OUT STD_LOGIC;
-      S01_AXI_rdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+      S01_AXI_rdata : OUT STD_LOGIC_VECTOR(127 DOWNTO 0);
       S01_AXI_rresp : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
       S01_AXI_rlast : OUT STD_LOGIC;
       S01_AXI_rvalid : OUT STD_LOGIC;

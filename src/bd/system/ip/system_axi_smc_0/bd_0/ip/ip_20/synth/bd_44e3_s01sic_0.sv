@@ -52,8 +52,8 @@
 
 (* X_CORE_INFO = "sc_si_converter_v1_0_4_top,Vivado 2017.2.1" *)
 (* CHECK_LICENSE_TYPE = "bd_44e3_s01sic_0,sc_si_converter_v1_0_4_top,{}" *)
-(* CORE_GENERATION_INFO = "bd_44e3_s01sic_0,sc_si_converter_v1_0_4_top,{x_ipProduct=Vivado 2017.2.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=sc_si_converter,x_ipVersion=1.0,x_ipCoreRevision=4,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_LIMIT_WRITE_LENGTH=0,C_LIMIT_READ_LENGTH=0,C_WRITE_WATERMARK=0,C_READ_WATERMARK=0,C_ENABLE_PIPELINING=0x1,C_IS_CASCADED=0,C_NUM_WRITE_THREADS=1,C_NUM_READ_THREADS=1,C_MEP_IDENTIFIER_WIDTH=2,C_SUPPORTS_NARROW=0,C_HAS_BURST=1,C_NUM_SEG=1,C_SEP_WDATA_WIDTH_ARRAY=0x00000080,C_SEP_RDATA_WIDTH\
-_ARRAY=0x00000080,C_SEP_PROTOCOL_ARRAY=0x00000000,C_NUM_MSC=1,C_MSC_WDATA_WIDTH_ARRAY=0x00000080,C_MSC_RDATA_WIDTH_ARRAY=0x00000080,C_ADDR_WIDTH=32,C_ID_WIDTH=2,C_WDATA_WIDTH=32,C_RDATA_WIDTH=32,C_S_WUSER_BITS_PER_BYTE=0,C_S_RUSER_BITS_PER_BYTE=0,C_MAX_WUSER_BITS_PER_BYTE=0,C_MAX_RUSER_BITS_PER_BYTE=0,C_READ_ACCEPTANCE=32,C_WRITE_ACCEPTANCE=32}" *)
+(* CORE_GENERATION_INFO = "bd_44e3_s01sic_0,sc_si_converter_v1_0_4_top,{x_ipProduct=Vivado 2017.2.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=sc_si_converter,x_ipVersion=1.0,x_ipCoreRevision=4,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_LIMIT_WRITE_LENGTH=0,C_LIMIT_READ_LENGTH=0,C_WRITE_WATERMARK=0,C_READ_WATERMARK=0,C_ENABLE_PIPELINING=0x1,C_IS_CASCADED=0,C_NUM_WRITE_THREADS=1,C_NUM_READ_THREADS=1,C_MEP_IDENTIFIER_WIDTH=2,C_SUPPORTS_NARROW=0,C_HAS_BURST=0,C_NUM_SEG=1,C_SEP_WDATA_WIDTH_ARRAY=0x00000080,C_SEP_RDATA_WIDTH\
+_ARRAY=0x00000080,C_SEP_PROTOCOL_ARRAY=0x00000000,C_NUM_MSC=1,C_MSC_WDATA_WIDTH_ARRAY=0x00000080,C_MSC_RDATA_WIDTH_ARRAY=0x00000080,C_ADDR_WIDTH=32,C_ID_WIDTH=2,C_WDATA_WIDTH=128,C_RDATA_WIDTH=128,C_S_WUSER_BITS_PER_BYTE=0,C_S_RUSER_BITS_PER_BYTE=0,C_MAX_WUSER_BITS_PER_BYTE=0,C_MAX_RUSER_BITS_PER_BYTE=0,C_READ_ACCEPTANCE=32,C_WRITE_ACCEPTANCE=32}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module bd_44e3_s01sic_0 (
   aclk,
@@ -61,7 +61,6 @@ module bd_44e3_s01sic_0 (
   s_axi_arid,
   s_axi_araddr,
   s_axi_arlen,
-  s_axi_arburst,
   s_axi_arlock,
   s_axi_arcache,
   s_axi_arprot,
@@ -105,8 +104,6 @@ input wire [1 : 0] s_axi_arid;
 input wire [31 : 0] s_axi_araddr;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARLEN" *)
 input wire [7 : 0] s_axi_arlen;
-(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARBURST" *)
-input wire [1 : 0] s_axi_arburst;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARLOCK" *)
 input wire [0 : 0] s_axi_arlock;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI ARCACHE" *)
@@ -124,7 +121,7 @@ output wire s_axi_arready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI RID" *)
 output wire [1 : 0] s_axi_rid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI RDATA" *)
-output wire [31 : 0] s_axi_rdata;
+output wire [127 : 0] s_axi_rdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI RRESP" *)
 output wire [1 : 0] s_axi_rresp;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI RLAST" *)
@@ -158,7 +155,7 @@ input wire m_axi_arready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RID" *)
 input wire [1 : 0] m_axi_rid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RDATA" *)
-input wire [31 : 0] m_axi_rdata;
+input wire [127 : 0] m_axi_rdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RRESP" *)
 input wire [1 : 0] m_axi_rresp;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI RLAST" *)
@@ -181,7 +178,7 @@ output wire m_axi_rready;
     .C_NUM_READ_THREADS(1),
     .C_MEP_IDENTIFIER_WIDTH(2),
     .C_SUPPORTS_NARROW(0),
-    .C_HAS_BURST(1),
+    .C_HAS_BURST(0),
     .C_NUM_SEG(1),
     .C_SEP_WDATA_WIDTH_ARRAY(32'H00000080),
     .C_SEP_RDATA_WIDTH_ARRAY(32'H00000080),
@@ -191,8 +188,8 @@ output wire m_axi_rready;
     .C_MSC_RDATA_WIDTH_ARRAY(32'H00000080),
     .C_ADDR_WIDTH(32),
     .C_ID_WIDTH(2),
-    .C_WDATA_WIDTH(32),
-    .C_RDATA_WIDTH(32),
+    .C_WDATA_WIDTH(128),
+    .C_RDATA_WIDTH(128),
     .C_S_WUSER_BITS_PER_BYTE(0),
     .C_S_RUSER_BITS_PER_BYTE(0),
     .C_MAX_WUSER_BITS_PER_BYTE(0),
@@ -215,8 +212,8 @@ output wire m_axi_rready;
     .s_axi_awuser(1024'H0),
     .s_axi_awvalid(1'H0),
     .s_axi_awready(),
-    .s_axi_wdata(32'H00000000),
-    .s_axi_wstrb(4'HF),
+    .s_axi_wdata(128'H00000000000000000000000000000000),
+    .s_axi_wstrb(16'HFFFF),
     .s_axi_wlast(1'H1),
     .s_axi_wuser(1024'H0),
     .s_axi_wvalid(1'H0),
@@ -230,7 +227,7 @@ output wire m_axi_rready;
     .s_axi_araddr(s_axi_araddr),
     .s_axi_arlen(s_axi_arlen),
     .s_axi_arsize(3'H0),
-    .s_axi_arburst(s_axi_arburst),
+    .s_axi_arburst(2'H1),
     .s_axi_arlock(s_axi_arlock),
     .s_axi_arcache(s_axi_arcache),
     .s_axi_arprot(s_axi_arprot),
