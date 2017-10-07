@@ -1,0 +1,15 @@
+PN: grep
+PV: 2.25
+PR: r0
+PKGV: 2.25
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION_grep-locale-pl: GNU grep utility.  This package contains language translation files for the pl locale.
+SUMMARY_grep-locale-pl: GNU grep utility - pl translations
+RPROVIDES_grep-locale-pl: grep-locale pl-translation
+RRECOMMENDS_grep-locale-pl: virtual-locale-pl
+SECTION: console/utils
+PKG_grep-locale-pl: grep-locale-pl
+FILES_grep-locale-pl: /usr/share/locale/pl
+FILES_INFO: {"/usr/share/locale/pl/LC_MESSAGES/grep.mo": 18479}
+PKGSIZE_grep-locale-pl: 18479

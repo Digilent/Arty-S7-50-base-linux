@@ -1,0 +1,14 @@
+PN: diffutils
+PV: 3.4
+PR: r0
+PKGV: 3.4
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_diffutils-staticdev: Diffutils contains the GNU diff, diff3, sdiff, and cmp utilities. These programs are usually used for creating patch files.  This package contains static libraries for software development.
+SUMMARY_diffutils-staticdev: Diffutils contains tools used for finding differences between files - Development files (Static Libraries)
+RDEPENDS_diffutils-staticdev: diffutils-dev (= 3.4-r0)
+SECTION_diffutils-staticdev: devel
+PKG_diffutils-staticdev: diffutils-staticdev
+FILES_diffutils-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/diffutils/*.a
+FILES_INFO: {}
+PKGSIZE_diffutils-staticdev: 0

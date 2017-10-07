@@ -1,0 +1,15 @@
+PN: grep
+PV: 2.25
+PR: r0
+PKGV: 2.25
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION_grep-locale-id: GNU grep utility.  This package contains language translation files for the id locale.
+SUMMARY_grep-locale-id: GNU grep utility - id translations
+RPROVIDES_grep-locale-id: grep-locale id-translation
+RRECOMMENDS_grep-locale-id: virtual-locale-id
+SECTION: console/utils
+PKG_grep-locale-id: grep-locale-id
+FILES_grep-locale-id: /usr/share/locale/id
+FILES_INFO: {"/usr/share/locale/id/LC_MESSAGES/grep.mo": 15970}
+PKGSIZE_grep-locale-id: 15970

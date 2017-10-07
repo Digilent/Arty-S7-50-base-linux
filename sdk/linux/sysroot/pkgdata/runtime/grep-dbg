@@ -1,0 +1,15 @@
+PN: grep
+PV: 2.25
+PR: r0
+PKGV: 2.25
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION_grep-dbg: GNU grep utility.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_grep-dbg: GNU grep utility - Debugging files
+RRECOMMENDS_grep-dbg: glibc-xilinx-dbg
+SECTION_grep-dbg: devel
+PKG_grep-dbg: grep-dbg
+ALLOW_EMPTY_grep-dbg: 1
+FILES_grep-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {"/bin/.debug/grep.grep": 864928}
+PKGSIZE_grep-dbg: 864928

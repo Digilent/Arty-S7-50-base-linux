@@ -1,0 +1,20 @@
+PN: acl
+PV: 2.2.52
+PR: r0
+PKGV: 2.2.52
+PKGR: r0
+LICENSE: LGPLv2.1+ & GPLv2+
+DESCRIPTION_acl-ptest: Utilities for managing POSIX Access Control Lists.  This package contains a test directory /usr/lib/acl/ptest for package test purposes.
+SUMMARY_acl-ptest: Utilities for managing POSIX Access Control Lists - Package test files
+RDEPENDS_acl-ptest: acl bash coreutils perl perl-module-filehandle perl-module-getopt-std perl-module-posix shadow
+RRECOMMENDS_acl-ptest:  ptest-runner
+SECTION_acl-ptest: devel
+PKG_acl-ptest: acl-ptest
+ALLOW_EMPTY_acl-ptest: 1
+FILES_acl-ptest: /usr/lib/acl/ptest
+FILES_INFO: {"/usr/lib/acl/ptest/test/root/permissions.test": 5276, "/usr/lib/acl/ptest/test/misc.test": 7764, "/usr/lib/acl/ptest/test/getfacl-recursive.test": 2927, "/usr/lib/acl/ptest/test/root/setfacl.test": 2825, "/usr/lib/acl/ptest/include/buildrules": 2452, "/usr/lib/acl/ptest/run-ptest": 1225, "/usr/lib/acl/ptest/test/malformed-restore.test": 493, "/usr/lib/acl/ptest/test/cp.test": 675, "/usr/lib/acl/ptest/test/run": 8540, "/usr/lib/acl/ptest/include/buildmacros": 5279, "/usr/lib/acl/ptest/test/sbits-restore.test": 458, "/usr/lib/acl/ptest/test/root/restore.test": 514, "/usr/lib/acl/ptest/test/setfacl-X.test": 1834, "/usr/lib/acl/ptest/test/getfacl-noacl.test": 924, "/usr/lib/acl/ptest/test/utf8-filenames.test": 807, "/usr/lib/acl/ptest/test/malformed-restore-double-owner.acl": 88, "/usr/lib/acl/ptest/test/make-tree": 757, "/usr/lib/acl/ptest/test/Makefile": 1465, "/usr/lib/acl/ptest/test/sort-getfacl-output": 83, "/usr/lib/acl/ptest/include/builddefs": 3047}
+FILERDEPENDSFLIST_acl-ptest: /usr/lib/acl/ptest/run-ptest /usr/lib/acl/ptest/test/run /usr/lib/acl/ptest/test/sort-getfacl-output
+FILERDEPENDS_/usr/lib/acl/ptest/run-ptest_acl-ptest: /bin/sh
+FILERDEPENDS_/usr/lib/acl/ptest/test/run_acl-ptest: /usr/bin/perl
+FILERDEPENDS_/usr/lib/acl/ptest/test/sort-getfacl-output_acl-ptest: /usr/bin/perl
+PKGSIZE_acl-ptest: 47433

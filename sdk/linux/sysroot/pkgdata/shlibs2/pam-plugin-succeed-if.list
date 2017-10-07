@@ -1,0 +1,1 @@
+pam_succeed_if.so:/lib/security:1.3.0

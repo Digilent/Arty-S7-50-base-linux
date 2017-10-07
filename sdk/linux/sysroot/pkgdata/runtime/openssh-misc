@@ -1,0 +1,21 @@
+PN: openssh
+PV: 7.3p1
+PR: r0
+PKGV: 7.3p1
+PKGR: r0
+LICENSE: BSD
+DESCRIPTION: Secure rlogin/rsh/rcp/telnet replacement (OpenSSH) Ssh (Secure Shell) is a program for logging into a remote machine and for executing commands on a remote machine.
+SUMMARY: A suite of security-related network utilities based on the SSH protocol including the ssh client and sshd server
+RDEPENDS_openssh-misc: zlib (>= 1.2.8) libcrypto (>= 1.0.2j) glibc-xilinx (>= 2.23)
+SECTION: console/network
+PKG_openssh-misc: openssh-misc
+FILES_openssh-misc: /usr/bin/ssh* /usr/libexec/ssh*
+FILES_INFO: {"/usr/libexec/ssh-keysign": 546332, "/usr/libexec/ssh-pkcs11-helper": 443824, "/usr/bin/ssh-add": 431556, "/usr/bin/ssh-copy-id": 10372, "/usr/bin/ssh-keyscan": 521764, "/usr/bin/ssh-agent": 456148}
+FILERDEPENDSFLIST_openssh-misc: /usr/libexec/ssh-keysign /usr/libexec/ssh-pkcs11-helper /usr/bin/ssh-add /usr/bin/ssh-copy-id /usr/bin/ssh-keyscan /usr/bin/ssh-agent
+FILERDEPENDS_/usr/libexec/ssh-keysign_openssh-misc: libc.so.6 libc.so.6(GLIBC_2.18) libcrypto.so.1.0.0 libcrypto.so.1.0.0(OPENSSL_1.0.2d) libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/libexec/ssh-pkcs11-helper_openssh-misc: libc.so.6 libc.so.6(GLIBC_2.18) libcrypto.so.1.0.0 libcrypto.so.1.0.0(OPENSSL_1.0.2d) libdl.so.2 libdl.so.2(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/ssh-add_openssh-misc: libc.so.6 libc.so.6(GLIBC_2.18) libcrypto.so.1.0.0 libcrypto.so.1.0.0(OPENSSL_1.0.2d) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/ssh-copy-id_openssh-misc: /bin/sh
+FILERDEPENDS_/usr/bin/ssh-keyscan_openssh-misc: libc.so.6 libc.so.6(GLIBC_2.18) libcrypto.so.1.0.0 libcrypto.so.1.0.0(OPENSSL_1.0.2d) libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/ssh-agent_openssh-misc: libc.so.6 libc.so.6(GLIBC_2.18) libcrypto.so.1.0.0 libcrypto.so.1.0.0(OPENSSL_1.0.2d) rtld(GNU_HASH)
+PKGSIZE_openssh-misc: 2409996

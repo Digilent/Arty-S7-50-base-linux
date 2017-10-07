@@ -1,0 +1,14 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-io-seekable: perl module io-seekable
+SUMMARY_perl-module-io-seekable: perl module io-seekable
+RDEPENDS_perl-module-io-seekable: perl perl-module-carp perl-module-exporter perl-module-fcntl perl-module-io-handle perl-module-strict
+SECTION: devel
+PKG_perl-module-io-seekable: perl-module-io-seekable
+FILES_perl-module-io-seekable: /usr/lib/perl/5.22.1/IO/Seekable.pm
+FILES_INFO: {"/usr/lib/perl/5.22.1/IO/Seekable.pm": 2935}
+PKGSIZE_perl-module-io-seekable: 2935

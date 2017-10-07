@@ -1,0 +1,16 @@
+PN: glibc-xilinx
+PV: 2017.2
+PR: r1
+PKGV: 2.23
+PKGR: r1
+LICENSE: GPLv2 & LGPL-2.1
+DESCRIPTION: External Xilinx toolchain.
+SUMMARY: External Xilinx toolchain
+RDEPENDS_catchsegv: libsegfault
+SECTION: base
+PKG_catchsegv: catchsegv
+FILES_catchsegv: /usr/bin/catchsegv
+FILES_INFO: {"/usr/bin/catchsegv": 3294}
+FILERDEPENDSFLIST_catchsegv: /usr/bin/catchsegv
+FILERDEPENDS_/usr/bin/catchsegv_catchsegv: /bin/sh
+PKGSIZE_catchsegv: 3294

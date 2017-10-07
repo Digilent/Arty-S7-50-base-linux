@@ -1,0 +1,15 @@
+PN: diffutils
+PV: 3.4
+PR: r0
+PKGV: 3.4
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_diffutils-locale-sr: Diffutils contains the GNU diff, diff3, sdiff, and cmp utilities. These programs are usually used for creating patch files.  This package contains language translation files for the sr locale.
+SUMMARY_diffutils-locale-sr: Diffutils contains tools used for finding differences between files - sr translations
+RPROVIDES_diffutils-locale-sr: diffutils-locale sr-translation
+RRECOMMENDS_diffutils-locale-sr: virtual-locale-sr
+SECTION: base
+PKG_diffutils-locale-sr: diffutils-locale-sr
+FILES_diffutils-locale-sr: /usr/share/locale/sr
+FILES_INFO: {"/usr/share/locale/sr/LC_MESSAGES/diffutils.mo": 39585}
+PKGSIZE_diffutils-locale-sr: 39585

@@ -1,0 +1,14 @@
+PN: fs-boot
+PV: 2017.2+gitAUTOINC+122565ec40
+PR: r0
+PKGV: 2017.2+git0+122565ec40
+PKGR: r0
+LICENSE: BSD
+DESCRIPTION_fs-boot-dbg: FS-BOOT generator  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_fs-boot-dbg: fs-boot version 2017.2+gitAUTOINC+122565ec40-r0 - Debugging files
+SECTION_fs-boot-dbg: devel
+PKG_fs-boot-dbg: fs-boot-dbg
+ALLOW_EMPTY_fs-boot-dbg: 1
+FILES_fs-boot-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {}
+PKGSIZE_fs-boot-dbg: 0

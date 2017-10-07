@@ -1,0 +1,15 @@
+PN: sed
+PV: 4.2.2
+PR: r0
+PKGV: 4.2.2
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_sed-locale-ru: Stream EDitor (text filtering utility).  This package contains language translation files for the ru locale.
+SUMMARY_sed-locale-ru: Stream EDitor (text filtering utility) - ru translations
+RPROVIDES_sed-locale-ru: sed-locale ru-translation
+RRECOMMENDS_sed-locale-ru: virtual-locale-ru
+SECTION: console/utils
+PKG_sed-locale-ru: sed-locale-ru
+FILES_sed-locale-ru: /usr/share/locale/ru
+FILES_INFO: {"/usr/share/locale/ru/LC_MESSAGES/sed.mo": 11937}
+PKGSIZE_sed-locale-ru: 11937

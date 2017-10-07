@@ -1,0 +1,16 @@
+PN: openssh
+PV: 7.3p1
+PR: r0
+PKGV: 7.3p1
+PKGR: r0
+LICENSE: BSD
+DESCRIPTION_openssh-dev: Secure rlogin/rsh/rcp/telnet replacement (OpenSSH) Ssh (Secure Shell) is a program for logging into a remote machine and for executing commands on a remote machine.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_openssh-dev: A suite of security-related network utilities based on the SSH protocol including the ssh client and sshd server - Development files
+RDEPENDS_openssh-dev: openssh (= 7.3p1-r0)
+RRECOMMENDS_openssh-dev: base-files-dev initscripts-dev libpam-dev openssl-dev shadow-dev shadow-sysroot-dev update-rc.d-dev zlib-dev libcrypto-dev glibc-xilinx-dev update-alternatives-opkg-dev base-passwd-dev openssh-keygen-dev pam-plugin-keyinit-dev pam-plugin-loginuid-dev make-dev openssh-misc-dev openssh-sftp-dev openssh-sftp-server-dev openssh-scp-dev openssh-ssh-dev openssh-sshd-dev
+SECTION_openssh-dev: devel
+PKG_openssh-dev: openssh-dev
+ALLOW_EMPTY_openssh-dev: 1
+FILES_openssh-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/openssh/*.la /lib/*.la
+FILES_INFO: {}
+PKGSIZE_openssh-dev: 0

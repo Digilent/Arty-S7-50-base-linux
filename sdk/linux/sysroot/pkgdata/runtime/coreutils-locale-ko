@@ -1,0 +1,15 @@
+PN: coreutils
+PV: 8.25
+PR: r0
+PKGV: 8.25
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_coreutils-locale-ko: The GNU Core Utilities provide the basic file, shell and text manipulation utilities. These are the core utilities which are expected to exist on every system.  This package contains language translation files for the ko locale.
+SUMMARY_coreutils-locale-ko: The basic file, shell and text manipulation utilities - ko translations
+RPROVIDES_coreutils-locale-ko: coreutils-locale ko-translation
+RRECOMMENDS_coreutils-locale-ko: virtual-locale-ko
+SECTION: base
+PKG_coreutils-locale-ko: coreutils-locale-ko
+FILES_coreutils-locale-ko: /usr/share/locale/ko
+FILES_INFO: {"/usr/share/locale/ko/LC_TIME/coreutils.mo": 27, "/usr/share/locale/ko/LC_MESSAGES/coreutils.mo": 26897}
+PKGSIZE_coreutils-locale-ko: 26924

@@ -1,0 +1,15 @@
+PN: glibc-xilinx
+PV: 2017.2
+PR: r1
+PKGV: 2.23
+PKGR: r1
+LICENSE: GPLv2 & LGPL-2.1
+DESCRIPTION_glibc-xilinx-staticdev: External Xilinx toolchain.  This package contains static libraries for software development.
+SUMMARY_glibc-xilinx-staticdev: External Xilinx toolchain - Development files (Static Libraries)
+RDEPENDS_glibc-xilinx-staticdev: glibc-xilinx-dev (= 2.23-r1)
+RPROVIDES_glibc-xilinx-staticdev: eglibc-staticdev libc-staticdev glibc-staticdev glibc-staticdev glibc-xilinx-staticdev (=2.23)
+SECTION_glibc-xilinx-staticdev: devel
+PKG_glibc-xilinx-staticdev: libc6-staticdev
+FILES_glibc-xilinx-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/glibc-xilinx/*.a /usr/lib/*.a /lib/*.a
+FILES_INFO: {"/usr/lib/libpthread.a": 289910, "/usr/lib/libdl.a": 6486, "/usr/lib/libg.a": 622, "/usr/lib/libcrypt.a": 52128, "/usr/lib/libieee.a": 476, "/usr/lib/libanl.a": 15768, "/usr/lib/libutil.a": 9820, "/usr/lib/libBrokenLocale.a": 1018, "/usr/lib/libnsl.a": 148270, "/usr/lib/librpcsvc.a": 45394, "/usr/lib/libm.a": 1422764, "/usr/lib/librt.a": 60048, "/usr/lib/libresolv.a": 132294, "/usr/lib/libmcheck.a": 832, "/usr/lib/libc.a": 3590492}
+PKGSIZE_glibc-xilinx-staticdev: 5776322

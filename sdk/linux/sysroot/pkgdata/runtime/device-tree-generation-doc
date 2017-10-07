@@ -1,0 +1,13 @@
+PN: device-tree-generation
+PV: xilinx+gitAUTOINC+43551819a1
+PR: r0
+PKGV: xilinx+git0+43551819a1
+PKGR: r0
+LICENSE: GPLv2
+DESCRIPTION_device-tree-generation-doc: DTS generator  This package contains documentation.
+SUMMARY_device-tree-generation-doc: device-tree-generation version xilinx+gitAUTOINC+43551819a1-r0 - Documentation files
+SECTION_device-tree-generation-doc: doc
+PKG_device-tree-generation-doc: device-tree-generation-doc
+FILES_device-tree-generation-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {}
+PKGSIZE_device-tree-generation-doc: 0

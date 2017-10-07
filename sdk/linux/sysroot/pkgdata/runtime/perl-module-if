@@ -1,0 +1,14 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-if: perl module if
+SUMMARY_perl-module-if: perl module if
+RDEPENDS_perl-module-if: perl
+SECTION: devel
+PKG_perl-module-if: perl-module-if
+FILES_perl-module-if: /usr/lib/perl/5.22.1/if.pm
+FILES_INFO: {"/usr/lib/perl/5.22.1/if.pm": 3055}
+PKGSIZE_perl-module-if: 3055

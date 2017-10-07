@@ -1,0 +1,18 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-filter-util-call: perl module filter-util-call
+SUMMARY_perl-module-filter-util-call: perl module filter-util-call
+RDEPENDS_perl-module-filter-util-call: perl perl-module-carp perl-module-dynaloader perl-module-exporter perl-module-strict perl-module-vars perl-module-warnings glibc-xilinx (>= 2.23)
+SECTION: devel
+PKG_perl-module-filter-util-call: perl-module-filter-util-call
+FILES_perl-module-filter-util-call: /usr/lib/perl/5.22.1/auto/Filter/Util/Call/Call.so /usr/lib/perl/5.22.1/Filter/Util/Call.pm
+FILERPROVIDESFLIST_perl-module-filter-util-call: /usr/lib/perl/5.22.1/auto/Filter/Util/Call/Call.so
+FILES_INFO: {"/usr/lib/perl/5.22.1/Filter/Util/Call.pm": 13224, "/usr/lib/perl/5.22.1/auto/Filter/Util/Call/Call.so": 10324}
+FILERPROVIDES_/usr/lib/perl/5.22.1/auto/Filter/Util/Call/Call.so_perl-module-filter-util-call: Call.so
+FILERDEPENDSFLIST_perl-module-filter-util-call: /usr/lib/perl/5.22.1/auto/Filter/Util/Call/Call.so
+FILERDEPENDS_/usr/lib/perl/5.22.1/auto/Filter/Util/Call/Call.so_perl-module-filter-util-call: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+PKGSIZE_perl-module-filter-util-call: 23548

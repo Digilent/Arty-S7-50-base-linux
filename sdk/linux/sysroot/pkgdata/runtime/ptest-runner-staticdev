@@ -1,0 +1,14 @@
+PN: ptest-runner
+PV: 2.0.1+gitAUTOINC+e2aa425674
+PR: r0
+PKGV: 2.0.1+git0+e2aa425674
+PKGR: r0
+LICENSE: GPLv2
+DESCRIPTION_ptest-runner-staticdev: The ptest-runner2 package installs a ptest-runner program which loops through all installed ptest test suites and runs them in sequence.  This package contains static libraries for software development.
+SUMMARY_ptest-runner-staticdev: A C program to run all installed ptests - Development files (Static Libraries)
+RDEPENDS_ptest-runner-staticdev: ptest-runner-dev (= 2.0.1+git0+e2aa425674-r0)
+SECTION_ptest-runner-staticdev: devel
+PKG_ptest-runner-staticdev: ptest-runner-staticdev
+FILES_ptest-runner-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/ptest-runner/*.a
+FILES_INFO: {}
+PKGSIZE_ptest-runner-staticdev: 0

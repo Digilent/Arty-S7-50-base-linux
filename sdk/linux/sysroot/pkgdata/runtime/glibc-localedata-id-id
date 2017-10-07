@@ -1,0 +1,14 @@
+PN: glibc-locale
+PV: 2.24
+PR: r0
+PKGV: 2.24
+PKGR: r0
+LICENSE: GPLv2 & LGPLv2.1
+DESCRIPTION_glibc-localedata-id-id: locale definition for id-id
+SUMMARY_glibc-localedata-id-id: locale definition for id-id
+RDEPENDS_glibc-localedata-id-id: glibc-localedata-i18n glibc-localedata-iso14651-t1 glibc-localedata-translit-combining
+SECTION: base
+PKG_glibc-localedata-id-id: glibc-localedata-id-id
+FILES_glibc-localedata-id-id: /usr/share/i18n/locales/id_ID
+FILES_INFO: {"/usr/share/i18n/locales/id_ID": 5304}
+PKGSIZE_glibc-localedata-id-id: 5304

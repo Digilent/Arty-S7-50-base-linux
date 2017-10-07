@@ -47,7 +47,7 @@ AXI Parameters :
    Data Width                    : 128
    Arbitration Scheme            : RD_PRI_REG
    Narrow Burst Support          : 0
-   ID Width                      : 4
+   ID Width                      : 1
 
 Memory Options:
    Burst Length (MR0[1:0])          : 8 - Fixed

@@ -1,0 +1,13 @@
+PN: external-hdf
+PV: 1.0
+PR: r0
+PKGV: 1.0
+PKGR: r0
+LICENSE: CLOSED
+DESCRIPTION: Recipe to copy externally built HDF to deploy
+SUMMARY: external-hdf version 1.0-r0
+SECTION: base
+PKG_external-hdf-locale: external-hdf-locale
+FILES_external-hdf-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_external-hdf-locale: 0

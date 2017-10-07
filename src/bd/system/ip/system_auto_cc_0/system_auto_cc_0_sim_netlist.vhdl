@@ -1,8 +1,8 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2017.2.1 (win64) Build 1957588 Wed Aug  9 16:32:24 MDT 2017
--- Date        : Wed Oct  4 19:00:09 2017
--- Host        : DESKTOP-9HMNAI5 running 64-bit major release  (build 9200)
+-- Tool Version: Vivado v.2017.2.1 (lin64) Build 1957588 Wed Aug  9 16:32:10 MDT 2017
+-- Date        : Fri Oct  6 20:13:33 2017
+-- Host        : ubuntu running 64-bit unknown
 -- Command     : write_vhdl -force -mode funcsim -rename_top system_auto_cc_0 -prefix
 --               system_auto_cc_0_ system_auto_cc_0_sim_netlist.vhdl
 -- Design      : system_auto_cc_0

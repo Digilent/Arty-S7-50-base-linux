@@ -1,0 +1,14 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-net-domain: perl module net-domain
+SUMMARY_perl-module-net-domain: perl module net-domain
+RDEPENDS_perl-module-net-domain: perl perl-module-carp perl-module-exporter perl-module-net-config perl-module-posix perl-module-socket perl-module-strict perl-module-warnings
+SECTION: devel
+PKG_perl-module-net-domain: perl-module-net-domain
+FILES_perl-module-net-domain: /usr/lib/perl/5.22.1/Net/Domain.pm
+FILES_INFO: {"/usr/lib/perl/5.22.1/Net/Domain.pm": 8091}
+PKGSIZE_perl-module-net-domain: 8091

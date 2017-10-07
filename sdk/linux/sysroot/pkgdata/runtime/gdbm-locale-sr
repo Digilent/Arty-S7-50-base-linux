@@ -1,0 +1,15 @@
+PN: gdbm
+PV: 1.12
+PR: r0
+PKGV: 1.12
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION_gdbm-locale-sr: Key/value database library with extensible hashing.  This package contains language translation files for the sr locale.
+SUMMARY_gdbm-locale-sr: Key/value database library with extensible hashing - sr translations
+RPROVIDES_gdbm-locale-sr: gdbm-locale sr-translation gdbm-locale-sr (=1.12)
+RRECOMMENDS_gdbm-locale-sr: virtual-locale-sr
+SECTION: libs
+PKG_gdbm-locale-sr: libgdbm-locale-sr
+FILES_gdbm-locale-sr: /usr/share/locale/sr
+FILES_INFO: {"/usr/share/locale/sr/LC_MESSAGES/gdbm.mo": 17134}
+PKGSIZE_gdbm-locale-sr: 17134

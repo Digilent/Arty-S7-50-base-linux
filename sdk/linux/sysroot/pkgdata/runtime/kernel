@@ -1,0 +1,14 @@
+PN: linux-xlnx
+PV: 4.9-xilinx-v2017.2+gitAUTOINC+5d029fdc25
+PR: r0
+PKGV: 4.9-xilinx-v2017.2+git0+5d029fdc25
+PKGR: r0
+LICENSE: GPLv2
+DESCRIPTION: Xilinx Kernel
+SUMMARY: Linux kernel
+RDEPENDS_kernel: kernel-base
+SECTION: kernel
+PKG_kernel: kernel
+ALLOW_EMPTY_kernel: 1
+FILES_INFO: {}
+PKGSIZE_kernel: 0

@@ -1,0 +1,13 @@
+PN: make
+PV: 4.2.1
+PR: r0
+PKGV: 4.2.1
+PKGR: r0
+LICENSE: GPLv3 & LGPLv2
+DESCRIPTION_make-doc: Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.  Make gets its knowledge of how to build your program from a file called the makefile, which lists each of the non-source files and how to compute it from other files.  This package contains documentation.
+SUMMARY_make-doc: GNU tool that controls the build process - Documentation files
+SECTION_make-doc: doc
+PKG_make-doc: make-doc
+FILES_make-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {"/usr/share/info/make.info-2": 298364, "/usr/share/info/make.info-1": 305787, "/usr/share/man/man1/make.1": 11000, "/usr/share/info/make.info": 6129}
+PKGSIZE_make-doc: 621280

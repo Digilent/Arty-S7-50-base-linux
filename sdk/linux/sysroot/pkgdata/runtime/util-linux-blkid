@@ -1,0 +1,22 @@
+PN: util-linux
+PV: 2.28.1
+PR: r0
+PKGV: 2.28.1
+PKGR: r0
+LICENSE: GPLv2+ & LGPLv2.1+ & BSD
+DESCRIPTION: Util-linux includes a suite of basic system administration utilities commonly found on most Linux systems.  Some of the more important utilities include disk partitioning, kernel message management, filesystem creation, and system login.
+SUMMARY: A suite of basic system administration utilities
+RDEPENDS_util-linux-blkid: update-alternatives-opkg util-linux-libblkid (>= 2.28.1) glibc-xilinx (>= 2.23)
+RREPLACES_util-linux-blkid: e2fsprogs-blkid
+RCONFLICTS_util-linux-blkid: e2fsprogs-blkid
+SECTION: base
+PKG_util-linux-blkid: util-linux-blkid
+FILES_util-linux-blkid: /sbin/blkid*
+pkg_postinst_util-linux-blkid: #!/bin/sh\n# Begin section update-alternatives\nupdate-alternatives --install /sbin/blkid blkid /sbin/blkid.util-linux 80\n# End section update-alternatives\n
+pkg_prerm_util-linux-blkid: #!/bin/sh\n# Begin section update-alternatives\nupdate-alternatives --remove  blkid /sbin/blkid.util-linux\n# End section update-alternatives\n
+FILERPROVIDESFLIST_util-linux-blkid:  /sbin/blkid.util-linux
+FILES_INFO: {"/sbin/blkid.util-linux": 82800}
+FILERPROVIDES_/sbin/blkid.util-linux_util-linux-blkid:  /sbin/blkid
+FILERDEPENDSFLIST_util-linux-blkid: /sbin/blkid.util-linux
+FILERDEPENDS_/sbin/blkid.util-linux_util-linux-blkid: libblkid.so.1 libblkid.so.1(BLKID_1.0) libblkid.so.1(BLKID_2.15) libblkid.so.1(BLKID_2.17) libblkid.so.1(BLKID_2.18) libblkid.so.1(BLKID_2.20) libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+PKGSIZE_util-linux-blkid: 82800

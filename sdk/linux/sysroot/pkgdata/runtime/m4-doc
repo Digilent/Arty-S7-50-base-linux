@@ -1,0 +1,13 @@
+PN: m4
+PV: 1.4.17
+PR: r0
+PKGV: 1.4.17
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION_m4-doc: GNU m4 is an implementation of the traditional Unix macro processor.  It is mostly SVR4 compatible although it has some extensions (for example, handling more than 9 positional parameters to macros). GNU M4 also has built-in functions for including files, running shell commands, doing arithmetic, etc.  This package contains documentation.
+SUMMARY_m4-doc: Traditional Unix macro processor - Documentation files
+SECTION_m4-doc: doc
+PKG_m4-doc: m4-doc
+FILES_m4-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {"/usr/share/info/m4.info-1": 300768, "/usr/share/info/m4.info-2": 54312, "/usr/share/info/m4.info": 3503, "/usr/share/man/man1/m4.1": 3711}
+PKGSIZE_m4-doc: 362294

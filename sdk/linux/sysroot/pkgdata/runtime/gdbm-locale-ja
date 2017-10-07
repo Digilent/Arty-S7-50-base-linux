@@ -1,0 +1,15 @@
+PN: gdbm
+PV: 1.12
+PR: r0
+PKGV: 1.12
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION_gdbm-locale-ja: Key/value database library with extensible hashing.  This package contains language translation files for the ja locale.
+SUMMARY_gdbm-locale-ja: Key/value database library with extensible hashing - ja translations
+RPROVIDES_gdbm-locale-ja: gdbm-locale ja-translation gdbm-locale-ja (=1.12)
+RRECOMMENDS_gdbm-locale-ja: virtual-locale-ja
+SECTION: libs
+PKG_gdbm-locale-ja: libgdbm-locale-ja
+FILES_gdbm-locale-ja: /usr/share/locale/ja
+FILES_INFO: {"/usr/share/locale/ja/LC_MESSAGES/gdbm.mo": 7221}
+PKGSIZE_gdbm-locale-ja: 7221

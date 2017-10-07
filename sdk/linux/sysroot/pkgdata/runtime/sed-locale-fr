@@ -1,0 +1,15 @@
+PN: sed
+PV: 4.2.2
+PR: r0
+PKGV: 4.2.2
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_sed-locale-fr: Stream EDitor (text filtering utility).  This package contains language translation files for the fr locale.
+SUMMARY_sed-locale-fr: Stream EDitor (text filtering utility) - fr translations
+RPROVIDES_sed-locale-fr: sed-locale fr-translation
+RRECOMMENDS_sed-locale-fr: virtual-locale-fr
+SECTION: console/utils
+PKG_sed-locale-fr: sed-locale-fr
+FILES_sed-locale-fr: /usr/share/locale/fr
+FILES_INFO: {"/usr/share/locale/fr/LC_MESSAGES/sed.mo": 10475}
+PKGSIZE_sed-locale-fr: 10475

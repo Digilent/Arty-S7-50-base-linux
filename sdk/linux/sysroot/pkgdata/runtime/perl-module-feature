@@ -1,0 +1,14 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-feature: perl module feature
+SUMMARY_perl-module-feature: perl module feature
+RDEPENDS_perl-module-feature: perl perl-module-carp
+SECTION: devel
+PKG_perl-module-feature: perl-module-feature
+FILES_perl-module-feature: /usr/lib/perl/5.22.1/feature.pm
+FILES_INFO: {"/usr/lib/perl/5.22.1/feature.pm": 15659}
+PKGSIZE_perl-module-feature: 15659

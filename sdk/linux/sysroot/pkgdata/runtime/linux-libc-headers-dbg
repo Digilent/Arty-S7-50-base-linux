@@ -1,0 +1,14 @@
+PN: linux-libc-headers-xilinx
+PV: 2017.2
+PR: r1
+PKGV: 4.03515625.9.0.0
+PKGR: r1
+LICENSE: GPLv2
+DESCRIPTION: External Xilinx toolchain.
+SUMMARY: External Xilinx toolchain
+RRECOMMENDS_linux-libc-headers-dbg: linux-libc-headers-dev (= 4.03515625.9.0.0-r1)
+SECTION: base
+PKG_linux-libc-headers-dbg: linux-libc-headers-dbg
+ALLOW_EMPTY_linux-libc-headers-dbg: 1
+FILES_INFO: {}
+PKGSIZE_linux-libc-headers-dbg: 0
