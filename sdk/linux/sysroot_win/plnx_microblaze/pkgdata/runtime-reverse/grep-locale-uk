@@ -1,0 +1,15 @@
+PN: grep
+PV: 2.25
+PR: r0
+PKGV: 2.25
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION_grep-locale-uk: GNU grep utility.  This package contains language translation files for the uk locale.
+SUMMARY_grep-locale-uk: GNU grep utility - uk translations
+RPROVIDES_grep-locale-uk: grep-locale uk-translation
+RRECOMMENDS_grep-locale-uk: virtual-locale-uk
+SECTION: console/utils
+PKG_grep-locale-uk: grep-locale-uk
+FILES_grep-locale-uk: /usr/share/locale/uk
+FILES_INFO: {"/usr/share/locale/uk/LC_MESSAGES/grep.mo": 24263}
+PKGSIZE_grep-locale-uk: 24263

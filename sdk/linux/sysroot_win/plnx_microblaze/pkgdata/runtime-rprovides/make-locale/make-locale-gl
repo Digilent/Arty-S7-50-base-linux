@@ -1,0 +1,15 @@
+PN: make
+PV: 4.2.1
+PR: r0
+PKGV: 4.2.1
+PKGR: r0
+LICENSE: GPLv3 & LGPLv2
+DESCRIPTION_make-locale-gl: Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.  Make gets its knowledge of how to build your program from a file called the makefile, which lists each of the non-source files and how to compute it from other files.  This package contains language translation files for the gl locale.
+SUMMARY_make-locale-gl: GNU tool that controls the build process - gl translations
+RPROVIDES_make-locale-gl: make-locale gl-translation
+RRECOMMENDS_make-locale-gl: virtual-locale-gl
+SECTION: devel
+PKG_make-locale-gl: make-locale-gl
+FILES_make-locale-gl: /usr/share/locale/gl
+FILES_INFO: {"/usr/share/locale/gl/LC_MESSAGES/make.mo": 22329}
+PKGSIZE_make-locale-gl: 22329

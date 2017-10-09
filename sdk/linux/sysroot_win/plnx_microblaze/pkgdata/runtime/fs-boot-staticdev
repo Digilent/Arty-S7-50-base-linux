@@ -1,0 +1,14 @@
+PN: fs-boot
+PV: 2017.2+gitAUTOINC+122565ec40
+PR: r0
+PKGV: 2017.2+git0+122565ec40
+PKGR: r0
+LICENSE: BSD
+DESCRIPTION_fs-boot-staticdev: FS-BOOT generator  This package contains static libraries for software development.
+SUMMARY_fs-boot-staticdev: fs-boot version 2017.2+gitAUTOINC+122565ec40-r0 - Development files (Static Libraries)
+RDEPENDS_fs-boot-staticdev: fs-boot-dev (= 2017.2+git0+122565ec40-r0)
+SECTION_fs-boot-staticdev: devel
+PKG_fs-boot-staticdev: fs-boot-staticdev
+FILES_fs-boot-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/fs-boot/*.a
+FILES_INFO: {}
+PKGSIZE_fs-boot-staticdev: 0

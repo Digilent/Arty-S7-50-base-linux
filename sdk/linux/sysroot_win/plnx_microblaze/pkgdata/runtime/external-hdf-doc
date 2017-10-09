@@ -1,0 +1,13 @@
+PN: external-hdf
+PV: 1.0
+PR: r0
+PKGV: 1.0
+PKGR: r0
+LICENSE: CLOSED
+DESCRIPTION_external-hdf-doc: Recipe to copy externally built HDF to deploy  This package contains documentation.
+SUMMARY_external-hdf-doc: external-hdf version 1.0-r0 - Documentation files
+SECTION_external-hdf-doc: doc
+PKG_external-hdf-doc: external-hdf-doc
+FILES_external-hdf-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {}
+PKGSIZE_external-hdf-doc: 0

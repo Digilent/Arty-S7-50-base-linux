@@ -1,0 +1,13 @@
+PN: dropbear
+PV: 2016.74
+PR: r0
+PKGV: 2016.74
+PKGR: r0
+LICENSE: MIT & BSD-3-Clause & BSD-2-Clause & PD
+DESCRIPTION: A lightweight SSH and SCP implementation.
+SUMMARY: A lightweight SSH and SCP implementation
+SECTION: console/network
+PKG_dropbear-locale: dropbear-locale
+FILES_dropbear-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_dropbear-locale: 0

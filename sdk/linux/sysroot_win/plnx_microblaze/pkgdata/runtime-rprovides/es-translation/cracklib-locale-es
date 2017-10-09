@@ -1,0 +1,15 @@
+PN: cracklib
+PV: 2.9.5
+PR: r0
+PKGV: 2.9.5
+PKGR: r0
+LICENSE: LGPLv2.1+
+DESCRIPTION_cracklib-locale-es: Password strength checker library.  This package contains language translation files for the es locale.
+SUMMARY_cracklib-locale-es: Password strength checker library - es translations
+RPROVIDES_cracklib-locale-es: cracklib-locale es-translation
+RRECOMMENDS_cracklib-locale-es: virtual-locale-es
+SECTION: base
+PKG_cracklib-locale-es: cracklib-locale-es
+FILES_cracklib-locale-es: /usr/share/locale/es
+FILES_INFO: {"/usr/share/locale/es/LC_MESSAGES/cracklib.mo": 1863}
+PKGSIZE_cracklib-locale-es: 1863

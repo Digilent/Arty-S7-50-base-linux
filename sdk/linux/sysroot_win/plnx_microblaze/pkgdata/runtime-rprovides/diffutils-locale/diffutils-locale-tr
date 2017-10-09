@@ -1,0 +1,15 @@
+PN: diffutils
+PV: 3.4
+PR: r0
+PKGV: 3.4
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_diffutils-locale-tr: Diffutils contains the GNU diff, diff3, sdiff, and cmp utilities. These programs are usually used for creating patch files.  This package contains language translation files for the tr locale.
+SUMMARY_diffutils-locale-tr: Diffutils contains tools used for finding differences between files - tr translations
+RPROVIDES_diffutils-locale-tr: diffutils-locale tr-translation
+RRECOMMENDS_diffutils-locale-tr: virtual-locale-tr
+SECTION: base
+PKG_diffutils-locale-tr: diffutils-locale-tr
+FILES_diffutils-locale-tr: /usr/share/locale/tr
+FILES_INFO: {"/usr/share/locale/tr/LC_MESSAGES/diffutils.mo": 33709}
+PKGSIZE_diffutils-locale-tr: 33709

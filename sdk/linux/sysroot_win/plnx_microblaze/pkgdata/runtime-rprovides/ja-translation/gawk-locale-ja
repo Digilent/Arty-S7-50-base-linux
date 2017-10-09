@@ -1,0 +1,15 @@
+PN: gawk
+PV: 4.1.3
+PR: r0
+PKGV: 4.1.3
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION_gawk-locale-ja: The GNU version of awk, a text processing utility. Awk interprets a special-purpose programming language to do quick and easy text pattern matching and reformatting jobs.  This package contains language translation files for the ja locale.
+SUMMARY_gawk-locale-ja: GNU awk text processing utility - ja translations
+RPROVIDES_gawk-locale-ja: gawk-locale ja-translation
+RRECOMMENDS_gawk-locale-ja: virtual-locale-ja
+SECTION: console/utils
+PKG_gawk-locale-ja: gawk-locale-ja
+FILES_gawk-locale-ja: /usr/share/locale/ja
+FILES_INFO: {"/usr/share/locale/ja/LC_MESSAGES/gawk.mo": 51602}
+PKGSIZE_gawk-locale-ja: 51602

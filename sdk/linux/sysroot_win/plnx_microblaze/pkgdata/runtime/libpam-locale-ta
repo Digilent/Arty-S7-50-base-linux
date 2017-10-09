@@ -1,0 +1,15 @@
+PN: libpam
+PV: 1.3.0
+PR: r5
+PKGV: 1.3.0
+PKGR: r5
+LICENSE: GPLv2+ | BSD
+DESCRIPTION_libpam-locale-ta: Linux-PAM (Pluggable Authentication Modules for Linux), a flexible mechanism for authenticating users  This package contains language translation files for the ta locale.
+SUMMARY_libpam-locale-ta: Linux-PAM (Pluggable Authentication Modules) - ta translations
+RPROVIDES_libpam-locale-ta: libpam-locale ta-translation
+RRECOMMENDS_libpam-locale-ta: virtual-locale-ta
+SECTION: base
+PKG_libpam-locale-ta: libpam-locale-ta
+FILES_libpam-locale-ta: /usr/share/locale/ta
+FILES_INFO: {"/usr/share/locale/ta/LC_MESSAGES/Linux-PAM.mo": 17474}
+PKGSIZE_libpam-locale-ta: 17474

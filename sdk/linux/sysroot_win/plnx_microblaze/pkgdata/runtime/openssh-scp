@@ -1,0 +1,20 @@
+PN: openssh
+PV: 7.3p1
+PR: r0
+PKGV: 7.3p1
+PKGR: r0
+LICENSE: BSD
+DESCRIPTION: Secure rlogin/rsh/rcp/telnet replacement (OpenSSH) Ssh (Secure Shell) is a program for logging into a remote machine and for executing commands on a remote machine.
+SUMMARY: A suite of security-related network utilities based on the SSH protocol including the ssh client and sshd server
+RDEPENDS_openssh-scp: update-alternatives-opkg glibc-xilinx (>= 2.23)
+SECTION: console/network
+PKG_openssh-scp: openssh-scp
+FILES_openssh-scp: /usr/bin/scp.openssh
+pkg_postinst_openssh-scp: #!/bin/sh\n# Begin section update-alternatives\nupdate-alternatives --install /usr/bin/scp scp /usr/bin/scp.openssh 90\n# End section update-alternatives\n
+pkg_prerm_openssh-scp: #!/bin/sh\n# Begin section update-alternatives\nupdate-alternatives --remove  scp /usr/bin/scp.openssh\n# End section update-alternatives\n
+FILERPROVIDESFLIST_openssh-scp:  /usr/bin/scp.openssh
+FILES_INFO: {"/usr/bin/scp.openssh": 107976}
+FILERPROVIDES_/usr/bin/scp.openssh_openssh-scp:  /usr/bin/scp
+FILERDEPENDSFLIST_openssh-scp: /usr/bin/scp.openssh
+FILERDEPENDS_/usr/bin/scp.openssh_openssh-scp: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+PKGSIZE_openssh-scp: 107976

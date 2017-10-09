@@ -1,0 +1,14 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-encode-alias: perl module encode-alias
+SUMMARY_perl-module-encode-alias: perl module encode-alias
+RDEPENDS_perl-module-encode-alias: perl perl-module-constant perl-module-encode perl-module-exporter perl-module-strict perl-module-warnings
+SECTION: devel
+PKG_perl-module-encode-alias: perl-module-encode-alias
+FILES_perl-module-encode-alias: /usr/lib/perl/5.22.1/Encode/Alias.pm
+FILES_INFO: {"/usr/lib/perl/5.22.1/Encode/Alias.pm": 12341}
+PKGSIZE_perl-module-encode-alias: 12341

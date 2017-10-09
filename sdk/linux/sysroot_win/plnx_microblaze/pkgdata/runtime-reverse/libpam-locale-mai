@@ -1,0 +1,15 @@
+PN: libpam
+PV: 1.3.0
+PR: r5
+PKGV: 1.3.0
+PKGR: r5
+LICENSE: GPLv2+ | BSD
+DESCRIPTION_libpam-locale-mai: Linux-PAM (Pluggable Authentication Modules for Linux), a flexible mechanism for authenticating users  This package contains language translation files for the mai locale.
+SUMMARY_libpam-locale-mai: Linux-PAM (Pluggable Authentication Modules) - mai translations
+RPROVIDES_libpam-locale-mai: libpam-locale mai-translation
+RRECOMMENDS_libpam-locale-mai: virtual-locale-mai
+SECTION: base
+PKG_libpam-locale-mai: libpam-locale-mai
+FILES_libpam-locale-mai: /usr/share/locale/mai
+FILES_INFO: {"/usr/share/locale/mai/LC_MESSAGES/Linux-PAM.mo": 526}
+PKGSIZE_libpam-locale-mai: 526

@@ -1,0 +1,15 @@
+PN: make
+PV: 4.2.1
+PR: r0
+PKGV: 4.2.1
+PKGR: r0
+LICENSE: GPLv3 & LGPLv2
+DESCRIPTION_make-locale-da: Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.  Make gets its knowledge of how to build your program from a file called the makefile, which lists each of the non-source files and how to compute it from other files.  This package contains language translation files for the da locale.
+SUMMARY_make-locale-da: GNU tool that controls the build process - da translations
+RPROVIDES_make-locale-da: make-locale da-translation
+RRECOMMENDS_make-locale-da: virtual-locale-da
+SECTION: devel
+PKG_make-locale-da: make-locale-da
+FILES_make-locale-da: /usr/share/locale/da
+FILES_INFO: {"/usr/share/locale/da/LC_MESSAGES/make.mo": 23665}
+PKGSIZE_make-locale-da: 23665

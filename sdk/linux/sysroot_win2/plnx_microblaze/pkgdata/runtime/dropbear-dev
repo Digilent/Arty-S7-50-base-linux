@@ -1,0 +1,16 @@
+PN: dropbear
+PV: 2016.74
+PR: r0
+PKGV: 2016.74
+PKGR: r0
+LICENSE: MIT & BSD-3-Clause & BSD-2-Clause & PD
+DESCRIPTION_dropbear-dev: A lightweight SSH and SCP implementation.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_dropbear-dev: A lightweight SSH and SCP implementation - Development files
+RDEPENDS_dropbear-dev: dropbear (= 2016.74-r0)
+RRECOMMENDS_dropbear-dev: initscripts-dev libpam-dev update-rc.d-dev zlib-dev openssh-sftp-server-dev libpam-runtime-dev pam-plugin-deny-dev pam-plugin-permit-dev pam-plugin-unix-dev update-alternatives-opkg-dev glibc-xilinx-dev
+SECTION_dropbear-dev: devel
+PKG_dropbear-dev: dropbear-dev
+ALLOW_EMPTY_dropbear-dev: 1
+FILES_dropbear-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/dropbear/*.la /lib/*.la
+FILES_INFO: {}
+PKGSIZE_dropbear-dev: 0

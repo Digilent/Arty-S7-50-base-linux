@@ -1,0 +1,15 @@
+PN: cracklib
+PV: 2.9.5
+PR: r0
+PKGV: 2.9.5
+PKGR: r0
+LICENSE: LGPLv2.1+
+DESCRIPTION_cracklib-locale-gu: Password strength checker library.  This package contains language translation files for the gu locale.
+SUMMARY_cracklib-locale-gu: Password strength checker library - gu translations
+RPROVIDES_cracklib-locale-gu: cracklib-locale gu-translation
+RRECOMMENDS_cracklib-locale-gu: virtual-locale-gu
+SECTION: base
+PKG_cracklib-locale-gu: cracklib-locale-gu
+FILES_cracklib-locale-gu: /usr/share/locale/gu
+FILES_INFO: {"/usr/share/locale/gu/LC_MESSAGES/cracklib.mo": 2644}
+PKGSIZE_cracklib-locale-gu: 2644

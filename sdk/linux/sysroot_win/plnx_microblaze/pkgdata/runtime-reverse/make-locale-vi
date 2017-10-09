@@ -1,0 +1,15 @@
+PN: make
+PV: 4.2.1
+PR: r0
+PKGV: 4.2.1
+PKGR: r0
+LICENSE: GPLv3 & LGPLv2
+DESCRIPTION_make-locale-vi: Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.  Make gets its knowledge of how to build your program from a file called the makefile, which lists each of the non-source files and how to compute it from other files.  This package contains language translation files for the vi locale.
+SUMMARY_make-locale-vi: GNU tool that controls the build process - vi translations
+RPROVIDES_make-locale-vi: make-locale vi-translation
+RRECOMMENDS_make-locale-vi: virtual-locale-vi
+SECTION: devel
+PKG_make-locale-vi: make-locale-vi
+FILES_make-locale-vi: /usr/share/locale/vi
+FILES_INFO: {"/usr/share/locale/vi/LC_MESSAGES/make.mo": 47141}
+PKGSIZE_make-locale-vi: 47141

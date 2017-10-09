@@ -1,0 +1,15 @@
+PN: libpam
+PV: 1.3.0
+PR: r5
+PKGV: 1.3.0
+PKGR: r5
+LICENSE: GPLv2+ | BSD
+DESCRIPTION_libpam-locale-nds: Linux-PAM (Pluggable Authentication Modules for Linux), a flexible mechanism for authenticating users  This package contains language translation files for the nds locale.
+SUMMARY_libpam-locale-nds: Linux-PAM (Pluggable Authentication Modules) - nds translations
+RPROVIDES_libpam-locale-nds: libpam-locale nds-translation
+RRECOMMENDS_libpam-locale-nds: virtual-locale-nds
+SECTION: base
+PKG_libpam-locale-nds: libpam-locale-nds
+FILES_libpam-locale-nds: /usr/share/locale/nds
+FILES_INFO: {"/usr/share/locale/nds/LC_MESSAGES/Linux-PAM.mo": 507}
+PKGSIZE_libpam-locale-nds: 507

@@ -1,0 +1,15 @@
+PN: diffutils
+PV: 3.4
+PR: r0
+PKGV: 3.4
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_diffutils-locale-hu: Diffutils contains the GNU diff, diff3, sdiff, and cmp utilities. These programs are usually used for creating patch files.  This package contains language translation files for the hu locale.
+SUMMARY_diffutils-locale-hu: Diffutils contains tools used for finding differences between files - hu translations
+RPROVIDES_diffutils-locale-hu: diffutils-locale hu-translation
+RRECOMMENDS_diffutils-locale-hu: virtual-locale-hu
+SECTION: base
+PKG_diffutils-locale-hu: diffutils-locale-hu
+FILES_diffutils-locale-hu: /usr/share/locale/hu
+FILES_INFO: {"/usr/share/locale/hu/LC_MESSAGES/diffutils.mo": 35089}
+PKGSIZE_diffutils-locale-hu: 35089

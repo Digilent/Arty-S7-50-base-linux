@@ -1,0 +1,14 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-autodie: perl module autodie
+SUMMARY_perl-module-autodie: perl module autodie
+RDEPENDS_perl-module-autodie: perl perl-module-carp perl-module-constant perl-module-lib perl-module-parent perl-module-strict perl-module-warnings
+SECTION: devel
+PKG_perl-module-autodie: perl-module-autodie
+FILES_perl-module-autodie: /usr/lib/perl/5.22.1/autodie.pm
+FILES_INFO: {"/usr/lib/perl/5.22.1/autodie.pm": 12886}
+PKGSIZE_perl-module-autodie: 12886

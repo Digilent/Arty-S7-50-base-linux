@@ -1,0 +1,15 @@
+PN: grep
+PV: 2.25
+PR: r0
+PKGV: 2.25
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION_grep-locale-ca: GNU grep utility.  This package contains language translation files for the ca locale.
+SUMMARY_grep-locale-ca: GNU grep utility - ca translations
+RPROVIDES_grep-locale-ca: grep-locale ca-translation
+RRECOMMENDS_grep-locale-ca: virtual-locale-ca
+SECTION: console/utils
+PKG_grep-locale-ca: grep-locale-ca
+FILES_grep-locale-ca: /usr/share/locale/ca
+FILES_INFO: {"/usr/share/locale/ca/LC_MESSAGES/grep.mo": 17647}
+PKGSIZE_grep-locale-ca: 17647

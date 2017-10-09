@@ -1,0 +1,15 @@
+PN: coreutils
+PV: 8.25
+PR: r0
+PKGV: 8.25
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_coreutils-locale-es: The GNU Core Utilities provide the basic file, shell and text manipulation utilities. These are the core utilities which are expected to exist on every system.  This package contains language translation files for the es locale.
+SUMMARY_coreutils-locale-es: The basic file, shell and text manipulation utilities - es translations
+RPROVIDES_coreutils-locale-es: coreutils-locale es-translation
+RRECOMMENDS_coreutils-locale-es: virtual-locale-es
+SECTION: base
+PKG_coreutils-locale-es: coreutils-locale-es
+FILES_coreutils-locale-es: /usr/share/locale/es
+FILES_INFO: {"/usr/share/locale/es/LC_MESSAGES/coreutils.mo": 290269, "/usr/share/locale/es/LC_TIME/coreutils.mo": 27}
+PKGSIZE_coreutils-locale-es: 290296

@@ -1,0 +1,16 @@
+PN: linux-xlnx
+PV: 4.9-xilinx-v2017.2+gitAUTOINC+5d029fdc25
+PR: r0
+PKGV: 4.9-xilinx-v2017.2+git0+5d029fdc25
+PKGR: r0
+LICENSE: GPLv2
+DESCRIPTION_kernel-module-echainiv: echainiv kernel module; Encrypted Chain IV Generator
+SUMMARY_kernel-module-echainiv: echainiv kernel module
+RDEPENDS_kernel-module-echainiv: kernel-4.9.0-xilinx-v2017.2
+SECTION: kernel
+PKG_kernel-module-echainiv: kernel-module-echainiv
+FILES_kernel-module-echainiv: /lib/modules/4.9.0-xilinx-v2017.2/kernel/crypto/echainiv.ko /etc/modules-load.d/echainiv.conf /etc/modprobe.d/echainiv.conf
+pkg_postinst_kernel-module-echainiv: #!/bin/sh\nif [ -z "$D" ]; then\n\tdepmod -a 4.9.0-xilinx-v2017.2\nelse\n\t# image.bbclass will call depmodwrapper after everything is installed,\n\t# no need to do it here as well\n\t:\nfi\n\n
+pkg_postrm_kernel-module-echainiv: #!/bin/sh\nif [ -z "$D" ]; then\n\tdepmod -a 4.9.0-xilinx-v2017.2\nelse\n\tdepmodwrapper -a -b $D 4.9.0-xilinx-v2017.2\nfi\n\n
+FILES_INFO: {"/lib/modules/4.9.0-xilinx-v2017.2/kernel/crypto/echainiv.ko": 4296}
+PKGSIZE_kernel-module-echainiv: 4296

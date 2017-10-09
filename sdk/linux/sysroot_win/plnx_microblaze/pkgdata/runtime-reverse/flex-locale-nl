@@ -1,0 +1,15 @@
+PN: flex
+PV: 2.6.0
+PR: r0
+PKGV: 2.6.0
+PKGR: r0
+LICENSE: BSD
+DESCRIPTION_flex-locale-nl: Flex is a fast lexical analyser generator.  Flex is a tool for generating programs that recognize lexical patterns in text.  This package contains language translation files for the nl locale.
+SUMMARY_flex-locale-nl: Flex (The Fast Lexical Analyzer) - nl translations
+RPROVIDES_flex-locale-nl: flex-locale nl-translation
+RRECOMMENDS_flex-locale-nl: virtual-locale-nl
+SECTION: devel
+PKG_flex-locale-nl: flex-locale-nl
+FILES_flex-locale-nl: /usr/share/locale/nl
+FILES_INFO: {"/usr/share/locale/nl/LC_MESSAGES/flex.mo": 15948}
+PKGSIZE_flex-locale-nl: 15948

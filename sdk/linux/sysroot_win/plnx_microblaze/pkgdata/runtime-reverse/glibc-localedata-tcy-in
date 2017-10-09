@@ -1,0 +1,14 @@
+PN: glibc-locale
+PV: 2.24
+PR: r0
+PKGV: 2.24
+PKGR: r0
+LICENSE: GPLv2 & LGPLv2.1
+DESCRIPTION_glibc-localedata-tcy-in: locale definition for tcy-in
+SUMMARY_glibc-localedata-tcy-in: locale definition for tcy-in
+RDEPENDS_glibc-localedata-tcy-in: glibc-localedata-hi-in glibc-localedata-iso14651-t1 glibc-localedata-kn-in
+SECTION: base
+PKG_glibc-localedata-tcy-in: glibc-localedata-tcy-in
+FILES_glibc-localedata-tcy-in: /usr/share/i18n/locales/tcy_IN
+FILES_INFO: {"/usr/share/i18n/locales/tcy_IN": 5629}
+PKGSIZE_glibc-localedata-tcy-in: 5629

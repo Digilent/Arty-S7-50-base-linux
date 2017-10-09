@@ -1,0 +1,15 @@
+PN: e2fsprogs
+PV: 1.43
+PR: r1
+PKGV: 1.43
+PKGR: r1
+LICENSE: GPLv2 & LGPLv2 & BSD & MIT
+DESCRIPTION_e2fsprogs-dbg: The Ext2 Filesystem Utilities (e2fsprogs) contain all of the standard utilities for creating, fixing, configuring , and debugging ext2 filesystems.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_e2fsprogs-dbg: Ext2 Filesystem Utilities - Debugging files
+RRECOMMENDS_e2fsprogs-dbg: glibc-xilinx-dbg libcomerr-dbg util-linux-libblkid-dbg libe2p-dbg libext2fs-dbg util-linux-libuuid-dbg libss-dbg
+SECTION_e2fsprogs-dbg: devel
+PKG_e2fsprogs-dbg: e2fsprogs-dbg
+ALLOW_EMPTY_e2fsprogs-dbg: 1
+FILES_e2fsprogs-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {"/sbin/.debug/fsck.ext2": 1115668, "/sbin/.debug/e4defrag": 155828, "/lib/.debug/libext2fs.so.2.4": 1479312, "/sbin/.debug/tune2fs": 411332, "/sbin/.debug/badblocks": 94768, "/bin/.debug/chattr.e2fsprogs": 17620, "/sbin/.debug/mklost+found": 10516, "/sbin/.debug/mkfs.ext4dev": 454844, "/sbin/.debug/debugfs": 772976, "/sbin/.debug/e2undo": 33772, "/sbin/.debug/dumpe2fs": 66712, "/sbin/.debug/filefrag": 66612, "/lib/.debug/libcom_err.so.2.1": 28380, "/sbin/.debug/e2fsck": 1115668, "/sbin/.debug/resize2fs": 294780, "/sbin/.debug/e2image": 164728, "/sbin/.debug/e2label": 411332, "/sbin/.debug/fsck.ext3": 1115668, "/sbin/.debug/mkfs.ext4": 454844, "/usr/bin/.debug/lsattr": 14896, "/lib/.debug/libss.so.2.0": 80228, "/usr/lib/e2fsprogs/ptest/test/progs/.debug/test_icount": 29940, "/usr/lib/.debug/e2initrd_helper": 26064, "/sbin/.debug/fsck.ext4": 1115668, "/sbin/.debug/e2freefrag": 63240, "/usr/lib/e2fsprogs/ptest/test/progs/.debug/crcsum": 11144, "/sbin/.debug/mke2fs": 454844, "/sbin/.debug/fsck.ext4dev": 1115668, "/sbin/.debug/logsave": 18556, "/sbin/.debug/mkfs.ext3": 454844, "/lib/.debug/libe2p.so.2.3": 110944, "/sbin/.debug/e4crypt": 46244, "/sbin/.debug/mkfs.ext2": 454844}
+PKGSIZE_e2fsprogs-dbg: 12262484

@@ -1,0 +1,14 @@
+PN: glibc-locale
+PV: 2.24
+PR: r0
+PKGV: 2.24
+PKGR: r0
+LICENSE: GPLv2 & LGPLv2.1
+DESCRIPTION_glibc-gconv-uhc: gconv module for character set uhc
+SUMMARY_glibc-gconv-uhc: gconv module for character set uhc
+RDEPENDS_glibc-gconv-uhc: glibc-gconv glibc-xilinx (>= 2.23) glibc-gconv-libksc (>= 2.24)
+SECTION: base
+PKG_glibc-gconv-uhc: glibc-gconv-uhc
+FILES_glibc-gconv-uhc: /usr/lib/gconv/UHC.so
+FILES_INFO: {"/usr/lib/gconv/UHC.so": 70924}
+PKGSIZE_glibc-gconv-uhc: 70924

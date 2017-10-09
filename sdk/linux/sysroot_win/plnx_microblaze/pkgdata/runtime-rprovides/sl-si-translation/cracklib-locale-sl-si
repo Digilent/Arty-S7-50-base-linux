@@ -1,0 +1,15 @@
+PN: cracklib
+PV: 2.9.5
+PR: r0
+PKGV: 2.9.5
+PKGR: r0
+LICENSE: LGPLv2.1+
+DESCRIPTION_cracklib-locale-sl-si: Password strength checker library.  This package contains language translation files for the sl_SI locale.
+SUMMARY_cracklib-locale-sl-si: Password strength checker library - sl_SI translations
+RPROVIDES_cracklib-locale-sl-si: cracklib-locale sl-si-translation
+RRECOMMENDS_cracklib-locale-sl-si: virtual-locale-sl-si
+SECTION: base
+PKG_cracklib-locale-sl-si: cracklib-locale-sl-si
+FILES_cracklib-locale-sl-si: /usr/share/locale/sl_SI
+FILES_INFO: {"/usr/share/locale/sl_SI/LC_MESSAGES/cracklib.mo": 1938}
+PKGSIZE_cracklib-locale-sl-si: 1938

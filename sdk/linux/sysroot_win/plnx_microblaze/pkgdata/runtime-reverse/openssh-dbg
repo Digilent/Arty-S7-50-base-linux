@@ -1,0 +1,15 @@
+PN: openssh
+PV: 7.3p1
+PR: r0
+PKGV: 7.3p1
+PKGR: r0
+LICENSE: BSD
+DESCRIPTION_openssh-dbg: Secure rlogin/rsh/rcp/telnet replacement (OpenSSH) Ssh (Secure Shell) is a program for logging into a remote machine and for executing commands on a remote machine.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_openssh-dbg: A suite of security-related network utilities based on the SSH protocol including the ssh client and sshd server - Debugging files
+RRECOMMENDS_openssh-dbg: zlib-dbg libcrypto-dbg glibc-xilinx-dbg libpam-dbg
+SECTION_openssh-dbg: devel
+PKG_openssh-dbg: openssh-dbg
+ALLOW_EMPTY_openssh-dbg: 1
+FILES_openssh-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {"/usr/bin/.debug/ssh-agent": 1091128, "/usr/lib/openssh/ptest/regress/.debug/setuid-allowed": 12512, "/usr/lib/openssh/ptest/regress/.debug/modpipe": 73876, "/usr/lib/openssh/ptest/regress/.debug/netcat": 191624, "/usr/libexec/.debug/ssh-pkcs11-helper": 1055148, "/usr/bin/.debug/ssh-add": 1006060, "/usr/sbin/.debug/sshd": 2647704, "/usr/bin/.debug/ssh-keygen": 1221640, "/usr/bin/.debug/ssh-keyscan": 1354004, "/usr/bin/.debug/sftp": 602340, "/usr/libexec/.debug/ssh-keysign": 1366204, "/usr/libexec/.debug/sftp-server": 447512, "/usr/bin/.debug/scp.openssh": 440592, "/usr/bin/.debug/ssh.openssh": 2250408}
+PKGSIZE_openssh-dbg: 13760752

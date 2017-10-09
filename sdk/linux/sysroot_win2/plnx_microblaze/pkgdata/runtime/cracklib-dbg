@@ -1,0 +1,15 @@
+PN: cracklib
+PV: 2.9.5
+PR: r0
+PKGV: 2.9.5
+PKGR: r0
+LICENSE: LGPLv2.1+
+DESCRIPTION_cracklib-dbg: Password strength checker library.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_cracklib-dbg: Password strength checker library - Debugging files
+RRECOMMENDS_cracklib-dbg: zlib-dbg glibc-xilinx-dbg
+SECTION_cracklib-dbg: devel
+PKG_cracklib-dbg: cracklib-dbg
+ALLOW_EMPTY_cracklib-dbg: 1
+FILES_cracklib-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {"/usr/sbin/.debug/cracklib-unpacker": 8180, "/lib/.debug/libcrack.so.2.9.0": 93928, "/usr/sbin/.debug/cracklib-check": 7992, "/usr/sbin/.debug/cracklib-packer": 9360}
+PKGSIZE_cracklib-dbg: 119460

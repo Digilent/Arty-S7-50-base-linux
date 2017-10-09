@@ -1,0 +1,15 @@
+PN: grep
+PV: 2.25
+PR: r0
+PKGV: 2.25
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION_grep-locale-cs: GNU grep utility.  This package contains language translation files for the cs locale.
+SUMMARY_grep-locale-cs: GNU grep utility - cs translations
+RPROVIDES_grep-locale-cs: grep-locale cs-translation
+RRECOMMENDS_grep-locale-cs: virtual-locale-cs
+SECTION: console/utils
+PKG_grep-locale-cs: grep-locale-cs
+FILES_grep-locale-cs: /usr/share/locale/cs
+FILES_INFO: {"/usr/share/locale/cs/LC_MESSAGES/grep.mo": 19109}
+PKGSIZE_grep-locale-cs: 19109

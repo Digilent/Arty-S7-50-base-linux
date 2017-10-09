@@ -1,0 +1,16 @@
+PN: sed
+PV: 4.2.2
+PR: r0
+PKGV: 4.2.2
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_sed-dev: Stream EDitor (text filtering utility).  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_sed-dev: Stream EDitor (text filtering utility) - Development files
+RDEPENDS_sed-dev: sed (= 4.2.2-r0)
+RRECOMMENDS_sed-dev: make-dev glibc-xilinx-dev update-alternatives-opkg-dev
+SECTION_sed-dev: devel
+PKG_sed-dev: sed-dev
+ALLOW_EMPTY_sed-dev: 1
+FILES_sed-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/sed/*.la /lib/*.la
+FILES_INFO: {}
+PKGSIZE_sed-dev: 0

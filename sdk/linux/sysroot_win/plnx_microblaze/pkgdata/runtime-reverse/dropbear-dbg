@@ -1,0 +1,15 @@
+PN: dropbear
+PV: 2016.74
+PR: r0
+PKGV: 2016.74
+PKGR: r0
+LICENSE: MIT & BSD-3-Clause & BSD-2-Clause & PD
+DESCRIPTION_dropbear-dbg: A lightweight SSH and SCP implementation.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_dropbear-dbg: A lightweight SSH and SCP implementation - Debugging files
+RRECOMMENDS_dropbear-dbg: zlib-dbg glibc-xilinx-dbg libpam-dbg
+SECTION_dropbear-dbg: devel
+PKG_dropbear-dbg: dropbear-dbg
+ALLOW_EMPTY_dropbear-dbg: 1
+FILES_dropbear-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {"/usr/sbin/.debug/dropbearmulti": 2046000}
+PKGSIZE_dropbear-dbg: 2046000

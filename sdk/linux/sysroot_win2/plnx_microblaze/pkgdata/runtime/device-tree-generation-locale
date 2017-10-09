@@ -1,0 +1,13 @@
+PN: device-tree-generation
+PV: xilinx+gitAUTOINC+43551819a1
+PR: r0
+PKGV: xilinx+git0+43551819a1
+PKGR: r0
+LICENSE: GPLv2
+DESCRIPTION: DTS generator
+SUMMARY: device-tree-generation version xilinx+gitAUTOINC+43551819a1-r0
+SECTION: base
+PKG_device-tree-generation-locale: device-tree-generation-locale
+FILES_device-tree-generation-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_device-tree-generation-locale: 0

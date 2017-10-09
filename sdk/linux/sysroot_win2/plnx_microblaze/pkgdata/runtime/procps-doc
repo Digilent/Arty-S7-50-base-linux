@@ -1,0 +1,19 @@
+PN: procps
+PV: 3.3.12
+PR: r0
+PKGV: 3.3.12
+PKGR: r0
+LICENSE: GPLv2+ & LGPLv2+
+DESCRIPTION_procps-doc: Procps contains a set of system utilities that provide system information about processes using the /proc filesystem. The package includes the programs ps, top, vmstat, w, kill, and skill.  This package contains documentation.
+SUMMARY_procps-doc: System and process monitoring utilities - Documentation files
+RDEPENDS_procps-doc: update-alternatives-opkg
+SECTION_procps-doc: doc
+PKG_procps-doc: procps-doc
+FILES_procps-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+pkg_postinst_procps-doc: #!/bin/sh\n# Begin section update-alternatives\nupdate-alternatives --install /usr/share/man/man1/kill.1 kill.1 /usr/share/man/man1/kill.1.procps 200\nupdate-alternatives --install /usr/share/man/man1/uptime.1 uptime.1 /usr/share/man/man1/uptime.1.procps 200\n# End section update-alternatives\n
+pkg_prerm_procps-doc: #!/bin/sh\n# Begin section update-alternatives\nupdate-alternatives --remove  kill.1 /usr/share/man/man1/kill.1.procps\nupdate-alternatives --remove  uptime.1 /usr/share/man/man1/uptime.1.procps\n# End section update-alternatives\n
+FILERPROVIDESFLIST_procps-doc:  /usr/share/man/man1/kill.1.procps /usr/share/man/man1/uptime.1.procps
+FILES_INFO: {"/usr/share/man/man8/vmstat.8": 5679, "/usr/share/man/man5/sysctl.conf.5": 1661, "/usr/share/man/man1/skill.1": 3178, "/usr/share/man/man1/watch.1": 4448, "/usr/share/doc/procps-ng/bugs.md": 3429, "/usr/share/man/man8/sysctl.8": 4245, "/usr/share/man/man1/pwdx.1": 761, "/usr/share/man/man1/pmap.1": 1916, "/usr/share/man/man1/ps.1": 44697, "/usr/share/man/man1/kill.1.procps": 2337, "/usr/share/man/man1/w.1": 2626, "/usr/share/man/man3/openproc.3": 4066, "/usr/share/doc/procps-ng/FAQ": 4411, "/usr/share/man/man1/pkill.1": 17, "/usr/share/man/man1/free.1": 4037, "/usr/share/man/man3/readproc.3": 2045, "/usr/share/man/man1/snice.1": 17, "/usr/share/man/man1/top.1": 95877, "/usr/share/man/man1/slabtop.1": 2943, "/usr/share/man/man1/tload.1": 1452, "/usr/share/man/man1/pgrep.1": 5715, "/usr/share/man/man1/uptime.1.procps": 1743, "/usr/share/man/man3/readproctab.3": 1667, "/usr/share/man/man1/pidof.1": 2064}
+FILERPROVIDES_/usr/share/man/man1/kill.1.procps_procps-doc:  /usr/share/man/man1/kill.1
+FILERPROVIDES_/usr/share/man/man1/uptime.1.procps_procps-doc:  /usr/share/man/man1/uptime.1
+PKGSIZE_procps-doc: 201031

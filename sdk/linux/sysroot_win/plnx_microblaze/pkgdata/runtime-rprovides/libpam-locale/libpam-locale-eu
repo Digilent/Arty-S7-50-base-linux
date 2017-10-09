@@ -1,0 +1,15 @@
+PN: libpam
+PV: 1.3.0
+PR: r5
+PKGV: 1.3.0
+PKGR: r5
+LICENSE: GPLv2+ | BSD
+DESCRIPTION_libpam-locale-eu: Linux-PAM (Pluggable Authentication Modules for Linux), a flexible mechanism for authenticating users  This package contains language translation files for the eu locale.
+SUMMARY_libpam-locale-eu: Linux-PAM (Pluggable Authentication Modules) - eu translations
+RPROVIDES_libpam-locale-eu: libpam-locale eu-translation
+RRECOMMENDS_libpam-locale-eu: virtual-locale-eu
+SECTION: base
+PKG_libpam-locale-eu: libpam-locale-eu
+FILES_libpam-locale-eu: /usr/share/locale/eu
+FILES_INFO: {"/usr/share/locale/eu/LC_MESSAGES/Linux-PAM.mo": 923}
+PKGSIZE_libpam-locale-eu: 923

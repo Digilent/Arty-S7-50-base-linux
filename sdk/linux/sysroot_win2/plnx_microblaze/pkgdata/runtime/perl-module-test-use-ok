@@ -1,0 +1,14 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-test-use-ok: perl module test-use-ok
+SUMMARY_perl-module-test-use-ok: perl module test-use-ok
+RDEPENDS_perl-module-test-use-ok: perl
+SECTION: devel
+PKG_perl-module-test-use-ok: perl-module-test-use-ok
+FILES_perl-module-test-use-ok: /usr/lib/perl/5.22.1/Test/use/ok.pm
+FILES_INFO: {"/usr/lib/perl/5.22.1/Test/use/ok.pm": 1365}
+PKGSIZE_perl-module-test-use-ok: 1365

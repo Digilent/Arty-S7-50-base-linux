@@ -1,0 +1,15 @@
+PN: coreutils
+PV: 8.25
+PR: r0
+PKGV: 8.25
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_coreutils-locale-eo: The GNU Core Utilities provide the basic file, shell and text manipulation utilities. These are the core utilities which are expected to exist on every system.  This package contains language translation files for the eo locale.
+SUMMARY_coreutils-locale-eo: The basic file, shell and text manipulation utilities - eo translations
+RPROVIDES_coreutils-locale-eo: coreutils-locale eo-translation
+RRECOMMENDS_coreutils-locale-eo: virtual-locale-eo
+SECTION: base
+PKG_coreutils-locale-eo: coreutils-locale-eo
+FILES_coreutils-locale-eo: /usr/share/locale/eo
+FILES_INFO: {"/usr/share/locale/eo/LC_MESSAGES/coreutils.mo": 174324, "/usr/share/locale/eo/LC_TIME/coreutils.mo": 27}
+PKGSIZE_coreutils-locale-eo: 174351

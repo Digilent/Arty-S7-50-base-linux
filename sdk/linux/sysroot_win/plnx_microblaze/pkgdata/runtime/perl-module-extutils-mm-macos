@@ -1,0 +1,14 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-extutils-mm-macos: perl module extutils-mm-macos
+SUMMARY_perl-module-extutils-mm-macos: perl module extutils-mm-macos
+RDEPENDS_perl-module-extutils-mm-macos: perl perl-module-strict
+SECTION: devel
+PKG_perl-module-extutils-mm-macos: perl-module-extutils-mm-macos
+FILES_perl-module-extutils-mm-macos: /usr/lib/perl/5.22.1/ExtUtils/MM_MacOS.pm
+FILES_INFO: {"/usr/lib/perl/5.22.1/ExtUtils/MM_MacOS.pm": 869}
+PKGSIZE_perl-module-extutils-mm-macos: 869

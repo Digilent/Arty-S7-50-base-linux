@@ -1,0 +1,15 @@
+PN: bash
+PV: 4.3.30
+PR: r0
+PKGV: 4.3.30
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_bash-dbg: An sh-compatible command language interpreter.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_bash-dbg: An sh-compatible command language interpreter - Debugging files
+RRECOMMENDS_bash-dbg: glibc-xilinx-dbg ncurses-libtinfo-dbg
+SECTION_bash-dbg: devel
+PKG_bash-dbg: bash-dbg
+ALLOW_EMPTY_bash-dbg: 1
+FILES_bash-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {"/usr/lib/bash/ptest/tests/.debug/printenv": 7720, "/bin/.debug/bash": 3129592, "/usr/lib/bash/ptest/tests/.debug/xcase": 9952, "/usr/lib/bash/ptest/tests/.debug/zecho": 7412, "/usr/lib/bash/ptest/tests/.debug/recho": 8456}
+PKGSIZE_bash-dbg: 3163132

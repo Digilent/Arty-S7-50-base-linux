@@ -1,0 +1,15 @@
+PN: sed
+PV: 4.2.2
+PR: r0
+PKGV: 4.2.2
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_sed-locale-ko: Stream EDitor (text filtering utility).  This package contains language translation files for the ko locale.
+SUMMARY_sed-locale-ko: Stream EDitor (text filtering utility) - ko translations
+RPROVIDES_sed-locale-ko: sed-locale ko-translation
+RRECOMMENDS_sed-locale-ko: virtual-locale-ko
+SECTION: console/utils
+PKG_sed-locale-ko: sed-locale-ko
+FILES_sed-locale-ko: /usr/share/locale/ko
+FILES_INFO: {"/usr/share/locale/ko/LC_MESSAGES/sed.mo": 1318}
+PKGSIZE_sed-locale-ko: 1318

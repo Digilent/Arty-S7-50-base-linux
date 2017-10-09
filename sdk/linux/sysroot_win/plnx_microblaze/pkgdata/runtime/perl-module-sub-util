@@ -1,0 +1,14 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-sub-util: perl module sub-util
+SUMMARY_perl-module-sub-util: perl module sub-util
+RDEPENDS_perl-module-sub-util: perl perl-module-exporter perl-module-list-util perl-module-strict perl-module-warnings
+SECTION: devel
+PKG_perl-module-sub-util: perl-module-sub-util
+FILES_perl-module-sub-util: /usr/lib/perl/5.22.1/Sub/Util.pm
+FILES_INFO: {"/usr/lib/perl/5.22.1/Sub/Util.pm": 4431}
+PKGSIZE_perl-module-sub-util: 4431

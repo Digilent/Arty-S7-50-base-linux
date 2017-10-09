@@ -1,0 +1,15 @@
+PN: coreutils
+PV: 8.25
+PR: r0
+PKGV: 8.25
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_coreutils-locale-ms: The GNU Core Utilities provide the basic file, shell and text manipulation utilities. These are the core utilities which are expected to exist on every system.  This package contains language translation files for the ms locale.
+SUMMARY_coreutils-locale-ms: The basic file, shell and text manipulation utilities - ms translations
+RPROVIDES_coreutils-locale-ms: coreutils-locale ms-translation
+RRECOMMENDS_coreutils-locale-ms: virtual-locale-ms
+SECTION: base
+PKG_coreutils-locale-ms: coreutils-locale-ms
+FILES_coreutils-locale-ms: /usr/share/locale/ms
+FILES_INFO: {"/usr/share/locale/ms/LC_MESSAGES/coreutils.mo": 23003, "/usr/share/locale/ms/LC_TIME/coreutils.mo": 27}
+PKGSIZE_coreutils-locale-ms: 23030

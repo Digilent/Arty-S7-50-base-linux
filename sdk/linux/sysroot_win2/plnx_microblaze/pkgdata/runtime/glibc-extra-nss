@@ -1,0 +1,26 @@
+PN: glibc-xilinx
+PV: 2017.2
+PR: r1
+PKGV: 2.23
+PKGR: r1
+LICENSE: GPLv2 & LGPL-2.1
+DESCRIPTION_glibc-extra-nss: glibc: nis, nisplus and hesiod search services.
+SUMMARY_glibc-extra-nss: hesiod, NIS and NIS+ nss libraries
+RDEPENDS_glibc-extra-nss: glibc-xilinx (>= 2.23)
+RPROVIDES_glibc-extra-nss: eglibc-extra-nss
+SECTION: base
+PKG_glibc-extra-nss: glibc-extra-nss
+FILES_glibc-extra-nss: /lib/libnss_*-*.so /lib/libnss_*.so.*
+pkg_postinst_glibc-extra-nss: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_glibc-extra-nss: /lib/libnss@underscore@db-2.23.so /lib/libnss@underscore@hesiod-2.23.so /lib/libnss@underscore@nis-2.23.so /lib/libnss@underscore@nisplus-2.23.so
+FILES_INFO: {"/lib/libnss_nisplus-2.23.so": 58904, "/lib/libnss_db.so.2": 17, "/lib/libnss_hesiod.so.2": 21, "/lib/libnss_db-2.23.so": 30132, "/lib/libnss_nis.so.2": 18, "/lib/libnss_hesiod-2.23.so": 21948, "/lib/libnss_nis-2.23.so": 46592, "/lib/libnss_nisplus.so.2": 22}
+FILERPROVIDES_/lib/libnss@underscore@db-2.23.so_glibc-extra-nss: libnss_db.so.2 libnss_db.so.2(GLIBC_PRIVATE)
+FILERPROVIDES_/lib/libnss@underscore@hesiod-2.23.so_glibc-extra-nss: libnss_hesiod.so.2 libnss_hesiod.so.2(GLIBC_PRIVATE)
+FILERPROVIDES_/lib/libnss@underscore@nis-2.23.so_glibc-extra-nss: libnss_nis.so.2 libnss_nis.so.2(GLIBC_PRIVATE)
+FILERPROVIDES_/lib/libnss@underscore@nisplus-2.23.so_glibc-extra-nss: libnss_nisplus.so.2 libnss_nisplus.so.2(GLIBC_PRIVATE)
+FILERDEPENDSFLIST_glibc-extra-nss: /lib/libnss@underscore@db-2.23.so /lib/libnss@underscore@hesiod-2.23.so /lib/libnss@underscore@nis-2.23.so /lib/libnss@underscore@nisplus-2.23.so
+FILERDEPENDS_/lib/libnss@underscore@db-2.23.so_glibc-extra-nss: ld.so.1 ld.so.1(GLIBC_2.18) libc.so.6 libc.so.6(GLIBC_2.18) libc.so.6(GLIBC_PRIVATE) libnss_files.so.2 libnss_files.so.2(GLIBC_PRIVATE)
+FILERDEPENDS_/lib/libnss@underscore@hesiod-2.23.so_glibc-extra-nss: ld.so.1 ld.so.1(GLIBC_2.18) libc.so.6 libc.so.6(GLIBC_2.18) libc.so.6(GLIBC_PRIVATE) libnss_files.so.2 libresolv.so.2 libresolv.so.2(GLIBC_2.18)
+FILERDEPENDS_/lib/libnss@underscore@nis-2.23.so_glibc-extra-nss: ld.so.1 ld.so.1(GLIBC_2.18) libc.so.6 libc.so.6(GLIBC_2.18) libc.so.6(GLIBC_PRIVATE) libnsl.so.1 libnsl.so.1(GLIBC_2.18) libnsl.so.1(GLIBC_PRIVATE) libnss_files.so.2 libnss_files.so.2(GLIBC_PRIVATE)
+FILERDEPENDS_/lib/libnss@underscore@nisplus-2.23.so_glibc-extra-nss: ld.so.1 ld.so.1(GLIBC_2.18) libc.so.6 libc.so.6(GLIBC_2.18) libc.so.6(GLIBC_PRIVATE) libnsl.so.1 libnsl.so.1(GLIBC_2.18) libnsl.so.1(GLIBC_PRIVATE)
+PKGSIZE_glibc-extra-nss: 157654

@@ -1,0 +1,19 @@
+PN: libpam
+PV: 1.3.0
+PR: r5
+PKGV: 1.3.0
+PKGR: r5
+LICENSE: GPLv2+ | BSD
+DESCRIPTION_pam-plugin-debug: PAM plugin for -debug
+SUMMARY_pam-plugin-debug: PAM plugin for -debug
+RDEPENDS_pam-plugin-debug: libpam-suffix glibc-xilinx (>= 2.23) libpam (>= 1.3.0)
+RPROVIDES_pam-plugin-debug: pam-plugin-debug-suffix
+SECTION: base
+PKG_pam-plugin-debug: pam-plugin-debug
+FILES_pam-plugin-debug: /lib/security/pam_debug.so
+FILERPROVIDESFLIST_pam-plugin-debug: /lib/security/pam@underscore@debug.so
+FILES_INFO: {"/lib/security/pam_debug.so": 6176}
+FILERPROVIDES_/lib/security/pam@underscore@debug.so_pam-plugin-debug: pam_debug.so
+FILERDEPENDSFLIST_pam-plugin-debug: /lib/security/pam@underscore@debug.so
+FILERDEPENDS_/lib/security/pam@underscore@debug.so_pam-plugin-debug: libc.so.6 libc.so.6(GLIBC_2.18) libdl.so.2 libpam.so.0 libpam.so.0(LIBPAM_1.0) libpam.so.0(LIBPAM_EXTENSION_1.0) rtld(GNU_HASH)
+PKGSIZE_pam-plugin-debug: 6176

@@ -1,0 +1,18 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-hash-util-fieldhash: perl module hash-util-fieldhash
+SUMMARY_perl-module-hash-util-fieldhash: perl module hash-util-fieldhash
+RDEPENDS_perl-module-hash-util-fieldhash: perl perl-module-exporter perl-module-scalar-util perl-module-strict perl-module-warnings perl-module-xsloader glibc-xilinx (>= 2.23)
+SECTION: devel
+PKG_perl-module-hash-util-fieldhash: perl-module-hash-util-fieldhash
+FILES_perl-module-hash-util-fieldhash: /usr/lib/perl/5.22.1/auto/Hash/Util/FieldHash/FieldHash.so /usr/lib/perl/5.22.1/Hash/Util/FieldHash.pm
+FILERPROVIDESFLIST_perl-module-hash-util-fieldhash: /usr/lib/perl/5.22.1/auto/Hash/Util/FieldHash/FieldHash.so
+FILES_INFO: {"/usr/lib/perl/5.22.1/auto/Hash/Util/FieldHash/FieldHash.so": 15800, "/usr/lib/perl/5.22.1/Hash/Util/FieldHash.pm": 29808}
+FILERPROVIDES_/usr/lib/perl/5.22.1/auto/Hash/Util/FieldHash/FieldHash.so_perl-module-hash-util-fieldhash: FieldHash.so
+FILERDEPENDSFLIST_perl-module-hash-util-fieldhash: /usr/lib/perl/5.22.1/auto/Hash/Util/FieldHash/FieldHash.so
+FILERDEPENDS_/usr/lib/perl/5.22.1/auto/Hash/Util/FieldHash/FieldHash.so_perl-module-hash-util-fieldhash: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+PKGSIZE_perl-module-hash-util-fieldhash: 45608

@@ -1,0 +1,15 @@
+PN: coreutils
+PV: 8.25
+PR: r0
+PKGV: 8.25
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_coreutils-locale-ia: The GNU Core Utilities provide the basic file, shell and text manipulation utilities. These are the core utilities which are expected to exist on every system.  This package contains language translation files for the ia locale.
+SUMMARY_coreutils-locale-ia: The basic file, shell and text manipulation utilities - ia translations
+RPROVIDES_coreutils-locale-ia: coreutils-locale ia-translation
+RRECOMMENDS_coreutils-locale-ia: virtual-locale-ia
+SECTION: base
+PKG_coreutils-locale-ia: coreutils-locale-ia
+FILES_coreutils-locale-ia: /usr/share/locale/ia
+FILES_INFO: {"/usr/share/locale/ia/LC_MESSAGES/coreutils.mo": 7804, "/usr/share/locale/ia/LC_TIME/coreutils.mo": 27}
+PKGSIZE_coreutils-locale-ia: 7831

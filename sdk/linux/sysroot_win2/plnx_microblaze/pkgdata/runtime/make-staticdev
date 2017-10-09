@@ -1,0 +1,14 @@
+PN: make
+PV: 4.2.1
+PR: r0
+PKGV: 4.2.1
+PKGR: r0
+LICENSE: GPLv3 & LGPLv2
+DESCRIPTION_make-staticdev: Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.  Make gets its knowledge of how to build your program from a file called the makefile, which lists each of the non-source files and how to compute it from other files.  This package contains static libraries for software development.
+SUMMARY_make-staticdev: GNU tool that controls the build process - Development files (Static Libraries)
+RDEPENDS_make-staticdev: make-dev (= 4.2.1-r0)
+SECTION_make-staticdev: devel
+PKG_make-staticdev: make-staticdev
+FILES_make-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/make/*.a
+FILES_INFO: {}
+PKGSIZE_make-staticdev: 0

@@ -1,0 +1,46 @@
+PN: glibc-xilinx
+PV: 2017.2
+PR: r1
+PKGV: 2.23
+PKGR: r1
+LICENSE: GPLv2 & LGPL-2.1
+DESCRIPTION: External Xilinx toolchain.
+SUMMARY: External Xilinx toolchain
+RPROVIDES_glibc-xilinx: eglibc rtld(GNU_HASH) glibc glibc glibc-xilinx (=2.23)
+SECTION: base
+PKG_glibc-xilinx: libc6
+FILES_glibc-xilinx: /lib/libcrypt*.so.* /lib/libcrypt-*.so /lib/libc.so.* /lib/libc-*.so /lib/libm*.so.* /lib/libm-*.so /lib/libmvec-*.so /lib/ld*.so.* /lib/ld-*.so /lib/libpthread*.so.* /lib/libpthread-*.so /lib/libresolv*.so.* /lib/libresolv-*.so /lib/librt*.so.* /lib/librt-*.so /lib/libutil*.so.* /lib/libutil-*.so /lib/libnsl*.so.* /lib/libnsl-*.so /lib/libnss_files*.so.* /lib/libnss_files-*.so /lib/libnss_compat*.so.* /lib/libnss_compat-*.so /lib/libnss_dns*.so.* /lib/libnss_dns-*.so /lib/libdl*.so.* /lib/libdl-*.so /lib/libanl*.so.* /lib/libanl-*.so /lib/libBrokenLocale*.so.* /lib/libBrokenLocale-*.so /usr/libexec/* /sbin/ldconfig /etc/ld.so.conf  /lib/microblazeel-xilinx-linux-gnu /usr/lib/microblazeel-xilinx-linux-gnu
+pkg_postinst_glibc-xilinx: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_glibc-xilinx: /lib/libnsl-2.23.so /lib/libresolv-2.23.so /lib/libanl-2.23.so /lib/libnss@underscore@dns-2.23.so /lib/libpthread-2.23.so /lib/libc-2.23.so /lib/ld-2.23.so /lib/libm-2.23.so /lib/libcrypt-2.23.so /lib/libnss@underscore@files-2.23.so /lib/libnss@underscore@compat-2.23.so /lib/libutil-2.23.so /lib/libBrokenLocale-2.23.so /lib/librt-2.23.so /lib/libdl-2.23.so
+FILES_INFO: {"/lib/libnsl-2.23.so": 91868, "/lib/libpthread.so.0": 18, "/lib/librt.so.1": 13, "/lib/libpthread-2.23.so": 113020, "/lib/libnss_files-2.23.so": 46564, "/lib/libnss_files.so.2": 20, "/lib/libanl.so.1": 14, "/lib/libm-2.23.so": 912376, "/lib/libBrokenLocale-2.23.so": 5448, "/lib/libm.so.6": 12, "/lib/ld.so.1": 10, "/lib/libcrypt-2.23.so": 38280, "/lib/libutil.so.1": 15, "/lib/libc-2.23.so": 1537384, "/lib/libBrokenLocale.so.1": 23, "/lib/libnss_compat.so.2": 21, "/lib/libcrypt.so.1": 16, "/lib/libresolv.so.2": 17, "/lib/libresolv-2.23.so": 87696, "/lib/libanl-2.23.so": 13876, "/lib/libnss_compat-2.23.so": 34472, "/lib/libnss_dns.so.2": 18, "/lib/librt-2.23.so": 34664, "/lib/ld-2.23.so": 146592, "/lib/libdl.so.2": 13, "/lib/libc.so.6": 12, "/lib/libnsl.so.1": 14, "/lib/libnss_dns-2.23.so": 21928, "/lib/libutil-2.23.so": 9656, "/lib/libdl-2.23.so": 13784, "/sbin/ldconfig": 677532}
+FILERPROVIDES_/lib/libnsl-2.23.so_glibc-xilinx: libnsl.so.1 libnsl.so.1(GLIBC_2.18) libnsl.so.1(GLIBC_PRIVATE)
+FILERPROVIDES_/lib/libresolv-2.23.so_glibc-xilinx: libresolv.so.2 libresolv.so.2(GLIBC_2.18) libresolv.so.2(GLIBC_PRIVATE)
+FILERPROVIDES_/lib/libanl-2.23.so_glibc-xilinx: libanl.so.1 libanl.so.1(GLIBC_2.18)
+FILERPROVIDES_/lib/libnss@underscore@dns-2.23.so_glibc-xilinx: libnss_dns.so.2 libnss_dns.so.2(GLIBC_PRIVATE)
+FILERPROVIDES_/lib/libpthread-2.23.so_glibc-xilinx: libpthread.so.0 libpthread.so.0(GLIBC_2.18) libpthread.so.0(GLIBC_PRIVATE)
+FILERPROVIDES_/lib/libc-2.23.so_glibc-xilinx: libc.so.6 libc.so.6(GLIBC_2.18) libc.so.6(GLIBC_2.22) libc.so.6(GLIBC_2.23) libc.so.6(GLIBC_PRIVATE)
+FILERPROVIDES_/lib/ld-2.23.so_glibc-xilinx: ld.so.1 ld.so.1(GLIBC_2.18) ld.so.1(GLIBC_PRIVATE)
+FILERPROVIDES_/lib/libm-2.23.so_glibc-xilinx: libm.so.6 libm.so.6(GLIBC_2.18) libm.so.6(GLIBC_2.23)
+FILERPROVIDES_/lib/libcrypt-2.23.so_glibc-xilinx: libcrypt.so.1 libcrypt.so.1(GLIBC_2.18)
+FILERPROVIDES_/lib/libnss@underscore@files-2.23.so_glibc-xilinx: libnss_files.so.2 libnss_files.so.2(GLIBC_PRIVATE)
+FILERPROVIDES_/lib/libnss@underscore@compat-2.23.so_glibc-xilinx: libnss_compat.so.2 libnss_compat.so.2(GLIBC_PRIVATE)
+FILERPROVIDES_/lib/libutil-2.23.so_glibc-xilinx: libutil.so.1 libutil.so.1(GLIBC_2.18)
+FILERPROVIDES_/lib/libBrokenLocale-2.23.so_glibc-xilinx: libBrokenLocale.so.1 libBrokenLocale.so.1(GLIBC_2.18)
+FILERPROVIDES_/lib/librt-2.23.so_glibc-xilinx: librt.so.1 librt.so.1(GLIBC_2.18)
+FILERPROVIDES_/lib/libdl-2.23.so_glibc-xilinx: libdl.so.2 libdl.so.2(GLIBC_2.18) libdl.so.2(GLIBC_PRIVATE)
+FILERDEPENDSFLIST_glibc-xilinx: /lib/libnsl-2.23.so /lib/libresolv-2.23.so /lib/libanl-2.23.so /lib/libnss@underscore@dns-2.23.so /lib/libpthread-2.23.so /lib/libc-2.23.so /lib/libm-2.23.so /lib/libcrypt-2.23.so /lib/libnss@underscore@files-2.23.so /lib/libnss@underscore@compat-2.23.so /lib/libutil-2.23.so /lib/libBrokenLocale-2.23.so /lib/librt-2.23.so /lib/libdl-2.23.so
+FILERDEPENDS_/lib/libnsl-2.23.so_glibc-xilinx: ld.so.1 ld.so.1(GLIBC_2.18) libc.so.6 libc.so.6(GLIBC_2.18) libc.so.6(GLIBC_PRIVATE)
+FILERDEPENDS_/lib/libresolv-2.23.so_glibc-xilinx: ld.so.1 ld.so.1(GLIBC_2.18) libc.so.6 libc.so.6(GLIBC_2.18) libc.so.6(GLIBC_PRIVATE)
+FILERDEPENDS_/lib/libanl-2.23.so_glibc-xilinx: ld.so.1 ld.so.1(GLIBC_2.18) libc.so.6 libc.so.6(GLIBC_2.18) libc.so.6(GLIBC_PRIVATE) libpthread.so.0 libpthread.so.0(GLIBC_2.18) libpthread.so.0(GLIBC_PRIVATE)
+FILERDEPENDS_/lib/libnss@underscore@dns-2.23.so_glibc-xilinx: ld.so.1 ld.so.1(GLIBC_2.18) libc.so.6 libc.so.6(GLIBC_2.18) libc.so.6(GLIBC_PRIVATE) libresolv.so.2 libresolv.so.2(GLIBC_2.18) libresolv.so.2(GLIBC_PRIVATE)
+FILERDEPENDS_/lib/libpthread-2.23.so_glibc-xilinx: ld.so.1 ld.so.1(GLIBC_2.18) ld.so.1(GLIBC_PRIVATE) libc.so.6 libc.so.6(GLIBC_2.18) libc.so.6(GLIBC_PRIVATE)
+FILERDEPENDS_/lib/libc-2.23.so_glibc-xilinx: ld.so.1 ld.so.1(GLIBC_2.18) ld.so.1(GLIBC_PRIVATE)
+FILERDEPENDS_/lib/libm-2.23.so_glibc-xilinx: ld.so.1 ld.so.1(GLIBC_2.18) libc.so.6 libc.so.6(GLIBC_2.18) libc.so.6(GLIBC_PRIVATE)
+FILERDEPENDS_/lib/libcrypt-2.23.so_glibc-xilinx: ld.so.1 ld.so.1(GLIBC_2.18) libc.so.6 libc.so.6(GLIBC_2.18) libc.so.6(GLIBC_PRIVATE)
+FILERDEPENDS_/lib/libnss@underscore@files-2.23.so_glibc-xilinx: ld.so.1 ld.so.1(GLIBC_2.18) libc.so.6 libc.so.6(GLIBC_2.18) libc.so.6(GLIBC_PRIVATE)
+FILERDEPENDS_/lib/libnss@underscore@compat-2.23.so_glibc-xilinx: ld.so.1 ld.so.1(GLIBC_2.18) libc.so.6 libc.so.6(GLIBC_2.18) libc.so.6(GLIBC_PRIVATE) libnsl.so.1 libnsl.so.1(GLIBC_2.18)
+FILERDEPENDS_/lib/libutil-2.23.so_glibc-xilinx: ld.so.1 ld.so.1(GLIBC_2.18) libc.so.6 libc.so.6(GLIBC_2.18) libc.so.6(GLIBC_PRIVATE)
+FILERDEPENDS_/lib/libBrokenLocale-2.23.so_glibc-xilinx: libc.so.6 libc.so.6(GLIBC_2.18)
+FILERDEPENDS_/lib/librt-2.23.so_glibc-xilinx: ld.so.1 ld.so.1(GLIBC_2.18) libc.so.6 libc.so.6(GLIBC_2.18) libc.so.6(GLIBC_PRIVATE) libpthread.so.0 libpthread.so.0(GLIBC_2.18) libpthread.so.0(GLIBC_PRIVATE)
+FILERDEPENDS_/lib/libdl-2.23.so_glibc-xilinx: ld.so.1 ld.so.1(GLIBC_PRIVATE) libc.so.6 libc.so.6(GLIBC_2.18) libc.so.6(GLIBC_PRIVATE)
+PKGSIZE_glibc-xilinx: 3785376

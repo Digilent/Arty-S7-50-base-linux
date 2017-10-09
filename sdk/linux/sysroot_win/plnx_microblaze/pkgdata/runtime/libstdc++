@@ -1,0 +1,20 @@
+PN: gcc-runtime-xilinx
+PV: 2017.2
+PR: r1
+PKGV: 6.2.0
+PKGR: r1
+LICENSE_libstdc++: GPL-3.0-with-GCC-exception
+DESCRIPTION: External Xilinx toolchain.
+SUMMARY: External Xilinx toolchain
+RDEPENDS_libstdc++: glibc-xilinx (>= 2.23) libgcc (>= 6.2.0)
+RPROVIDES_libstdc++:  libstdc++ (=6.2.0)
+SECTION: base
+PKG_libstdc++: libstdc++6
+FILES_libstdc++: /usr/lib/libstdc++.so.*
+pkg_postinst_libstdc++: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libstdc++: /usr/lib/libstdc++.so.6.0.22
+FILES_INFO: {"/usr/lib/libstdc++.so.6.0.22-gdb.py": 2592, "/usr/lib/libstdc++.so.6": 19, "/usr/lib/libstdc++.so.6.0.22": 1425072}
+FILERPROVIDES_/usr/lib/libstdc++.so.6.0.22_libstdc++: libstdc++.so.6 libstdc++.so.6(CXXABI_1.3) libstdc++.so.6(CXXABI_1.3.1) libstdc++.so.6(CXXABI_1.3.10) libstdc++.so.6(CXXABI_1.3.2) libstdc++.so.6(CXXABI_1.3.3) libstdc++.so.6(CXXABI_1.3.4) libstdc++.so.6(CXXABI_1.3.5) libstdc++.so.6(CXXABI_1.3.6) libstdc++.so.6(CXXABI_1.3.7) libstdc++.so.6(CXXABI_1.3.8) libstdc++.so.6(CXXABI_1.3.9) libstdc++.so.6(CXXABI_TM_1) libstdc++.so.6(GLIBCXX_3.4) libstdc++.so.6(GLIBCXX_3.4.1) libstdc++.so.6(GLIBCXX_3.4.10) libstdc++.so.6(GLIBCXX_3.4.11) libstdc++.so.6(GLIBCXX_3.4.12) libstdc++.so.6(GLIBCXX_3.4.13) libstdc++.so.6(GLIBCXX_3.4.14) libstdc++.so.6(GLIBCXX_3.4.15) libstdc++.so.6(GLIBCXX_3.4.16) libstdc++.so.6(GLIBCXX_3.4.17) libstdc++.so.6(GLIBCXX_3.4.18) libstdc++.so.6(GLIBCXX_3.4.19) libstdc++.so.6(GLIBCXX_3.4.2) libstdc++.so.6(GLIBCXX_3.4.20) libstdc++.so.6(GLIBCXX_3.4.21) libstdc++.so.6(GLIBCXX_3.4.22) libstdc++.so.6(GLIBCXX_3.4.3) libstdc++.so.6(GLIBCXX_3.4.4) libstdc++.so.6(GLIBCXX_3.4.5) libstdc++.so.6(GLIBCXX_3.4.6) libstdc++.so.6(GLIBCXX_3.4.7) libstdc++.so.6(GLIBCXX_3.4.8) libstdc++.so.6(GLIBCXX_3.4.9)
+FILERDEPENDSFLIST_libstdc++: /usr/lib/libstdc++.so.6.0.22
+FILERDEPENDS_/usr/lib/libstdc++.so.6.0.22_libstdc++: ld.so.1 ld.so.1(GLIBC_2.18) libc.so.6 libc.so.6(GLIBC_2.18) libgcc_s.so.1 libgcc_s.so.1(GCC_3.0) libgcc_s.so.1(GCC_3.3) libgcc_s.so.1(GCC_4.2.0) libgcc_s.so.1(GLIBC_2.0) libm.so.6 libm.so.6(GLIBC_2.18)
+PKGSIZE_libstdc++: 1427683

@@ -1,0 +1,22 @@
+PN: readline
+PV: 6.3
+PR: r0
+PKGV: 6.3
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION: The GNU Readline library provides a set of functions for use by applications that allow users to edit command lines as they are typed in. Both Emacs and vi editing modes are available. The Readline library includes  additional functions to maintain a list of previously-entered command lines, to recall and perhaps reedit those   lines, and perform csh-like history expansion on previous commands.
+SUMMARY: Library for editing typed command lines
+RDEPENDS_readline: ncurses-libtinfo (>= 6.0+20160625) glibc-xilinx (>= 2.23)
+RPROVIDES_readline:  readline (=6.3)
+SECTION: libs
+PKG_readline: libreadline6
+FILES_readline: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev /usr/lib/udev /lib/udev /usr/lib/udev /usr/share/readline /usr/lib/readline/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+pkg_postinst_readline: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_readline: /usr/lib/libhistory.so.6.3 /usr/lib/libreadline.so.6.3
+FILES_INFO: {"/usr/lib/libreadline.so.6": 18, "/usr/lib/libhistory.so.6": 17, "/etc/inputrc": 1633, "/usr/lib/libreadline.so.6.3": 273796, "/usr/lib/libhistory.so.6.3": 33424}
+FILERPROVIDES_/usr/lib/libhistory.so.6.3_readline: libhistory.so.6
+FILERPROVIDES_/usr/lib/libreadline.so.6.3_readline: libreadline.so.6
+FILERDEPENDSFLIST_readline: /usr/lib/libhistory.so.6.3 /usr/lib/libreadline.so.6.3
+FILERDEPENDS_/usr/lib/libhistory.so.6.3_readline: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/libreadline.so.6.3_readline: libc.so.6 libc.so.6(GLIBC_2.18) libtinfo.so.5 rtld(GNU_HASH)
+PKGSIZE_readline: 308888

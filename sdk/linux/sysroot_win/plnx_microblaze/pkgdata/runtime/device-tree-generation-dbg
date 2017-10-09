@@ -1,0 +1,14 @@
+PN: device-tree-generation
+PV: xilinx+gitAUTOINC+43551819a1
+PR: r0
+PKGV: xilinx+git0+43551819a1
+PKGR: r0
+LICENSE: GPLv2
+DESCRIPTION_device-tree-generation-dbg: DTS generator  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_device-tree-generation-dbg: device-tree-generation version xilinx+gitAUTOINC+43551819a1-r0 - Debugging files
+SECTION_device-tree-generation-dbg: devel
+PKG_device-tree-generation-dbg: device-tree-generation-dbg
+ALLOW_EMPTY_device-tree-generation-dbg: 1
+FILES_device-tree-generation-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {}
+PKGSIZE_device-tree-generation-dbg: 0

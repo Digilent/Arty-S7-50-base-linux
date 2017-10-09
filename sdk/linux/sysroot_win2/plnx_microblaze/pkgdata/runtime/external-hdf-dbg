@@ -1,0 +1,14 @@
+PN: external-hdf
+PV: 1.0
+PR: r0
+PKGV: 1.0
+PKGR: r0
+LICENSE: CLOSED
+DESCRIPTION_external-hdf-dbg: Recipe to copy externally built HDF to deploy  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_external-hdf-dbg: external-hdf version 1.0-r0 - Debugging files
+SECTION_external-hdf-dbg: devel
+PKG_external-hdf-dbg: external-hdf-dbg
+ALLOW_EMPTY_external-hdf-dbg: 1
+FILES_external-hdf-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {}
+PKGSIZE_external-hdf-dbg: 0

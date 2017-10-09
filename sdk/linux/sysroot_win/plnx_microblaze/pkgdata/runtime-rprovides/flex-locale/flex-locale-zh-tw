@@ -1,0 +1,15 @@
+PN: flex
+PV: 2.6.0
+PR: r0
+PKGV: 2.6.0
+PKGR: r0
+LICENSE: BSD
+DESCRIPTION_flex-locale-zh-tw: Flex is a fast lexical analyser generator.  Flex is a tool for generating programs that recognize lexical patterns in text.  This package contains language translation files for the zh_TW locale.
+SUMMARY_flex-locale-zh-tw: Flex (The Fast Lexical Analyzer) - zh_TW translations
+RPROVIDES_flex-locale-zh-tw: flex-locale zh-tw-translation
+RRECOMMENDS_flex-locale-zh-tw: virtual-locale-zh-tw
+SECTION: devel
+PKG_flex-locale-zh-tw: flex-locale-zh-tw
+FILES_flex-locale-zh-tw: /usr/share/locale/zh_TW
+FILES_INFO: {"/usr/share/locale/zh_TW/LC_MESSAGES/flex.mo": 14947}
+PKGSIZE_flex-locale-zh-tw: 14947

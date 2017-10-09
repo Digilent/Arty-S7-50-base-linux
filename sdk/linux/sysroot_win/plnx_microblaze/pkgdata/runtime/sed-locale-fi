@@ -1,0 +1,15 @@
+PN: sed
+PV: 4.2.2
+PR: r0
+PKGV: 4.2.2
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_sed-locale-fi: Stream EDitor (text filtering utility).  This package contains language translation files for the fi locale.
+SUMMARY_sed-locale-fi: Stream EDitor (text filtering utility) - fi translations
+RPROVIDES_sed-locale-fi: sed-locale fi-translation
+RRECOMMENDS_sed-locale-fi: virtual-locale-fi
+SECTION: console/utils
+PKG_sed-locale-fi: sed-locale-fi
+FILES_sed-locale-fi: /usr/share/locale/fi
+FILES_INFO: {"/usr/share/locale/fi/LC_MESSAGES/sed.mo": 10492}
+PKGSIZE_sed-locale-fi: 10492

@@ -1,0 +1,15 @@
+PN: grep
+PV: 2.25
+PR: r0
+PKGV: 2.25
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION_grep-locale-vi: GNU grep utility.  This package contains language translation files for the vi locale.
+SUMMARY_grep-locale-vi: GNU grep utility - vi translations
+RPROVIDES_grep-locale-vi: grep-locale vi-translation
+RRECOMMENDS_grep-locale-vi: virtual-locale-vi
+SECTION: console/utils
+PKG_grep-locale-vi: grep-locale-vi
+FILES_grep-locale-vi: /usr/share/locale/vi
+FILES_INFO: {"/usr/share/locale/vi/LC_MESSAGES/grep.mo": 20402}
+PKGSIZE_grep-locale-vi: 20402

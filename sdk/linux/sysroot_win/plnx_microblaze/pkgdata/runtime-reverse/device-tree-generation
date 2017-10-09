@@ -1,0 +1,13 @@
+PN: device-tree-generation
+PV: xilinx+gitAUTOINC+43551819a1
+PR: r0
+PKGV: xilinx+git0+43551819a1
+PKGR: r0
+LICENSE: GPLv2
+DESCRIPTION: DTS generator
+SUMMARY: device-tree-generation version xilinx+gitAUTOINC+43551819a1-r0
+SECTION: base
+PKG_device-tree-generation: device-tree-generation
+FILES_device-tree-generation: /boot/devicetree*
+FILES_INFO: {"/boot/devicetree/plnx_microblaze-system.dtb": 15772}
+PKGSIZE_device-tree-generation: 15772

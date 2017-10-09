@@ -1,0 +1,15 @@
+PN: libpam
+PV: 1.3.0
+PR: r5
+PKGV: 1.3.0
+PKGR: r5
+LICENSE: GPLv2+ | BSD
+DESCRIPTION_libpam-locale-eo: Linux-PAM (Pluggable Authentication Modules for Linux), a flexible mechanism for authenticating users  This package contains language translation files for the eo locale.
+SUMMARY_libpam-locale-eo: Linux-PAM (Pluggable Authentication Modules) - eo translations
+RPROVIDES_libpam-locale-eo: libpam-locale eo-translation
+RRECOMMENDS_libpam-locale-eo: virtual-locale-eo
+SECTION: base
+PKG_libpam-locale-eo: libpam-locale-eo
+FILES_libpam-locale-eo: /usr/share/locale/eo
+FILES_INFO: {"/usr/share/locale/eo/LC_MESSAGES/Linux-PAM.mo": 525}
+PKGSIZE_libpam-locale-eo: 525

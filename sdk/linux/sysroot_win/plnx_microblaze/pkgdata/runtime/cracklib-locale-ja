@@ -1,0 +1,15 @@
+PN: cracklib
+PV: 2.9.5
+PR: r0
+PKGV: 2.9.5
+PKGR: r0
+LICENSE: LGPLv2.1+
+DESCRIPTION_cracklib-locale-ja: Password strength checker library.  This package contains language translation files for the ja locale.
+SUMMARY_cracklib-locale-ja: Password strength checker library - ja translations
+RPROVIDES_cracklib-locale-ja: cracklib-locale ja-translation
+RRECOMMENDS_cracklib-locale-ja: virtual-locale-ja
+SECTION: base
+PKG_cracklib-locale-ja: cracklib-locale-ja
+FILES_cracklib-locale-ja: /usr/share/locale/ja
+FILES_INFO: {"/usr/share/locale/ja/LC_MESSAGES/cracklib.mo": 1984}
+PKGSIZE_cracklib-locale-ja: 1984

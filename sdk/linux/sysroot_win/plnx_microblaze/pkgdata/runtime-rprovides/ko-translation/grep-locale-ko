@@ -1,0 +1,15 @@
+PN: grep
+PV: 2.25
+PR: r0
+PKGV: 2.25
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION_grep-locale-ko: GNU grep utility.  This package contains language translation files for the ko locale.
+SUMMARY_grep-locale-ko: GNU grep utility - ko translations
+RPROVIDES_grep-locale-ko: grep-locale ko-translation
+RRECOMMENDS_grep-locale-ko: virtual-locale-ko
+SECTION: console/utils
+PKG_grep-locale-ko: grep-locale-ko
+FILES_grep-locale-ko: /usr/share/locale/ko
+FILES_INFO: {"/usr/share/locale/ko/LC_MESSAGES/grep.mo": 659}
+PKGSIZE_grep-locale-ko: 659

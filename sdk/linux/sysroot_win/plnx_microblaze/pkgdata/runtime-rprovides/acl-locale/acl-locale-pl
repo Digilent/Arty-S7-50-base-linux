@@ -1,0 +1,15 @@
+PN: acl
+PV: 2.2.52
+PR: r0
+PKGV: 2.2.52
+PKGR: r0
+LICENSE: LGPLv2.1+ & GPLv2+
+DESCRIPTION_acl-locale-pl: Utilities for managing POSIX Access Control Lists.  This package contains language translation files for the pl locale.
+SUMMARY_acl-locale-pl: Utilities for managing POSIX Access Control Lists - pl translations
+RPROVIDES_acl-locale-pl: acl-locale pl-translation
+RRECOMMENDS_acl-locale-pl: virtual-locale-pl
+SECTION: libs
+PKG_acl-locale-pl: acl-locale-pl
+FILES_acl-locale-pl: /usr/share/locale/pl
+FILES_INFO: {"/usr/share/locale/pl/LC_MESSAGES/acl.mo": 8946}
+PKGSIZE_acl-locale-pl: 8946

@@ -1,0 +1,14 @@
+PN: dropbear
+PV: 2016.74
+PR: r0
+PKGV: 2016.74
+PKGR: r0
+LICENSE: MIT & BSD-3-Clause & BSD-2-Clause & PD
+DESCRIPTION_dropbear-staticdev: A lightweight SSH and SCP implementation.  This package contains static libraries for software development.
+SUMMARY_dropbear-staticdev: A lightweight SSH and SCP implementation - Development files (Static Libraries)
+RDEPENDS_dropbear-staticdev: dropbear-dev (= 2016.74-r0)
+SECTION_dropbear-staticdev: devel
+PKG_dropbear-staticdev: dropbear-staticdev
+FILES_dropbear-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/dropbear/*.a
+FILES_INFO: {}
+PKGSIZE_dropbear-staticdev: 0

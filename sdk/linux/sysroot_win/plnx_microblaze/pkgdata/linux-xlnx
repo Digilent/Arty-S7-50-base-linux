@@ -1,0 +1,1 @@
+PACKAGES: kernel kernel-base kernel-vmlinux kernel-image kernel-dev kernel-modules kernel-image-simpleimage.mb kernel-devicetree kernel-module-drbg kernel-module-echainiv kernel-module-jitterentropy-rng kernel-module-p8022 kernel-module-psnap kernel-module-stp kernel-module-bridge kernel-module-llc

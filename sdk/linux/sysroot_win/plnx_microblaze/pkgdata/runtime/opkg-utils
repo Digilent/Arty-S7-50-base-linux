@@ -1,0 +1,27 @@
+PN: opkg-utils
+PV: 0.3.2+gitAUTOINC+3ffece9bf1
+PR: r0
+PKGV: 0.3.2+git0+3ffece9bf1
+PKGR: r0
+LICENSE: GPLv2+
+DESCRIPTION: Additional utilities for the opkg package manager.
+SUMMARY: Additional utilities for the opkg package manager
+RDEPENDS_opkg-utils: python python-compression python-crypt python-fcntl python-io python-logging python-math python-pickle python-shell python-stringold python-subprocess python-textutils glibc-xilinx (>= 2.23)
+SECTION: base
+PKG_opkg-utils: opkg-utils
+FILES_opkg-utils: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev /usr/lib/udev /lib/udev /usr/lib/udev /usr/share/opkg-utils /usr/lib/opkg-utils/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+FILES_INFO: {"/usr/bin/opkg-show-deps": 2855, "/usr/bin/opkg-unbuild": 798, "/usr/bin/opkg-compare-indexes": 1515, "/usr/bin/opkg-extract-file": 1013, "/usr/bin/opkg-compare-versions": 5684, "/usr/bin/opkg-compare-versions.sh": 1588, "/usr/bin/opkg-make-index": 7999, "/usr/bin/opkg-diff": 221, "/usr/bin/opkg-buildpackage": 5371, "/usr/bin/opkg.py": 20054, "/usr/bin/opkg-build": 7221, "/usr/bin/opkg-list-fields": 273, "/usr/bin/arfile.py": 4178}
+FILERDEPENDSFLIST_opkg-utils: /usr/bin/opkg-show-deps /usr/bin/opkg-unbuild /usr/bin/opkg-compare-indexes /usr/bin/opkg-extract-file /usr/bin/opkg-compare-versions /usr/bin/opkg-compare-versions.sh /usr/bin/opkg-make-index /usr/bin/opkg-diff /usr/bin/opkg-buildpackage /usr/bin/opkg.py /usr/bin/opkg-build /usr/bin/opkg-list-fields
+FILERDEPENDS_/usr/bin/opkg-show-deps_opkg-utils: /usr/bin/env
+FILERDEPENDS_/usr/bin/opkg-unbuild_opkg-utils: /usr/bin/env
+FILERDEPENDS_/usr/bin/opkg-compare-indexes_opkg-utils: /usr/bin/env
+FILERDEPENDS_/usr/bin/opkg-extract-file_opkg-utils: /bin/sh
+FILERDEPENDS_/usr/bin/opkg-compare-versions_opkg-utils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/opkg-compare-versions.sh_opkg-utils: /bin/sh
+FILERDEPENDS_/usr/bin/opkg-make-index_opkg-utils: /usr/bin/env
+FILERDEPENDS_/usr/bin/opkg-diff_opkg-utils: /bin/sh
+FILERDEPENDS_/usr/bin/opkg-buildpackage_opkg-utils: /bin/sh
+FILERDEPENDS_/usr/bin/opkg.py_opkg-utils: /usr/bin/env
+FILERDEPENDS_/usr/bin/opkg-build_opkg-utils: /bin/sh
+FILERDEPENDS_/usr/bin/opkg-list-fields_opkg-utils: /usr/bin/env
+PKGSIZE_opkg-utils: 58770

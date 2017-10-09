@@ -1,0 +1,15 @@
+PN: util-linux
+PV: 2.28.1
+PR: r0
+PKGV: 2.28.1
+PKGR: r0
+LICENSE: GPLv2+ & LGPLv2.1+ & BSD
+DESCRIPTION_util-linux-locale-fr: Util-linux includes a suite of basic system administration utilities commonly found on most Linux systems.  Some of the more important utilities include disk partitioning, kernel message management, filesystem creation, and system login.  This package contains language translation files for the fr locale.
+SUMMARY_util-linux-locale-fr: A suite of basic system administration utilities - fr translations
+RPROVIDES_util-linux-locale-fr: util-linux-locale fr-translation
+RRECOMMENDS_util-linux-locale-fr: virtual-locale-fr
+SECTION: base
+PKG_util-linux-locale-fr: util-linux-locale-fr
+FILES_util-linux-locale-fr: /usr/share/locale/fr
+FILES_INFO: {"/usr/share/locale/fr/LC_MESSAGES/util-linux.mo": 386935}
+PKGSIZE_util-linux-locale-fr: 386935

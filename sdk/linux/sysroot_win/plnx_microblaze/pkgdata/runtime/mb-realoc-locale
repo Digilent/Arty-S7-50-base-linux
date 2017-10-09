@@ -1,0 +1,13 @@
+PN: mb-realoc
+PV: 0.1
+PR: r0
+PKGV: 0.1
+PKGR: r0
+LICENSE: CLOSED
+DESCRIPTION: mb-realoc
+SUMMARY: mb-realoc version 0.1-r0
+SECTION: base
+PKG_mb-realoc-locale: mb-realoc-locale
+FILES_mb-realoc-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_mb-realoc-locale: 0

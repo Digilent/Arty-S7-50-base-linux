@@ -1,0 +1,228 @@
+PN: coreutils
+PV: 8.25
+PR: r0
+PKGV: 8.25
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION: The GNU Core Utilities provide the basic file, shell and text manipulation utilities. These are the core utilities which are expected to exist on every system.
+SUMMARY: The basic file, shell and text manipulation utilities
+RDEPENDS_coreutils: update-alternatives-opkg gmp (>= 6.1.1) glibc-xilinx (>= 2.23) libattr (>= 2.4.47) libcap (>= 2.25)
+SECTION: base
+PKG_coreutils: coreutils
+FILES_coreutils: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev /usr/lib/udev /lib/udev /usr/lib/udev /usr/share/coreutils /usr/lib/coreutils/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+pkg_postinst_coreutils: #!/bin/sh\n# Begin section update-alternatives\nupdate-alternatives --install /usr/bin/[ lbracket /usr/bin/lbracket.coreutils 100\nupdate-alternatives --install /usr/bin/arch arch /usr/bin/arch.coreutils 100\nupdate-alternatives --install /usr/bin/basename basename /usr/bin/basename.coreutils 100\nupdate-alternatives --install /usr/bin/chcon chcon /usr/bin/chcon.coreutils 100\nupdate-alternatives --install /usr/bin/cksum cksum /usr/bin/cksum.coreutils 100\nupdate-alternatives --install /usr/bin/comm comm /usr/bin/comm.coreutils 100\nupdate-alternatives --install /usr/bin/csplit csplit /usr/bin/csplit.coreutils 100\nupdate-alternatives --install /usr/bin/cut cut /usr/bin/cut.coreutils 100\nupdate-alternatives --install /usr/bin/dir dir /usr/bin/dir.coreutils 100\nupdate-alternatives --install /usr/bin/dircolors dircolors /usr/bin/dircolors.coreutils 100\nupdate-alternatives --install /usr/bin/dirname dirname /usr/bin/dirname.coreutils 100\nupdate-alternatives --install /usr/bin/du du /usr/bin/du.coreutils 100\nupdate-alternatives --install /usr/bin/env env /usr/bin/env.coreutils 100\nupdate-alternatives --install /usr/bin/expand expand /usr/bin/expand.coreutils 100\nupdate-alternatives --install /usr/bin/expr expr /usr/bin/expr.coreutils 100\nupdate-alternatives --install /usr/bin/factor factor /usr/bin/factor.coreutils 100\nupdate-alternatives --install /usr/bin/fmt fmt /usr/bin/fmt.coreutils 100\nupdate-alternatives --install /usr/bin/fold fold /usr/bin/fold.coreutils 100\nupdate-alternatives --install /usr/bin/groups groups /usr/bin/groups.coreutils 100\nupdate-alternatives --install /usr/bin/head head /usr/bin/head.coreutils 100\nupdate-alternatives --install /usr/bin/hostid hostid /usr/bin/hostid.coreutils 100\nupdate-alternatives --install /usr/bin/id id /usr/bin/id.coreutils 100\nupdate-alternatives --install /usr/bin/install install /usr/bin/install.coreutils 100\nupdate-alternatives --install /usr/bin/join join /usr/bin/join.coreutils 100\nupdate-alternatives --install /usr/bin/link link /usr/bin/link.coreutils 100\nupdate-alternatives --install /usr/bin/logname logname /usr/bin/logname.coreutils 100\nupdate-alternatives --install /usr/bin/md5sum md5sum /usr/bin/md5sum.coreutils 100\nupdate-alternatives --install /usr/bin/mkfifo mkfifo /usr/bin/mkfifo.coreutils 100\nupdate-alternatives --install /usr/bin/nice nice /usr/bin/nice.coreutils 100\nupdate-alternatives --install /usr/bin/nl nl /usr/bin/nl.coreutils 100\nupdate-alternatives --install /usr/bin/nohup nohup /usr/bin/nohup.coreutils 100\nupdate-alternatives --install /usr/bin/nproc nproc /usr/bin/nproc.coreutils 100\nupdate-alternatives --install /usr/bin/od od /usr/bin/od.coreutils 100\nupdate-alternatives --install /usr/bin/paste paste /usr/bin/paste.coreutils 100\nupdate-alternatives --install /usr/bin/pathchk pathchk /usr/bin/pathchk.coreutils 100\nupdate-alternatives --install /usr/bin/pinky pinky /usr/bin/pinky.coreutils 100\nupdate-alternatives --install /usr/bin/pr pr /usr/bin/pr.coreutils 100\nupdate-alternatives --install /usr/bin/printenv printenv /usr/bin/printenv.coreutils 100\nupdate-alternatives --install /usr/bin/printf printf /usr/bin/printf.coreutils 100\nupdate-alternatives --install /usr/bin/ptx ptx /usr/bin/ptx.coreutils 100\nupdate-alternatives --install /usr/bin/readlink readlink /usr/bin/readlink.coreutils 100\nupdate-alternatives --install /usr/bin/realpath realpath /usr/bin/realpath.coreutils 100\nupdate-alternatives --install /usr/bin/runcon runcon /usr/bin/runcon.coreutils 100\nupdate-alternatives --install /usr/bin/seq seq /usr/bin/seq.coreutils 100\nupdate-alternatives --install /usr/bin/sha1sum sha1sum /usr/bin/sha1sum.coreutils 100\nupdate-alternatives --install /usr/bin/sha224sum sha224sum /usr/bin/sha224sum.coreutils 100\nupdate-alternatives --install /usr/bin/sha256sum sha256sum /usr/bin/sha256sum.coreutils 100\nupdate-alternatives --install /usr/bin/sha384sum sha384sum /usr/bin/sha384sum.coreutils 100\nupdate-alternatives --install /usr/bin/sha512sum sha512sum /usr/bin/sha512sum.coreutils 100\nupdate-alternatives --install /usr/bin/shred shred /usr/bin/shred.coreutils 100\nupdate-alternatives --install /usr/bin/shuf shuf /usr/bin/shuf.coreutils 100\nupdate-alternatives --install /usr/bin/sort sort /usr/bin/sort.coreutils 100\nupdate-alternatives --install /usr/bin/split split /usr/bin/split.coreutils 100\nupdate-alternatives --install /usr/bin/stdbuf stdbuf /usr/bin/stdbuf.coreutils 100\nupdate-alternatives --install /usr/bin/sum sum /usr/bin/sum.coreutils 100\nupdate-alternatives --install /usr/bin/tac tac /usr/bin/tac.coreutils 100\nupdate-alternatives --install /usr/bin/tail tail /usr/bin/tail.coreutils 100\nupdate-alternatives --install /usr/bin/tee tee /usr/bin/tee.coreutils 100\nupdate-alternatives --install /usr/bin/test test /usr/bin/test.coreutils 100\nupdate-alternatives --install /usr/bin/timeout timeout /usr/bin/timeout.coreutils 100\nupdate-alternatives --install /usr/bin/tr tr /usr/bin/tr.coreutils 100\nupdate-alternatives --install /usr/bin/truncate truncate /usr/bin/truncate.coreutils 100\nupdate-alternatives --install /usr/bin/tsort tsort /usr/bin/tsort.coreutils 100\nupdate-alternatives --install /usr/bin/tty tty /usr/bin/tty.coreutils 100\nupdate-alternatives --install /usr/bin/unexpand unexpand /usr/bin/unexpand.coreutils 100\nupdate-alternatives --install /usr/bin/uniq uniq /usr/bin/uniq.coreutils 100\nupdate-alternatives --install /usr/bin/unlink unlink /usr/bin/unlink.coreutils 100\nupdate-alternatives --install /usr/bin/uptime uptime /usr/bin/uptime.coreutils 100\nupdate-alternatives --install /usr/bin/users users /usr/bin/users.coreutils 100\nupdate-alternatives --install /usr/bin/vdir vdir /usr/bin/vdir.coreutils 100\nupdate-alternatives --install /usr/bin/wc wc /usr/bin/wc.coreutils 100\nupdate-alternatives --install /usr/bin/who who /usr/bin/who.coreutils 100\nupdate-alternatives --install /usr/bin/whoami whoami /usr/bin/whoami.coreutils 100\nupdate-alternatives --install /usr/bin/yes yes /usr/bin/yes.coreutils 100\nupdate-alternatives --install /bin/cat cat /bin/cat.coreutils 100\nupdate-alternatives --install /bin/chgrp chgrp /bin/chgrp.coreutils 100\nupdate-alternatives --install /bin/chmod chmod /bin/chmod.coreutils 100\nupdate-alternatives --install /bin/chown chown /bin/chown.coreutils 100\nupdate-alternatives --install /bin/cp cp /bin/cp.coreutils 100\nupdate-alternatives --install /bin/date date /bin/date.coreutils 100\nupdate-alternatives --install /bin/dd dd /bin/dd.coreutils 100\nupdate-alternatives --install /bin/echo echo /bin/echo.coreutils 100\nupdate-alternatives --install /bin/false false /bin/false.coreutils 100\nupdate-alternatives --install /bin/kill kill /bin/kill.coreutils 100\nupdate-alternatives --install /bin/ln ln /bin/ln.coreutils 100\nupdate-alternatives --install /bin/ls ls /bin/ls.coreutils 100\nupdate-alternatives --install /bin/mkdir mkdir /bin/mkdir.coreutils 100\nupdate-alternatives --install /bin/mknod mknod /bin/mknod.coreutils 100\nupdate-alternatives --install /bin/mv mv /bin/mv.coreutils 100\nupdate-alternatives --install /bin/pwd pwd /bin/pwd.coreutils 100\nupdate-alternatives --install /bin/rm rm /bin/rm.coreutils 100\nupdate-alternatives --install /bin/rmdir rmdir /bin/rmdir.coreutils 100\nupdate-alternatives --install /bin/sleep sleep /bin/sleep.coreutils 100\nupdate-alternatives --install /bin/stty stty /bin/stty.coreutils 100\nupdate-alternatives --install /bin/sync sync /bin/sync.coreutils 100\nupdate-alternatives --install /bin/touch touch /bin/touch.coreutils 100\nupdate-alternatives --install /bin/true true /bin/true.coreutils 100\nupdate-alternatives --install /bin/uname uname /bin/uname.coreutils 100\nupdate-alternatives --install /bin/stat stat /bin/stat.coreutils 100\nupdate-alternatives --install /usr/sbin/chroot chroot /usr/sbin/chroot.coreutils 100\nupdate-alternatives --install /bin/base64 base64 /usr/bin/base64.coreutils 100\nupdate-alternatives --install /bin/mktemp mktemp /usr/bin/mktemp.coreutils 100\nupdate-alternatives --install /bin/df df /usr/bin/df.coreutils 100\n# End section update-alternatives\n
+pkg_prerm_coreutils: #!/bin/sh\n# Begin section update-alternatives\nupdate-alternatives --remove  lbracket /usr/bin/lbracket.coreutils\nupdate-alternatives --remove  arch /usr/bin/arch.coreutils\nupdate-alternatives --remove  basename /usr/bin/basename.coreutils\nupdate-alternatives --remove  chcon /usr/bin/chcon.coreutils\nupdate-alternatives --remove  cksum /usr/bin/cksum.coreutils\nupdate-alternatives --remove  comm /usr/bin/comm.coreutils\nupdate-alternatives --remove  csplit /usr/bin/csplit.coreutils\nupdate-alternatives --remove  cut /usr/bin/cut.coreutils\nupdate-alternatives --remove  dir /usr/bin/dir.coreutils\nupdate-alternatives --remove  dircolors /usr/bin/dircolors.coreutils\nupdate-alternatives --remove  dirname /usr/bin/dirname.coreutils\nupdate-alternatives --remove  du /usr/bin/du.coreutils\nupdate-alternatives --remove  env /usr/bin/env.coreutils\nupdate-alternatives --remove  expand /usr/bin/expand.coreutils\nupdate-alternatives --remove  expr /usr/bin/expr.coreutils\nupdate-alternatives --remove  factor /usr/bin/factor.coreutils\nupdate-alternatives --remove  fmt /usr/bin/fmt.coreutils\nupdate-alternatives --remove  fold /usr/bin/fold.coreutils\nupdate-alternatives --remove  groups /usr/bin/groups.coreutils\nupdate-alternatives --remove  head /usr/bin/head.coreutils\nupdate-alternatives --remove  hostid /usr/bin/hostid.coreutils\nupdate-alternatives --remove  id /usr/bin/id.coreutils\nupdate-alternatives --remove  install /usr/bin/install.coreutils\nupdate-alternatives --remove  join /usr/bin/join.coreutils\nupdate-alternatives --remove  link /usr/bin/link.coreutils\nupdate-alternatives --remove  logname /usr/bin/logname.coreutils\nupdate-alternatives --remove  md5sum /usr/bin/md5sum.coreutils\nupdate-alternatives --remove  mkfifo /usr/bin/mkfifo.coreutils\nupdate-alternatives --remove  nice /usr/bin/nice.coreutils\nupdate-alternatives --remove  nl /usr/bin/nl.coreutils\nupdate-alternatives --remove  nohup /usr/bin/nohup.coreutils\nupdate-alternatives --remove  nproc /usr/bin/nproc.coreutils\nupdate-alternatives --remove  od /usr/bin/od.coreutils\nupdate-alternatives --remove  paste /usr/bin/paste.coreutils\nupdate-alternatives --remove  pathchk /usr/bin/pathchk.coreutils\nupdate-alternatives --remove  pinky /usr/bin/pinky.coreutils\nupdate-alternatives --remove  pr /usr/bin/pr.coreutils\nupdate-alternatives --remove  printenv /usr/bin/printenv.coreutils\nupdate-alternatives --remove  printf /usr/bin/printf.coreutils\nupdate-alternatives --remove  ptx /usr/bin/ptx.coreutils\nupdate-alternatives --remove  readlink /usr/bin/readlink.coreutils\nupdate-alternatives --remove  realpath /usr/bin/realpath.coreutils\nupdate-alternatives --remove  runcon /usr/bin/runcon.coreutils\nupdate-alternatives --remove  seq /usr/bin/seq.coreutils\nupdate-alternatives --remove  sha1sum /usr/bin/sha1sum.coreutils\nupdate-alternatives --remove  sha224sum /usr/bin/sha224sum.coreutils\nupdate-alternatives --remove  sha256sum /usr/bin/sha256sum.coreutils\nupdate-alternatives --remove  sha384sum /usr/bin/sha384sum.coreutils\nupdate-alternatives --remove  sha512sum /usr/bin/sha512sum.coreutils\nupdate-alternatives --remove  shred /usr/bin/shred.coreutils\nupdate-alternatives --remove  shuf /usr/bin/shuf.coreutils\nupdate-alternatives --remove  sort /usr/bin/sort.coreutils\nupdate-alternatives --remove  split /usr/bin/split.coreutils\nupdate-alternatives --remove  stdbuf /usr/bin/stdbuf.coreutils\nupdate-alternatives --remove  sum /usr/bin/sum.coreutils\nupdate-alternatives --remove  tac /usr/bin/tac.coreutils\nupdate-alternatives --remove  tail /usr/bin/tail.coreutils\nupdate-alternatives --remove  tee /usr/bin/tee.coreutils\nupdate-alternatives --remove  test /usr/bin/test.coreutils\nupdate-alternatives --remove  timeout /usr/bin/timeout.coreutils\nupdate-alternatives --remove  tr /usr/bin/tr.coreutils\nupdate-alternatives --remove  truncate /usr/bin/truncate.coreutils\nupdate-alternatives --remove  tsort /usr/bin/tsort.coreutils\nupdate-alternatives --remove  tty /usr/bin/tty.coreutils\nupdate-alternatives --remove  unexpand /usr/bin/unexpand.coreutils\nupdate-alternatives --remove  uniq /usr/bin/uniq.coreutils\nupdate-alternatives --remove  unlink /usr/bin/unlink.coreutils\nupdate-alternatives --remove  uptime /usr/bin/uptime.coreutils\nupdate-alternatives --remove  users /usr/bin/users.coreutils\nupdate-alternatives --remove  vdir /usr/bin/vdir.coreutils\nupdate-alternatives --remove  wc /usr/bin/wc.coreutils\nupdate-alternatives --remove  who /usr/bin/who.coreutils\nupdate-alternatives --remove  whoami /usr/bin/whoami.coreutils\nupdate-alternatives --remove  yes /usr/bin/yes.coreutils\nupdate-alternatives --remove  cat /bin/cat.coreutils\nupdate-alternatives --remove  chgrp /bin/chgrp.coreutils\nupdate-alternatives --remove  chmod /bin/chmod.coreutils\nupdate-alternatives --remove  chown /bin/chown.coreutils\nupdate-alternatives --remove  cp /bin/cp.coreutils\nupdate-alternatives --remove  date /bin/date.coreutils\nupdate-alternatives --remove  dd /bin/dd.coreutils\nupdate-alternatives --remove  echo /bin/echo.coreutils\nupdate-alternatives --remove  false /bin/false.coreutils\nupdate-alternatives --remove  kill /bin/kill.coreutils\nupdate-alternatives --remove  ln /bin/ln.coreutils\nupdate-alternatives --remove  ls /bin/ls.coreutils\nupdate-alternatives --remove  mkdir /bin/mkdir.coreutils\nupdate-alternatives --remove  mknod /bin/mknod.coreutils\nupdate-alternatives --remove  mv /bin/mv.coreutils\nupdate-alternatives --remove  pwd /bin/pwd.coreutils\nupdate-alternatives --remove  rm /bin/rm.coreutils\nupdate-alternatives --remove  rmdir /bin/rmdir.coreutils\nupdate-alternatives --remove  sleep /bin/sleep.coreutils\nupdate-alternatives --remove  stty /bin/stty.coreutils\nupdate-alternatives --remove  sync /bin/sync.coreutils\nupdate-alternatives --remove  touch /bin/touch.coreutils\nupdate-alternatives --remove  true /bin/true.coreutils\nupdate-alternatives --remove  uname /bin/uname.coreutils\nupdate-alternatives --remove  stat /bin/stat.coreutils\nupdate-alternatives --remove  chroot /usr/sbin/chroot.coreutils\nupdate-alternatives --remove  base64 /usr/bin/base64.coreutils\nupdate-alternatives --remove  mktemp /usr/bin/mktemp.coreutils\nupdate-alternatives --remove  df /usr/bin/df.coreutils\n# End section update-alternatives\n
+FILERPROVIDESFLIST_coreutils: /usr/lib/coreutils/libstdbuf.so /usr/bin/lbracket.coreutils /usr/bin/arch.coreutils /usr/bin/basename.coreutils /usr/bin/chcon.coreutils /usr/bin/cksum.coreutils /usr/bin/comm.coreutils /usr/bin/csplit.coreutils /usr/bin/cut.coreutils /usr/bin/dir.coreutils /usr/bin/dircolors.coreutils /usr/bin/dirname.coreutils /usr/bin/du.coreutils /usr/bin/env.coreutils /usr/bin/expand.coreutils /usr/bin/expr.coreutils /usr/bin/factor.coreutils /usr/bin/fmt.coreutils /usr/bin/fold.coreutils /usr/bin/groups.coreutils /usr/bin/head.coreutils /usr/bin/hostid.coreutils /usr/bin/id.coreutils /usr/bin/install.coreutils /usr/bin/join.coreutils /usr/bin/link.coreutils /usr/bin/logname.coreutils /usr/bin/md5sum.coreutils /usr/bin/mkfifo.coreutils /usr/bin/nice.coreutils /usr/bin/nl.coreutils /usr/bin/nohup.coreutils /usr/bin/nproc.coreutils /usr/bin/od.coreutils /usr/bin/paste.coreutils /usr/bin/pathchk.coreutils /usr/bin/pinky.coreutils /usr/bin/pr.coreutils /usr/bin/printenv.coreutils /usr/bin/printf.coreutils /usr/bin/ptx.coreutils /usr/bin/readlink.coreutils /usr/bin/realpath.coreutils /usr/bin/runcon.coreutils /usr/bin/seq.coreutils /usr/bin/sha1sum.coreutils /usr/bin/sha224sum.coreutils /usr/bin/sha256sum.coreutils /usr/bin/sha384sum.coreutils /usr/bin/sha512sum.coreutils /usr/bin/shred.coreutils /usr/bin/shuf.coreutils /usr/bin/sort.coreutils /usr/bin/split.coreutils /usr/bin/stdbuf.coreutils /usr/bin/sum.coreutils /usr/bin/tac.coreutils /usr/bin/tail.coreutils /usr/bin/tee.coreutils /usr/bin/test.coreutils /usr/bin/timeout.coreutils /usr/bin/tr.coreutils /usr/bin/truncate.coreutils /usr/bin/tsort.coreutils /usr/bin/tty.coreutils /usr/bin/unexpand.coreutils /usr/bin/uniq.coreutils /usr/bin/unlink.coreutils /usr/bin/uptime.coreutils /usr/bin/users.coreutils /usr/bin/vdir.coreutils /usr/bin/wc.coreutils /usr/bin/who.coreutils /usr/bin/whoami.coreutils /usr/bin/yes.coreutils /bin/cat.coreutils /bin/chgrp.coreutils /bin/chmod.coreutils /bin/chown.coreutils /bin/cp.coreutils /bin/date.coreutils /bin/dd.coreutils /bin/echo.coreutils /bin/false.coreutils /bin/kill.coreutils /bin/ln.coreutils /bin/ls.coreutils /bin/mkdir.coreutils /bin/mknod.coreutils /bin/mv.coreutils /bin/pwd.coreutils /bin/rm.coreutils /bin/rmdir.coreutils /bin/sleep.coreutils /bin/stty.coreutils /bin/sync.coreutils /bin/touch.coreutils /bin/true.coreutils /bin/uname.coreutils /bin/stat.coreutils /usr/sbin/chroot.coreutils /usr/bin/base64.coreutils /usr/bin/mktemp.coreutils /usr/bin/df.coreutils
+FILES_INFO: {"/bin/rmdir.coreutils": 30900, "/usr/bin/nohup.coreutils": 32648, "/usr/bin/split.coreutils": 76404, "/usr/bin/head.coreutils": 51428, "/bin/stty.coreutils": 61756, "/usr/bin/nl.coreutils": 104736, "/bin/date.coreutils": 71804, "/bin/dd.coreutils": 77752, "/usr/bin/id.coreutils": 43116, "/usr/bin/basename.coreutils": 30556, "/usr/bin/vdir.coreutils": 152792, "/usr/bin/fold.coreutils": 36180, "/usr/bin/dir.coreutils": 152792, "/usr/bin/factor.coreutils": 97100, "/bin/true.coreutils": 22944, "/bin/stat.coreutils": 77256, "/usr/bin/uptime.coreutils": 49232, "/usr/bin/whoami.coreutils": 28680, "/usr/bin/sha1sum.coreutils": 49652, "/usr/bin/comm.coreutils": 35400, "/bin/touch.coreutils": 66320, "/usr/bin/sha512sum.coreutils": 125424, "/usr/bin/csplit.coreutils": 117864, "/usr/bin/cksum.coreutils": 35324, "/usr/bin/cut.coreutils": 39544, "/usr/sbin/chroot.coreutils": 40528, "/usr/bin/pathchk.coreutils": 30560, "/usr/bin/hostid.coreutils": 28360, "/bin/uname.coreutils": 30556, "/usr/bin/dirname.coreutils": 29420, "/usr/bin/printenv.coreutils": 28880, "/usr/bin/nice.coreutils": 31940, "/usr/bin/tr.coreutils": 49032, "/usr/bin/env.coreutils": 30556, "/usr/bin/seq.coreutils": 40828, "/bin/echo.coreutils": 26384, "/bin/mknod.coreutils": 38904, "/usr/bin/readlink.coreutils": 51232, "/usr/bin/uniq.coreutils": 40984, "/usr/bin/fmt.coreutils": 43000, "/usr/bin/expand.coreutils": 34864, "/bin/pwd.coreutils": 36980, "/usr/bin/pinky.coreutils": 40792, "/usr/bin/sort.coreutils": 121304, "/usr/bin/sha224sum.coreutils": 64900, "/usr/bin/test.coreutils": 37680, "/usr/bin/df.coreutils": 109144, "/bin/kill.coreutils": 33532, "/bin/cat.coreutils": 51128, "/usr/bin/yes.coreutils": 29092, "/usr/bin/numfmt": 69708, "/usr/bin/sum.coreutils": 49212, "/usr/bin/mktemp.coreutils": 43184, "/usr/bin/logname.coreutils": 28480, "/usr/bin/dircolors.coreutils": 53244, "/usr/bin/wc.coreutils": 51568, "/usr/bin/install.coreutils": 117076, "/usr/bin/arch.coreutils": 30556, "/usr/bin/mkfifo.coreutils": 31372, "/usr/bin/tail.coreutils": 82740, "/bin/sync.coreutils": 30564, "/usr/bin/md5sum.coreutils": 44888, "/bin/chgrp.coreutils": 73812, "/usr/bin/unexpand.coreutils": 35652, "/bin/sleep.coreutils": 35464, "/usr/bin/lbracket.coreutils": 40332, "/bin/false.coreutils": 22944, "/usr/bin/base32": 40492, "/usr/bin/nproc.coreutils": 34804, "/bin/chown.coreutils": 75964, "/usr/bin/sha256sum.coreutils": 64900, "/usr/bin/shuf.coreutils": 63632, "/usr/bin/realpath.coreutils": 68948, "/usr/bin/truncate.coreutils": 59500, "/usr/bin/stdbuf.coreutils": 55348, "/usr/bin/shred.coreutils": 69892, "/usr/bin/link.coreutils": 28752, "/bin/ls.coreutils": 152792, "/usr/bin/tsort.coreutils": 33316, "/bin/ln.coreutils": 64244, "/usr/bin/du.coreutils": 211424, "/usr/bin/users.coreutils": 30576, "/bin/mv.coreutils": 117404, "/usr/bin/expr.coreutils": 100416, "/bin/cp.coreutils": 125208, "/usr/bin/chcon.coreutils": 67644, "/usr/bin/ptx.coreutils": 129184, "/usr/bin/runcon.coreutils": 31060, "/usr/bin/od.coreutils": 64296, "/bin/rm.coreutils": 68420, "/usr/bin/paste.coreutils": 32532, "/usr/bin/tee.coreutils": 33376, "/usr/bin/timeout.coreutils": 59804, "/usr/bin/unlink.coreutils": 28592, "/usr/bin/base64.coreutils": 40160, "/usr/lib/coreutils/libstdbuf.so": 5124, "/usr/bin/tac.coreutils": 100660, "/usr/bin/join.coreutils": 44660, "/usr/bin/who.coreutils": 43132, "/bin/mkdir.coreutils": 38816, "/usr/bin/pr.coreutils": 80148, "/usr/bin/sha384sum.coreutils": 125424, "/bin/chmod.coreutils": 63632, "/usr/bin/tty.coreutils": 28520, "/usr/bin/groups.coreutils": 35552, "/usr/bin/printf.coreutils": 35196}
+FILERPROVIDES_/usr/lib/coreutils/libstdbuf.so_coreutils: libstdbuf.so
+FILERPROVIDES_/usr/bin/lbracket.coreutils_coreutils:  /usr/bin/[
+FILERPROVIDES_/usr/bin/arch.coreutils_coreutils:  /usr/bin/arch
+FILERPROVIDES_/usr/bin/basename.coreutils_coreutils:  /usr/bin/basename
+FILERPROVIDES_/usr/bin/chcon.coreutils_coreutils:  /usr/bin/chcon
+FILERPROVIDES_/usr/bin/cksum.coreutils_coreutils:  /usr/bin/cksum
+FILERPROVIDES_/usr/bin/comm.coreutils_coreutils:  /usr/bin/comm
+FILERPROVIDES_/usr/bin/csplit.coreutils_coreutils:  /usr/bin/csplit
+FILERPROVIDES_/usr/bin/cut.coreutils_coreutils:  /usr/bin/cut
+FILERPROVIDES_/usr/bin/dir.coreutils_coreutils:  /usr/bin/dir
+FILERPROVIDES_/usr/bin/dircolors.coreutils_coreutils:  /usr/bin/dircolors
+FILERPROVIDES_/usr/bin/dirname.coreutils_coreutils:  /usr/bin/dirname
+FILERPROVIDES_/usr/bin/du.coreutils_coreutils:  /usr/bin/du
+FILERPROVIDES_/usr/bin/env.coreutils_coreutils:  /usr/bin/env
+FILERPROVIDES_/usr/bin/expand.coreutils_coreutils:  /usr/bin/expand
+FILERPROVIDES_/usr/bin/expr.coreutils_coreutils:  /usr/bin/expr
+FILERPROVIDES_/usr/bin/factor.coreutils_coreutils:  /usr/bin/factor
+FILERPROVIDES_/usr/bin/fmt.coreutils_coreutils:  /usr/bin/fmt
+FILERPROVIDES_/usr/bin/fold.coreutils_coreutils:  /usr/bin/fold
+FILERPROVIDES_/usr/bin/groups.coreutils_coreutils:  /usr/bin/groups
+FILERPROVIDES_/usr/bin/head.coreutils_coreutils:  /usr/bin/head
+FILERPROVIDES_/usr/bin/hostid.coreutils_coreutils:  /usr/bin/hostid
+FILERPROVIDES_/usr/bin/id.coreutils_coreutils:  /usr/bin/id
+FILERPROVIDES_/usr/bin/install.coreutils_coreutils:  /usr/bin/install
+FILERPROVIDES_/usr/bin/join.coreutils_coreutils:  /usr/bin/join
+FILERPROVIDES_/usr/bin/link.coreutils_coreutils:  /usr/bin/link
+FILERPROVIDES_/usr/bin/logname.coreutils_coreutils:  /usr/bin/logname
+FILERPROVIDES_/usr/bin/md5sum.coreutils_coreutils:  /usr/bin/md5sum
+FILERPROVIDES_/usr/bin/mkfifo.coreutils_coreutils:  /usr/bin/mkfifo
+FILERPROVIDES_/usr/bin/nice.coreutils_coreutils:  /usr/bin/nice
+FILERPROVIDES_/usr/bin/nl.coreutils_coreutils:  /usr/bin/nl
+FILERPROVIDES_/usr/bin/nohup.coreutils_coreutils:  /usr/bin/nohup
+FILERPROVIDES_/usr/bin/nproc.coreutils_coreutils:  /usr/bin/nproc
+FILERPROVIDES_/usr/bin/od.coreutils_coreutils:  /usr/bin/od
+FILERPROVIDES_/usr/bin/paste.coreutils_coreutils:  /usr/bin/paste
+FILERPROVIDES_/usr/bin/pathchk.coreutils_coreutils:  /usr/bin/pathchk
+FILERPROVIDES_/usr/bin/pinky.coreutils_coreutils:  /usr/bin/pinky
+FILERPROVIDES_/usr/bin/pr.coreutils_coreutils:  /usr/bin/pr
+FILERPROVIDES_/usr/bin/printenv.coreutils_coreutils:  /usr/bin/printenv
+FILERPROVIDES_/usr/bin/printf.coreutils_coreutils:  /usr/bin/printf
+FILERPROVIDES_/usr/bin/ptx.coreutils_coreutils:  /usr/bin/ptx
+FILERPROVIDES_/usr/bin/readlink.coreutils_coreutils:  /usr/bin/readlink
+FILERPROVIDES_/usr/bin/realpath.coreutils_coreutils:  /usr/bin/realpath
+FILERPROVIDES_/usr/bin/runcon.coreutils_coreutils:  /usr/bin/runcon
+FILERPROVIDES_/usr/bin/seq.coreutils_coreutils:  /usr/bin/seq
+FILERPROVIDES_/usr/bin/sha1sum.coreutils_coreutils:  /usr/bin/sha1sum
+FILERPROVIDES_/usr/bin/sha224sum.coreutils_coreutils:  /usr/bin/sha224sum
+FILERPROVIDES_/usr/bin/sha256sum.coreutils_coreutils:  /usr/bin/sha256sum
+FILERPROVIDES_/usr/bin/sha384sum.coreutils_coreutils:  /usr/bin/sha384sum
+FILERPROVIDES_/usr/bin/sha512sum.coreutils_coreutils:  /usr/bin/sha512sum
+FILERPROVIDES_/usr/bin/shred.coreutils_coreutils:  /usr/bin/shred
+FILERPROVIDES_/usr/bin/shuf.coreutils_coreutils:  /usr/bin/shuf
+FILERPROVIDES_/usr/bin/sort.coreutils_coreutils:  /usr/bin/sort
+FILERPROVIDES_/usr/bin/split.coreutils_coreutils:  /usr/bin/split
+FILERPROVIDES_/usr/bin/stdbuf.coreutils_coreutils:  /usr/bin/stdbuf
+FILERPROVIDES_/usr/bin/sum.coreutils_coreutils:  /usr/bin/sum
+FILERPROVIDES_/usr/bin/tac.coreutils_coreutils:  /usr/bin/tac
+FILERPROVIDES_/usr/bin/tail.coreutils_coreutils:  /usr/bin/tail
+FILERPROVIDES_/usr/bin/tee.coreutils_coreutils:  /usr/bin/tee
+FILERPROVIDES_/usr/bin/test.coreutils_coreutils:  /usr/bin/test
+FILERPROVIDES_/usr/bin/timeout.coreutils_coreutils:  /usr/bin/timeout
+FILERPROVIDES_/usr/bin/tr.coreutils_coreutils:  /usr/bin/tr
+FILERPROVIDES_/usr/bin/truncate.coreutils_coreutils:  /usr/bin/truncate
+FILERPROVIDES_/usr/bin/tsort.coreutils_coreutils:  /usr/bin/tsort
+FILERPROVIDES_/usr/bin/tty.coreutils_coreutils:  /usr/bin/tty
+FILERPROVIDES_/usr/bin/unexpand.coreutils_coreutils:  /usr/bin/unexpand
+FILERPROVIDES_/usr/bin/uniq.coreutils_coreutils:  /usr/bin/uniq
+FILERPROVIDES_/usr/bin/unlink.coreutils_coreutils:  /usr/bin/unlink
+FILERPROVIDES_/usr/bin/uptime.coreutils_coreutils:  /usr/bin/uptime
+FILERPROVIDES_/usr/bin/users.coreutils_coreutils:  /usr/bin/users
+FILERPROVIDES_/usr/bin/vdir.coreutils_coreutils:  /usr/bin/vdir
+FILERPROVIDES_/usr/bin/wc.coreutils_coreutils:  /usr/bin/wc
+FILERPROVIDES_/usr/bin/who.coreutils_coreutils:  /usr/bin/who
+FILERPROVIDES_/usr/bin/whoami.coreutils_coreutils:  /usr/bin/whoami
+FILERPROVIDES_/usr/bin/yes.coreutils_coreutils:  /usr/bin/yes
+FILERPROVIDES_/bin/cat.coreutils_coreutils:  /bin/cat
+FILERPROVIDES_/bin/chgrp.coreutils_coreutils:  /bin/chgrp
+FILERPROVIDES_/bin/chmod.coreutils_coreutils:  /bin/chmod
+FILERPROVIDES_/bin/chown.coreutils_coreutils:  /bin/chown
+FILERPROVIDES_/bin/cp.coreutils_coreutils:  /bin/cp
+FILERPROVIDES_/bin/date.coreutils_coreutils:  /bin/date
+FILERPROVIDES_/bin/dd.coreutils_coreutils:  /bin/dd
+FILERPROVIDES_/bin/echo.coreutils_coreutils:  /bin/echo
+FILERPROVIDES_/bin/false.coreutils_coreutils:  /bin/false
+FILERPROVIDES_/bin/kill.coreutils_coreutils:  /bin/kill
+FILERPROVIDES_/bin/ln.coreutils_coreutils:  /bin/ln
+FILERPROVIDES_/bin/ls.coreutils_coreutils:  /bin/ls
+FILERPROVIDES_/bin/mkdir.coreutils_coreutils:  /bin/mkdir
+FILERPROVIDES_/bin/mknod.coreutils_coreutils:  /bin/mknod
+FILERPROVIDES_/bin/mv.coreutils_coreutils:  /bin/mv
+FILERPROVIDES_/bin/pwd.coreutils_coreutils:  /bin/pwd
+FILERPROVIDES_/bin/rm.coreutils_coreutils:  /bin/rm
+FILERPROVIDES_/bin/rmdir.coreutils_coreutils:  /bin/rmdir
+FILERPROVIDES_/bin/sleep.coreutils_coreutils:  /bin/sleep
+FILERPROVIDES_/bin/stty.coreutils_coreutils:  /bin/stty
+FILERPROVIDES_/bin/sync.coreutils_coreutils:  /bin/sync
+FILERPROVIDES_/bin/touch.coreutils_coreutils:  /bin/touch
+FILERPROVIDES_/bin/true.coreutils_coreutils:  /bin/true
+FILERPROVIDES_/bin/uname.coreutils_coreutils:  /bin/uname
+FILERPROVIDES_/bin/stat.coreutils_coreutils:  /bin/stat
+FILERPROVIDES_/usr/sbin/chroot.coreutils_coreutils:  /usr/sbin/chroot
+FILERPROVIDES_/usr/bin/base64.coreutils_coreutils:  /bin/base64
+FILERPROVIDES_/usr/bin/mktemp.coreutils_coreutils:  /bin/mktemp
+FILERPROVIDES_/usr/bin/df.coreutils_coreutils:  /bin/df
+FILERDEPENDSFLIST_coreutils: /bin/rmdir.coreutils /usr/bin/nohup.coreutils /bin/dd.coreutils /usr/bin/split.coreutils /usr/bin/head.coreutils /bin/stty.coreutils /usr/bin/nl.coreutils /bin/date.coreutils /usr/bin/fmt.coreutils /usr/bin/expr.coreutils /usr/bin/link.coreutils /usr/bin/basename.coreutils /usr/bin/vdir.coreutils /bin/chown.coreutils /usr/bin/factor.coreutils /bin/true.coreutils /bin/stat.coreutils /usr/bin/runcon.coreutils /usr/bin/numfmt /usr/bin/whoami.coreutils /usr/bin/sha1sum.coreutils /bin/touch.coreutils /usr/bin/sha512sum.coreutils /usr/bin/csplit.coreutils /usr/bin/cksum.coreutils /usr/bin/cut.coreutils /usr/sbin/chroot.coreutils /usr/bin/hostid.coreutils /usr/bin/wc.coreutils /usr/bin/pathchk.coreutils /usr/bin/dirname.coreutils /usr/bin/nice.coreutils /usr/bin/tr.coreutils /usr/bin/env.coreutils /usr/bin/seq.coreutils /bin/echo.coreutils /bin/mknod.coreutils /usr/bin/readlink.coreutils /usr/bin/uniq.coreutils /bin/uname.coreutils /usr/bin/expand.coreutils /bin/pwd.coreutils /usr/bin/pinky.coreutils /usr/bin/id.coreutils /usr/bin/sort.coreutils /usr/bin/sha224sum.coreutils /usr/bin/test.coreutils /usr/bin/df.coreutils /bin/kill.coreutils /bin/cat.coreutils /usr/bin/users.coreutils /usr/bin/sum.coreutils /usr/bin/pr.coreutils /usr/bin/base64.coreutils /usr/bin/fold.coreutils /usr/bin/arch.coreutils /usr/bin/mkfifo.coreutils /usr/bin/tail.coreutils /bin/sync.coreutils /bin/chgrp.coreutils /usr/bin/unexpand.coreutils /bin/sleep.coreutils /usr/bin/lbracket.coreutils /usr/bin/install.coreutils /usr/bin/base32 /usr/bin/nproc.coreutils /usr/bin/dir.coreutils /usr/bin/sha256sum.coreutils /usr/bin/shuf.coreutils /usr/bin/realpath.coreutils /usr/bin/truncate.coreutils /bin/false.coreutils /usr/bin/shred.coreutils /usr/bin/comm.coreutils /bin/ls.coreutils /usr/bin/tsort.coreutils /bin/ln.coreutils /usr/bin/du.coreutils /bin/mv.coreutils /bin/cp.coreutils /bin/chmod.coreutils /usr/bin/ptx.coreutils /usr/bin/uptime.coreutils /usr/bin/od.coreutils /bin/rm.coreutils /usr/bin/paste.coreutils /usr/bin/tee.coreutils /usr/bin/timeout.coreutils /usr/bin/unlink.coreutils /usr/bin/tac.coreutils /usr/bin/join.coreutils /usr/bin/who.coreutils /bin/mkdir.coreutils /usr/bin/logname.coreutils /usr/bin/sha384sum.coreutils /usr/bin/chcon.coreutils /usr/bin/stdbuf.coreutils /usr/bin/tty.coreutils /usr/bin/dircolors.coreutils /usr/bin/groups.coreutils /usr/bin/md5sum.coreutils /usr/bin/yes.coreutils /usr/bin/printenv.coreutils /usr/bin/mktemp.coreutils /usr/lib/coreutils/libstdbuf.so /usr/bin/printf.coreutils
+FILERDEPENDS_/bin/rmdir.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/nohup.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/bin/dd.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/split.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/head.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/bin/stty.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/nl.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/bin/date.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/fmt.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/expr.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) libgmp.so.10 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/link.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/basename.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/vdir.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) libcap.so.2 rtld(GNU_HASH)
+FILERDEPENDS_/bin/chown.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/factor.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) libgmp.so.10 rtld(GNU_HASH)
+FILERDEPENDS_/bin/true.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/bin/stat.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/runcon.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/numfmt_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/whoami.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/sha1sum.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/bin/touch.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/sha512sum.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/csplit.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/cksum.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/cut.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/sbin/chroot.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/hostid.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/wc.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/pathchk.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/dirname.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/nice.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/tr.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/env.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/seq.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/bin/echo.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/bin/mknod.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/readlink.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/uniq.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/bin/uname.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/expand.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/bin/pwd.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/pinky.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/id.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/sort.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) libpthread.so.0 libpthread.so.0(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/sha224sum.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/test.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/df.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/bin/kill.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) libpthread.so.0 libpthread.so.0(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/bin/cat.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/users.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/sum.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/pr.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/base64.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/fold.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/arch.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/mkfifo.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/tail.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/bin/sync.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/bin/chgrp.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/unexpand.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/bin/sleep.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/lbracket.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/install.coreutils_coreutils: libattr.so.1 libattr.so.1(ATTR_1.1) libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/base32_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/nproc.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/dir.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) libcap.so.2 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/sha256sum.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/shuf.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/realpath.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/truncate.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/bin/false.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/shred.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/comm.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/bin/ls.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) libcap.so.2 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/tsort.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/bin/ln.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/du.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/bin/mv.coreutils_coreutils: libattr.so.1 libattr.so.1(ATTR_1.1) libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/bin/cp.coreutils_coreutils: libattr.so.1 libattr.so.1(ATTR_1.1) libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/bin/chmod.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/ptx.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/uptime.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/od.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/bin/rm.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/paste.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/tee.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/timeout.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) libpthread.so.0 libpthread.so.0(GLIBC_2.18) librt.so.1 librt.so.1(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/unlink.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/tac.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/join.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/who.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/bin/mkdir.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/logname.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/sha384sum.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/chcon.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/stdbuf.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/tty.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/dircolors.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/groups.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/md5sum.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/yes.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/printenv.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/mktemp.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/coreutils/libstdbuf.so_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/printf.coreutils_coreutils: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+PKGSIZE_coreutils: 6162524

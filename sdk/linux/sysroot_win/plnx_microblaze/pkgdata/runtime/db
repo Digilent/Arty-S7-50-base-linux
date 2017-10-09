@@ -1,0 +1,20 @@
+PN: db
+PV: 6.0.35
+PR: r1
+PKGV: 6.0.35
+PKGR: r1
+LICENSE: AGPL-3.0
+DESCRIPTION: Berkeley Database v6.
+SUMMARY: Berkeley Database v6
+RDEPENDS_db: glibc-xilinx (>= 2.23)
+RCONFLICTS_db: db3
+SECTION: libs
+PKG_db: db
+FILES_db: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*-6*.so /etc /com /var /bin/* /sbin/* /lib/*-6*.so /lib/udev /usr/lib/udev /lib/udev /usr/lib/udev /usr/share/db /usr/lib/db/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+pkg_postinst_db: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_db: /usr/lib/libdb-6.0.so
+FILES_INFO: {"/usr/lib/libdb-6.0.so": 1274012, "/usr/lib/libdb-6.so": 12}
+FILERPROVIDES_/usr/lib/libdb-6.0.so_db: libdb-6.0.so
+FILERDEPENDSFLIST_db: /usr/lib/libdb-6.0.so
+FILERDEPENDS_/usr/lib/libdb-6.0.so_db: libc.so.6 libc.so.6(GLIBC_2.18) libpthread.so.0 libpthread.so.0(GLIBC_2.18) rtld(GNU_HASH)
+PKGSIZE_db: 1274024

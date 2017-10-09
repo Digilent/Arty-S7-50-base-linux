@@ -1,0 +1,13 @@
+PN: binutils-cross-xilinx-microblazeel
+PV: 2017.2
+PR: r1
+PKGV: 6.2.0
+PKGR: r1
+LICENSE: GPL-3.0
+DESCRIPTION_binutils-cross-xilinx-microblazeel-doc: External Xilinx toolchain.  This package contains documentation.
+SUMMARY_binutils-cross-xilinx-microblazeel-doc: External Xilinx toolchain - Documentation files
+SECTION_binutils-cross-xilinx-microblazeel-doc: doc
+PKG_binutils-cross-xilinx-microblazeel-doc: binutils-cross-xilinx-microblazeel-doc
+FILES_binutils-cross-xilinx-microblazeel-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {}
+PKGSIZE_binutils-cross-xilinx-microblazeel-doc: 0

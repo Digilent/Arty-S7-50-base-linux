@@ -1,0 +1,15 @@
+PN: grep
+PV: 2.25
+PR: r0
+PKGV: 2.25
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION_grep-locale-sv: GNU grep utility.  This package contains language translation files for the sv locale.
+SUMMARY_grep-locale-sv: GNU grep utility - sv translations
+RPROVIDES_grep-locale-sv: grep-locale sv-translation
+RRECOMMENDS_grep-locale-sv: virtual-locale-sv
+SECTION: console/utils
+PKG_grep-locale-sv: grep-locale-sv
+FILES_grep-locale-sv: /usr/share/locale/sv
+FILES_INFO: {"/usr/share/locale/sv/LC_MESSAGES/grep.mo": 17915}
+PKGSIZE_grep-locale-sv: 17915

@@ -1,0 +1,15 @@
+PN: diffutils
+PV: 3.4
+PR: r0
+PKGV: 3.4
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_diffutils-locale-id: Diffutils contains the GNU diff, diff3, sdiff, and cmp utilities. These programs are usually used for creating patch files.  This package contains language translation files for the id locale.
+SUMMARY_diffutils-locale-id: Diffutils contains tools used for finding differences between files - id translations
+RPROVIDES_diffutils-locale-id: diffutils-locale id-translation
+RRECOMMENDS_diffutils-locale-id: virtual-locale-id
+SECTION: base
+PKG_diffutils-locale-id: diffutils-locale-id
+FILES_diffutils-locale-id: /usr/share/locale/id
+FILES_INFO: {"/usr/share/locale/id/LC_MESSAGES/diffutils.mo": 31171}
+PKGSIZE_diffutils-locale-id: 31171

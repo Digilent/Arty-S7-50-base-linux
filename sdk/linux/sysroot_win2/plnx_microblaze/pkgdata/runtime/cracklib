@@ -1,0 +1,24 @@
+PN: cracklib
+PV: 2.9.5
+PR: r0
+PKGV: 2.9.5
+PKGR: r0
+LICENSE: LGPLv2.1+
+DESCRIPTION: Password strength checker library.
+SUMMARY: Password strength checker library
+RDEPENDS_cracklib: zlib (>= 1.2.8) glibc-xilinx (>= 2.23)
+SECTION: base
+PKG_cracklib: cracklib
+FILES_cracklib: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev /usr/lib/udev /lib/udev /usr/lib/udev /usr/share/cracklib /usr/lib/cracklib/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+pkg_postinst_cracklib: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_cracklib: /lib/libcrack.so.2.9.0
+FILES_INFO: {"/usr/sbin/cracklib-unpacker": 4060, "/usr/sbin/cracklib-packer": 4744, "/usr/sbin/create-cracklib-dict": 990, "/usr/sbin/cracklib-check": 4196, "/usr/share/cracklib/pw_dict.hwm": 1024, "/usr/share/cracklib/cracklib.magic": 360, "/usr/share/cracklib/pw_dict.pwd": 235429, "/lib/libcrack.so.2": 17, "/lib/libcrack.so.2.9.0": 40428, "/usr/sbin/cracklib-format": 218, "/usr/share/cracklib/cracklib-small": 477238, "/usr/share/cracklib/pw_dict.pwi": 12424}
+FILERPROVIDES_/lib/libcrack.so.2.9.0_cracklib: libcrack.so.2
+FILERDEPENDSFLIST_cracklib: /usr/sbin/cracklib-packer /usr/sbin/cracklib-unpacker /usr/sbin/create-cracklib-dict /lib/libcrack.so.2.9.0 /usr/sbin/cracklib-format /usr/sbin/cracklib-check
+FILERDEPENDS_/usr/sbin/cracklib-packer_cracklib: libc.so.6 libc.so.6(GLIBC_2.18) libcrack.so.2 rtld(GNU_HASH)
+FILERDEPENDS_/usr/sbin/cracklib-unpacker_cracklib: libc.so.6 libc.so.6(GLIBC_2.18) libcrack.so.2 rtld(GNU_HASH)
+FILERDEPENDS_/usr/sbin/create-cracklib-dict_cracklib: /bin/sh
+FILERDEPENDS_/lib/libcrack.so.2.9.0_cracklib: libc.so.6 libc.so.6(GLIBC_2.18) libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/sbin/cracklib-format_cracklib: /bin/sh
+FILERDEPENDS_/usr/sbin/cracklib-check_cracklib: libc.so.6 libc.so.6(GLIBC_2.18) libcrack.so.2 rtld(GNU_HASH)
+PKGSIZE_cracklib: 781128

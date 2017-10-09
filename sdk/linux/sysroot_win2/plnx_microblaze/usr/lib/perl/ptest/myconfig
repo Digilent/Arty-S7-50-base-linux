@@ -1,0 +1,39 @@
+#!/bin/sh
+
+# This script is designed to provide a handy summary of the configuration
+# information being used to build perl. This is especially useful if you
+# are requesting help from comp.lang.perl.misc on usenet or via mail.
+
+# Note that the text lines /^Summary of/ .. /^\s*$/ are copied into Config.pm.
+cat <<'!NO!SUBS!'
+Summary of my perl (revision 5 version 22 subversion 1) configuration:
+   
+  Platform:
+    osname=linux, osvers=3.19.5-yocto-standard, archname=microblazeel-linux
+    uname='linux qemux86 2.6.37-rc5-yocto-standard+ #1 preempt mon dec 20 14:21:27 pst 2010 i686 gnulinux '
+    config_args='-des -Doptimize=-O2 -Dmyhostname=localhost -Dperladmin=root@localhost -Dcc=gcc -Dcf_by=Open Embedded -Dinstallprefix=/usr -Dprefix=/usr -Dvendorprefix=/usr -Dsiteprefix=/usr -Dotherlibdirs=/usr/lib/perl/5.22.1 -Duseshrplib -Dusethreads -Duseithreads -Duselargefiles -Ud_dosuid -Dd_semctl_semun -Ui_db -Ui_ndbm -Ui_gdbm -Di_shadow -Di_syslog -Dman3ext=3pm -Duseperlio -Dinstallusrbinperl -Ubincompat5005 -Uversiononly -Dpager=/usr/bin/less -isr'
+    hint=recommended, useposix=true, d_sigaction=define
+    useithreads=define, usemultiplicity=define
+    use64bitint=undef, use64bitall=undef, uselongdouble=undef
+    usemymalloc=n, bincompat5005=undef
+  Compiler:
+    cc='microblazeel-xilinx-linux-gnu-gcc   -mlittle-endian   -mcpu=v10.0           -mxl-barrel-shift -mno-xl-soft-mul -mxl-multiply-high  -mno-xl-soft-div  -mxl-pattern-compare -mno-xl-reorder -Wl,--hash-style=gnu --sysroot=/tmp/scratch/petalinux-yocto/yocto_sdk_minimal_2017.2/build/tmp/sysroots/microblazeel-v10.0-bs-cmp-mh-div-generic', ccflags ='-O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=/tmp/scratch/petalinux-yocto/yocto_sdk_minimal_2017.2/build/tmp/work/microblazeel-v10.0-bs-cmp-mh-div-xilinx-linux/perl/5.22.1-r0=/usr/src/debug/perl/5.22.1-r0 -fdebug-prefix-map=/tmp/scratch/petalinux-yocto/yocto_sdk_minimal_2017.2/build/tmp/sysroots/x86_64-linux= -fdebug-prefix-map=/tmp/scratch/petalinux-yocto/yocto_sdk_minimal_2017.2/build/tmp/sysroots/microblazeel-v10.0-bs-cmp-mh-div-generic= -DDEBIAN -D_REENTRANT -D_GNU_SOURCE -fwrapv -fno-strict-aliasing -pipe -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_FORTIFY_SOURCE=2',
+    optimize='-O2',
+    cppflags='-fno-strict-aliasing'
+    ccversion='', gccversion='4.9.2', gccosandvers=''
+    intsize=4, longsize=4, ptrsize=4, doublesize=8, byteorder=1234, doublekind=3
+    d_longlong=define, longlongsize=8, d_longdbl=define, longdblsize=12, longdblkind=3
+    ivtype='long', ivsize=4, nvtype='double', nvsize=8, Off_t='off_t', lseeksize=8
+    alignbytes=4, prototype=define
+  Linker and Libraries:
+    ld='microblazeel-xilinx-linux-gnu-gcc   -mlittle-endian   -mcpu=v10.0           -mxl-barrel-shift -mno-xl-soft-mul -mxl-multiply-high  -mno-xl-soft-div  -mxl-pattern-compare -mno-xl-reorder -Wl,--hash-style=gnu --sysroot=/tmp/scratch/petalinux-yocto/yocto_sdk_minimal_2017.2/build/tmp/sysroots/microblazeel-v10.0-bs-cmp-mh-div-generic', ldflags ='-Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector'
+    libpth=/usr/lib /lib
+    libs=-lpthread -lnsl -lgdbm -ldb -ldl -lm -lcrypt -lutil -lc -lgdbm_compat
+    perllibs=-lpthread -lnsl -ldl -lm -lcrypt -lutil -lc
+    libc=libc-2.21.so, so=so, useshrplib=true, libperl=libperl.so
+    gnulibc_version='2.21'
+  Dynamic Linking:
+    dlsrc=dl_dlopen.xs, dlext=so, d_dlsymun=undef, ccdlflags='-Wl,-E -Wl,-rpath,/usr/lib/perl/5.22.1//CORE'
+    cccdlflags='-fPIC', lddlflags='-Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed -fstack-protector -shared'
+
+!NO!SUBS!

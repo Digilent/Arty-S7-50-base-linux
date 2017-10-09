@@ -1,0 +1,15 @@
+PN: device-tree-generation
+PV: xilinx+gitAUTOINC+43551819a1
+PR: r0
+PKGV: xilinx+git0+43551819a1
+PKGR: r0
+LICENSE: GPLv2
+DESCRIPTION_device-tree-generation-dev: DTS generator  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_device-tree-generation-dev: device-tree-generation version xilinx+gitAUTOINC+43551819a1-r0 - Development files
+RDEPENDS_device-tree-generation-dev: device-tree-generation (= xilinx+git0+43551819a1-r0)
+SECTION_device-tree-generation-dev: devel
+PKG_device-tree-generation-dev: device-tree-generation-dev
+ALLOW_EMPTY_device-tree-generation-dev: 1
+FILES_device-tree-generation-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/device-tree-generation/*.la /lib/*.la
+FILES_INFO: {}
+PKGSIZE_device-tree-generation-dev: 0

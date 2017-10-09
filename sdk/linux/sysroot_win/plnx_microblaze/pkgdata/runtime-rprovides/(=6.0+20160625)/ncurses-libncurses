@@ -1,0 +1,20 @@
+PN: ncurses
+PV: 6.0+20160625
+PR: r0
+PKGV: 6.0+20160625
+PKGR: r0
+LICENSE: MIT
+DESCRIPTION_ncurses-libncurses: ncurses ncurses library
+SUMMARY_ncurses-libncurses: ncurses ncurses library
+RDEPENDS_ncurses-libncurses: ncurses-libtinfo (>= 6.0+20160625) glibc-xilinx (>= 2.23)
+RPROVIDES_ncurses-libncurses:  ncurses-libncurses (=6.0+20160625)
+SECTION: libs
+PKG_ncurses-libncurses: libncurses5
+FILES_ncurses-libncurses: /lib/libncurses.so.5 /lib/libncurses.so.5.9
+pkg_postinst_ncurses-libncurses: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_ncurses-libncurses: /lib/libncurses.so.5.9
+FILES_INFO: {"/lib/libncurses.so.5": 17, "/lib/libncurses.so.5.9": 142328}
+FILERPROVIDES_/lib/libncurses.so.5.9_ncurses-libncurses: libncurses.so.5
+FILERDEPENDSFLIST_ncurses-libncurses: /lib/libncurses.so.5.9
+FILERDEPENDS_/lib/libncurses.so.5.9_ncurses-libncurses: libc.so.6 libc.so.6(GLIBC_2.18) libtinfo.so.5 rtld(GNU_HASH)
+PKGSIZE_ncurses-libncurses: 142345

@@ -1,0 +1,14 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-dirhandle: perl module dirhandle
+SUMMARY_perl-module-dirhandle: perl module dirhandle
+RDEPENDS_perl-module-dirhandle: perl perl-module-carp perl-module-symbol
+SECTION: devel
+PKG_perl-module-dirhandle: perl-module-dirhandle
+FILES_perl-module-dirhandle: /usr/lib/perl/5.22.1/DirHandle.pm
+FILES_INFO: {"/usr/lib/perl/5.22.1/DirHandle.pm": 1556}
+PKGSIZE_perl-module-dirhandle: 1556

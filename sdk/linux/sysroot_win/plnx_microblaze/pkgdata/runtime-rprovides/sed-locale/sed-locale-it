@@ -1,0 +1,15 @@
+PN: sed
+PV: 4.2.2
+PR: r0
+PKGV: 4.2.2
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_sed-locale-it: Stream EDitor (text filtering utility).  This package contains language translation files for the it locale.
+SUMMARY_sed-locale-it: Stream EDitor (text filtering utility) - it translations
+RPROVIDES_sed-locale-it: sed-locale it-translation
+RRECOMMENDS_sed-locale-it: virtual-locale-it
+SECTION: console/utils
+PKG_sed-locale-it: sed-locale-it
+FILES_sed-locale-it: /usr/share/locale/it
+FILES_INFO: {"/usr/share/locale/it/LC_MESSAGES/sed.mo": 9297}
+PKGSIZE_sed-locale-it: 9297

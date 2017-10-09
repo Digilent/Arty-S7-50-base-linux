@@ -1,0 +1,16 @@
+PN: packagegroup-core-ssh-dropbear
+PV: 1.0
+PR: r1
+PKGV: 1.0
+PKGR: r1
+LICENSE: MIT
+DESCRIPTION_packagegroup-core-ssh-dropbear-dev: Dropbear SSH client/server.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_packagegroup-core-ssh-dropbear-dev: Dropbear SSH client/server - Development files
+RDEPENDS_packagegroup-core-ssh-dropbear-dev: packagegroup-core-ssh-dropbear (= 1.0-r1)
+RRECOMMENDS_packagegroup-core-ssh-dropbear-dev: dropbear-dev
+SECTION_packagegroup-core-ssh-dropbear-dev: devel
+PKG_packagegroup-core-ssh-dropbear-dev: packagegroup-core-ssh-dropbear-dev
+ALLOW_EMPTY_packagegroup-core-ssh-dropbear-dev: 1
+FILES_packagegroup-core-ssh-dropbear-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/packagegroup-core-ssh-dropbear/*.la /lib/*.la
+FILES_INFO: {}
+PKGSIZE_packagegroup-core-ssh-dropbear-dev: 0

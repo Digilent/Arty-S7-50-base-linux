@@ -1,0 +1,15 @@
+PN: cracklib
+PV: 2.9.5
+PR: r0
+PKGV: 2.9.5
+PKGR: r0
+LICENSE: LGPLv2.1+
+DESCRIPTION_cracklib-locale-de: Password strength checker library.  This package contains language translation files for the de locale.
+SUMMARY_cracklib-locale-de: Password strength checker library - de translations
+RPROVIDES_cracklib-locale-de: cracklib-locale de-translation
+RRECOMMENDS_cracklib-locale-de: virtual-locale-de
+SECTION: base
+PKG_cracklib-locale-de: cracklib-locale-de
+FILES_cracklib-locale-de: /usr/share/locale/de
+FILES_INFO: {"/usr/share/locale/de/LC_MESSAGES/cracklib.mo": 1943}
+PKGSIZE_cracklib-locale-de: 1943

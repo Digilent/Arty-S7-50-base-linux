@@ -1,0 +1,15 @@
+PN: grep
+PV: 2.25
+PR: r0
+PKGV: 2.25
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION_grep-locale-th: GNU grep utility.  This package contains language translation files for the th locale.
+SUMMARY_grep-locale-th: GNU grep utility - th translations
+RPROVIDES_grep-locale-th: grep-locale th-translation
+RRECOMMENDS_grep-locale-th: virtual-locale-th
+SECTION: console/utils
+PKG_grep-locale-th: grep-locale-th
+FILES_grep-locale-th: /usr/share/locale/th
+FILES_INFO: {"/usr/share/locale/th/LC_MESSAGES/grep.mo": 24293}
+PKGSIZE_grep-locale-th: 24293

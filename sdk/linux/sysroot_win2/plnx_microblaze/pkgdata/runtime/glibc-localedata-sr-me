@@ -1,0 +1,14 @@
+PN: glibc-locale
+PV: 2.24
+PR: r0
+PKGV: 2.24
+PKGR: r0
+LICENSE: GPLv2 & LGPLv2.1
+DESCRIPTION_glibc-localedata-sr-me: locale definition for sr-me
+SUMMARY_glibc-localedata-sr-me: locale definition for sr-me
+RDEPENDS_glibc-localedata-sr-me: glibc-localedata-i18n glibc-localedata-sr-rs
+SECTION: base
+PKG_glibc-localedata-sr-me: glibc-localedata-sr-me
+FILES_glibc-localedata-sr-me: /usr/share/i18n/locales/sr_ME
+FILES_INFO: {"/usr/share/i18n/locales/sr_ME": 4962}
+PKGSIZE_glibc-localedata-sr-me: 4962

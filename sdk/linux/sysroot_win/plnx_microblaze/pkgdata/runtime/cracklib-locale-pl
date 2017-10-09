@@ -1,0 +1,15 @@
+PN: cracklib
+PV: 2.9.5
+PR: r0
+PKGV: 2.9.5
+PKGR: r0
+LICENSE: LGPLv2.1+
+DESCRIPTION_cracklib-locale-pl: Password strength checker library.  This package contains language translation files for the pl locale.
+SUMMARY_cracklib-locale-pl: Password strength checker library - pl translations
+RPROVIDES_cracklib-locale-pl: cracklib-locale pl-translation
+RRECOMMENDS_cracklib-locale-pl: virtual-locale-pl
+SECTION: base
+PKG_cracklib-locale-pl: cracklib-locale-pl
+FILES_cracklib-locale-pl: /usr/share/locale/pl
+FILES_INFO: {"/usr/share/locale/pl/LC_MESSAGES/cracklib.mo": 1751}
+PKGSIZE_cracklib-locale-pl: 1751

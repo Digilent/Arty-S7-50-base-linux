@@ -1,0 +1,14 @@
+PN: glibc-locale
+PV: 2.24
+PR: r0
+PKGV: 2.24
+PKGR: r0
+LICENSE: GPLv2 & LGPLv2.1
+DESCRIPTION_glibc-gconv-cp737: gconv module for character set cp737
+SUMMARY_glibc-gconv-cp737: gconv module for character set cp737
+RDEPENDS_glibc-gconv-cp737: glibc-gconv glibc-xilinx (>= 2.23)
+SECTION: base
+PKG_glibc-gconv-cp737: glibc-gconv-cp737
+FILES_glibc-gconv-cp737: /usr/lib/gconv/CP737.so
+FILES_INFO: {"/usr/lib/gconv/CP737.so": 9488}
+PKGSIZE_glibc-gconv-cp737: 9488

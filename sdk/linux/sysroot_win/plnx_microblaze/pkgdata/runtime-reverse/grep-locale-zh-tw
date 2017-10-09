@@ -1,0 +1,15 @@
+PN: grep
+PV: 2.25
+PR: r0
+PKGV: 2.25
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION_grep-locale-zh-tw: GNU grep utility.  This package contains language translation files for the zh_TW locale.
+SUMMARY_grep-locale-zh-tw: GNU grep utility - zh_TW translations
+RPROVIDES_grep-locale-zh-tw: grep-locale zh-tw-translation
+RRECOMMENDS_grep-locale-zh-tw: virtual-locale-zh-tw
+SECTION: console/utils
+PKG_grep-locale-zh-tw: grep-locale-zh-tw
+FILES_grep-locale-zh-tw: /usr/share/locale/zh_TW
+FILES_INFO: {"/usr/share/locale/zh_TW/LC_MESSAGES/grep.mo": 17108}
+PKGSIZE_grep-locale-zh-tw: 17108

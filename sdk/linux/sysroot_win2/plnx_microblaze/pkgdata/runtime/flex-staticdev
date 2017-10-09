@@ -1,0 +1,14 @@
+PN: flex
+PV: 2.6.0
+PR: r0
+PKGV: 2.6.0
+PKGR: r0
+LICENSE: BSD
+DESCRIPTION_flex-staticdev: Flex is a fast lexical analyser generator.  Flex is a tool for generating programs that recognize lexical patterns in text.  This package contains static libraries for software development.
+SUMMARY_flex-staticdev: Flex (The Fast Lexical Analyzer) - Development files (Static Libraries)
+RDEPENDS_flex-staticdev: flex-dev (= 2.6.0-r0)
+SECTION_flex-staticdev: devel
+PKG_flex-staticdev: flex-staticdev
+FILES_flex-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/flex/*.a
+FILES_INFO: {}
+PKGSIZE_flex-staticdev: 0

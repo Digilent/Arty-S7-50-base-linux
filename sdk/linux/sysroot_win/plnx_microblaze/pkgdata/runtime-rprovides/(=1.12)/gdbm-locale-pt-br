@@ -1,0 +1,15 @@
+PN: gdbm
+PV: 1.12
+PR: r0
+PKGV: 1.12
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION_gdbm-locale-pt-br: Key/value database library with extensible hashing.  This package contains language translation files for the pt_BR locale.
+SUMMARY_gdbm-locale-pt-br: Key/value database library with extensible hashing - pt_BR translations
+RPROVIDES_gdbm-locale-pt-br: gdbm-locale pt-br-translation gdbm-locale-pt-br (=1.12)
+RRECOMMENDS_gdbm-locale-pt-br: virtual-locale-pt-br
+SECTION: libs
+PKG_gdbm-locale-pt-br: libgdbm-locale-pt-br
+FILES_gdbm-locale-pt-br: /usr/share/locale/pt_BR
+FILES_INFO: {"/usr/share/locale/pt_BR/LC_MESSAGES/gdbm.mo": 13607}
+PKGSIZE_gdbm-locale-pt-br: 13607

@@ -1,0 +1,18 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-mime-base64: perl module mime-base64
+SUMMARY_perl-module-mime-base64: perl module mime-base64
+RDEPENDS_perl-module-mime-base64: perl perl-module-exporter perl-module-strict perl-module-vars perl-module-xsloader glibc-xilinx (>= 2.23)
+SECTION: devel
+PKG_perl-module-mime-base64: perl-module-mime-base64
+FILES_perl-module-mime-base64: /usr/lib/perl/5.22.1/auto/MIME/Base64/Base64.so /usr/lib/perl/5.22.1/MIME/Base64.pm
+FILERPROVIDESFLIST_perl-module-mime-base64: /usr/lib/perl/5.22.1/auto/MIME/Base64/Base64.so
+FILES_INFO: {"/usr/lib/perl/5.22.1/auto/MIME/Base64/Base64.so": 12748, "/usr/lib/perl/5.22.1/MIME/Base64.pm": 5450}
+FILERPROVIDES_/usr/lib/perl/5.22.1/auto/MIME/Base64/Base64.so_perl-module-mime-base64: Base64.so
+FILERDEPENDSFLIST_perl-module-mime-base64: /usr/lib/perl/5.22.1/auto/MIME/Base64/Base64.so
+FILERDEPENDS_/usr/lib/perl/5.22.1/auto/MIME/Base64/Base64.so_perl-module-mime-base64: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+PKGSIZE_perl-module-mime-base64: 18198

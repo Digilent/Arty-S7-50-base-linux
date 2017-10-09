@@ -1,0 +1,14 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-locale-codes-script-retired: perl module locale-codes-script-retired
+SUMMARY_perl-module-locale-codes-script-retired: perl module locale-codes-script-retired
+RDEPENDS_perl-module-locale-codes-script-retired: perl perl-module-strict perl-module-utf8 perl-module-warnings
+SECTION: devel
+PKG_perl-module-locale-codes-script-retired: perl-module-locale-codes-script-retired
+FILES_perl-module-locale-codes-script-retired: /usr/lib/perl/5.22.1/Locale/Codes/Script_Retired.pm
+FILES_INFO: {"/usr/lib/perl/5.22.1/Locale/Codes/Script_Retired.pm": 3320}
+PKGSIZE_perl-module-locale-codes-script-retired: 3320

@@ -1,0 +1,14 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-ipc-open3: perl module ipc-open3
+SUMMARY_perl-module-ipc-open3: perl module ipc-open3
+RDEPENDS_perl-module-ipc-open3: perl perl-module-carp perl-module-constant perl-module-exporter perl-module-fcntl perl-module-io-pipe perl-module-posix perl-module-strict perl-module-symbol
+SECTION: devel
+PKG_perl-module-ipc-open3: perl-module-ipc-open3
+FILES_perl-module-ipc-open3: /usr/lib/perl/5.22.1/IPC/Open3.pm
+FILES_INFO: {"/usr/lib/perl/5.22.1/IPC/Open3.pm": 12777}
+PKGSIZE_perl-module-ipc-open3: 12777

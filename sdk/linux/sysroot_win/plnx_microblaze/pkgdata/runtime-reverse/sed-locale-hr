@@ -1,0 +1,15 @@
+PN: sed
+PV: 4.2.2
+PR: r0
+PKGV: 4.2.2
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_sed-locale-hr: Stream EDitor (text filtering utility).  This package contains language translation files for the hr locale.
+SUMMARY_sed-locale-hr: Stream EDitor (text filtering utility) - hr translations
+RPROVIDES_sed-locale-hr: sed-locale hr-translation
+RRECOMMENDS_sed-locale-hr: virtual-locale-hr
+SECTION: console/utils
+PKG_sed-locale-hr: sed-locale-hr
+FILES_sed-locale-hr: /usr/share/locale/hr
+FILES_INFO: {"/usr/share/locale/hr/LC_MESSAGES/sed.mo": 10091}
+PKGSIZE_sed-locale-hr: 10091

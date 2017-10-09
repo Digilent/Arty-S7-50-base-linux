@@ -1,0 +1,15 @@
+PN: grep
+PV: 2.25
+PR: r0
+PKGV: 2.25
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION_grep-locale-pt: GNU grep utility.  This package contains language translation files for the pt locale.
+SUMMARY_grep-locale-pt: GNU grep utility - pt translations
+RPROVIDES_grep-locale-pt: grep-locale pt-translation
+RRECOMMENDS_grep-locale-pt: virtual-locale-pt
+SECTION: console/utils
+PKG_grep-locale-pt: grep-locale-pt
+FILES_grep-locale-pt: /usr/share/locale/pt
+FILES_INFO: {"/usr/share/locale/pt/LC_MESSAGES/grep.mo": 1570}
+PKGSIZE_grep-locale-pt: 1570

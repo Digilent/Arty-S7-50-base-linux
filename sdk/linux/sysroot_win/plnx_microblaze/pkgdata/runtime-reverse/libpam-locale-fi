@@ -1,0 +1,15 @@
+PN: libpam
+PV: 1.3.0
+PR: r5
+PKGV: 1.3.0
+PKGR: r5
+LICENSE: GPLv2+ | BSD
+DESCRIPTION_libpam-locale-fi: Linux-PAM (Pluggable Authentication Modules for Linux), a flexible mechanism for authenticating users  This package contains language translation files for the fi locale.
+SUMMARY_libpam-locale-fi: Linux-PAM (Pluggable Authentication Modules) - fi translations
+RPROVIDES_libpam-locale-fi: libpam-locale fi-translation
+RRECOMMENDS_libpam-locale-fi: virtual-locale-fi
+SECTION: base
+PKG_libpam-locale-fi: libpam-locale-fi
+FILES_libpam-locale-fi: /usr/share/locale/fi
+FILES_INFO: {"/usr/share/locale/fi/LC_MESSAGES/Linux-PAM.mo": 11377}
+PKGSIZE_libpam-locale-fi: 11377

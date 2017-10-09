@@ -1,0 +1,15 @@
+PN: cracklib
+PV: 2.9.5
+PR: r0
+PKGV: 2.9.5
+PKGR: r0
+LICENSE: LGPLv2.1+
+DESCRIPTION_cracklib-locale-ta: Password strength checker library.  This package contains language translation files for the ta locale.
+SUMMARY_cracklib-locale-ta: Password strength checker library - ta translations
+RPROVIDES_cracklib-locale-ta: cracklib-locale ta-translation
+RRECOMMENDS_cracklib-locale-ta: virtual-locale-ta
+SECTION: base
+PKG_cracklib-locale-ta: cracklib-locale-ta
+FILES_cracklib-locale-ta: /usr/share/locale/ta
+FILES_INFO: {"/usr/share/locale/ta/LC_MESSAGES/cracklib.mo": 3132}
+PKGSIZE_cracklib-locale-ta: 3132

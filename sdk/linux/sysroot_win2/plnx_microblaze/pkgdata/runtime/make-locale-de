@@ -1,0 +1,15 @@
+PN: make
+PV: 4.2.1
+PR: r0
+PKGV: 4.2.1
+PKGR: r0
+LICENSE: GPLv3 & LGPLv2
+DESCRIPTION_make-locale-de: Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.  Make gets its knowledge of how to build your program from a file called the makefile, which lists each of the non-source files and how to compute it from other files.  This package contains language translation files for the de locale.
+SUMMARY_make-locale-de: GNU tool that controls the build process - de translations
+RPROVIDES_make-locale-de: make-locale de-translation
+RRECOMMENDS_make-locale-de: virtual-locale-de
+SECTION: devel
+PKG_make-locale-de: make-locale-de
+FILES_make-locale-de: /usr/share/locale/de
+FILES_INFO: {"/usr/share/locale/de/LC_MESSAGES/make.mo": 46290}
+PKGSIZE_make-locale-de: 46290

@@ -1,0 +1,15 @@
+PN: cracklib
+PV: 2.9.5
+PR: r0
+PKGV: 2.9.5
+PKGR: r0
+LICENSE: LGPLv2.1+
+DESCRIPTION_cracklib-locale-uk: Password strength checker library.  This package contains language translation files for the uk locale.
+SUMMARY_cracklib-locale-uk: Password strength checker library - uk translations
+RPROVIDES_cracklib-locale-uk: cracklib-locale uk-translation
+RRECOMMENDS_cracklib-locale-uk: virtual-locale-uk
+SECTION: base
+PKG_cracklib-locale-uk: cracklib-locale-uk
+FILES_cracklib-locale-uk: /usr/share/locale/uk
+FILES_INFO: {"/usr/share/locale/uk/LC_MESSAGES/cracklib.mo": 2396}
+PKGSIZE_cracklib-locale-uk: 2396

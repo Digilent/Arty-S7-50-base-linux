@@ -1,0 +1,18 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-threads: perl module threads
+SUMMARY_perl-module-threads: perl module threads
+RDEPENDS_perl-module-threads: perl perl-module-carp perl-module-config perl-module-overload perl-module-strict perl-module-warnings perl-module-xsloader glibc-xilinx (>= 2.23)
+SECTION: devel
+PKG_perl-module-threads: perl-module-threads
+FILES_perl-module-threads: /usr/lib/perl/5.22.1/auto/threads/threads.so /usr/lib/perl/5.22.1/threads.pm
+FILERPROVIDESFLIST_perl-module-threads: /usr/lib/perl/5.22.1/auto/threads/threads.so
+FILES_INFO: {"/usr/lib/perl/5.22.1/auto/threads/threads.so": 37024, "/usr/lib/perl/5.22.1/threads.pm": 35767}
+FILERPROVIDES_/usr/lib/perl/5.22.1/auto/threads/threads.so_perl-module-threads: threads.so
+FILERDEPENDSFLIST_perl-module-threads: /usr/lib/perl/5.22.1/auto/threads/threads.so
+FILERDEPENDS_/usr/lib/perl/5.22.1/auto/threads/threads.so_perl-module-threads: libc.so.6 libc.so.6(GLIBC_2.18) libpthread.so.0 libpthread.so.0(GLIBC_2.18) rtld(GNU_HASH)
+PKGSIZE_perl-module-threads: 72791

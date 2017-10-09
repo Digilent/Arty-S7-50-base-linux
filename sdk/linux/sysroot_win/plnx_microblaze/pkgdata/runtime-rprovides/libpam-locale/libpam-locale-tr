@@ -1,0 +1,15 @@
+PN: libpam
+PV: 1.3.0
+PR: r5
+PKGV: 1.3.0
+PKGR: r5
+LICENSE: GPLv2+ | BSD
+DESCRIPTION_libpam-locale-tr: Linux-PAM (Pluggable Authentication Modules for Linux), a flexible mechanism for authenticating users  This package contains language translation files for the tr locale.
+SUMMARY_libpam-locale-tr: Linux-PAM (Pluggable Authentication Modules) - tr translations
+RPROVIDES_libpam-locale-tr: libpam-locale tr-translation
+RRECOMMENDS_libpam-locale-tr: virtual-locale-tr
+SECTION: base
+PKG_libpam-locale-tr: libpam-locale-tr
+FILES_libpam-locale-tr: /usr/share/locale/tr
+FILES_INFO: {"/usr/share/locale/tr/LC_MESSAGES/Linux-PAM.mo": 11229}
+PKGSIZE_libpam-locale-tr: 11229

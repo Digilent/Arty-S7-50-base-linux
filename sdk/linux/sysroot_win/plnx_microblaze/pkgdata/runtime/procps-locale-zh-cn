@@ -1,0 +1,15 @@
+PN: procps
+PV: 3.3.12
+PR: r0
+PKGV: 3.3.12
+PKGR: r0
+LICENSE: GPLv2+ & LGPLv2+
+DESCRIPTION_procps-locale-zh-cn: Procps contains a set of system utilities that provide system information about processes using the /proc filesystem. The package includes the programs ps, top, vmstat, w, kill, and skill.  This package contains language translation files for the zh_CN locale.
+SUMMARY_procps-locale-zh-cn: System and process monitoring utilities - zh_CN translations
+RPROVIDES_procps-locale-zh-cn: procps-locale zh-cn-translation
+RRECOMMENDS_procps-locale-zh-cn: virtual-locale-zh-cn
+SECTION: base
+PKG_procps-locale-zh-cn: procps-locale-zh-cn
+FILES_procps-locale-zh-cn: /usr/share/locale/zh_CN
+FILES_INFO: {"/usr/share/locale/zh_CN/LC_MESSAGES/procps-ng.mo": 3370}
+PKGSIZE_procps-locale-zh-cn: 3370

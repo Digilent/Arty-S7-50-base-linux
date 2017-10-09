@@ -1,0 +1,15 @@
+PN: grep
+PV: 2.25
+PR: r0
+PKGV: 2.25
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION_grep-locale-pa: GNU grep utility.  This package contains language translation files for the pa locale.
+SUMMARY_grep-locale-pa: GNU grep utility - pa translations
+RPROVIDES_grep-locale-pa: grep-locale pa-translation
+RRECOMMENDS_grep-locale-pa: virtual-locale-pa
+SECTION: console/utils
+PKG_grep-locale-pa: grep-locale-pa
+FILES_grep-locale-pa: /usr/share/locale/pa
+FILES_INFO: {"/usr/share/locale/pa/LC_MESSAGES/grep.mo": 8212}
+PKGSIZE_grep-locale-pa: 8212

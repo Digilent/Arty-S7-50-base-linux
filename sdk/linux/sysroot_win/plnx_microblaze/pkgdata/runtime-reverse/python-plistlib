@@ -1,0 +1,14 @@
+PN: python
+PV: 2.7.12
+PR: r1
+PKGV: 2.7.12
+PKGR: r1
+LICENSE: PSFv2
+DESCRIPTION: The Python Programming Language.
+SUMMARY_python-plistlib: Generate and parse Mac OS X .plist files
+RDEPENDS_python-plistlib: python-core python-datetime python-io
+SECTION: devel/python
+PKG_python-plistlib: python-plistlib
+FILES_python-plistlib: /usr/lib/python2.7/plistlib.* 
+FILES_INFO: {"/usr/lib/python2.7/plistlib.pyc": 19151, "/usr/lib/python2.7/plistlib.py": 15185}
+PKGSIZE_python-plistlib: 34336

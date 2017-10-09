@@ -1,0 +1,20 @@
+PN: gdbm
+PV: 1.12
+PR: r0
+PKGV: 1.12
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION: Key/value database library with extensible hashing.
+SUMMARY: Key/value database library with extensible hashing
+RDEPENDS_gdbm-compat: glibc-xilinx (>= 2.23) gdbm (>= 1.12)
+RPROVIDES_gdbm-compat:  gdbm-compat (=1.12)
+SECTION: libs
+PKG_gdbm-compat: libgdbm-compat4
+FILES_gdbm-compat: /usr/lib/libgdbm_compat.so.*                      
+pkg_postinst_gdbm-compat: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_gdbm-compat: /usr/lib/libgdbm@underscore@compat.so.4.0.0
+FILES_INFO: {"/usr/lib/libgdbm_compat.so.4": 23, "/usr/lib/libgdbm_compat.so.4.0.0": 8908}
+FILERPROVIDES_/usr/lib/libgdbm@underscore@compat.so.4.0.0_gdbm-compat: libgdbm_compat.so.4
+FILERDEPENDSFLIST_gdbm-compat: /usr/lib/libgdbm@underscore@compat.so.4.0.0
+FILERDEPENDS_/usr/lib/libgdbm@underscore@compat.so.4.0.0_gdbm-compat: libc.so.6 libc.so.6(GLIBC_2.18) libgdbm.so.4 rtld(GNU_HASH)
+PKGSIZE_gdbm-compat: 8931

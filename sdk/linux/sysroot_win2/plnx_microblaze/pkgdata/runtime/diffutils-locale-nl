@@ -1,0 +1,15 @@
+PN: diffutils
+PV: 3.4
+PR: r0
+PKGV: 3.4
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_diffutils-locale-nl: Diffutils contains the GNU diff, diff3, sdiff, and cmp utilities. These programs are usually used for creating patch files.  This package contains language translation files for the nl locale.
+SUMMARY_diffutils-locale-nl: Diffutils contains tools used for finding differences between files - nl translations
+RPROVIDES_diffutils-locale-nl: diffutils-locale nl-translation
+RRECOMMENDS_diffutils-locale-nl: virtual-locale-nl
+SECTION: base
+PKG_diffutils-locale-nl: diffutils-locale-nl
+FILES_diffutils-locale-nl: /usr/share/locale/nl
+FILES_INFO: {"/usr/share/locale/nl/LC_MESSAGES/diffutils.mo": 34390}
+PKGSIZE_diffutils-locale-nl: 34390

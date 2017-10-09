@@ -1,0 +1,14 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-pod-simple-text: perl module pod-simple-text
+SUMMARY_perl-module-pod-simple-text: perl module pod-simple-text
+RDEPENDS_perl-module-pod-simple-text: perl perl-module-carp perl-module-pod-simple perl-module-pod-simple-methody perl-module-strict perl-module-text-wrap perl-module-vars
+SECTION: devel
+PKG_perl-module-pod-simple-text: perl-module-pod-simple-text
+FILES_perl-module-pod-simple-text: /usr/lib/perl/5.22.1/Pod/Simple/Text.pm
+FILES_INFO: {"/usr/lib/perl/5.22.1/Pod/Simple/Text.pm": 5130}
+PKGSIZE_perl-module-pod-simple-text: 5130

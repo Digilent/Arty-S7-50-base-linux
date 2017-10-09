@@ -1,0 +1,15 @@
+PN: grep
+PV: 2.25
+PR: r0
+PKGV: 2.25
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION_grep-locale-hu: GNU grep utility.  This package contains language translation files for the hu locale.
+SUMMARY_grep-locale-hu: GNU grep utility - hu translations
+RPROVIDES_grep-locale-hu: grep-locale hu-translation
+RRECOMMENDS_grep-locale-hu: virtual-locale-hu
+SECTION: console/utils
+PKG_grep-locale-hu: grep-locale-hu
+FILES_grep-locale-hu: /usr/share/locale/hu
+FILES_INFO: {"/usr/share/locale/hu/LC_MESSAGES/grep.mo": 18671}
+PKGSIZE_grep-locale-hu: 18671

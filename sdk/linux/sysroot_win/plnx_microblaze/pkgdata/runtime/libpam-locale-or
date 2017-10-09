@@ -1,0 +1,15 @@
+PN: libpam
+PV: 1.3.0
+PR: r5
+PKGV: 1.3.0
+PKGR: r5
+LICENSE: GPLv2+ | BSD
+DESCRIPTION_libpam-locale-or: Linux-PAM (Pluggable Authentication Modules for Linux), a flexible mechanism for authenticating users  This package contains language translation files for the or locale.
+SUMMARY_libpam-locale-or: Linux-PAM (Pluggable Authentication Modules) - or translations
+RPROVIDES_libpam-locale-or: libpam-locale or-translation
+RRECOMMENDS_libpam-locale-or: virtual-locale-or
+SECTION: base
+PKG_libpam-locale-or: libpam-locale-or
+FILES_libpam-locale-or: /usr/share/locale/or
+FILES_INFO: {"/usr/share/locale/or/LC_MESSAGES/Linux-PAM.mo": 17799}
+PKGSIZE_libpam-locale-or: 17799

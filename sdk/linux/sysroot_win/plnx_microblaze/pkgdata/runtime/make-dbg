@@ -1,0 +1,15 @@
+PN: make
+PV: 4.2.1
+PR: r0
+PKGV: 4.2.1
+PKGR: r0
+LICENSE: GPLv3 & LGPLv2
+DESCRIPTION_make-dbg: Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.  Make gets its knowledge of how to build your program from a file called the makefile, which lists each of the non-source files and how to compute it from other files.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_make-dbg: GNU tool that controls the build process - Debugging files
+RRECOMMENDS_make-dbg: glibc-xilinx-dbg
+SECTION_make-dbg: devel
+PKG_make-dbg: make-dbg
+ALLOW_EMPTY_make-dbg: 1
+FILES_make-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {"/usr/bin/.debug/make": 638160}
+PKGSIZE_make-dbg: 638160

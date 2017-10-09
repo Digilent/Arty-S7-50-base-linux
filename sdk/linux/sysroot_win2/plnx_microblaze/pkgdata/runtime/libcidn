@@ -1,0 +1,13 @@
+PN: glibc-xilinx
+PV: 2017.2
+PR: r1
+PKGV: 2.23
+PKGR: r1
+LICENSE: GPLv2 & LGPL-2.1
+DESCRIPTION: External Xilinx toolchain.
+SUMMARY: External Xilinx toolchain
+SECTION: base
+PKG_libcidn: libcidn
+FILES_libcidn: /lib/libcidn-*.so /lib/libcidn.so.*
+FILES_INFO: {}
+PKGSIZE_libcidn: 0

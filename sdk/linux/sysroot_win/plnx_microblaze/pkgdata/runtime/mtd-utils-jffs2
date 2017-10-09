@@ -1,0 +1,19 @@
+PN: mtd-utils
+PV: 1.5.2
+PR: r0
+PKGV: 1.5.2
+PKGR: r0
+LICENSE: GPLv2+
+DESCRIPTION: Tools for managing memory technology devices.
+SUMMARY: Tools for managing memory technology devices
+RDEPENDS_mtd-utils-jffs2: zlib (>= 1.2.8) glibc-xilinx (>= 2.23) lzo (>= 2.09)
+SECTION: base
+PKG_mtd-utils-jffs2: mtd-utils-jffs2
+FILES_mtd-utils-jffs2: /usr/sbin/mkfs.jffs2 /usr/sbin/jffs2dump /usr/sbin/jffs2reader /usr/sbin/sumtool
+FILES_INFO: {"/usr/sbin/jffs2reader": 14620, "/usr/sbin/mkfs.jffs2": 48876, "/usr/sbin/jffs2dump": 24200, "/usr/sbin/sumtool": 23456}
+FILERDEPENDSFLIST_mtd-utils-jffs2: /usr/sbin/jffs2reader /usr/sbin/mkfs.jffs2 /usr/sbin/jffs2dump /usr/sbin/sumtool
+FILERDEPENDS_/usr/sbin/jffs2reader_mtd-utils-jffs2: libc.so.6 libc.so.6(GLIBC_2.18) libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/sbin/mkfs.jffs2_mtd-utils-jffs2: libc.so.6 libc.so.6(GLIBC_2.18) liblzo2.so.2 libz.so.1 rtld(GNU_HASH)
+FILERDEPENDS_/usr/sbin/jffs2dump_mtd-utils-jffs2: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/sbin/sumtool_mtd-utils-jffs2: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+PKGSIZE_mtd-utils-jffs2: 111152

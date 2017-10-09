@@ -1,0 +1,15 @@
+PN: sed
+PV: 4.2.2
+PR: r0
+PKGV: 4.2.2
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_sed-locale-de: Stream EDitor (text filtering utility).  This package contains language translation files for the de locale.
+SUMMARY_sed-locale-de: Stream EDitor (text filtering utility) - de translations
+RPROVIDES_sed-locale-de: sed-locale de-translation
+RRECOMMENDS_sed-locale-de: virtual-locale-de
+SECTION: console/utils
+PKG_sed-locale-de: sed-locale-de
+FILES_sed-locale-de: /usr/share/locale/de
+FILES_INFO: {"/usr/share/locale/de/LC_MESSAGES/sed.mo": 9655}
+PKGSIZE_sed-locale-de: 9655

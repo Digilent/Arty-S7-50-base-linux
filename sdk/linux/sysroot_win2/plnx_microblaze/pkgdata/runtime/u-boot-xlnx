@@ -1,0 +1,13 @@
+PN: u-boot-xlnx
+PV: v2017.01-xilinx-v2017.2+gitAUTOINC+5290eb544b
+PR: r0
+PKGV: v2017.01-xilinx-v2017.2+git0+5290eb544b
+PKGR: r0
+LICENSE: GPLv2+
+DESCRIPTION: Universal Boot Loader for embedded devices.
+SUMMARY: Universal Boot Loader for embedded devices
+SECTION: bootloaders
+PKG_u-boot-xlnx: u-boot-xlnx
+FILES_u-boot-xlnx: /boot /etc
+FILES_INFO: {"/boot/u-boot-plnx_microblaze-v2017.01-xilinx-v2017.2+gitAUTOINC+5290eb544b-r0.bin": 328436, "/boot/u-boot-plnx_microblaze-v2017.01-xilinx-v2017.2+gitAUTOINC+5290eb544b-r0.elf": 1947552, "/boot/u-boot.elf": 75, "/boot/u-boot.bin": 75}
+PKGSIZE_u-boot-xlnx: 2276138

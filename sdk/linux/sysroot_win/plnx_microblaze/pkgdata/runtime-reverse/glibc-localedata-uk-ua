@@ -1,0 +1,14 @@
+PN: glibc-locale
+PV: 2.24
+PR: r0
+PKGV: 2.24
+PKGR: r0
+LICENSE: GPLv2 & LGPLv2.1
+DESCRIPTION_glibc-localedata-uk-ua: locale definition for uk-ua
+SUMMARY_glibc-localedata-uk-ua: locale definition for uk-ua
+RDEPENDS_glibc-localedata-uk-ua: glibc-localedata-i18n glibc-localedata-iso14651-t1
+SECTION: base
+PKG_glibc-localedata-uk-ua: glibc-localedata-uk-ua
+FILES_glibc-localedata-uk-ua: /usr/share/i18n/locales/uk_UA
+FILES_INFO: {"/usr/share/i18n/locales/uk_UA": 43120}
+PKGSIZE_glibc-localedata-uk-ua: 43120

@@ -1,0 +1,14 @@
+PN: glibc-locale
+PV: 2.24
+PR: r0
+PKGV: 2.24
+PKGR: r0
+LICENSE: GPLv2 & LGPLv2.1
+DESCRIPTION_glibc-gconv-cp1125: gconv module for character set cp1125
+SUMMARY_glibc-gconv-cp1125: gconv module for character set cp1125
+RDEPENDS_glibc-gconv-cp1125: glibc-gconv glibc-xilinx (>= 2.23)
+SECTION: base
+PKG_glibc-gconv-cp1125: glibc-gconv-cp1125
+FILES_glibc-gconv-cp1125: /usr/lib/gconv/CP1125.so
+FILES_INFO: {"/usr/lib/gconv/CP1125.so": 9488}
+PKGSIZE_glibc-gconv-cp1125: 9488

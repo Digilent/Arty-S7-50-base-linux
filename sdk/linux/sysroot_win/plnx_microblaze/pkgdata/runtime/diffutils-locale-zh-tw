@@ -1,0 +1,15 @@
+PN: diffutils
+PV: 3.4
+PR: r0
+PKGV: 3.4
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_diffutils-locale-zh-tw: Diffutils contains the GNU diff, diff3, sdiff, and cmp utilities. These programs are usually used for creating patch files.  This package contains language translation files for the zh_TW locale.
+SUMMARY_diffutils-locale-zh-tw: Diffutils contains tools used for finding differences between files - zh_TW translations
+RPROVIDES_diffutils-locale-zh-tw: diffutils-locale zh-tw-translation
+RRECOMMENDS_diffutils-locale-zh-tw: virtual-locale-zh-tw
+SECTION: base
+PKG_diffutils-locale-zh-tw: diffutils-locale-zh-tw
+FILES_diffutils-locale-zh-tw: /usr/share/locale/zh_TW
+FILES_INFO: {"/usr/share/locale/zh_TW/LC_MESSAGES/diffutils.mo": 7702}
+PKGSIZE_diffutils-locale-zh-tw: 7702

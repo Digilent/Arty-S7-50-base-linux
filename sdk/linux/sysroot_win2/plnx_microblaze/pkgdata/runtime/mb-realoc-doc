@@ -1,0 +1,13 @@
+PN: mb-realoc
+PV: 0.1
+PR: r0
+PKGV: 0.1
+PKGR: r0
+LICENSE: CLOSED
+DESCRIPTION_mb-realoc-doc: mb-realoc  This package contains documentation.
+SUMMARY_mb-realoc-doc: mb-realoc version 0.1-r0 - Documentation files
+SECTION_mb-realoc-doc: doc
+PKG_mb-realoc-doc: mb-realoc-doc
+FILES_mb-realoc-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {}
+PKGSIZE_mb-realoc-doc: 0

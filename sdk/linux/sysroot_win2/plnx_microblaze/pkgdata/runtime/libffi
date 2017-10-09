@@ -1,0 +1,20 @@
+PN: libffi
+PV: 3.2.1
+PR: r0
+PKGV: 3.2.1
+PKGR: r0
+LICENSE: MIT
+DESCRIPTION: The `libffi' library provides a portable, high level programming interface to various calling conventions.  This allows a programmer to call any function specified by a call interface description at run time. FFI stands for Foreign Function Interface.  A foreign function interface is the popular name for the interface that allows code written in one language to call code written in another language.  The `libffi' library really only provides the lowest, machine dependent layer of a fully featured foreign function interface.  A layer must exist above `libffi' that handles type conversions for values passed between the two languages.
+SUMMARY: A portable foreign function interface library
+RDEPENDS_libffi: glibc-xilinx (>= 2.23)
+RPROVIDES_libffi:  libffi (=3.2.1)
+SECTION: base
+PKG_libffi: libffi6
+FILES_libffi: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev /usr/lib/udev /lib/udev /usr/lib/udev /usr/share/libffi /usr/lib/libffi/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+pkg_postinst_libffi: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libffi: /usr/lib/libffi.so.6.0.4
+FILES_INFO: {"/usr/lib/libffi.so.6.0.4": 27680, "/usr/lib/libffi.so.6": 15}
+FILERPROVIDES_/usr/lib/libffi.so.6.0.4_libffi: libffi.so.6
+FILERDEPENDSFLIST_libffi: /usr/lib/libffi.so.6.0.4
+FILERDEPENDS_/usr/lib/libffi.so.6.0.4_libffi: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+PKGSIZE_libffi: 27695

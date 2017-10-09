@@ -1,0 +1,15 @@
+PN: coreutils
+PV: 8.25
+PR: r0
+PKGV: 8.25
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_coreutils-locale-ja: The GNU Core Utilities provide the basic file, shell and text manipulation utilities. These are the core utilities which are expected to exist on every system.  This package contains language translation files for the ja locale.
+SUMMARY_coreutils-locale-ja: The basic file, shell and text manipulation utilities - ja translations
+RPROVIDES_coreutils-locale-ja: coreutils-locale ja-translation
+RRECOMMENDS_coreutils-locale-ja: virtual-locale-ja
+SECTION: base
+PKG_coreutils-locale-ja: coreutils-locale-ja
+FILES_coreutils-locale-ja: /usr/share/locale/ja
+FILES_INFO: {"/usr/share/locale/ja/LC_TIME/coreutils.mo": 27, "/usr/share/locale/ja/LC_MESSAGES/coreutils.mo": 206787}
+PKGSIZE_coreutils-locale-ja: 206814

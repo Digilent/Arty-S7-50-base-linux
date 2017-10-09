@@ -1,0 +1,15 @@
+PN: acl
+PV: 2.2.52
+PR: r0
+PKGV: 2.2.52
+PKGR: r0
+LICENSE: LGPLv2.1+ & GPLv2+
+DESCRIPTION_acl-locale-de: Utilities for managing POSIX Access Control Lists.  This package contains language translation files for the de locale.
+SUMMARY_acl-locale-de: Utilities for managing POSIX Access Control Lists - de translations
+RPROVIDES_acl-locale-de: acl-locale de-translation
+RRECOMMENDS_acl-locale-de: virtual-locale-de
+SECTION: libs
+PKG_acl-locale-de: acl-locale-de
+FILES_acl-locale-de: /usr/share/locale/de
+FILES_INFO: {"/usr/share/locale/de/LC_MESSAGES/acl.mo": 8472}
+PKGSIZE_acl-locale-de: 8472

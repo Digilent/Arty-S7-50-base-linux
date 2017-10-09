@@ -1,0 +1,15 @@
+PN: procps
+PV: 3.3.12
+PR: r0
+PKGV: 3.3.12
+PKGR: r0
+LICENSE: GPLv2+ & LGPLv2+
+DESCRIPTION_procps-locale-vi: Procps contains a set of system utilities that provide system information about processes using the /proc filesystem. The package includes the programs ps, top, vmstat, w, kill, and skill.  This package contains language translation files for the vi locale.
+SUMMARY_procps-locale-vi: System and process monitoring utilities - vi translations
+RPROVIDES_procps-locale-vi: procps-locale vi-translation
+RRECOMMENDS_procps-locale-vi: virtual-locale-vi
+SECTION: base
+PKG_procps-locale-vi: procps-locale-vi
+FILES_procps-locale-vi: /usr/share/locale/vi
+FILES_INFO: {"/usr/share/locale/vi/LC_MESSAGES/procps-ng.mo": 90772}
+PKGSIZE_procps-locale-vi: 90772

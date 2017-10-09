@@ -1,0 +1,15 @@
+PN: packagegroup-core-ssh-dropbear
+PV: 1.0
+PR: r1
+PKGV: 1.0
+PKGR: r1
+LICENSE: MIT
+DESCRIPTION_packagegroup-core-ssh-dropbear-dbg: Dropbear SSH client/server.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_packagegroup-core-ssh-dropbear-dbg: Dropbear SSH client/server - Debugging files
+RRECOMMENDS_packagegroup-core-ssh-dropbear-dbg: dropbear-dbg
+SECTION_packagegroup-core-ssh-dropbear-dbg: devel
+PKG_packagegroup-core-ssh-dropbear-dbg: packagegroup-core-ssh-dropbear-dbg
+ALLOW_EMPTY_packagegroup-core-ssh-dropbear-dbg: 1
+FILES_packagegroup-core-ssh-dropbear-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {}
+PKGSIZE_packagegroup-core-ssh-dropbear-dbg: 0

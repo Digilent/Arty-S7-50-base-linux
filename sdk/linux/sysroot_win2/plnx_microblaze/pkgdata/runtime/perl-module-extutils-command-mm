@@ -1,0 +1,14 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-extutils-command-mm: perl module extutils-command-mm
+SUMMARY_perl-module-extutils-command-mm: perl module extutils-command-mm
+RDEPENDS_perl-module-extutils-command-mm: perl perl-module-exporter perl-module-extutils-command perl-module-extutils-install perl-module-file-spec perl-module-getopt-long perl-module-strict perl-module-test-harness perl-module-warnings
+SECTION: devel
+PKG_perl-module-extutils-command-mm: perl-module-extutils-command-mm
+FILES_perl-module-extutils-command-mm: /usr/lib/perl/5.22.1/ExtUtils/Command/MM.pm
+FILES_INFO: {"/usr/lib/perl/5.22.1/ExtUtils/Command/MM.pm": 7557}
+PKGSIZE_perl-module-extutils-command-mm: 7557

@@ -1,0 +1,15 @@
+PN: sed
+PV: 4.2.2
+PR: r0
+PKGV: 4.2.2
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_sed-locale-af: Stream EDitor (text filtering utility).  This package contains language translation files for the af locale.
+SUMMARY_sed-locale-af: Stream EDitor (text filtering utility) - af translations
+RPROVIDES_sed-locale-af: sed-locale af-translation
+RRECOMMENDS_sed-locale-af: virtual-locale-af
+SECTION: console/utils
+PKG_sed-locale-af: sed-locale-af
+FILES_sed-locale-af: /usr/share/locale/af
+FILES_INFO: {"/usr/share/locale/af/LC_MESSAGES/sed.mo": 3125}
+PKGSIZE_sed-locale-af: 3125

@@ -1,0 +1,18 @@
+PN: glibc-xilinx
+PV: 2017.2
+PR: r1
+PKGV: 2.23
+PKGR: r1
+LICENSE: GPLv2 & LGPL-2.1
+DESCRIPTION_tzcode: tzcode, timezone zoneinfo utils -- zic, zdump, tzselect
+SUMMARY: External Xilinx toolchain
+RDEPENDS_tzcode: bash glibc-xilinx (>= 2.23)
+SECTION: base
+PKG_tzcode: tzcode
+FILES_tzcode: /usr/bin/tzselect /usr/sbin/zic /usr/sbin/zdump
+FILES_INFO: {"/usr/bin/tzselect": 15190, "/usr/sbin/zic": 54788, "/usr/sbin/zdump": 26064}
+FILERDEPENDSFLIST_tzcode: /usr/bin/tzselect /usr/sbin/zic /usr/sbin/zdump
+FILERDEPENDS_/usr/bin/tzselect_tzcode: /bin/bash
+FILERDEPENDS_/usr/sbin/zic_tzcode: libc.so.6 libc.so.6(GLIBC_2.18)
+FILERDEPENDS_/usr/sbin/zdump_tzcode: libc.so.6 libc.so.6(GLIBC_2.18)
+PKGSIZE_tzcode: 96042

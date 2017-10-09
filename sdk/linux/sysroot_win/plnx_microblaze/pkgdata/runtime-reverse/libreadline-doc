@@ -1,0 +1,14 @@
+PN: readline
+PV: 6.3
+PR: r0
+PKGV: 6.3
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_readline-doc: The GNU Readline library provides a set of functions for use by applications that allow users to edit command lines as they are typed in. Both Emacs and vi editing modes are available. The Readline library includes  additional functions to maintain a list of previously-entered command lines, to recall and perhaps reedit those   lines, and perform csh-like history expansion on previous commands.  This package contains documentation.
+SUMMARY_readline-doc: Library for editing typed command lines - Documentation files
+RPROVIDES_readline-doc:  readline-doc (=6.3)
+SECTION_readline-doc: doc
+PKG_readline-doc: libreadline-doc
+FILES_readline-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {"/usr/share/info/history.info": 60979, "/usr/share/man/man3/history.3": 22290, "/usr/share/doc/readline/INSTALL": 12304, "/usr/share/doc/readline/README": 8028, "/usr/share/info/rluserman.info": 82095, "/usr/share/man/man3/readline.3": 44308, "/usr/share/info/readline.info": 217260, "/usr/share/doc/readline/CHANGES": 57525}
+PKGSIZE_readline-doc: 504789

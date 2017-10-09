@@ -1,0 +1,15 @@
+PN: acl
+PV: 2.2.52
+PR: r0
+PKGV: 2.2.52
+PKGR: r0
+LICENSE: LGPLv2.1+ & GPLv2+
+DESCRIPTION_acl-locale-es: Utilities for managing POSIX Access Control Lists.  This package contains language translation files for the es locale.
+SUMMARY_acl-locale-es: Utilities for managing POSIX Access Control Lists - es translations
+RPROVIDES_acl-locale-es: acl-locale es-translation
+RRECOMMENDS_acl-locale-es: virtual-locale-es
+SECTION: libs
+PKG_acl-locale-es: acl-locale-es
+FILES_acl-locale-es: /usr/share/locale/es
+FILES_INFO: {"/usr/share/locale/es/LC_MESSAGES/acl.mo": 8814}
+PKGSIZE_acl-locale-es: 8814

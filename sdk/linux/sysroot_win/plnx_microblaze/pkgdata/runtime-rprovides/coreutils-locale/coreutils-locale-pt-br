@@ -1,0 +1,15 @@
+PN: coreutils
+PV: 8.25
+PR: r0
+PKGV: 8.25
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_coreutils-locale-pt-br: The GNU Core Utilities provide the basic file, shell and text manipulation utilities. These are the core utilities which are expected to exist on every system.  This package contains language translation files for the pt_BR locale.
+SUMMARY_coreutils-locale-pt-br: The basic file, shell and text manipulation utilities - pt_BR translations
+RPROVIDES_coreutils-locale-pt-br: coreutils-locale pt-br-translation
+RRECOMMENDS_coreutils-locale-pt-br: virtual-locale-pt-br
+SECTION: base
+PKG_coreutils-locale-pt-br: coreutils-locale-pt-br
+FILES_coreutils-locale-pt-br: /usr/share/locale/pt_BR
+FILES_INFO: {"/usr/share/locale/pt_BR/LC_TIME/coreutils.mo": 27, "/usr/share/locale/pt_BR/LC_MESSAGES/coreutils.mo": 148741}
+PKGSIZE_coreutils-locale-pt-br: 148768

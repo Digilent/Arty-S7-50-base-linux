@@ -1,0 +1,13 @@
+PN: packagegroup-core-ssh-dropbear
+PV: 1.0
+PR: r1
+PKGV: 1.0
+PKGR: r1
+LICENSE: MIT
+DESCRIPTION: Dropbear SSH client/server.
+SUMMARY: Dropbear SSH client/server
+SECTION: base
+PKG_packagegroup-core-ssh-dropbear-ptest: packagegroup-core-ssh-dropbear-ptest
+ALLOW_EMPTY_packagegroup-core-ssh-dropbear-ptest: 1
+FILES_INFO: {}
+PKGSIZE_packagegroup-core-ssh-dropbear-ptest: 0

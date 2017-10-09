@@ -1,0 +1,15 @@
+PN: libpam
+PV: 1.3.0
+PR: r5
+PKGV: 1.3.0
+PKGR: r5
+LICENSE: GPLv2+ | BSD
+DESCRIPTION_libpam-locale-ur: Linux-PAM (Pluggable Authentication Modules for Linux), a flexible mechanism for authenticating users  This package contains language translation files for the ur locale.
+SUMMARY_libpam-locale-ur: Linux-PAM (Pluggable Authentication Modules) - ur translations
+RPROVIDES_libpam-locale-ur: libpam-locale ur-translation
+RRECOMMENDS_libpam-locale-ur: virtual-locale-ur
+SECTION: base
+PKG_libpam-locale-ur: libpam-locale-ur
+FILES_libpam-locale-ur: /usr/share/locale/ur
+FILES_INFO: {"/usr/share/locale/ur/LC_MESSAGES/Linux-PAM.mo": 499}
+PKGSIZE_libpam-locale-ur: 499

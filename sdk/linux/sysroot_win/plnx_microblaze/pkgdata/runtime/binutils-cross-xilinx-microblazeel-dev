@@ -1,0 +1,14 @@
+PN: binutils-cross-xilinx-microblazeel
+PV: 2017.2
+PR: r1
+PKGV: 6.2.0
+PKGR: r1
+LICENSE: GPL-3.0
+DESCRIPTION_binutils-cross-xilinx-microblazeel-dev: External Xilinx toolchain.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_binutils-cross-xilinx-microblazeel-dev: External Xilinx toolchain - Development files
+RDEPENDS_binutils-cross-xilinx-microblazeel-dev: binutils-cross-xilinx-microblazeel (= 6.2.0-r1)
+SECTION_binutils-cross-xilinx-microblazeel-dev: devel
+PKG_binutils-cross-xilinx-microblazeel-dev: binutils-cross-xilinx-microblazeel-dev
+ALLOW_EMPTY_binutils-cross-xilinx-microblazeel-dev: 0
+FILES_INFO: {}
+PKGSIZE_binutils-cross-xilinx-microblazeel-dev: 0

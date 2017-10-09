@@ -1,0 +1,18 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-storable: perl module storable
+SUMMARY_perl-module-storable: perl module storable
+RDEPENDS_perl-module-storable: perl perl-module-carp perl-module-config perl-module-exporter perl-module-io-file perl-module-vars perl-module-xsloader glibc-xilinx (>= 2.23)
+SECTION: devel
+PKG_perl-module-storable: perl-module-storable
+FILES_perl-module-storable: /usr/lib/perl/5.22.1/auto/Storable/Storable.so /usr/lib/perl/5.22.1/Storable.pm
+FILERPROVIDESFLIST_perl-module-storable: /usr/lib/perl/5.22.1/auto/Storable/Storable.so
+FILES_INFO: {"/usr/lib/perl/5.22.1/Storable.pm": 43145, "/usr/lib/perl/5.22.1/auto/Storable/Storable.so": 85404}
+FILERPROVIDES_/usr/lib/perl/5.22.1/auto/Storable/Storable.so_perl-module-storable: Storable.so
+FILERDEPENDSFLIST_perl-module-storable: /usr/lib/perl/5.22.1/auto/Storable/Storable.so
+FILERDEPENDS_/usr/lib/perl/5.22.1/auto/Storable/Storable.so_perl-module-storable: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+PKGSIZE_perl-module-storable: 128549

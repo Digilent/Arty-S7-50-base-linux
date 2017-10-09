@@ -1,0 +1,2 @@
+#!/bin/sh
+qemu-microblazeel -r 3.2.0  "$@"

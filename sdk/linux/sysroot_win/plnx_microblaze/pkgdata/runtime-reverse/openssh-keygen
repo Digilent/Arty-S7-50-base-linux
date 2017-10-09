@@ -1,0 +1,17 @@
+PN: openssh
+PV: 7.3p1
+PR: r0
+PKGV: 7.3p1
+PKGR: r0
+LICENSE: BSD
+DESCRIPTION: Secure rlogin/rsh/rcp/telnet replacement (OpenSSH) Ssh (Secure Shell) is a program for logging into a remote machine and for executing commands on a remote machine.
+SUMMARY: A suite of security-related network utilities based on the SSH protocol including the ssh client and sshd server
+RDEPENDS_openssh-keygen: libcrypto (>= 1.0.2j) glibc-xilinx (>= 2.23)
+RCONFLICTS_openssh-keygen: ssh-keygen
+SECTION: console/network
+PKG_openssh-keygen: openssh-keygen
+FILES_openssh-keygen: /usr/bin/ssh-keygen
+FILES_INFO: {"/usr/bin/ssh-keygen": 509464}
+FILERDEPENDSFLIST_openssh-keygen: /usr/bin/ssh-keygen
+FILERDEPENDS_/usr/bin/ssh-keygen_openssh-keygen: libc.so.6 libc.so.6(GLIBC_2.18) libcrypto.so.1.0.0 libcrypto.so.1.0.0(OPENSSL_1.0.2d) libdl.so.2 libdl.so.2(GLIBC_2.18) libresolv.so.2 libresolv.so.2(GLIBC_2.18) rtld(GNU_HASH)
+PKGSIZE_openssh-keygen: 509464

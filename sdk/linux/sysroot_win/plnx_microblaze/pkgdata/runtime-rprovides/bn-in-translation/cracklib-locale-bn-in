@@ -1,0 +1,15 @@
+PN: cracklib
+PV: 2.9.5
+PR: r0
+PKGV: 2.9.5
+PKGR: r0
+LICENSE: LGPLv2.1+
+DESCRIPTION_cracklib-locale-bn-in: Password strength checker library.  This package contains language translation files for the bn_IN locale.
+SUMMARY_cracklib-locale-bn-in: Password strength checker library - bn_IN translations
+RPROVIDES_cracklib-locale-bn-in: cracklib-locale bn-in-translation
+RRECOMMENDS_cracklib-locale-bn-in: virtual-locale-bn-in
+SECTION: base
+PKG_cracklib-locale-bn-in: cracklib-locale-bn-in
+FILES_cracklib-locale-bn-in: /usr/share/locale/bn_IN
+FILES_INFO: {"/usr/share/locale/bn_IN/LC_MESSAGES/cracklib.mo": 3100}
+PKGSIZE_cracklib-locale-bn-in: 3100

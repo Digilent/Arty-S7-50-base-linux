@@ -1,0 +1,14 @@
+PN: libgcc-xilinx
+PV: 2017.2
+PR: r1
+PKGV: 6.2.0
+PKGR: r1
+LICENSE: GPL-3.0-with-GCC-exception
+DESCRIPTION: External Xilinx toolchain.
+SUMMARY: External Xilinx toolchain
+RPROVIDES_libgcc-dbg:  libgcc-dbg (=6.2.0)
+SECTION: base
+PKG_libgcc-dbg: libgcc-s-dbg
+FILES_libgcc-dbg: /lib/.debug/ /usr/lib/microblazeel-xilinx-linux-gnu/6.2.0/.debug/
+FILES_INFO: {"/lib/.debug/libgcc_s.so.1": 504492}
+PKGSIZE_libgcc-dbg: 504492

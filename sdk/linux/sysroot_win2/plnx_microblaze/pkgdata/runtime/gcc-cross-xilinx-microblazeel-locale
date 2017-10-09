@@ -1,0 +1,13 @@
+PN: gcc-cross-xilinx-microblazeel
+PV: 2017.2
+PR: r1
+PKGV: 6.2.0
+PKGR: r1
+LICENSE: GPL-3.0-with-GCC-exception & GPL-3.0
+DESCRIPTION: External Xilinx toolchain.
+SUMMARY: External Xilinx toolchain
+SECTION: base
+PKG_gcc-cross-xilinx-microblazeel-locale: gcc-cross-xilinx-microblazeel-locale
+FILES_gcc-cross-xilinx-microblazeel-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_gcc-cross-xilinx-microblazeel-locale: 0

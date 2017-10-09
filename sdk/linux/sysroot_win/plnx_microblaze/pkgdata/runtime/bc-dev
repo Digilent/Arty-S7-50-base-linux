@@ -1,0 +1,16 @@
+PN: bc
+PV: 1.06
+PR: r3
+PKGV: 1.06
+PKGR: r3
+LICENSE: GPLv2+ & LGPLv2.1
+DESCRIPTION_bc-dev: Arbitrary precision calculator language.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_bc-dev: Arbitrary precision calculator language - Development files
+RDEPENDS_bc-dev: bc (= 1.06-r3)
+RRECOMMENDS_bc-dev: flex-dev update-alternatives-opkg-dev glibc-xilinx-dev
+SECTION_bc-dev: devel
+PKG_bc-dev: bc-dev
+ALLOW_EMPTY_bc-dev: 1
+FILES_bc-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/bc/*.la /lib/*.la
+FILES_INFO: {}
+PKGSIZE_bc-dev: 0
