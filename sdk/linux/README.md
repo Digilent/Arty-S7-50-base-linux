@@ -66,4 +66,10 @@ To make modifications to the project, you will need to install the petalinux too
 the project. Using those tools, many popular third party programs can easily be built into your system, and you can also
 add a custom program you have written in Xilinx SDK as well (via the petalinux "app" process described in UG1144 provided by Xilinx). 
 
+## Repackaging sysroot
 
+If modifications are made to the rootfs in Petalinux then the sysroot folder will need to be repackaged. This was done by building the petalinux project,
+and then compressing build/tmp/sysroots/plnx_microblaze into a tar.gz file. Next, this tar.gz file must be copied to a Windows host, and extracted
+to sdk/linux/sysroot/ using WinRAR. It is important that WinRAR be opened without administrator priveleges. At the end of the extraction, several thousand
+warning should appear about insufficient privileges, however, these can be ignored. Following this process will cause WinRAR to automatically replace all the 
+symlinks with hard copies of the linked files, which is needed for this project to work on both Windows and Linux hosts. 
