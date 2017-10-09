@@ -1,3 +1,0 @@
-gawk: fnarray2.awk:3: error: function `pile' called with space between name and `(',
-or used as a variable or an array
-EXIT CODE: 1

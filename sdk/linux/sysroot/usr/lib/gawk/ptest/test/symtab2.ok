@@ -1,2 +1,0 @@
-a = 5, SYMTAB["a"] = 5
-a = 4, SYMTAB["a"] = 4

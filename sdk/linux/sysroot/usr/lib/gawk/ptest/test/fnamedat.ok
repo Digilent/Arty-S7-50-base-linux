@@ -1,3 +1,0 @@
-gawk: fnamedat.awk:1: error: function `foo' called with space between name and `(',
-or used as a variable or an array
-EXIT CODE: 1

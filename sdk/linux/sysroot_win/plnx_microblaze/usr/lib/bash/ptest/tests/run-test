@@ -1,5 +1,0 @@
-unset GROUPS UID 2>/dev/null
-
-rm -f /tmp/xx
-su -c "${THIS_SH} ./test.tests >/tmp/xx 2>&1" test
-diff /tmp/xx test.right && rm -f /tmp/xx
