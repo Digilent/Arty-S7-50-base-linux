@@ -1,0 +1,15 @@
+PN: sed
+PV: 4.2.2
+PR: r0
+PKGV: 4.2.2
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_sed-locale-tr: Stream EDitor (text filtering utility).  This package contains language translation files for the tr locale.
+SUMMARY_sed-locale-tr: Stream EDitor (text filtering utility) - tr translations
+RPROVIDES_sed-locale-tr: sed-locale tr-translation
+RRECOMMENDS_sed-locale-tr: virtual-locale-tr
+SECTION: console/utils
+PKG_sed-locale-tr: sed-locale-tr
+FILES_sed-locale-tr: /usr/share/locale/tr
+FILES_INFO: {"/usr/share/locale/tr/LC_MESSAGES/sed.mo": 8197}
+PKGSIZE_sed-locale-tr: 8197

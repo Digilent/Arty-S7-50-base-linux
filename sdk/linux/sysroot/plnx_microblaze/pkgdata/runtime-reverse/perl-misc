@@ -1,0 +1,46 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION: Perl scripting language.
+SUMMARY: Perl scripting language
+RDEPENDS_perl-misc: perl perl-modules
+SECTION: devel
+PKG_perl-misc: perl-misc
+FILES_perl-misc: /usr/bin/*
+FILES_INFO: {"/usr/bin/pod2html": 4134, "/usr/bin/zipdetails": 48497, "/usr/bin/podselect": 2527, "/usr/bin/perlbug": 45393, "/usr/bin/perlthanks": 45393, "/usr/bin/prove": 13588, "/usr/bin/splain": 18768, "/usr/bin/piconv": 8357, "/usr/bin/h2ph": 29201, "/usr/bin/c2ph": 36645, "/usr/bin/pod2usage": 3670, "/usr/bin/ptardiff": 2628, "/usr/bin/perldoc": 262, "/usr/bin/pod2text": 11003, "/usr/bin/podchecker": 3699, "/usr/bin/enc2xs": 39896, "/usr/bin/ptargrep": 4392, "/usr/bin/corelist": 12830, "/usr/bin/ptar": 3562, "/usr/bin/xsubpp": 5164, "/usr/bin/json_pp": 3956, "/usr/bin/libnetcfg": 15757, "/usr/bin/cpan": 7465, "/usr/bin/encguess": 3066, "/usr/bin/pod2man": 13580, "/usr/bin/pstruct": 36645, "/usr/bin/pl2pm": 4531, "/usr/bin/shasum": 9370, "/usr/bin/perlivp": 10862, "/usr/bin/instmodsh": 4370, "/usr/bin/h2xs": 60814}
+FILERDEPENDSFLIST_perl-misc: /usr/bin/pod2text /usr/bin/pod2html /usr/bin/cpan /usr/bin/podselect /usr/bin/perlbug /usr/bin/perlthanks /usr/bin/prove /usr/bin/splain /usr/bin/piconv /usr/bin/h2ph /usr/bin/ptar /usr/bin/pod2usage /usr/bin/ptardiff /usr/bin/zipdetails /usr/bin/h2xs /usr/bin/podchecker /usr/bin/enc2xs /usr/bin/corelist /usr/bin/c2ph /usr/bin/perlivp /usr/bin/ptargrep /usr/bin/libnetcfg /usr/bin/json@underscore@pp /usr/bin/encguess /usr/bin/pod2man /usr/bin/pstruct /usr/bin/pl2pm /usr/bin/shasum /usr/bin/xsubpp /usr/bin/instmodsh /usr/bin/perldoc
+FILERDEPENDS_/usr/bin/pod2text_perl-misc: /usr/bin/perl
+FILERDEPENDS_/usr/bin/pod2html_perl-misc: /usr/bin/perl
+FILERDEPENDS_/usr/bin/cpan_perl-misc: /usr/bin/perl
+FILERDEPENDS_/usr/bin/podselect_perl-misc: /usr/bin/perl
+FILERDEPENDS_/usr/bin/perlbug_perl-misc: /usr/bin/perl
+FILERDEPENDS_/usr/bin/perlthanks_perl-misc: /usr/bin/perl
+FILERDEPENDS_/usr/bin/prove_perl-misc: /usr/bin/perl
+FILERDEPENDS_/usr/bin/splain_perl-misc: /usr/bin/perl
+FILERDEPENDS_/usr/bin/piconv_perl-misc: /usr/bin/perl
+FILERDEPENDS_/usr/bin/h2ph_perl-misc: /usr/bin/perl
+FILERDEPENDS_/usr/bin/ptar_perl-misc: /usr/bin/perl
+FILERDEPENDS_/usr/bin/pod2usage_perl-misc: /usr/bin/perl
+FILERDEPENDS_/usr/bin/ptardiff_perl-misc: /usr/bin/perl
+FILERDEPENDS_/usr/bin/zipdetails_perl-misc: /usr/bin/perl
+FILERDEPENDS_/usr/bin/h2xs_perl-misc: /usr/bin/perl
+FILERDEPENDS_/usr/bin/podchecker_perl-misc: /usr/bin/perl
+FILERDEPENDS_/usr/bin/enc2xs_perl-misc: /usr/bin/perl
+FILERDEPENDS_/usr/bin/corelist_perl-misc: /usr/bin/perl
+FILERDEPENDS_/usr/bin/c2ph_perl-misc: /usr/bin/perl
+FILERDEPENDS_/usr/bin/perlivp_perl-misc: /usr/bin/perl
+FILERDEPENDS_/usr/bin/ptargrep_perl-misc: /usr/bin/perl
+FILERDEPENDS_/usr/bin/libnetcfg_perl-misc: /usr/bin/perl
+FILERDEPENDS_/usr/bin/json@underscore@pp_perl-misc: /usr/bin/perl
+FILERDEPENDS_/usr/bin/encguess_perl-misc: /usr/bin/perl
+FILERDEPENDS_/usr/bin/pod2man_perl-misc: /usr/bin/perl
+FILERDEPENDS_/usr/bin/pstruct_perl-misc: /usr/bin/perl
+FILERDEPENDS_/usr/bin/pl2pm_perl-misc: /usr/bin/perl
+FILERDEPENDS_/usr/bin/shasum_perl-misc: /usr/bin/perl
+FILERDEPENDS_/usr/bin/xsubpp_perl-misc: /usr/bin/perl
+FILERDEPENDS_/usr/bin/instmodsh_perl-misc: /usr/bin/perl
+FILERDEPENDS_/usr/bin/perldoc_perl-misc: /usr/bin/perl
+PKGSIZE_perl-misc: 510025

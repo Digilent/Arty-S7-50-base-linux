@@ -1,0 +1,15 @@
+PN: diffutils
+PV: 3.4
+PR: r0
+PKGV: 3.4
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_diffutils-locale-uk: Diffutils contains the GNU diff, diff3, sdiff, and cmp utilities. These programs are usually used for creating patch files.  This package contains language translation files for the uk locale.
+SUMMARY_diffutils-locale-uk: Diffutils contains tools used for finding differences between files - uk translations
+RPROVIDES_diffutils-locale-uk: diffutils-locale uk-translation
+RRECOMMENDS_diffutils-locale-uk: virtual-locale-uk
+SECTION: base
+PKG_diffutils-locale-uk: diffutils-locale-uk
+FILES_diffutils-locale-uk: /usr/share/locale/uk
+FILES_INFO: {"/usr/share/locale/uk/LC_MESSAGES/diffutils.mo": 42512}
+PKGSIZE_diffutils-locale-uk: 42512

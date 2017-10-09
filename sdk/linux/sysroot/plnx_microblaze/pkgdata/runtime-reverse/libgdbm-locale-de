@@ -1,0 +1,15 @@
+PN: gdbm
+PV: 1.12
+PR: r0
+PKGV: 1.12
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION_gdbm-locale-de: Key/value database library with extensible hashing.  This package contains language translation files for the de locale.
+SUMMARY_gdbm-locale-de: Key/value database library with extensible hashing - de translations
+RPROVIDES_gdbm-locale-de: gdbm-locale de-translation gdbm-locale-de (=1.12)
+RRECOMMENDS_gdbm-locale-de: virtual-locale-de
+SECTION: libs
+PKG_gdbm-locale-de: libgdbm-locale-de
+FILES_gdbm-locale-de: /usr/share/locale/de
+FILES_INFO: {"/usr/share/locale/de/LC_MESSAGES/gdbm.mo": 13717}
+PKGSIZE_gdbm-locale-de: 13717

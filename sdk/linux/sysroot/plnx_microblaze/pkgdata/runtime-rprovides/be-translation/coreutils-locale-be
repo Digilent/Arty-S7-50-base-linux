@@ -1,0 +1,15 @@
+PN: coreutils
+PV: 8.25
+PR: r0
+PKGV: 8.25
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_coreutils-locale-be: The GNU Core Utilities provide the basic file, shell and text manipulation utilities. These are the core utilities which are expected to exist on every system.  This package contains language translation files for the be locale.
+SUMMARY_coreutils-locale-be: The basic file, shell and text manipulation utilities - be translations
+RPROVIDES_coreutils-locale-be: coreutils-locale be-translation
+RRECOMMENDS_coreutils-locale-be: virtual-locale-be
+SECTION: base
+PKG_coreutils-locale-be: coreutils-locale-be
+FILES_coreutils-locale-be: /usr/share/locale/be
+FILES_INFO: {"/usr/share/locale/be/LC_TIME/coreutils.mo": 27, "/usr/share/locale/be/LC_MESSAGES/coreutils.mo": 62408}
+PKGSIZE_coreutils-locale-be: 62435

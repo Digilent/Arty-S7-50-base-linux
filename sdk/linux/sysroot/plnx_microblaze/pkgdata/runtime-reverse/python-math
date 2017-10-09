@@ -1,0 +1,22 @@
+PN: python
+PV: 2.7.12
+PR: r1
+PKGV: 2.7.12
+PKGR: r1
+LICENSE: PSFv2
+DESCRIPTION: The Python Programming Language.
+SUMMARY_python-math: Python math support
+RDEPENDS_python-math: python-core python-crypt glibc-xilinx (>= 2.23) libpython2 (>= 2.7.12)
+SECTION: devel/python
+PKG_python-math: python-math
+FILES_python-math: /usr/lib/python2.7/lib-dynload/cmath.so /usr/lib/python2.7/lib-dynload/math.so /usr/lib/python2.7/lib-dynload/_random.so /usr/lib/python2.7/random.* /usr/lib/python2.7/sets.* 
+FILERPROVIDESFLIST_python-math: /usr/lib/python2.7/lib-dynload/@underscore@random.so /usr/lib/python2.7/lib-dynload/cmath.so /usr/lib/python2.7/lib-dynload/math.so
+FILES_INFO: {"/usr/lib/python2.7/sets.py": 19050, "/usr/lib/python2.7/lib-dynload/_random.so": 14692, "/usr/lib/python2.7/sets.pyc": 16783, "/usr/lib/python2.7/lib-dynload/math.so": 75248, "/usr/lib/python2.7/lib-dynload/cmath.so": 81444, "/usr/lib/python2.7/random.pyc": 25484, "/usr/lib/python2.7/random.py": 32323}
+FILERPROVIDES_/usr/lib/python2.7/lib-dynload/@underscore@random.so_python-math: _random.so
+FILERPROVIDES_/usr/lib/python2.7/lib-dynload/cmath.so_python-math: cmath.so
+FILERPROVIDES_/usr/lib/python2.7/lib-dynload/math.so_python-math: math.so
+FILERDEPENDSFLIST_python-math: /usr/lib/python2.7/lib-dynload/@underscore@random.so /usr/lib/python2.7/lib-dynload/cmath.so /usr/lib/python2.7/lib-dynload/math.so
+FILERDEPENDS_/usr/lib/python2.7/lib-dynload/@underscore@random.so_python-math: libc.so.6 libc.so.6(GLIBC_2.18) libpython2.7.so.1.0 rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/python2.7/lib-dynload/cmath.so_python-math: libc.so.6 libc.so.6(GLIBC_2.18) libm.so.6 libm.so.6(GLIBC_2.18) libpython2.7.so.1.0 rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/python2.7/lib-dynload/math.so_python-math: libc.so.6 libc.so.6(GLIBC_2.18) libm.so.6 libm.so.6(GLIBC_2.18) libpython2.7.so.1.0 rtld(GNU_HASH)
+PKGSIZE_python-math: 265024

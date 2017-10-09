@@ -1,0 +1,13 @@
+PN: busybox
+PV: 1.24.1
+PR: r0
+PKGV: 1.24.1
+PKGR: r0
+LICENSE: GPLv2 & bzip2
+DESCRIPTION_busybox-doc: BusyBox combines tiny versions of many common UNIX utilities into a single small executable. It provides minimalist replacements for most of the utilities you usually find in GNU fileutils, shellutils, etc. The utilities in BusyBox generally have fewer options than their full-featured GNU cousins; however, the options that are included provide the expected functionality and behave very much like their GNU counterparts. BusyBox provides a fairly complete POSIX environment for any small or embedded system.  This package contains documentation.
+SUMMARY_busybox-doc: Tiny versions of many common UNIX utilities in a single small executable - Documentation files
+SECTION_busybox-doc: doc
+PKG_busybox-doc: busybox-doc
+FILES_busybox-doc: /usr/share/doc /usr/share/man /usr/share/info /usr/share/gtk-doc /usr/share/gnome/help
+FILES_INFO: {}
+PKGSIZE_busybox-doc: 0

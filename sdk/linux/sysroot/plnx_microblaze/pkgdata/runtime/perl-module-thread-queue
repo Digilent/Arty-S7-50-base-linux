@@ -1,0 +1,14 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-thread-queue: perl module thread-queue
+SUMMARY_perl-module-thread-queue: perl module thread-queue
+RDEPENDS_perl-module-thread-queue: perl perl-module-attributes perl-module-carp perl-module-scalar-util perl-module-strict perl-module-threads-shared perl-module-warnings
+SECTION: devel
+PKG_perl-module-thread-queue: perl-module-thread-queue
+FILES_perl-module-thread-queue: /usr/lib/perl/5.22.1/Thread/Queue.pm
+FILES_INFO: {"/usr/lib/perl/5.22.1/Thread/Queue.pm": 16037}
+PKGSIZE_perl-module-thread-queue: 16037

@@ -1,0 +1,13 @@
+PN: gcc-cross-xilinx-microblazeel
+PV: 2017.2
+PR: r1
+PKGV: 6.2.0
+PKGR: r1
+LICENSE: GPL-3.0-with-GCC-exception & GPL-3.0
+DESCRIPTION: External Xilinx toolchain.
+SUMMARY: External Xilinx toolchain
+SECTION: base
+PKG_gcc-cross-xilinx-microblazeel: gcc-cross-xilinx-microblazeel
+FILES_gcc-cross-xilinx-microblazeel: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev /usr/lib/udev /lib/udev /usr/lib/udev /usr/share/gcc-cross-xilinx-microblazeel /usr/lib/gcc-cross-xilinx-microblazeel/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+FILES_INFO: {}
+PKGSIZE_gcc-cross-xilinx-microblazeel: 0

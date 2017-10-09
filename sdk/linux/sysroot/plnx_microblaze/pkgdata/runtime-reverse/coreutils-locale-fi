@@ -1,0 +1,15 @@
+PN: coreutils
+PV: 8.25
+PR: r0
+PKGV: 8.25
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_coreutils-locale-fi: The GNU Core Utilities provide the basic file, shell and text manipulation utilities. These are the core utilities which are expected to exist on every system.  This package contains language translation files for the fi locale.
+SUMMARY_coreutils-locale-fi: The basic file, shell and text manipulation utilities - fi translations
+RPROVIDES_coreutils-locale-fi: coreutils-locale fi-translation
+RRECOMMENDS_coreutils-locale-fi: virtual-locale-fi
+SECTION: base
+PKG_coreutils-locale-fi: coreutils-locale-fi
+FILES_coreutils-locale-fi: /usr/share/locale/fi
+FILES_INFO: {"/usr/share/locale/fi/LC_TIME/coreutils.mo": 27, "/usr/share/locale/fi/LC_MESSAGES/coreutils.mo": 116026}
+PKGSIZE_coreutils-locale-fi: 116053

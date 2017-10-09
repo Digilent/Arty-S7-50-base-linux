@@ -1,0 +1,22 @@
+PN: libcap
+PV: 2.25
+PR: r0
+PKGV: 2.25
+PKGR: r0
+LICENSE: BSD | GPLv2
+DESCRIPTION: Library for getting/setting POSIX.1e capabilities.
+SUMMARY: Library for getting/setting POSIX.1e capabilities
+RDEPENDS_libcap: glibc-xilinx (>= 2.23)
+RPROVIDES_libcap:  libcap (=2.25)
+SECTION: base
+PKG_libcap: libcap2
+FILES_libcap: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev /usr/lib/udev /lib/udev /usr/lib/udev /usr/share/libcap /usr/lib/libcap/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers /lib/security/*.so
+pkg_postinst_libcap: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_libcap: /lib/libcap.so.2.25 /lib/security/pam@underscore@cap.so
+FILES_INFO: {"/lib/security/pam_cap.so": 6804, "/lib/libcap.so.2": 14, "/lib/libcap.so.2.25": 18828}
+FILERPROVIDES_/lib/libcap.so.2.25_libcap: libcap.so.2
+FILERPROVIDES_/lib/security/pam@underscore@cap.so_libcap: pam_cap.so
+FILERDEPENDSFLIST_libcap: /lib/libcap.so.2.25 /lib/security/pam@underscore@cap.so
+FILERDEPENDS_/lib/libcap.so.2.25_libcap: rtld(GNU_HASH)
+FILERDEPENDS_/lib/security/pam@underscore@cap.so_libcap: libc.so.6 libc.so.6(GLIBC_2.18) libcap.so.2 rtld(GNU_HASH)
+PKGSIZE_libcap: 25646

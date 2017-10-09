@@ -1,0 +1,14 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-pod-simple-search: perl module pod-simple-search
+SUMMARY_perl-module-pod-simple-search: perl module pod-simple-search
+RDEPENDS_perl-module-pod-simple-search: perl perl-module-carp perl-module-config perl-module-cwd perl-module-file-basename perl-module-file-spec perl-module-strict perl-module-vars
+SECTION: devel
+PKG_perl-module-pod-simple-search: perl-module-pod-simple-search
+FILES_perl-module-pod-simple-search: /usr/lib/perl/5.22.1/Pod/Simple/Search.pm
+FILES_INFO: {"/usr/lib/perl/5.22.1/Pod/Simple/Search.pm": 33639}
+PKGSIZE_perl-module-pod-simple-search: 33639

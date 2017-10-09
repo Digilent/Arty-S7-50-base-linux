@@ -1,0 +1,14 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-constant: perl module constant
+SUMMARY_perl-module-constant: perl module constant
+RDEPENDS_perl-module-constant: perl perl-module-carp perl-module-strict perl-module-warnings-register
+SECTION: devel
+PKG_perl-module-constant: perl-module-constant
+FILES_perl-module-constant: /usr/lib/perl/5.22.1/constant.pm
+FILES_INFO: {"/usr/lib/perl/5.22.1/constant.pm": 14724}
+PKGSIZE_perl-module-constant: 14724

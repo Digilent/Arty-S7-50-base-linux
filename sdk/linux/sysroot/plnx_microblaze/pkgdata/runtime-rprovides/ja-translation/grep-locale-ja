@@ -1,0 +1,15 @@
+PN: grep
+PV: 2.25
+PR: r0
+PKGV: 2.25
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION_grep-locale-ja: GNU grep utility.  This package contains language translation files for the ja locale.
+SUMMARY_grep-locale-ja: GNU grep utility - ja translations
+RPROVIDES_grep-locale-ja: grep-locale ja-translation
+RRECOMMENDS_grep-locale-ja: virtual-locale-ja
+SECTION: console/utils
+PKG_grep-locale-ja: grep-locale-ja
+FILES_grep-locale-ja: /usr/share/locale/ja
+FILES_INFO: {"/usr/share/locale/ja/LC_MESSAGES/grep.mo": 18182}
+PKGSIZE_grep-locale-ja: 18182

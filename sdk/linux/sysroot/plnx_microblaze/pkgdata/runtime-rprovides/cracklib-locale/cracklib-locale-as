@@ -1,0 +1,15 @@
+PN: cracklib
+PV: 2.9.5
+PR: r0
+PKGV: 2.9.5
+PKGR: r0
+LICENSE: LGPLv2.1+
+DESCRIPTION_cracklib-locale-as: Password strength checker library.  This package contains language translation files for the as locale.
+SUMMARY_cracklib-locale-as: Password strength checker library - as translations
+RPROVIDES_cracklib-locale-as: cracklib-locale as-translation
+RRECOMMENDS_cracklib-locale-as: virtual-locale-as
+SECTION: base
+PKG_cracklib-locale-as: cracklib-locale-as
+FILES_cracklib-locale-as: /usr/share/locale/as
+FILES_INFO: {"/usr/share/locale/as/LC_MESSAGES/cracklib.mo": 2602}
+PKGSIZE_cracklib-locale-as: 2602

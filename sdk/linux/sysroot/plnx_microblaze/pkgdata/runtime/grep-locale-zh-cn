@@ -1,0 +1,15 @@
+PN: grep
+PV: 2.25
+PR: r0
+PKGV: 2.25
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION_grep-locale-zh-cn: GNU grep utility.  This package contains language translation files for the zh_CN locale.
+SUMMARY_grep-locale-zh-cn: GNU grep utility - zh_CN translations
+RPROVIDES_grep-locale-zh-cn: grep-locale zh-cn-translation
+RRECOMMENDS_grep-locale-zh-cn: virtual-locale-zh-cn
+SECTION: console/utils
+PKG_grep-locale-zh-cn: grep-locale-zh-cn
+FILES_grep-locale-zh-cn: /usr/share/locale/zh_CN
+FILES_INFO: {"/usr/share/locale/zh_CN/LC_MESSAGES/grep.mo": 16970}
+PKGSIZE_grep-locale-zh-cn: 16970

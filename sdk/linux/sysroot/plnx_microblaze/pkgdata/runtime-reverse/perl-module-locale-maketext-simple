@@ -1,0 +1,14 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-locale-maketext-simple: perl module locale-maketext-simple
+SUMMARY_perl-module-locale-maketext-simple: perl module locale-maketext-simple
+RDEPENDS_perl-module-locale-maketext-simple: perl perl-module-base perl-module-strict
+SECTION: devel
+PKG_perl-module-locale-maketext-simple: perl-module-locale-maketext-simple
+FILES_perl-module-locale-maketext-simple: /usr/lib/perl/5.22.1/Locale/Maketext/Simple.pm
+FILES_INFO: {"/usr/lib/perl/5.22.1/Locale/Maketext/Simple.pm": 9707}
+PKGSIZE_perl-module-locale-maketext-simple: 9707

@@ -1,0 +1,15 @@
+PN: cracklib
+PV: 2.9.5
+PR: r0
+PKGV: 2.9.5
+PKGR: r0
+LICENSE: LGPLv2.1+
+DESCRIPTION_cracklib-locale-ko: Password strength checker library.  This package contains language translation files for the ko locale.
+SUMMARY_cracklib-locale-ko: Password strength checker library - ko translations
+RPROVIDES_cracklib-locale-ko: cracklib-locale ko-translation
+RRECOMMENDS_cracklib-locale-ko: virtual-locale-ko
+SECTION: base
+PKG_cracklib-locale-ko: cracklib-locale-ko
+FILES_cracklib-locale-ko: /usr/share/locale/ko
+FILES_INFO: {"/usr/share/locale/ko/LC_MESSAGES/cracklib.mo": 2012}
+PKGSIZE_cracklib-locale-ko: 2012

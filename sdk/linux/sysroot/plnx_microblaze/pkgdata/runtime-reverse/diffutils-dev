@@ -1,0 +1,16 @@
+PN: diffutils
+PV: 3.4
+PR: r0
+PKGV: 3.4
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_diffutils-dev: Diffutils contains the GNU diff, diff3, sdiff, and cmp utilities. These programs are usually used for creating patch files.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_diffutils-dev: Diffutils contains tools used for finding differences between files - Development files
+RDEPENDS_diffutils-dev: diffutils (= 3.4-r0)
+RRECOMMENDS_diffutils-dev: update-alternatives-opkg-dev glibc-xilinx-dev
+SECTION_diffutils-dev: devel
+PKG_diffutils-dev: diffutils-dev
+ALLOW_EMPTY_diffutils-dev: 1
+FILES_diffutils-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/diffutils/*.la /lib/*.la
+FILES_INFO: {}
+PKGSIZE_diffutils-dev: 0

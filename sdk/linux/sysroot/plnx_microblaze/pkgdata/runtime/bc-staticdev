@@ -1,0 +1,14 @@
+PN: bc
+PV: 1.06
+PR: r3
+PKGV: 1.06
+PKGR: r3
+LICENSE: GPLv2+ & LGPLv2.1
+DESCRIPTION_bc-staticdev: Arbitrary precision calculator language.  This package contains static libraries for software development.
+SUMMARY_bc-staticdev: Arbitrary precision calculator language - Development files (Static Libraries)
+RDEPENDS_bc-staticdev: bc-dev (= 1.06-r3)
+SECTION_bc-staticdev: devel
+PKG_bc-staticdev: bc-staticdev
+FILES_bc-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/bc/*.a
+FILES_INFO: {}
+PKGSIZE_bc-staticdev: 0

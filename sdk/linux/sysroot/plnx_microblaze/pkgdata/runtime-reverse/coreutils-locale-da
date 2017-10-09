@@ -1,0 +1,15 @@
+PN: coreutils
+PV: 8.25
+PR: r0
+PKGV: 8.25
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_coreutils-locale-da: The GNU Core Utilities provide the basic file, shell and text manipulation utilities. These are the core utilities which are expected to exist on every system.  This package contains language translation files for the da locale.
+SUMMARY_coreutils-locale-da: The basic file, shell and text manipulation utilities - da translations
+RPROVIDES_coreutils-locale-da: coreutils-locale da-translation
+RRECOMMENDS_coreutils-locale-da: virtual-locale-da
+SECTION: base
+PKG_coreutils-locale-da: coreutils-locale-da
+FILES_coreutils-locale-da: /usr/share/locale/da
+FILES_INFO: {"/usr/share/locale/da/LC_MESSAGES/coreutils.mo": 319584, "/usr/share/locale/da/LC_TIME/coreutils.mo": 27}
+PKGSIZE_coreutils-locale-da: 319611

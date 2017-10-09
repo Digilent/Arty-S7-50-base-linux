@@ -1,0 +1,15 @@
+PN: make
+PV: 4.2.1
+PR: r0
+PKGV: 4.2.1
+PKGR: r0
+LICENSE: GPLv3 & LGPLv2
+DESCRIPTION_make-locale-sv: Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.  Make gets its knowledge of how to build your program from a file called the makefile, which lists each of the non-source files and how to compute it from other files.  This package contains language translation files for the sv locale.
+SUMMARY_make-locale-sv: GNU tool that controls the build process - sv translations
+RPROVIDES_make-locale-sv: make-locale sv-translation
+RRECOMMENDS_make-locale-sv: virtual-locale-sv
+SECTION: devel
+PKG_make-locale-sv: make-locale-sv
+FILES_make-locale-sv: /usr/share/locale/sv
+FILES_INFO: {"/usr/share/locale/sv/LC_MESSAGES/make.mo": 43230}
+PKGSIZE_make-locale-sv: 43230

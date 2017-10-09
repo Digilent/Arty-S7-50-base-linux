@@ -1,0 +1,15 @@
+PN: coreutils
+PV: 8.25
+PR: r0
+PKGV: 8.25
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_coreutils-locale-kk: The GNU Core Utilities provide the basic file, shell and text manipulation utilities. These are the core utilities which are expected to exist on every system.  This package contains language translation files for the kk locale.
+SUMMARY_coreutils-locale-kk: The basic file, shell and text manipulation utilities - kk translations
+RPROVIDES_coreutils-locale-kk: coreutils-locale kk-translation
+RRECOMMENDS_coreutils-locale-kk: virtual-locale-kk
+SECTION: base
+PKG_coreutils-locale-kk: coreutils-locale-kk
+FILES_coreutils-locale-kk: /usr/share/locale/kk
+FILES_INFO: {"/usr/share/locale/kk/LC_MESSAGES/coreutils.mo": 1647, "/usr/share/locale/kk/LC_TIME/coreutils.mo": 27}
+PKGSIZE_coreutils-locale-kk: 1674

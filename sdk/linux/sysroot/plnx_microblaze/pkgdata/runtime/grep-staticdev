@@ -1,0 +1,14 @@
+PN: grep
+PV: 2.25
+PR: r0
+PKGV: 2.25
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION_grep-staticdev: GNU grep utility.  This package contains static libraries for software development.
+SUMMARY_grep-staticdev: GNU grep utility - Development files (Static Libraries)
+RDEPENDS_grep-staticdev: grep-dev (= 2.25-r0)
+SECTION_grep-staticdev: devel
+PKG_grep-staticdev: grep-staticdev
+FILES_grep-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/grep/*.a
+FILES_INFO: {}
+PKGSIZE_grep-staticdev: 0

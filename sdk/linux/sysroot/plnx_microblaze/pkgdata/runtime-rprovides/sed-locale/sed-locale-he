@@ -1,0 +1,15 @@
+PN: sed
+PV: 4.2.2
+PR: r0
+PKGV: 4.2.2
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_sed-locale-he: Stream EDitor (text filtering utility).  This package contains language translation files for the he locale.
+SUMMARY_sed-locale-he: Stream EDitor (text filtering utility) - he translations
+RPROVIDES_sed-locale-he: sed-locale he-translation
+RRECOMMENDS_sed-locale-he: virtual-locale-he
+SECTION: console/utils
+PKG_sed-locale-he: sed-locale-he
+FILES_sed-locale-he: /usr/share/locale/he
+FILES_INFO: {"/usr/share/locale/he/LC_MESSAGES/sed.mo": 1269}
+PKGSIZE_sed-locale-he: 1269

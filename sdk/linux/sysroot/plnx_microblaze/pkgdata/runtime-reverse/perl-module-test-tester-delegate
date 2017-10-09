@@ -1,0 +1,14 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-test-tester-delegate: perl module test-tester-delegate
+SUMMARY_perl-module-test-tester-delegate: perl module test-tester-delegate
+RDEPENDS_perl-module-test-tester-delegate: perl perl-module-strict perl-module-vars perl-module-warnings
+SECTION: devel
+PKG_perl-module-test-tester-delegate: perl-module-test-tester-delegate
+FILES_perl-module-test-tester-delegate: /usr/lib/perl/5.22.1/Test/Tester/Delegate.pm
+FILES_INFO: {"/usr/lib/perl/5.22.1/Test/Tester/Delegate.pm": 372}
+PKGSIZE_perl-module-test-tester-delegate: 372

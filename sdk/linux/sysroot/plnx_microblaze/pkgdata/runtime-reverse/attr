@@ -1,0 +1,18 @@
+PN: attr
+PV: 2.4.47
+PR: r0
+PKGV: 2.4.47
+PKGR: r0
+LICENSE_attr: GPLv2+
+DESCRIPTION: Utilities for manipulating filesystem extended attributes.
+SUMMARY: Utilities for manipulating filesystem extended attributes
+RDEPENDS_attr: glibc-xilinx (>= 2.23) libattr (>= 2.4.47)
+SECTION: libs
+PKG_attr: attr
+FILES_attr: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev /usr/lib/udev /lib/udev /usr/lib/udev /usr/share/attr /usr/lib/attr/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+FILES_INFO: {"/usr/bin/attr": 8000, "/usr/bin/getfattr": 16120, "/usr/bin/setfattr": 12624}
+FILERDEPENDSFLIST_attr: /usr/bin/attr /usr/bin/getfattr /usr/bin/setfattr
+FILERDEPENDS_/usr/bin/attr_attr: libattr.so.1 libattr.so.1(ATTR_1.0) libattr.so.1(ATTR_1.2) libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/getfattr_attr: libattr.so.1 libattr.so.1(ATTR_1.0) libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/setfattr_attr: libattr.so.1 libattr.so.1(ATTR_1.0) libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+PKGSIZE_attr: 36744

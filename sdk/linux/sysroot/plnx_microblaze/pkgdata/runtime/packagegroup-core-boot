@@ -1,0 +1,16 @@
+PN: packagegroup-core-boot
+PV: 1.0
+PR: r17
+PKGV: 1.0
+PKGR: r17
+LICENSE: MIT
+DESCRIPTION: The minimal set of packages required to boot the system
+SUMMARY: Minimal boot requirements
+RDEPENDS_packagegroup-core-boot: base-files base-passwd busybox busybox-mdev init-ifupdown initscripts modutils-initscripts netbase sysvinit update-alternatives-opkg
+RRECOMMENDS_packagegroup-core-boot:     
+SECTION: base
+PKG_packagegroup-core-boot: packagegroup-core-boot
+ALLOW_EMPTY_packagegroup-core-boot: 1
+FILES_packagegroup-core-boot: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev /usr/lib/udev /lib/udev /usr/lib/udev /usr/share/packagegroup-core-boot /usr/lib/packagegroup-core-boot/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+FILES_INFO: {}
+PKGSIZE_packagegroup-core-boot: 0

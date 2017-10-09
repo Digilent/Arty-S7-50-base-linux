@@ -1,0 +1,13 @@
+PN: gcc-runtime-xilinx
+PV: 2017.2
+PR: r1
+PKGV: 6.2.0
+PKGR: r1
+LICENSE: GPL-3.0-with-GCC-exception & GPL-3.0
+DESCRIPTION: External Xilinx toolchain.
+SUMMARY: External Xilinx toolchain
+SECTION: base
+PKG_libitm-staticdev: libitm-staticdev
+FILES_libitm-staticdev:   /usr/lib/libitm*.a   
+FILES_INFO: {}
+PKGSIZE_libitm-staticdev: 0

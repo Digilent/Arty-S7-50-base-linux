@@ -1,0 +1,15 @@
+PN: flex
+PV: 2.6.0
+PR: r0
+PKGV: 2.6.0
+PKGR: r0
+LICENSE: BSD
+DESCRIPTION_flex-locale-sv: Flex is a fast lexical analyser generator.  Flex is a tool for generating programs that recognize lexical patterns in text.  This package contains language translation files for the sv locale.
+SUMMARY_flex-locale-sv: Flex (The Fast Lexical Analyzer) - sv translations
+RPROVIDES_flex-locale-sv: flex-locale sv-translation
+RRECOMMENDS_flex-locale-sv: virtual-locale-sv
+SECTION: devel
+PKG_flex-locale-sv: flex-locale-sv
+FILES_flex-locale-sv: /usr/share/locale/sv
+FILES_INFO: {"/usr/share/locale/sv/LC_MESSAGES/flex.mo": 14344}
+PKGSIZE_flex-locale-sv: 14344

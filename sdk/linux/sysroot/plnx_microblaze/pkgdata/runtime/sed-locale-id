@@ -1,0 +1,15 @@
+PN: sed
+PV: 4.2.2
+PR: r0
+PKGV: 4.2.2
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_sed-locale-id: Stream EDitor (text filtering utility).  This package contains language translation files for the id locale.
+SUMMARY_sed-locale-id: Stream EDitor (text filtering utility) - id translations
+RPROVIDES_sed-locale-id: sed-locale id-translation
+RRECOMMENDS_sed-locale-id: virtual-locale-id
+SECTION: console/utils
+PKG_sed-locale-id: sed-locale-id
+FILES_sed-locale-id: /usr/share/locale/id
+FILES_INFO: {"/usr/share/locale/id/LC_MESSAGES/sed.mo": 9214}
+PKGSIZE_sed-locale-id: 9214

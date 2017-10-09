@@ -1,0 +1,14 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-next: perl module next
+SUMMARY_perl-module-next: perl module next
+RDEPENDS_perl-module-next: perl perl-module-carp perl-module-overload perl-module-strict
+SECTION: devel
+PKG_perl-module-next: perl-module-next
+FILES_perl-module-next: /usr/lib/perl/5.22.1/NEXT.pm
+FILES_INFO: {"/usr/lib/perl/5.22.1/NEXT.pm": 18481}
+PKGSIZE_perl-module-next: 18481

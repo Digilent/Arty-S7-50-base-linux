@@ -1,0 +1,15 @@
+PN: flex
+PV: 2.6.0
+PR: r0
+PKGV: 2.6.0
+PKGR: r0
+LICENSE: BSD
+DESCRIPTION_flex-locale-hr: Flex is a fast lexical analyser generator.  Flex is a tool for generating programs that recognize lexical patterns in text.  This package contains language translation files for the hr locale.
+SUMMARY_flex-locale-hr: Flex (The Fast Lexical Analyzer) - hr translations
+RPROVIDES_flex-locale-hr: flex-locale hr-translation
+RRECOMMENDS_flex-locale-hr: virtual-locale-hr
+SECTION: devel
+PKG_flex-locale-hr: flex-locale-hr
+FILES_flex-locale-hr: /usr/share/locale/hr
+FILES_INFO: {"/usr/share/locale/hr/LC_MESSAGES/flex.mo": 3452}
+PKGSIZE_flex-locale-hr: 3452

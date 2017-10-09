@@ -1,0 +1,15 @@
+PN: grep
+PV: 2.25
+PR: r0
+PKGV: 2.25
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION_grep-locale-hr: GNU grep utility.  This package contains language translation files for the hr locale.
+SUMMARY_grep-locale-hr: GNU grep utility - hr translations
+RPROVIDES_grep-locale-hr: grep-locale hr-translation
+RRECOMMENDS_grep-locale-hr: virtual-locale-hr
+SECTION: console/utils
+PKG_grep-locale-hr: grep-locale-hr
+FILES_grep-locale-hr: /usr/share/locale/hr
+FILES_INFO: {"/usr/share/locale/hr/LC_MESSAGES/grep.mo": 18421}
+PKGSIZE_grep-locale-hr: 18421

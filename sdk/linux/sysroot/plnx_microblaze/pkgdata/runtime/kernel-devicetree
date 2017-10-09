@@ -1,0 +1,15 @@
+PN: linux-xlnx
+PV: 4.9-xilinx-v2017.2+gitAUTOINC+5d029fdc25
+PR: r0
+PKGV: 4.9-xilinx-v2017.2+git0+5d029fdc25
+PKGR: r0
+LICENSE: GPLv2
+DESCRIPTION: Xilinx Kernel
+SUMMARY: Linux kernel
+SECTION: kernel
+PKG_kernel-devicetree: kernel-devicetree
+FILES_kernel-devicetree: /boot/devicetree*
+pkg_postinst_kernel-devicetree: \tcd /boot\n\tfor DTB in ${KERNEL_DEVICETREE}; do\n\t\tfor type in simpleImage.mb; do\n\t\t\tsymlink_name=${type}"-"plnx_microblaze\n\t\t\tDTB_EXT=${DTB##*.}\n\t\t\tDTB_BASE_NAME=`basename ${DTB} ."${DTB_EXT}"`\n\t\t\tDTB_SYMLINK_NAME=`echo ${symlink_name} | sed "s/plnx_microblaze/${DTB_BASE_NAME}/g"`\n\t\t\tupdate-alternatives --install /boot/${DTB_BASE_NAME}.${DTB_EXT} ${DTB_BASE_NAME}.${DTB_EXT} /boot/devicetree-${DTB_SYMLINK_NAME}.${DTB_EXT} 40909 || true\n\t\tdone\n\tdone\n
+pkg_postrm_kernel-devicetree: \tcd /boot\n\tfor DTB in ${KERNEL_DEVICETREE}; do\n\t\tfor type in simpleImage.mb; do\n\t\t\tsymlink_name=${type}"-"plnx_microblaze\n\t\t\tDTB_EXT=${DTB##*.}\n\t\t\tDTB_BASE_NAME=`basename ${DTB} ."${DTB_EXT}"`\n\t\t\tDTB_SYMLINK_NAME=`echo ${symlink_name} | sed "s/plnx_microblaze/${DTB_BASE_NAME}/g"`\n\t\t\tupdate-alternatives --remove ${DTB_BASE_NAME}.${DTB_EXT} /boot/devicetree-${DTB_SYMLINK_NAME}.${DTB_EXT} 40909 || true\n\t\tdone\n\tdone\n
+FILES_INFO: {}
+PKGSIZE_kernel-devicetree: 0

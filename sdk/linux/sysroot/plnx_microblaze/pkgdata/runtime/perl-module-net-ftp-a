@@ -1,0 +1,14 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-net-ftp-a: perl module net-ftp-a
+SUMMARY_perl-module-net-ftp-a: perl module net-ftp-a
+RDEPENDS_perl-module-net-ftp-a: perl perl-module-carp perl-module-net-ftp-dataconn perl-module-strict perl-module-warnings
+SECTION: devel
+PKG_perl-module-net-ftp-a: perl-module-net-ftp-a
+FILES_perl-module-net-ftp-a: /usr/lib/perl/5.22.1/Net/FTP/A.pm
+FILES_INFO: {"/usr/lib/perl/5.22.1/Net/FTP/A.pm": 2400}
+PKGSIZE_perl-module-net-ftp-a: 2400

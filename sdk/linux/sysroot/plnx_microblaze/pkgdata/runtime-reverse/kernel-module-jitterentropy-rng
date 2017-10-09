@@ -1,0 +1,16 @@
+PN: linux-xlnx
+PV: 4.9-xilinx-v2017.2+gitAUTOINC+5d029fdc25
+PR: r0
+PKGV: 4.9-xilinx-v2017.2+git0+5d029fdc25
+PKGR: r0
+LICENSE: GPLv2
+DESCRIPTION_kernel-module-jitterentropy-rng: jitterentropy-rng kernel module; Non-physical True Random Number Generator based on CPU Jitter
+SUMMARY_kernel-module-jitterentropy-rng: jitterentropy-rng kernel module
+RDEPENDS_kernel-module-jitterentropy-rng: kernel-4.9.0-xilinx-v2017.2
+SECTION: kernel
+PKG_kernel-module-jitterentropy-rng: kernel-module-jitterentropy-rng
+FILES_kernel-module-jitterentropy-rng: /lib/modules/4.9.0-xilinx-v2017.2/kernel/crypto/jitterentropy_rng.ko /etc/modules-load.d/jitterentropy_rng.conf /etc/modprobe.d/jitterentropy_rng.conf
+pkg_postinst_kernel-module-jitterentropy-rng: #!/bin/sh\nif [ -z "$D" ]; then\n\tdepmod -a 4.9.0-xilinx-v2017.2\nelse\n\t# image.bbclass will call depmodwrapper after everything is installed,\n\t# no need to do it here as well\n\t:\nfi\n\n
+pkg_postrm_kernel-module-jitterentropy-rng: #!/bin/sh\nif [ -z "$D" ]; then\n\tdepmod -a 4.9.0-xilinx-v2017.2\nelse\n\tdepmodwrapper -a -b $D 4.9.0-xilinx-v2017.2\nfi\n\n
+FILES_INFO: {"/lib/modules/4.9.0-xilinx-v2017.2/kernel/crypto/jitterentropy_rng.ko": 11484}
+PKGSIZE_kernel-module-jitterentropy-rng: 11484

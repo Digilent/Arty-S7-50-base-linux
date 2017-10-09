@@ -1,0 +1,15 @@
+PN: diffutils
+PV: 3.4
+PR: r0
+PKGV: 3.4
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_diffutils-locale-hr: Diffutils contains the GNU diff, diff3, sdiff, and cmp utilities. These programs are usually used for creating patch files.  This package contains language translation files for the hr locale.
+SUMMARY_diffutils-locale-hr: Diffutils contains tools used for finding differences between files - hr translations
+RPROVIDES_diffutils-locale-hr: diffutils-locale hr-translation
+RRECOMMENDS_diffutils-locale-hr: virtual-locale-hr
+SECTION: base
+PKG_diffutils-locale-hr: diffutils-locale-hr
+FILES_diffutils-locale-hr: /usr/share/locale/hr
+FILES_INFO: {"/usr/share/locale/hr/LC_MESSAGES/diffutils.mo": 16253}
+PKGSIZE_diffutils-locale-hr: 16253

@@ -1,0 +1,15 @@
+PN: grep
+PV: 2.25
+PR: r0
+PKGV: 2.25
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION_grep-locale-sk: GNU grep utility.  This package contains language translation files for the sk locale.
+SUMMARY_grep-locale-sk: GNU grep utility - sk translations
+RPROVIDES_grep-locale-sk: grep-locale sk-translation
+RRECOMMENDS_grep-locale-sk: virtual-locale-sk
+SECTION: console/utils
+PKG_grep-locale-sk: grep-locale-sk
+FILES_grep-locale-sk: /usr/share/locale/sk
+FILES_INFO: {"/usr/share/locale/sk/LC_MESSAGES/grep.mo": 16052}
+PKGSIZE_grep-locale-sk: 16052

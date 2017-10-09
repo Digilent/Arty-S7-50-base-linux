@@ -1,0 +1,15 @@
+PN: grep
+PV: 2.25
+PR: r0
+PKGV: 2.25
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION_grep-locale-af: GNU grep utility.  This package contains language translation files for the af locale.
+SUMMARY_grep-locale-af: GNU grep utility - af translations
+RPROVIDES_grep-locale-af: grep-locale af-translation
+RRECOMMENDS_grep-locale-af: virtual-locale-af
+SECTION: console/utils
+PKG_grep-locale-af: grep-locale-af
+FILES_grep-locale-af: /usr/share/locale/af
+FILES_INFO: {"/usr/share/locale/af/LC_MESSAGES/grep.mo": 1410}
+PKGSIZE_grep-locale-af: 1410

@@ -1,0 +1,18 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-ndbm-file: perl module ndbm-file
+SUMMARY_perl-module-ndbm-file: perl module ndbm-file
+RDEPENDS_perl-module-ndbm-file: perl gdbm-compat (>= 1.12) glibc-xilinx (>= 2.23)
+SECTION: devel
+PKG_perl-module-ndbm-file: perl-module-ndbm-file
+FILES_perl-module-ndbm-file: /usr/lib/perl/5.22.1/auto/NDBM_File/NDBM_File.so /usr/lib/perl/5.22.1/NDBM_File.pm
+FILERPROVIDESFLIST_perl-module-ndbm-file: /usr/lib/perl/5.22.1/auto/NDBM@underscore@File/NDBM@underscore@File.so
+FILES_INFO: {"/usr/lib/perl/5.22.1/auto/NDBM_File/NDBM_File.so": 15272, "/usr/lib/perl/5.22.1/NDBM_File.pm": 2500}
+FILERPROVIDES_/usr/lib/perl/5.22.1/auto/NDBM@underscore@File/NDBM@underscore@File.so_perl-module-ndbm-file: NDBM_File.so
+FILERDEPENDSFLIST_perl-module-ndbm-file: /usr/lib/perl/5.22.1/auto/NDBM@underscore@File/NDBM@underscore@File.so
+FILERDEPENDS_/usr/lib/perl/5.22.1/auto/NDBM@underscore@File/NDBM@underscore@File.so_perl-module-ndbm-file: libc.so.6 libc.so.6(GLIBC_2.18) libgdbm_compat.so.4 rtld(GNU_HASH)
+PKGSIZE_perl-module-ndbm-file: 17772

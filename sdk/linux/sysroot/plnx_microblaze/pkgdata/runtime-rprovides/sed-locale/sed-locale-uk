@@ -1,0 +1,15 @@
+PN: sed
+PV: 4.2.2
+PR: r0
+PKGV: 4.2.2
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_sed-locale-uk: Stream EDitor (text filtering utility).  This package contains language translation files for the uk locale.
+SUMMARY_sed-locale-uk: Stream EDitor (text filtering utility) - uk translations
+RPROVIDES_sed-locale-uk: sed-locale uk-translation
+RRECOMMENDS_sed-locale-uk: virtual-locale-uk
+SECTION: console/utils
+PKG_sed-locale-uk: sed-locale-uk
+FILES_sed-locale-uk: /usr/share/locale/uk
+FILES_INFO: {"/usr/share/locale/uk/LC_MESSAGES/sed.mo": 13187}
+PKGSIZE_sed-locale-uk: 13187

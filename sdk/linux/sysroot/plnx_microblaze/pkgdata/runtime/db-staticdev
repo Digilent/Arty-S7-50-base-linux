@@ -1,0 +1,14 @@
+PN: db
+PV: 6.0.35
+PR: r1
+PKGV: 6.0.35
+PKGR: r1
+LICENSE: AGPL-3.0
+DESCRIPTION_db-staticdev: Berkeley Database v6.  This package contains static libraries for software development.
+SUMMARY_db-staticdev: Berkeley Database v6 - Development files (Static Libraries)
+RDEPENDS_db-staticdev: db-dev (= 6.0.35-r1)
+SECTION_db-staticdev: devel
+PKG_db-staticdev: db-staticdev
+FILES_db-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/db/*.a
+FILES_INFO: {}
+PKGSIZE_db-staticdev: 0

@@ -1,0 +1,20 @@
+PN: util-linux
+PV: 2.28.1
+PR: r0
+PKGV: 2.28.1
+PKGR: r0
+LICENSE: GPLv2+ & LGPLv2.1+ & BSD
+DESCRIPTION_util-linux-libblkid: util-linux libblkid
+SUMMARY_util-linux-libblkid: util-linux libblkid
+RDEPENDS_util-linux-libblkid: glibc-xilinx (>= 2.23) util-linux-libuuid (>= 2.28.1)
+RPROVIDES_util-linux-libblkid:  util-linux-libblkid (=2.28.1)
+SECTION: base
+PKG_util-linux-libblkid: libblkid1
+FILES_util-linux-libblkid: /lib/libblkid.so.1 /lib/libblkid.so.1.1.0
+pkg_postinst_util-linux-libblkid: #!/bin/sh\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+FILERPROVIDESFLIST_util-linux-libblkid: /lib/libblkid.so.1.1.0
+FILES_INFO: {"/lib/libblkid.so.1": 17, "/lib/libblkid.so.1.1.0": 299244}
+FILERPROVIDES_/lib/libblkid.so.1.1.0_util-linux-libblkid: libblkid.so.1 libblkid.so.1(BLKID_1.0) libblkid.so.1(BLKID_2.15) libblkid.so.1(BLKID_2.17) libblkid.so.1(BLKID_2.18) libblkid.so.1(BLKID_2.20) libblkid.so.1(BLKID_2.21) libblkid.so.1(BLKID_2.23) libblkid.so.1(BLKID_2.25)
+FILERDEPENDSFLIST_util-linux-libblkid: /lib/libblkid.so.1.1.0
+FILERDEPENDS_/lib/libblkid.so.1.1.0_util-linux-libblkid: ld.so.1 ld.so.1(GLIBC_2.18) libc.so.6 libc.so.6(GLIBC_2.18) libuuid.so.1 libuuid.so.1(UUID_1.0) rtld(GNU_HASH)
+PKGSIZE_util-linux-libblkid: 299261

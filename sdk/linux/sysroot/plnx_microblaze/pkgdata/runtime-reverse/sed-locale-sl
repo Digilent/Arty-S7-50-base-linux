@@ -1,0 +1,15 @@
+PN: sed
+PV: 4.2.2
+PR: r0
+PKGV: 4.2.2
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_sed-locale-sl: Stream EDitor (text filtering utility).  This package contains language translation files for the sl locale.
+SUMMARY_sed-locale-sl: Stream EDitor (text filtering utility) - sl translations
+RPROVIDES_sed-locale-sl: sed-locale sl-translation
+RRECOMMENDS_sed-locale-sl: virtual-locale-sl
+SECTION: console/utils
+PKG_sed-locale-sl: sed-locale-sl
+FILES_sed-locale-sl: /usr/share/locale/sl
+FILES_INFO: {"/usr/share/locale/sl/LC_MESSAGES/sed.mo": 10048}
+PKGSIZE_sed-locale-sl: 10048

@@ -1,0 +1,15 @@
+PN: sed
+PV: 4.2.2
+PR: r0
+PKGV: 4.2.2
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_sed-locale-ro: Stream EDitor (text filtering utility).  This package contains language translation files for the ro locale.
+SUMMARY_sed-locale-ro: Stream EDitor (text filtering utility) - ro translations
+RPROVIDES_sed-locale-ro: sed-locale ro-translation
+RRECOMMENDS_sed-locale-ro: virtual-locale-ro
+SECTION: console/utils
+PKG_sed-locale-ro: sed-locale-ro
+FILES_sed-locale-ro: /usr/share/locale/ro
+FILES_INFO: {"/usr/share/locale/ro/LC_MESSAGES/sed.mo": 8589}
+PKGSIZE_sed-locale-ro: 8589

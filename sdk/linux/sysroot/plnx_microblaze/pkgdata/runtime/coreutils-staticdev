@@ -1,0 +1,14 @@
+PN: coreutils
+PV: 8.25
+PR: r0
+PKGV: 8.25
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_coreutils-staticdev: The GNU Core Utilities provide the basic file, shell and text manipulation utilities. These are the core utilities which are expected to exist on every system.  This package contains static libraries for software development.
+SUMMARY_coreutils-staticdev: The basic file, shell and text manipulation utilities - Development files (Static Libraries)
+RDEPENDS_coreutils-staticdev: coreutils-dev (= 8.25-r0)
+SECTION_coreutils-staticdev: devel
+PKG_coreutils-staticdev: coreutils-staticdev
+FILES_coreutils-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/coreutils/*.a
+FILES_INFO: {}
+PKGSIZE_coreutils-staticdev: 0

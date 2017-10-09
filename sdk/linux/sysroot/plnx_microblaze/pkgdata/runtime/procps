@@ -1,0 +1,52 @@
+PN: procps
+PV: 3.3.12
+PR: r0
+PKGV: 3.3.12
+PKGR: r0
+LICENSE: GPLv2+ & LGPLv2+
+DESCRIPTION: Procps contains a set of system utilities that provide system information about processes using the /proc filesystem. The package includes the programs ps, top, vmstat, w, kill, and skill.
+SUMMARY: System and process monitoring utilities
+RDEPENDS_procps: update-alternatives-opkg ncurses-libncurses (>= 6.0+20160625) glibc-xilinx (>= 2.23) ncurses-libtinfo (>= 6.0+20160625)
+SECTION: base
+PKG_procps: procps
+FILES_procps: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev /usr/lib/udev /lib/udev /usr/lib/udev /usr/share/procps /usr/lib/procps/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+pkg_postinst_procps: #!/bin/sh\n# Begin section update-alternatives\nupdate-alternatives --install /usr/bin/free free /usr/bin/free.procps 200\nupdate-alternatives --install /usr/bin/pkill pkill /usr/bin/pkill.procps 200\nupdate-alternatives --install /usr/bin/pmap pmap /usr/bin/pmap.procps 200\nupdate-alternatives --install /usr/bin/pgrep pgrep /usr/bin/pgrep.procps 200\nupdate-alternatives --install /usr/bin/pwdx pwdx /usr/bin/pwdx.procps 200\nupdate-alternatives --install /usr/bin/skill skill /usr/bin/skill.procps 200\nupdate-alternatives --install /usr/bin/snice snice /usr/bin/snice.procps 200\nupdate-alternatives --install /usr/bin/top top /usr/bin/top.procps 200\nupdate-alternatives --install /usr/bin/uptime uptime /usr/bin/uptime.procps 200\nupdate-alternatives --install /bin/kill kill /bin/kill.procps 200\nupdate-alternatives --install /bin/pidof pidof /bin/pidof.procps 200\nupdate-alternatives --install /bin/ps ps /bin/ps.procps 200\nupdate-alternatives --install /bin/watch watch /bin/watch.procps 200\nupdate-alternatives --install /sbin/sysctl sysctl /sbin/sysctl.procps 200\n# End section update-alternatives\nif [ x"$D" = "x" ]; then\n\tif [ -x /sbin/ldconfig ]; then /sbin/ldconfig ; fi\nfi\n
+pkg_prerm_procps: #!/bin/sh\n# Begin section update-alternatives\nupdate-alternatives --remove  free /usr/bin/free.procps\nupdate-alternatives --remove  pkill /usr/bin/pkill.procps\nupdate-alternatives --remove  pmap /usr/bin/pmap.procps\nupdate-alternatives --remove  pgrep /usr/bin/pgrep.procps\nupdate-alternatives --remove  pwdx /usr/bin/pwdx.procps\nupdate-alternatives --remove  skill /usr/bin/skill.procps\nupdate-alternatives --remove  snice /usr/bin/snice.procps\nupdate-alternatives --remove  top /usr/bin/top.procps\nupdate-alternatives --remove  uptime /usr/bin/uptime.procps\nupdate-alternatives --remove  kill /bin/kill.procps\nupdate-alternatives --remove  pidof /bin/pidof.procps\nupdate-alternatives --remove  ps /bin/ps.procps\nupdate-alternatives --remove  watch /bin/watch.procps\nupdate-alternatives --remove  sysctl /sbin/sysctl.procps\n# End section update-alternatives\n
+FILERPROVIDESFLIST_procps: /usr/lib/libprocps.so.6.0.0 /usr/bin/free.procps /usr/bin/pkill.procps /usr/bin/pmap.procps /usr/bin/pgrep.procps /usr/bin/pwdx.procps /usr/bin/skill.procps /usr/bin/snice.procps /usr/bin/top.procps /usr/bin/uptime.procps /bin/kill.procps /bin/pidof.procps /bin/ps.procps /bin/watch.procps /sbin/sysctl.procps
+FILES_INFO: {"/usr/bin/uptime.procps": 10324, "/etc/sysctl.conf": 2049, "/usr/bin/vmstat": 37952, "/usr/bin/free.procps": 22156, "/usr/bin/pkill.procps": 21280, "/usr/bin/skill.procps": 26368, "/bin/pidof.procps": 10668, "/usr/lib/libprocps.so.6": 18, "/usr/bin/snice.procps": 26368, "/usr/bin/pmap.procps": 26404, "/bin/watch.procps": 24892, "/usr/bin/pgrep.procps": 21280, "/usr/bin/slabtop": 20164, "/bin/kill.procps": 26364, "/bin/ps.procps": 92756, "/usr/lib/libprocps.so.6.0.0": 76004, "/sbin/sysctl.procps": 18108, "/usr/bin/tload": 16060, "/usr/bin/pwdx.procps": 7452, "/usr/bin/w": 23516, "/usr/bin/top.procps": 115500}
+FILERPROVIDES_/usr/lib/libprocps.so.6.0.0_procps: libprocps.so.6 libprocps.so.6(LIBPROCPS_0)
+FILERPROVIDES_/usr/bin/free.procps_procps:  /usr/bin/free
+FILERPROVIDES_/usr/bin/pkill.procps_procps:  /usr/bin/pkill
+FILERPROVIDES_/usr/bin/pmap.procps_procps:  /usr/bin/pmap
+FILERPROVIDES_/usr/bin/pgrep.procps_procps:  /usr/bin/pgrep
+FILERPROVIDES_/usr/bin/pwdx.procps_procps:  /usr/bin/pwdx
+FILERPROVIDES_/usr/bin/skill.procps_procps:  /usr/bin/skill
+FILERPROVIDES_/usr/bin/snice.procps_procps:  /usr/bin/snice
+FILERPROVIDES_/usr/bin/top.procps_procps:  /usr/bin/top
+FILERPROVIDES_/usr/bin/uptime.procps_procps:  /usr/bin/uptime
+FILERPROVIDES_/bin/kill.procps_procps:  /bin/kill
+FILERPROVIDES_/bin/pidof.procps_procps:  /bin/pidof
+FILERPROVIDES_/bin/ps.procps_procps:  /bin/ps
+FILERPROVIDES_/bin/watch.procps_procps:  /bin/watch
+FILERPROVIDES_/sbin/sysctl.procps_procps:  /sbin/sysctl
+FILERDEPENDSFLIST_procps: /usr/bin/uptime.procps /bin/watch.procps /sbin/sysctl.procps /usr/bin/free.procps /usr/bin/top.procps /usr/bin/pkill.procps /usr/bin/skill.procps /bin/pidof.procps /usr/bin/pgrep.procps /usr/bin/pmap.procps /usr/bin/snice.procps /bin/kill.procps /bin/ps.procps /usr/lib/libprocps.so.6.0.0 /usr/bin/slabtop /usr/bin/tload /usr/bin/pwdx.procps /usr/bin/w /usr/bin/vmstat
+FILERDEPENDS_/usr/bin/uptime.procps_procps: libc.so.6 libc.so.6(GLIBC_2.18) libprocps.so.6 libprocps.so.6(LIBPROCPS_0) rtld(GNU_HASH)
+FILERDEPENDS_/bin/watch.procps_procps: libc.so.6 libc.so.6(GLIBC_2.18) libncurses.so.5 libtinfo.so.5 rtld(GNU_HASH)
+FILERDEPENDS_/sbin/sysctl.procps_procps: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/free.procps_procps: libc.so.6 libc.so.6(GLIBC_2.18) libprocps.so.6 libprocps.so.6(LIBPROCPS_0) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/top.procps_procps: libc.so.6 libc.so.6(GLIBC_2.18) libdl.so.2 libdl.so.2(GLIBC_2.18) libprocps.so.6 libprocps.so.6(LIBPROCPS_0) libtinfo.so.5 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/pkill.procps_procps: libc.so.6 libc.so.6(GLIBC_2.18) libprocps.so.6 libprocps.so.6(LIBPROCPS_0) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/skill.procps_procps: libc.so.6 libc.so.6(GLIBC_2.18) libprocps.so.6 libprocps.so.6(LIBPROCPS_0) rtld(GNU_HASH)
+FILERDEPENDS_/bin/pidof.procps_procps: libc.so.6 libc.so.6(GLIBC_2.18) libprocps.so.6 libprocps.so.6(LIBPROCPS_0) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/pgrep.procps_procps: libc.so.6 libc.so.6(GLIBC_2.18) libprocps.so.6 libprocps.so.6(LIBPROCPS_0) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/pmap.procps_procps: libc.so.6 libc.so.6(GLIBC_2.18) libprocps.so.6 libprocps.so.6(LIBPROCPS_0) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/snice.procps_procps: libc.so.6 libc.so.6(GLIBC_2.18) libprocps.so.6 libprocps.so.6(LIBPROCPS_0) rtld(GNU_HASH)
+FILERDEPENDS_/bin/kill.procps_procps: libc.so.6 libc.so.6(GLIBC_2.18) libprocps.so.6 libprocps.so.6(LIBPROCPS_0) rtld(GNU_HASH)
+FILERDEPENDS_/bin/ps.procps_procps: libc.so.6 libc.so.6(GLIBC_2.18) libprocps.so.6 libprocps.so.6(LIBPROCPS_0) rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/libprocps.so.6.0.0_procps: libc.so.6 libc.so.6(GLIBC_2.18) libdl.so.2 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/slabtop_procps: libc.so.6 libc.so.6(GLIBC_2.18) libncurses.so.5 libprocps.so.6 libprocps.so.6(LIBPROCPS_0) libtinfo.so.5 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/tload_procps: libc.so.6 libc.so.6(GLIBC_2.18) libprocps.so.6 libprocps.so.6(LIBPROCPS_0) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/pwdx.procps_procps: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/w_procps: libc.so.6 libc.so.6(GLIBC_2.18) libprocps.so.6 libprocps.so.6(LIBPROCPS_0) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/vmstat_procps: libc.so.6 libc.so.6(GLIBC_2.18) libprocps.so.6 libprocps.so.6(LIBPROCPS_0) rtld(GNU_HASH)
+PKGSIZE_procps: 625683

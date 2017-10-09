@@ -1,0 +1,15 @@
+PN: grep
+PV: 2.25
+PR: r0
+PKGV: 2.25
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION_grep-locale-da: GNU grep utility.  This package contains language translation files for the da locale.
+SUMMARY_grep-locale-da: GNU grep utility - da translations
+RPROVIDES_grep-locale-da: grep-locale da-translation
+RRECOMMENDS_grep-locale-da: virtual-locale-da
+SECTION: console/utils
+PKG_grep-locale-da: grep-locale-da
+FILES_grep-locale-da: /usr/share/locale/da
+FILES_INFO: {"/usr/share/locale/da/LC_MESSAGES/grep.mo": 17331}
+PKGSIZE_grep-locale-da: 17331

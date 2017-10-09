@@ -1,0 +1,15 @@
+PN: sed
+PV: 4.2.2
+PR: r0
+PKGV: 4.2.2
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_sed-locale-cs: Stream EDitor (text filtering utility).  This package contains language translation files for the cs locale.
+SUMMARY_sed-locale-cs: Stream EDitor (text filtering utility) - cs translations
+RPROVIDES_sed-locale-cs: sed-locale cs-translation
+RRECOMMENDS_sed-locale-cs: virtual-locale-cs
+SECTION: console/utils
+PKG_sed-locale-cs: sed-locale-cs
+FILES_sed-locale-cs: /usr/share/locale/cs
+FILES_INFO: {"/usr/share/locale/cs/LC_MESSAGES/sed.mo": 10479}
+PKGSIZE_sed-locale-cs: 10479

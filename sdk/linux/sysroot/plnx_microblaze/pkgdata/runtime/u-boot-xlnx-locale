@@ -1,0 +1,13 @@
+PN: u-boot-xlnx
+PV: v2017.01-xilinx-v2017.2+gitAUTOINC+5290eb544b
+PR: r0
+PKGV: v2017.01-xilinx-v2017.2+git0+5290eb544b
+PKGR: r0
+LICENSE: GPLv2+
+DESCRIPTION: Universal Boot Loader for embedded devices.
+SUMMARY: Universal Boot Loader for embedded devices
+SECTION: bootloaders
+PKG_u-boot-xlnx-locale: u-boot-xlnx-locale
+FILES_u-boot-xlnx-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_u-boot-xlnx-locale: 0

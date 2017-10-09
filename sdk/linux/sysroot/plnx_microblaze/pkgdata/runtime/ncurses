@@ -1,0 +1,17 @@
+PN: ncurses
+PV: 6.0+20160625
+PR: r0
+PKGV: 6.0+20160625
+PKGR: r0
+LICENSE: MIT
+DESCRIPTION: SVr4 and XSI-Curses compatible curses library and terminfo tools including tic, infocmp, captoinfo. Supports color, multiple highlights, forms-drawing characters, and automatic recognition of keypad and function-key sequences. Extensions include resizable windows and mouse support on both xterm and Linux console using the gpm library.
+SUMMARY: The New Curses library
+RDEPENDS_ncurses: ncurses-libtinfo (>= 6.0+20160625) glibc-xilinx (>= 2.23)
+SECTION: libs
+PKG_ncurses: ncurses
+FILES_ncurses:   /usr/bin/tput   /usr/bin/tset   /usr/bin/ncurses5-config   /usr/bin/ncursesw5-config   /usr/share/tabset 
+FILES_INFO: {"/usr/share/tabset/std": 135, "/usr/bin/tset": 16208, "/usr/share/tabset/vt100": 160, "/usr/share/tabset/stdcrt": 95, "/usr/bin/tput": 10124, "/usr/share/tabset/vt300": 64}
+FILERDEPENDSFLIST_ncurses: /usr/bin/tput /usr/bin/tset
+FILERDEPENDS_/usr/bin/tput_ncurses: libc.so.6 libc.so.6(GLIBC_2.18) libtinfo.so.5 rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/tset_ncurses: libc.so.6 libc.so.6(GLIBC_2.18) libtinfo.so.5 rtld(GNU_HASH)
+PKGSIZE_ncurses: 26786

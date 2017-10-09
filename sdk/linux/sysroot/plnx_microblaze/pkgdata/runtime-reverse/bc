@@ -1,0 +1,21 @@
+PN: bc
+PV: 1.06
+PR: r3
+PKGV: 1.06
+PKGR: r3
+LICENSE: GPLv2+ & LGPLv2.1
+DESCRIPTION: Arbitrary precision calculator language.
+SUMMARY: Arbitrary precision calculator language
+RDEPENDS_bc: update-alternatives-opkg glibc-xilinx (>= 2.23)
+SECTION: base
+PKG_bc: bc
+FILES_bc: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev /usr/lib/udev /lib/udev /usr/lib/udev /usr/share/bc /usr/lib/bc/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+pkg_postinst_bc: #!/bin/sh\n# Begin section update-alternatives\nupdate-alternatives --install /usr/bin/dc dc /usr/bin/dc.bc 100\n# End section update-alternatives\n
+pkg_prerm_bc: #!/bin/sh\n# Begin section update-alternatives\nupdate-alternatives --remove  dc /usr/bin/dc.bc\n# End section update-alternatives\n
+FILERPROVIDESFLIST_bc:  /usr/bin/dc.bc
+FILES_INFO: {"/usr/bin/dc.bc": 36848, "/usr/bin/bc": 72092}
+FILERPROVIDES_/usr/bin/dc.bc_bc:  /usr/bin/dc
+FILERDEPENDSFLIST_bc: /usr/bin/dc.bc /usr/bin/bc
+FILERDEPENDS_/usr/bin/dc.bc_bc: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/bc_bc: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+PKGSIZE_bc: 108940

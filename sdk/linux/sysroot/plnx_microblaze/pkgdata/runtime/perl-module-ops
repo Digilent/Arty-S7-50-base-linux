@@ -1,0 +1,14 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-ops: perl module ops
+SUMMARY_perl-module-ops: perl module ops
+RDEPENDS_perl-module-ops: perl perl-module-opcode
+SECTION: devel
+PKG_perl-module-ops: perl-module-ops
+FILES_perl-module-ops: /usr/lib/perl/5.22.1/ops.pm
+FILES_INFO: {"/usr/lib/perl/5.22.1/ops.pm": 997}
+PKGSIZE_perl-module-ops: 997

@@ -1,0 +1,14 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-pod-perldoc-toman: perl module pod-perldoc-toman
+SUMMARY_perl-module-pod-perldoc-toman: perl module pod-perldoc-toman
+RDEPENDS_perl-module-pod-perldoc-toman: perl perl-module-encode perl-module-file-spec-functions perl-module-io-handle perl-module-io-select perl-module-ipc-open3 perl-module-parent perl-module-pod-man perl-module-pod-perldoc-topod perl-module-strict perl-module-symbol perl-module-vars perl-module-warnings
+SECTION: devel
+PKG_perl-module-pod-perldoc-toman: perl-module-pod-perldoc-toman
+FILES_perl-module-pod-perldoc-toman: /usr/lib/perl/5.22.1/Pod/Perldoc/ToMan.pm
+FILES_INFO: {"/usr/lib/perl/5.22.1/Pod/Perldoc/ToMan.pm": 14227}
+PKGSIZE_perl-module-pod-perldoc-toman: 14227

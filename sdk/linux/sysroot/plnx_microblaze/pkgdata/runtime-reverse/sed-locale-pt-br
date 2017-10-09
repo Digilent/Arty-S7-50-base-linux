@@ -1,0 +1,15 @@
+PN: sed
+PV: 4.2.2
+PR: r0
+PKGV: 4.2.2
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_sed-locale-pt-br: Stream EDitor (text filtering utility).  This package contains language translation files for the pt_BR locale.
+SUMMARY_sed-locale-pt-br: Stream EDitor (text filtering utility) - pt_BR translations
+RPROVIDES_sed-locale-pt-br: sed-locale pt-br-translation
+RRECOMMENDS_sed-locale-pt-br: virtual-locale-pt-br
+SECTION: console/utils
+PKG_sed-locale-pt-br: sed-locale-pt-br
+FILES_sed-locale-pt-br: /usr/share/locale/pt_BR
+FILES_INFO: {"/usr/share/locale/pt_BR/LC_MESSAGES/sed.mo": 10316}
+PKGSIZE_sed-locale-pt-br: 10316

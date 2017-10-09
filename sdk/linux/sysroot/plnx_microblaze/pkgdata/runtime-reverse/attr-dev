@@ -1,0 +1,16 @@
+PN: attr
+PV: 2.4.47
+PR: r0
+PKGV: 2.4.47
+PKGR: r0
+LICENSE: LGPLv2.1+ & GPLv2+
+DESCRIPTION_attr-dev: Utilities for manipulating filesystem extended attributes.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_attr-dev: Utilities for manipulating filesystem extended attributes - Development files
+RDEPENDS_attr-dev: attr (= 2.4.47-r0) libattr
+RRECOMMENDS_attr-dev: coreutils-dev perl-module-filehandle-dev perl-module-getopt-std-dev perl-module-posix-dev glibc-xilinx-dev libattr-dev
+SECTION_attr-dev: devel
+PKG_attr-dev: attr-dev
+ALLOW_EMPTY_attr-dev: 1
+FILES_attr-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/attr/*.la /lib/*.la
+FILES_INFO: {"/lib/libattr.so": 12, "/usr/include/attr/xattr.h": 2560, "/usr/include/attr/libattr.h": 1388, "/usr/include/attr/error_context.h": 1555, "/usr/lib/libattr.la": 901, "/usr/include/attr/attributes.h": 7242, "/lib/libattr.la": 21, "/usr/lib/libattr.so": 20}
+PKGSIZE_attr-dev: 13699

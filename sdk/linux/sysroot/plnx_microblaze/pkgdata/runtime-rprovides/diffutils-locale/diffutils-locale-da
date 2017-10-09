@@ -1,0 +1,15 @@
+PN: diffutils
+PV: 3.4
+PR: r0
+PKGV: 3.4
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_diffutils-locale-da: Diffutils contains the GNU diff, diff3, sdiff, and cmp utilities. These programs are usually used for creating patch files.  This package contains language translation files for the da locale.
+SUMMARY_diffutils-locale-da: Diffutils contains tools used for finding differences between files - da translations
+RPROVIDES_diffutils-locale-da: diffutils-locale da-translation
+RRECOMMENDS_diffutils-locale-da: virtual-locale-da
+SECTION: base
+PKG_diffutils-locale-da: diffutils-locale-da
+FILES_diffutils-locale-da: /usr/share/locale/da
+FILES_INFO: {"/usr/share/locale/da/LC_MESSAGES/diffutils.mo": 32510}
+PKGSIZE_diffutils-locale-da: 32510

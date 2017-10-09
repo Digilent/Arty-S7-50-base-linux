@@ -1,0 +1,14 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-archive-tar-constant: perl module archive-tar-constant
+SUMMARY_perl-module-archive-tar-constant: perl module archive-tar-constant
+RDEPENDS_perl-module-archive-tar-constant: perl perl-module-constant perl-module-exporter perl-module-io-compress-bzip2 perl-module-time-local
+SECTION: devel
+PKG_perl-module-archive-tar-constant: perl-module-archive-tar-constant
+FILES_perl-module-archive-tar-constant: /usr/lib/perl/5.22.1/Archive/Tar/Constant.pm
+FILES_INFO: {"/usr/lib/perl/5.22.1/Archive/Tar/Constant.pm": 4176}
+PKGSIZE_perl-module-archive-tar-constant: 4176

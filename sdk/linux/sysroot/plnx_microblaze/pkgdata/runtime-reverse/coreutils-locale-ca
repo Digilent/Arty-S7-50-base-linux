@@ -1,0 +1,15 @@
+PN: coreutils
+PV: 8.25
+PR: r0
+PKGV: 8.25
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_coreutils-locale-ca: The GNU Core Utilities provide the basic file, shell and text manipulation utilities. These are the core utilities which are expected to exist on every system.  This package contains language translation files for the ca locale.
+SUMMARY_coreutils-locale-ca: The basic file, shell and text manipulation utilities - ca translations
+RPROVIDES_coreutils-locale-ca: coreutils-locale ca-translation
+RRECOMMENDS_coreutils-locale-ca: virtual-locale-ca
+SECTION: base
+PKG_coreutils-locale-ca: coreutils-locale-ca
+FILES_coreutils-locale-ca: /usr/share/locale/ca
+FILES_INFO: {"/usr/share/locale/ca/LC_TIME/coreutils.mo": 27, "/usr/share/locale/ca/LC_MESSAGES/coreutils.mo": 356960}
+PKGSIZE_coreutils-locale-ca: 356987

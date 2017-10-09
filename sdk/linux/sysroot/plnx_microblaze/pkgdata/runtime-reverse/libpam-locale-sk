@@ -1,0 +1,15 @@
+PN: libpam
+PV: 1.3.0
+PR: r5
+PKGV: 1.3.0
+PKGR: r5
+LICENSE: GPLv2+ | BSD
+DESCRIPTION_libpam-locale-sk: Linux-PAM (Pluggable Authentication Modules for Linux), a flexible mechanism for authenticating users  This package contains language translation files for the sk locale.
+SUMMARY_libpam-locale-sk: Linux-PAM (Pluggable Authentication Modules) - sk translations
+RPROVIDES_libpam-locale-sk: libpam-locale sk-translation
+RRECOMMENDS_libpam-locale-sk: virtual-locale-sk
+SECTION: base
+PKG_libpam-locale-sk: libpam-locale-sk
+FILES_libpam-locale-sk: /usr/share/locale/sk
+FILES_INFO: {"/usr/share/locale/sk/LC_MESSAGES/Linux-PAM.mo": 11328}
+PKGSIZE_libpam-locale-sk: 11328

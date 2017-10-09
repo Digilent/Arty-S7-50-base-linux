@@ -1,0 +1,40 @@
+PN: openssl
+PV: 1.0.2j
+PR: r0
+PKGV: 1.0.2j
+PKGR: r0
+LICENSE: openssl
+DESCRIPTION: Secure Socket Layer (SSL) binary and related cryptographic tools.
+SUMMARY: Secure Socket Layer
+RDEPENDS_openssl-engines: glibc-xilinx (>= 2.23) libcrypto (>= 1.0.2j)
+SECTION: libs/network
+PKG_openssl-engines: openssl-engines
+FILES_openssl-engines: /usr/lib/ssl/engines/*.so /usr/lib/engines
+FILERPROVIDESFLIST_openssl-engines: /usr/lib/ssl/engines/libsureware.so /usr/lib/ssl/engines/libaep.so /usr/lib/ssl/engines/libnuron.so /usr/lib/ssl/engines/libubsec.so /usr/lib/ssl/engines/libcswift.so /usr/lib/ssl/engines/libatalla.so /usr/lib/ssl/engines/libcapi.so /usr/lib/ssl/engines/lib4758cca.so /usr/lib/ssl/engines/libpadlock.so /usr/lib/ssl/engines/libchil.so /usr/lib/ssl/engines/libgmp.so /usr/lib/ssl/engines/libgost.so
+FILES_INFO: {"/usr/lib/ssl/engines/libaep.so": 14640, "/usr/lib/ssl/engines/libnuron.so": 10336, "/usr/lib/ssl/engines/libubsec.so": 16432, "/usr/lib/ssl/engines/libcswift.so": 16936, "/usr/lib/ssl/engines/libatalla.so": 11672, "/usr/lib/ssl/engines/libcapi.so": 3428, "/usr/lib/ssl/engines/libchil.so": 20460, "/usr/lib/ssl/engines/libgost.so": 90856, "/usr/lib/ssl/engines/libpadlock.so": 3436, "/usr/lib/ssl/engines/lib4758cca.so": 15400, "/usr/lib/ssl/engines/libsureware.so": 21084, "/usr/lib/ssl/engines/libgmp.so": 3428}
+FILERPROVIDES_/usr/lib/ssl/engines/libsureware.so_openssl-engines: libsureware.so libsureware.so(OPENSSL_1.0.2)
+FILERPROVIDES_/usr/lib/ssl/engines/libaep.so_openssl-engines: libaep.so libaep.so(OPENSSL_1.0.2)
+FILERPROVIDES_/usr/lib/ssl/engines/libnuron.so_openssl-engines: libnuron.so libnuron.so(OPENSSL_1.0.2)
+FILERPROVIDES_/usr/lib/ssl/engines/libubsec.so_openssl-engines: libubsec.so libubsec.so(OPENSSL_1.0.2)
+FILERPROVIDES_/usr/lib/ssl/engines/libcswift.so_openssl-engines: libcswift.so libcswift.so(OPENSSL_1.0.2)
+FILERPROVIDES_/usr/lib/ssl/engines/libatalla.so_openssl-engines: libatalla.so libatalla.so(OPENSSL_1.0.2)
+FILERPROVIDES_/usr/lib/ssl/engines/libcapi.so_openssl-engines: libcapi.so libcapi.so(OPENSSL_1.0.2)
+FILERPROVIDES_/usr/lib/ssl/engines/lib4758cca.so_openssl-engines: lib4758cca.so lib4758cca.so(OPENSSL_1.0.2)
+FILERPROVIDES_/usr/lib/ssl/engines/libpadlock.so_openssl-engines: libpadlock.so libpadlock.so(OPENSSL_1.0.2)
+FILERPROVIDES_/usr/lib/ssl/engines/libchil.so_openssl-engines: libchil.so libchil.so(OPENSSL_1.0.2)
+FILERPROVIDES_/usr/lib/ssl/engines/libgmp.so_openssl-engines: libgmp.so libgmp.so(OPENSSL_1.0.2)
+FILERPROVIDES_/usr/lib/ssl/engines/libgost.so_openssl-engines: libgost.so libgost.so(OPENSSL_1.0.2)
+FILERDEPENDSFLIST_openssl-engines: /usr/lib/ssl/engines/libsureware.so /usr/lib/ssl/engines/libaep.so /usr/lib/ssl/engines/libnuron.so /usr/lib/ssl/engines/libubsec.so /usr/lib/ssl/engines/libcswift.so /usr/lib/ssl/engines/libatalla.so /usr/lib/ssl/engines/libcapi.so /usr/lib/ssl/engines/lib4758cca.so /usr/lib/ssl/engines/libpadlock.so /usr/lib/ssl/engines/libchil.so /usr/lib/ssl/engines/libgmp.so /usr/lib/ssl/engines/libgost.so
+FILERDEPENDS_/usr/lib/ssl/engines/libsureware.so_openssl-engines: libc.so.6 libc.so.6(GLIBC_2.18) libcrypto.so.1.0.0 libcrypto.so.1.0.0(OPENSSL_1.0.2d) rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/ssl/engines/libaep.so_openssl-engines: libc.so.6 libc.so.6(GLIBC_2.18) libcrypto.so.1.0.0 libcrypto.so.1.0.0(OPENSSL_1.0.2d) rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/ssl/engines/libnuron.so_openssl-engines: libc.so.6 libc.so.6(GLIBC_2.18) libcrypto.so.1.0.0 libcrypto.so.1.0.0(OPENSSL_1.0.2d) rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/ssl/engines/libubsec.so_openssl-engines: libc.so.6 libc.so.6(GLIBC_2.18) libcrypto.so.1.0.0 libcrypto.so.1.0.0(OPENSSL_1.0.2d) rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/ssl/engines/libcswift.so_openssl-engines: libc.so.6 libc.so.6(GLIBC_2.18) libcrypto.so.1.0.0 libcrypto.so.1.0.0(OPENSSL_1.0.2d) rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/ssl/engines/libatalla.so_openssl-engines: libc.so.6 libc.so.6(GLIBC_2.18) libcrypto.so.1.0.0 libcrypto.so.1.0.0(OPENSSL_1.0.2d) rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/ssl/engines/libcapi.so_openssl-engines: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/ssl/engines/lib4758cca.so_openssl-engines: libc.so.6 libc.so.6(GLIBC_2.18) libcrypto.so.1.0.0 libcrypto.so.1.0.0(OPENSSL_1.0.2d) rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/ssl/engines/libpadlock.so_openssl-engines: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/ssl/engines/libchil.so_openssl-engines: libc.so.6 libc.so.6(GLIBC_2.18) libcrypto.so.1.0.0 libcrypto.so.1.0.0(OPENSSL_1.0.2d) rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/ssl/engines/libgmp.so_openssl-engines: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/ssl/engines/libgost.so_openssl-engines: libc.so.6 libc.so.6(GLIBC_2.18) libcrypto.so.1.0.0 libcrypto.so.1.0.0(OPENSSL_1.0.2d) rtld(GNU_HASH)
+PKGSIZE_openssl-engines: 228108

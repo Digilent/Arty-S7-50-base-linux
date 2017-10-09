@@ -1,0 +1,15 @@
+PN: coreutils
+PV: 8.25
+PR: r0
+PKGV: 8.25
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_coreutils-locale-ga: The GNU Core Utilities provide the basic file, shell and text manipulation utilities. These are the core utilities which are expected to exist on every system.  This package contains language translation files for the ga locale.
+SUMMARY_coreutils-locale-ga: The basic file, shell and text manipulation utilities - ga translations
+RPROVIDES_coreutils-locale-ga: coreutils-locale ga-translation
+RRECOMMENDS_coreutils-locale-ga: virtual-locale-ga
+SECTION: base
+PKG_coreutils-locale-ga: coreutils-locale-ga
+FILES_coreutils-locale-ga: /usr/share/locale/ga
+FILES_INFO: {"/usr/share/locale/ga/LC_MESSAGES/coreutils.mo": 122574, "/usr/share/locale/ga/LC_TIME/coreutils.mo": 27}
+PKGSIZE_coreutils-locale-ga: 122601

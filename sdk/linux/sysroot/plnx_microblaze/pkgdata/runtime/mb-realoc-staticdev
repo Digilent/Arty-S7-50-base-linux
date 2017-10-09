@@ -1,0 +1,14 @@
+PN: mb-realoc
+PV: 0.1
+PR: r0
+PKGV: 0.1
+PKGR: r0
+LICENSE: CLOSED
+DESCRIPTION_mb-realoc-staticdev: mb-realoc  This package contains static libraries for software development.
+SUMMARY_mb-realoc-staticdev: mb-realoc version 0.1-r0 - Development files (Static Libraries)
+RDEPENDS_mb-realoc-staticdev: mb-realoc-dev (= 0.1-r0)
+SECTION_mb-realoc-staticdev: devel
+PKG_mb-realoc-staticdev: mb-realoc-staticdev
+FILES_mb-realoc-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/mb-realoc/*.a
+FILES_INFO: {}
+PKGSIZE_mb-realoc-staticdev: 0

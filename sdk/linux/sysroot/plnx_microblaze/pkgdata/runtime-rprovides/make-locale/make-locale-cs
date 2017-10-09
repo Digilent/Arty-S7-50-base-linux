@@ -1,0 +1,15 @@
+PN: make
+PV: 4.2.1
+PR: r0
+PKGV: 4.2.1
+PKGR: r0
+LICENSE: GPLv3 & LGPLv2
+DESCRIPTION_make-locale-cs: Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files.  Make gets its knowledge of how to build your program from a file called the makefile, which lists each of the non-source files and how to compute it from other files.  This package contains language translation files for the cs locale.
+SUMMARY_make-locale-cs: GNU tool that controls the build process - cs translations
+RPROVIDES_make-locale-cs: make-locale cs-translation
+RRECOMMENDS_make-locale-cs: virtual-locale-cs
+SECTION: devel
+PKG_make-locale-cs: make-locale-cs
+FILES_make-locale-cs: /usr/share/locale/cs
+FILES_INFO: {"/usr/share/locale/cs/LC_MESSAGES/make.mo": 45392}
+PKGSIZE_make-locale-cs: 45392

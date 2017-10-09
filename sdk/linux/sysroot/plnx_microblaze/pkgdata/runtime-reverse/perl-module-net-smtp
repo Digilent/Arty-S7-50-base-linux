@@ -1,0 +1,14 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-net-smtp: perl module net-smtp
+SUMMARY_perl-module-net-smtp: perl module net-smtp
+RDEPENDS_perl-module-net-smtp: perl perl-module-carp perl-module-io-socket perl-module-io-socket-ip perl-module-mime-base64 perl-module-net-cmd perl-module-net-config perl-module-socket perl-module-strict perl-module-warnings
+SECTION: devel
+PKG_perl-module-net-smtp: perl-module-net-smtp
+FILES_perl-module-net-smtp: /usr/lib/perl/5.22.1/Net/SMTP.pm
+FILES_INFO: {"/usr/lib/perl/5.22.1/Net/SMTP.pm": 27490}
+PKGSIZE_perl-module-net-smtp: 27490

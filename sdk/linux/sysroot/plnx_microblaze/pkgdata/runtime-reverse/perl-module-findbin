@@ -1,0 +1,14 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-findbin: perl module findbin
+SUMMARY_perl-module-findbin: perl module findbin
+RDEPENDS_perl-module-findbin: perl perl-module-carp perl-module-cwd perl-module-exporter perl-module-file-basename perl-module-file-spec
+SECTION: devel
+PKG_perl-module-findbin: perl-module-findbin
+FILES_perl-module-findbin: /usr/lib/perl/5.22.1/FindBin.pm
+FILES_INFO: {"/usr/lib/perl/5.22.1/FindBin.pm": 4561}
+PKGSIZE_perl-module-findbin: 4561

@@ -1,0 +1,18 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-math-bigint-fastcalc: perl module math-bigint-fastcalc
+SUMMARY_perl-module-math-bigint-fastcalc: perl module math-bigint-fastcalc
+RDEPENDS_perl-module-math-bigint-fastcalc: perl perl-module-math-bigint-calc perl-module-strict perl-module-vars perl-module-warnings perl-module-xsloader glibc-xilinx (>= 2.23)
+SECTION: devel
+PKG_perl-module-math-bigint-fastcalc: perl-module-math-bigint-fastcalc
+FILES_perl-module-math-bigint-fastcalc: /usr/lib/perl/5.22.1/auto/Math/BigInt/FastCalc/FastCalc.so /usr/lib/perl/5.22.1/Math/BigInt/FastCalc.pm
+FILERPROVIDESFLIST_perl-module-math-bigint-fastcalc: /usr/lib/perl/5.22.1/auto/Math/BigInt/FastCalc/FastCalc.so
+FILES_INFO: {"/usr/lib/perl/5.22.1/Math/BigInt/FastCalc.pm": 2870, "/usr/lib/perl/5.22.1/auto/Math/BigInt/FastCalc/FastCalc.so": 16928}
+FILERPROVIDES_/usr/lib/perl/5.22.1/auto/Math/BigInt/FastCalc/FastCalc.so_perl-module-math-bigint-fastcalc: FastCalc.so
+FILERDEPENDSFLIST_perl-module-math-bigint-fastcalc: /usr/lib/perl/5.22.1/auto/Math/BigInt/FastCalc/FastCalc.so
+FILERDEPENDS_/usr/lib/perl/5.22.1/auto/Math/BigInt/FastCalc/FastCalc.so_perl-module-math-bigint-fastcalc: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+PKGSIZE_perl-module-math-bigint-fastcalc: 19798

@@ -1,0 +1,17 @@
+PN: glibc-xilinx
+PV: 2017.2
+PR: r1
+PKGV: 2.23
+PKGR: r1
+LICENSE: GPLv2 & LGPL-2.1
+DESCRIPTION_glibc-xilinx-dbg: External Xilinx toolchain.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_glibc-xilinx-dbg: External Xilinx toolchain - Debugging files
+RPROVIDES_glibc-xilinx-dbg: eglibc-dbg glibc-dbg glibc-dbg libc-dbg glibc-xilinx-dbg (=2.23)
+RREPLACES_glibc-xilinx-dbg:  libc-dbg
+RCONFLICTS_glibc-xilinx-dbg:  libc-dbg
+SECTION_glibc-xilinx-dbg: devel
+PKG_glibc-xilinx-dbg: libc6-dbg
+ALLOW_EMPTY_glibc-xilinx-dbg: 1
+FILES_glibc-xilinx-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {"/lib/.debug/libm-2.23.so": 189192, "/lib/.debug/libBrokenLocale-2.23.so": 3508, "/lib/.debug/libpthread-2.23.so": 34052, "/lib/.debug/libthread_db-1.0.so": 10140, "/lib/.debug/libpcprofile.so": 3680, "/lib/.debug/libnss_files-2.23.so": 10324, "/sbin/.debug/sln": 114192, "/lib/.debug/libmemusage.so": 14432, "/usr/bin/.debug/getent": 8708, "/lib/.debug/libresolv-2.23.so": 19592, "/sbin/.debug/ldconfig": 127492, "/lib/.debug/libcrypt-2.23.so": 8976, "/usr/lib/audit/.debug/sotruss-lib.so": 4728, "/lib/.debug/libnss_db-2.23.so": 8568, "/usr/bin/.debug/pldd": 5936, "/usr/bin/.debug/sprof": 51360, "/usr/bin/.debug/getconf": 4872, "/lib/.debug/libnss_hesiod-2.23.so": 6360, "/usr/sbin/.debug/iconvconfig": 52632, "/usr/bin/.debug/iconv": 11668, "/lib/.debug/libSegFault.so": 6244, "/lib/.debug/librt-2.23.so": 10384, "/usr/bin/.debug/locale": 9876, "/lib/.debug/libutil-2.23.so": 4964, "/usr/sbin/.debug/zdump": 37328, "/lib/.debug/libnsl-2.23.so": 24644, "/lib/.debug/libanl-2.23.so": 6012, "/usr/bin/.debug/gencat": 8020, "/lib/.debug/libnss_dns-2.23.so": 5628, "/usr/sbin/.debug/zic": 43408, "/usr/sbin/.debug/nscd": 33488, "/usr/bin/.debug/makedb": 7932, "/lib/.debug/ld-2.23.so": 36580, "/lib/.debug/libnss_nisplus-2.23.so": 11204, "/usr/bin/.debug/pcprofiledump": 4848, "/lib/.debug/libnss_nis-2.23.so": 9972, "/lib/.debug/libnss_compat-2.23.so": 8176, "/lib/.debug/libc-2.23.so": 327544, "/lib/.debug/libdl-2.23.so": 5908, "/usr/bin/.debug/rpcgen": 11684}
+PKGSIZE_glibc-xilinx-dbg: 1304256

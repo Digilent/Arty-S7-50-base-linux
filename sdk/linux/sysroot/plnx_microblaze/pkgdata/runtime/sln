@@ -1,0 +1,13 @@
+PN: glibc-xilinx
+PV: 2017.2
+PR: r1
+PKGV: 2.23
+PKGR: r1
+LICENSE: GPLv2 & LGPL-2.1
+DESCRIPTION_sln: Similar to the 'ln' utility, but statically linked.  sln is useful to make symbolic links to dynamic libraries if the dynamic linking system, for some reason, is not functional.
+SUMMARY_sln: The static ln
+SECTION: base
+PKG_sln: sln
+FILES_sln: /sbin/sln
+FILES_INFO: {"/sbin/sln": 543684}
+PKGSIZE_sln: 543684

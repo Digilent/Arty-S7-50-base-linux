@@ -1,0 +1,14 @@
+PN: acl
+PV: 2.2.52
+PR: r0
+PKGV: 2.2.52
+PKGR: r0
+LICENSE: LGPLv2.1+ & GPLv2+
+DESCRIPTION_acl-staticdev: Utilities for managing POSIX Access Control Lists.  This package contains static libraries for software development.
+SUMMARY_acl-staticdev: Utilities for managing POSIX Access Control Lists - Development files (Static Libraries)
+RDEPENDS_acl-staticdev: acl-dev (= 2.2.52-r0)
+SECTION_acl-staticdev: devel
+PKG_acl-staticdev: acl-staticdev
+FILES_acl-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/acl/*.a
+FILES_INFO: {"/lib/libacl.a": 19}
+PKGSIZE_acl-staticdev: 19

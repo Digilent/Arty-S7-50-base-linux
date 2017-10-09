@@ -1,0 +1,15 @@
+PN: sed
+PV: 4.2.2
+PR: r0
+PKGV: 4.2.2
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_sed-locale-ja: Stream EDitor (text filtering utility).  This package contains language translation files for the ja locale.
+SUMMARY_sed-locale-ja: Stream EDitor (text filtering utility) - ja translations
+RPROVIDES_sed-locale-ja: sed-locale ja-translation
+RRECOMMENDS_sed-locale-ja: virtual-locale-ja
+SECTION: console/utils
+PKG_sed-locale-ja: sed-locale-ja
+FILES_sed-locale-ja: /usr/share/locale/ja
+FILES_INFO: {"/usr/share/locale/ja/LC_MESSAGES/sed.mo": 11228}
+PKGSIZE_sed-locale-ja: 11228

@@ -1,0 +1,15 @@
+PN: grep
+PV: 2.25
+PR: r0
+PKGV: 2.25
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION_grep-locale-tr: GNU grep utility.  This package contains language translation files for the tr locale.
+SUMMARY_grep-locale-tr: GNU grep utility - tr translations
+RPROVIDES_grep-locale-tr: grep-locale tr-translation
+RRECOMMENDS_grep-locale-tr: virtual-locale-tr
+SECTION: console/utils
+PKG_grep-locale-tr: grep-locale-tr
+FILES_grep-locale-tr: /usr/share/locale/tr
+FILES_INFO: {"/usr/share/locale/tr/LC_MESSAGES/grep.mo": 1490}
+PKGSIZE_grep-locale-tr: 1490

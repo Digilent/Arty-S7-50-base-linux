@@ -1,0 +1,27 @@
+PN: glibc-xilinx
+PV: 2017.2
+PR: r1
+PKGV: 2.23
+PKGR: r1
+LICENSE: GPLv2 & LGPL-2.1
+DESCRIPTION_glibc-xilinx-utils: Miscellaneous utilities including getconf, iconv, locale, gencat, rpcgen, ...
+SUMMARY_glibc-xilinx-utils: Miscellaneous utilities provided by glibc
+RDEPENDS_glibc-xilinx-utils: glibc-xilinx (>= 2.23)
+RPROVIDES_glibc-xilinx-utils: eglibc-utils glibc-utils glibc-utils glibc-xilinx-utils (=2.23)
+SECTION: base
+PKG_glibc-xilinx-utils: libc6-utils
+FILES_glibc-xilinx-utils: /usr/bin/* /usr/sbin/*
+FILES_INFO: {"/usr/bin/rpcgen": 91908, "/usr/bin/gencat": 21996, "/usr/sbin/iconvconfig": 30196, "/usr/bin/getconf": 21896, "/usr/bin/makedb": 17956, "/usr/bin/sprof": 34328, "/usr/bin/pldd": 13784, "/usr/bin/iconv": 54996, "/usr/bin/getent": 22348, "/usr/bin/locale": 35728, "/usr/bin/pcprofiledump": 9624}
+FILERDEPENDSFLIST_glibc-xilinx-utils: /usr/bin/locale /usr/bin/gencat /usr/bin/iconv /usr/bin/makedb /usr/bin/getconf /usr/bin/getent /usr/bin/pldd /usr/sbin/iconvconfig /usr/bin/sprof /usr/bin/rpcgen /usr/bin/pcprofiledump
+FILERDEPENDS_/usr/bin/locale_glibc-xilinx-utils: libc.so.6 libc.so.6(GLIBC_2.18)
+FILERDEPENDS_/usr/bin/gencat_glibc-xilinx-utils: libc.so.6 libc.so.6(GLIBC_2.18) libc.so.6(GLIBC_PRIVATE)
+FILERDEPENDS_/usr/bin/iconv_glibc-xilinx-utils: libc.so.6 libc.so.6(GLIBC_2.18) libc.so.6(GLIBC_PRIVATE)
+FILERDEPENDS_/usr/bin/makedb_glibc-xilinx-utils: libc.so.6 libc.so.6(GLIBC_2.18)
+FILERDEPENDS_/usr/bin/getconf_glibc-xilinx-utils: libc.so.6 libc.so.6(GLIBC_2.18)
+FILERDEPENDS_/usr/bin/getent_glibc-xilinx-utils: libc.so.6 libc.so.6(GLIBC_2.18)
+FILERDEPENDS_/usr/bin/pldd_glibc-xilinx-utils: libc.so.6 libc.so.6(GLIBC_2.18) libc.so.6(GLIBC_PRIVATE)
+FILERDEPENDS_/usr/sbin/iconvconfig_glibc-xilinx-utils: libc.so.6 libc.so.6(GLIBC_2.18)
+FILERDEPENDS_/usr/bin/sprof_glibc-xilinx-utils: libc.so.6 libc.so.6(GLIBC_2.18) libdl.so.2 libdl.so.2(GLIBC_2.18)
+FILERDEPENDS_/usr/bin/rpcgen_glibc-xilinx-utils: libc.so.6 libc.so.6(GLIBC_2.18)
+FILERDEPENDS_/usr/bin/pcprofiledump_glibc-xilinx-utils: libc.so.6 libc.so.6(GLIBC_2.18)
+PKGSIZE_glibc-xilinx-utils: 354760

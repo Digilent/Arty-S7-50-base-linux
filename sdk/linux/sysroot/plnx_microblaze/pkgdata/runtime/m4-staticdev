@@ -1,0 +1,14 @@
+PN: m4
+PV: 1.4.17
+PR: r0
+PKGV: 1.4.17
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION_m4-staticdev: GNU m4 is an implementation of the traditional Unix macro processor.  It is mostly SVR4 compatible although it has some extensions (for example, handling more than 9 positional parameters to macros). GNU M4 also has built-in functions for including files, running shell commands, doing arithmetic, etc.  This package contains static libraries for software development.
+SUMMARY_m4-staticdev: Traditional Unix macro processor - Development files (Static Libraries)
+RDEPENDS_m4-staticdev: m4-dev (= 1.4.17-r0)
+SECTION_m4-staticdev: devel
+PKG_m4-staticdev: m4-staticdev
+FILES_m4-staticdev: /usr/lib/*.a /lib/*.a /usr/lib/m4/*.a
+FILES_INFO: {}
+PKGSIZE_m4-staticdev: 0

@@ -1,0 +1,25 @@
+PN: bzip2
+PV: 1.0.6
+PR: r5
+PKGV: 1.0.6
+PKGR: r5
+LICENSE: bzip2
+DESCRIPTION: bzip2 compresses files using the Burrows-Wheeler block-sorting text compression algorithm, and Huffman coding. Compression is generally considerably better than that achieved by more conventional LZ77/LZ78-based compressors, and approaches the performance of the PPM family of statistical compressors.
+SUMMARY: Very high-quality data compression program
+RDEPENDS_bzip2: update-alternatives-opkg glibc-xilinx (>= 2.23) libbz2 (>= 1.0.6)
+SECTION: console/utils
+PKG_bzip2: bzip2
+FILES_bzip2: /usr/bin/* /usr/sbin/* /usr/libexec/* /usr/lib/lib*.so.* /etc /com /var /bin/* /sbin/* /lib/*.so.* /lib/udev /usr/lib/udev /lib/udev /usr/lib/udev /usr/share/bzip2 /usr/lib/bzip2/* /usr/share/pixmaps /usr/share/applications /usr/share/idl /usr/share/omf /usr/share/sounds /usr/lib/bonobo/servers
+pkg_postinst_bzip2: #!/bin/sh\n# Begin section update-alternatives\nupdate-alternatives --install /usr/bin/bunzip2 bunzip2 /usr/bin/bunzip2.bzip2 100\nupdate-alternatives --install /usr/bin/bzcat bzcat /usr/bin/bzcat.bzip2 100\n# End section update-alternatives\n
+pkg_prerm_bzip2: #!/bin/sh\n# Begin section update-alternatives\nupdate-alternatives --remove  bunzip2 /usr/bin/bunzip2.bzip2\nupdate-alternatives --remove  bzcat /usr/bin/bzcat.bzip2\n# End section update-alternatives\n
+FILERPROVIDESFLIST_bzip2:  /usr/bin/bunzip2.bzip2 /usr/bin/bzcat.bzip2
+FILES_INFO: {"/usr/bin/bzip2recover": 10132, "/usr/bin/bunzip2.bzip2": 14, "/usr/bin/bzcmp": 15, "/usr/bin/bzegrep": 15, "/usr/bin/bzip2": 36964, "/usr/bin/bzdiff": 2128, "/usr/bin/bzgrep": 1677, "/usr/bin/bzless": 15, "/usr/bin/bzmore": 1259, "/usr/bin/bzcat.bzip2": 14, "/usr/bin/bzfgrep": 15}
+FILERPROVIDES_/usr/bin/bunzip2.bzip2_bzip2:  /usr/bin/bunzip2
+FILERPROVIDES_/usr/bin/bzcat.bzip2_bzip2:  /usr/bin/bzcat
+FILERDEPENDSFLIST_bzip2: /usr/bin/bzgrep /usr/bin/bzdiff /usr/bin/bzmore /usr/bin/bzip2 /usr/bin/bzip2recover
+FILERDEPENDS_/usr/bin/bzgrep_bzip2: /bin/sh
+FILERDEPENDS_/usr/bin/bzdiff_bzip2: /bin/sh
+FILERDEPENDS_/usr/bin/bzmore_bzip2: /bin/sh
+FILERDEPENDS_/usr/bin/bzip2_bzip2: libbz2.so.1 libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+FILERDEPENDS_/usr/bin/bzip2recover_bzip2: libc.so.6 libc.so.6(GLIBC_2.18) rtld(GNU_HASH)
+PKGSIZE_bzip2: 52248

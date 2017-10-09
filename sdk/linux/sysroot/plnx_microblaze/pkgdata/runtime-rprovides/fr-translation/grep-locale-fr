@@ -1,0 +1,15 @@
+PN: grep
+PV: 2.25
+PR: r0
+PKGV: 2.25
+PKGR: r0
+LICENSE: GPLv3
+DESCRIPTION_grep-locale-fr: GNU grep utility.  This package contains language translation files for the fr locale.
+SUMMARY_grep-locale-fr: GNU grep utility - fr translations
+RPROVIDES_grep-locale-fr: grep-locale fr-translation
+RRECOMMENDS_grep-locale-fr: virtual-locale-fr
+SECTION: console/utils
+PKG_grep-locale-fr: grep-locale-fr
+FILES_grep-locale-fr: /usr/share/locale/fr
+FILES_INFO: {"/usr/share/locale/fr/LC_MESSAGES/grep.mo": 17710}
+PKGSIZE_grep-locale-fr: 17710

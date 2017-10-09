@@ -1,0 +1,15 @@
+PN: cracklib
+PV: 2.9.5
+PR: r0
+PKGV: 2.9.5
+PKGR: r0
+LICENSE: LGPLv2.1+
+DESCRIPTION_cracklib-locale-mr: Password strength checker library.  This package contains language translation files for the mr locale.
+SUMMARY_cracklib-locale-mr: Password strength checker library - mr translations
+RPROVIDES_cracklib-locale-mr: cracklib-locale mr-translation
+RRECOMMENDS_cracklib-locale-mr: virtual-locale-mr
+SECTION: base
+PKG_cracklib-locale-mr: cracklib-locale-mr
+FILES_cracklib-locale-mr: /usr/share/locale/mr
+FILES_INFO: {"/usr/share/locale/mr/LC_MESSAGES/cracklib.mo": 2680}
+PKGSIZE_cracklib-locale-mr: 2680

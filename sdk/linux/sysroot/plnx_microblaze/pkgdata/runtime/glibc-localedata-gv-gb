@@ -1,0 +1,14 @@
+PN: glibc-locale
+PV: 2.24
+PR: r0
+PKGV: 2.24
+PKGR: r0
+LICENSE: GPLv2 & LGPLv2.1
+DESCRIPTION_glibc-localedata-gv-gb: locale definition for gv-gb
+SUMMARY_glibc-localedata-gv-gb: locale definition for gv-gb
+RDEPENDS_glibc-localedata-gv-gb: glibc-localedata-i18n glibc-localedata-iso14651-t1 glibc-localedata-translit-combining
+SECTION: base
+PKG_glibc-localedata-gv-gb: glibc-localedata-gv-gb
+FILES_glibc-localedata-gv-gb: /usr/share/i18n/locales/gv_GB
+FILES_INFO: {"/usr/share/i18n/locales/gv_GB": 6318}
+PKGSIZE_glibc-localedata-gv-gb: 6318

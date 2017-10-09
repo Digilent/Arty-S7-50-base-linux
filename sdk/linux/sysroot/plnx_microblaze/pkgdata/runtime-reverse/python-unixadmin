@@ -1,0 +1,20 @@
+PN: python
+PV: 2.7.12
+PR: r1
+PKGV: 2.7.12
+PKGR: r1
+LICENSE: PSFv2
+DESCRIPTION: The Python Programming Language.
+SUMMARY_python-unixadmin: Python Unix administration support
+RDEPENDS_python-unixadmin: python-core glibc-xilinx (>= 2.23) libpython2 (>= 2.7.12)
+SECTION: devel/python
+PKG_python-unixadmin: python-unixadmin
+FILES_python-unixadmin: /usr/lib/python2.7/lib-dynload/nis.so /usr/lib/python2.7/lib-dynload/grp.so /usr/lib/python2.7/lib-dynload/pwd.so /usr/lib/python2.7/getpass.* 
+FILERPROVIDESFLIST_python-unixadmin: /usr/lib/python2.7/lib-dynload/grp.so /usr/lib/python2.7/lib-dynload/nis.so
+FILES_INFO: {"/usr/lib/python2.7/lib-dynload/grp.so": 8244, "/usr/lib/python2.7/lib-dynload/nis.so": 10880, "/usr/lib/python2.7/getpass.pyc": 4730, "/usr/lib/python2.7/getpass.py": 5563}
+FILERPROVIDES_/usr/lib/python2.7/lib-dynload/grp.so_python-unixadmin: grp.so
+FILERPROVIDES_/usr/lib/python2.7/lib-dynload/nis.so_python-unixadmin: nis.so
+FILERDEPENDSFLIST_python-unixadmin: /usr/lib/python2.7/lib-dynload/grp.so /usr/lib/python2.7/lib-dynload/nis.so
+FILERDEPENDS_/usr/lib/python2.7/lib-dynload/grp.so_python-unixadmin: libc.so.6 libc.so.6(GLIBC_2.18) libpython2.7.so.1.0 rtld(GNU_HASH)
+FILERDEPENDS_/usr/lib/python2.7/lib-dynload/nis.so_python-unixadmin: libc.so.6 libc.so.6(GLIBC_2.18) libnsl.so.1 libnsl.so.1(GLIBC_2.18) libpython2.7.so.1.0 rtld(GNU_HASH)
+PKGSIZE_python-unixadmin: 29417

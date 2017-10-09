@@ -1,0 +1,15 @@
+PN: diffutils
+PV: 3.4
+PR: r0
+PKGV: 3.4
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_diffutils-locale-ga: Diffutils contains the GNU diff, diff3, sdiff, and cmp utilities. These programs are usually used for creating patch files.  This package contains language translation files for the ga locale.
+SUMMARY_diffutils-locale-ga: Diffutils contains tools used for finding differences between files - ga translations
+RPROVIDES_diffutils-locale-ga: diffutils-locale ga-translation
+RRECOMMENDS_diffutils-locale-ga: virtual-locale-ga
+SECTION: base
+PKG_diffutils-locale-ga: diffutils-locale-ga
+FILES_diffutils-locale-ga: /usr/share/locale/ga
+FILES_INFO: {"/usr/share/locale/ga/LC_MESSAGES/diffutils.mo": 7785}
+PKGSIZE_diffutils-locale-ga: 7785

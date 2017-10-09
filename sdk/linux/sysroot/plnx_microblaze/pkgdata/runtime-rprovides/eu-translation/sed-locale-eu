@@ -1,0 +1,15 @@
+PN: sed
+PV: 4.2.2
+PR: r0
+PKGV: 4.2.2
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_sed-locale-eu: Stream EDitor (text filtering utility).  This package contains language translation files for the eu locale.
+SUMMARY_sed-locale-eu: Stream EDitor (text filtering utility) - eu translations
+RPROVIDES_sed-locale-eu: sed-locale eu-translation
+RRECOMMENDS_sed-locale-eu: virtual-locale-eu
+SECTION: console/utils
+PKG_sed-locale-eu: sed-locale-eu
+FILES_sed-locale-eu: /usr/share/locale/eu
+FILES_INFO: {"/usr/share/locale/eu/LC_MESSAGES/sed.mo": 1686}
+PKGSIZE_sed-locale-eu: 1686

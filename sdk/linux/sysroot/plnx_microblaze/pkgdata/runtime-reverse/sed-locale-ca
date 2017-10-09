@@ -1,0 +1,15 @@
+PN: sed
+PV: 4.2.2
+PR: r0
+PKGV: 4.2.2
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_sed-locale-ca: Stream EDitor (text filtering utility).  This package contains language translation files for the ca locale.
+SUMMARY_sed-locale-ca: Stream EDitor (text filtering utility) - ca translations
+RPROVIDES_sed-locale-ca: sed-locale ca-translation
+RRECOMMENDS_sed-locale-ca: virtual-locale-ca
+SECTION: console/utils
+PKG_sed-locale-ca: sed-locale-ca
+FILES_sed-locale-ca: /usr/share/locale/ca
+FILES_INFO: {"/usr/share/locale/ca/LC_MESSAGES/sed.mo": 10203}
+PKGSIZE_sed-locale-ca: 10203

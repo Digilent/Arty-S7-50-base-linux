@@ -1,0 +1,14 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-locale-language: perl module locale-language
+SUMMARY_perl-module-locale-language: perl module locale-language
+RDEPENDS_perl-module-locale-language: perl perl-module-exporter perl-module-strict perl-module-warnings
+SECTION: devel
+PKG_perl-module-locale-language: perl-module-locale-language
+FILES_perl-module-locale-language: /usr/lib/perl/5.22.1/Locale/Language.pm
+FILES_INFO: {"/usr/lib/perl/5.22.1/Locale/Language.pm": 1520}
+PKGSIZE_perl-module-locale-language: 1520

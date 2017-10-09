@@ -1,0 +1,15 @@
+PN: sed
+PV: 4.2.2
+PR: r0
+PKGV: 4.2.2
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_sed-locale-vi: Stream EDitor (text filtering utility).  This package contains language translation files for the vi locale.
+SUMMARY_sed-locale-vi: Stream EDitor (text filtering utility) - vi translations
+RPROVIDES_sed-locale-vi: sed-locale vi-translation
+RRECOMMENDS_sed-locale-vi: virtual-locale-vi
+SECTION: console/utils
+PKG_sed-locale-vi: sed-locale-vi
+FILES_sed-locale-vi: /usr/share/locale/vi
+FILES_INFO: {"/usr/share/locale/vi/LC_MESSAGES/sed.mo": 11244}
+PKGSIZE_sed-locale-vi: 11244

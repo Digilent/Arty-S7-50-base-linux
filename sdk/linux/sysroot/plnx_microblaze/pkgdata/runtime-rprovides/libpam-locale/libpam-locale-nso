@@ -1,0 +1,15 @@
+PN: libpam
+PV: 1.3.0
+PR: r5
+PKGV: 1.3.0
+PKGR: r5
+LICENSE: GPLv2+ | BSD
+DESCRIPTION_libpam-locale-nso: Linux-PAM (Pluggable Authentication Modules for Linux), a flexible mechanism for authenticating users  This package contains language translation files for the nso locale.
+SUMMARY_libpam-locale-nso: Linux-PAM (Pluggable Authentication Modules) - nso translations
+RPROVIDES_libpam-locale-nso: libpam-locale nso-translation
+RRECOMMENDS_libpam-locale-nso: virtual-locale-nso
+SECTION: base
+PKG_libpam-locale-nso: libpam-locale-nso
+FILES_libpam-locale-nso: /usr/share/locale/nso
+FILES_INFO: {"/usr/share/locale/nso/LC_MESSAGES/Linux-PAM.mo": 531}
+PKGSIZE_libpam-locale-nso: 531

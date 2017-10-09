@@ -1,0 +1,14 @@
+PN: glibc-locale
+PV: 2.24
+PR: r0
+PKGV: 2.24
+PKGR: r0
+LICENSE: GPLv2 & LGPLv2.1
+DESCRIPTION_glibc-gconv-ibm423: gconv module for character set ibm423
+SUMMARY_glibc-gconv-ibm423: gconv module for character set ibm423
+RDEPENDS_glibc-gconv-ibm423: glibc-gconv glibc-xilinx (>= 2.23)
+SECTION: base
+PKG_glibc-gconv-ibm423: glibc-gconv-ibm423
+FILES_glibc-gconv-ibm423: /usr/lib/gconv/IBM423.so
+FILES_INFO: {"/usr/lib/gconv/IBM423.so": 9488}
+PKGSIZE_glibc-gconv-ibm423: 9488

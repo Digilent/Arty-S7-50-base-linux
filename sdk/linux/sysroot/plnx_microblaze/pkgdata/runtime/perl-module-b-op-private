@@ -1,0 +1,14 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-b-op-private: perl module b-op-private
+SUMMARY_perl-module-b-op-private: perl module b-op-private
+RDEPENDS_perl-module-b-op-private: perl
+SECTION: devel
+PKG_perl-module-b-op-private: perl-module-b-op-private
+FILES_perl-module-b-op-private: /usr/lib/perl/5.22.1/B/Op_private.pm
+FILES_INFO: {"/usr/lib/perl/5.22.1/B/Op_private.pm": 35875}
+PKGSIZE_perl-module-b-op-private: 35875

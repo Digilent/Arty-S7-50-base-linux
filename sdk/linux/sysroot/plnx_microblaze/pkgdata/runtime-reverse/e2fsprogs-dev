@@ -1,0 +1,19 @@
+PN: e2fsprogs
+PV: 1.43
+PR: r1
+PKGV: 1.43
+PKGR: r1
+LICENSE: GPLv2 & LGPLv2 & BSD & MIT
+DESCRIPTION_e2fsprogs-dev: The Ext2 Filesystem Utilities (e2fsprogs) contain all of the standard utilities for creating, fixing, configuring , and debugging ext2 filesystems.  This package contains symbolic links, header files, and related items necessary for software development.
+SUMMARY_e2fsprogs-dev: Ext2 Filesystem Utilities - Development files
+RDEPENDS_e2fsprogs-dev: e2fsprogs (= 1.43-r1) libcomerr libe2p libext2fs libss
+RRECOMMENDS_e2fsprogs-dev: util-linux-dev glibc-xilinx-dev libcomerr-dev util-linux-libblkid-dev libe2p-dev libext2fs-dev util-linux-libuuid-dev bash-dev coreutils-dev e2fsprogs-tune2fs-dev procps-dev libss-dev update-alternatives-opkg-dev e2fsprogs-badblocks-dev
+SECTION_e2fsprogs-dev: devel
+PKG_e2fsprogs-dev: e2fsprogs-dev
+ALLOW_EMPTY_e2fsprogs-dev: 1
+FILES_e2fsprogs-dev: /usr/include /lib/lib*.so /usr/lib/lib*.so /usr/lib/*.la /usr/lib/*.o /usr/lib/pkgconfig /usr/share/pkgconfig /usr/share/aclocal /lib/*.o /usr/lib/e2fsprogs/*.la /lib/*.la /usr/share/*/*.awk /usr/share/*/*.sed /lib/*.so /usr/bin/compile_et /usr/bin/mk_cmds
+FILES_INFO: {"/usr/include/ext2fs/ext2fs.h": 67921, "/usr/lib/pkgconfig/ext2fs.pc": 221, "/usr/include/ext2fs/ext2_io.h": 5191, "/usr/share/et/et_h.awk": 4539, "/usr/include/e2p/e2p.h": 2762, "/lib/libext2fs.so": 14, "/usr/include/ext2fs/tdb.h": 8867, "/usr/bin/mk_cmds": 1281, "/lib/libcom_err.so": 15, "/usr/lib/pkgconfig/com_err.pc": 245, "/lib/libe2p.so": 11, "/usr/include/ext2fs/ext3_extents.h": 4559, "/usr/include/ext2fs/ext2_err.h": 11469, "/usr/include/ext2fs/ext2_types.h": 1698, "/usr/include/ext2fs/qcow2.h": 2560, "/usr/include/com_err.h": 2118, "/usr/lib/pkgconfig/ss.pc": 247, "/usr/include/ss/ss.h": 3166, "/usr/include/ext2fs/ext2_ext_attr.h": 2650, "/usr/share/et/et_c.awk": 6485, "/usr/include/ss/ss_err.h": 1193, "/usr/bin/compile_et": 1460, "/usr/include/ext2fs/ext2_fs.h": 40284, "/usr/include/ext2fs/ext2_types-32.h": 4135, "/usr/share/ss/ct_c.sed": 2289, "/lib/libss.so": 10, "/usr/lib/pkgconfig/e2p.pc": 223, "/usr/include/ext2fs/bitops.h": 22143, "/usr/share/ss/ct_c.awk": 1551, "/usr/include/et/com_err.h": 2118}
+FILERDEPENDSFLIST_e2fsprogs-dev: /usr/bin/compile@underscore@et /usr/bin/mk@underscore@cmds
+FILERDEPENDS_/usr/bin/compile@underscore@et_e2fsprogs-dev: /bin/sh
+FILERDEPENDS_/usr/bin/mk@underscore@cmds_e2fsprogs-dev: /bin/sh
+PKGSIZE_e2fsprogs-dev: 201425

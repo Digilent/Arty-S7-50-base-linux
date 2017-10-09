@@ -1,0 +1,14 @@
+PN: glibc-locale
+PV: 2.24
+PR: r0
+PKGV: 2.24
+PKGR: r0
+LICENSE: GPLv2 & LGPLv2.1
+DESCRIPTION_glibc-gconv-georgian-academy: gconv module for character set georgian-academy
+SUMMARY_glibc-gconv-georgian-academy: gconv module for character set georgian-academy
+RDEPENDS_glibc-gconv-georgian-academy: glibc-gconv glibc-xilinx (>= 2.23)
+SECTION: base
+PKG_glibc-gconv-georgian-academy: glibc-gconv-georgian-academy
+FILES_glibc-gconv-georgian-academy: /usr/lib/gconv/GEORGIAN-ACADEMY.so
+FILES_INFO: {"/usr/lib/gconv/GEORGIAN-ACADEMY.so": 9496}
+PKGSIZE_glibc-gconv-georgian-academy: 9496

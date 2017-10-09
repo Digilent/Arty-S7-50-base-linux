@@ -1,0 +1,34 @@
+PN: diffutils
+PV: 3.4
+PR: r0
+PKGV: 3.4
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_diffutils-ptest: Diffutils contains the GNU diff, diff3, sdiff, and cmp utilities. These programs are usually used for creating patch files.  This package contains a test directory /usr/lib/diffutils/ptest for package test purposes.
+SUMMARY_diffutils-ptest: Diffutils contains tools used for finding differences between files - Package test files
+RRECOMMENDS_diffutils-ptest:  ptest-runner
+SECTION_diffutils-ptest: devel
+PKG_diffutils-ptest: diffutils-ptest
+ALLOW_EMPTY_diffutils-ptest: 1
+FILES_diffutils-ptest: /usr/lib/diffutils/ptest
+FILES_INFO: {"/usr/lib/diffutils/ptest/tests/Makefile.am": 2600, "/usr/lib/diffutils/ptest/tests/colors": 2550, "/usr/lib/diffutils/ptest/tests/filename-quoting": 1027, "/usr/lib/diffutils/ptest/tests/label-vs-func": 457, "/usr/lib/diffutils/ptest/run-ptest": 37, "/usr/lib/diffutils/ptest/build-aux/test-driver": 4640, "/usr/lib/diffutils/ptest/tests/no-newline-at-eof": 1110, "/usr/lib/diffutils/ptest/tests/t-local.sh": 0, "/usr/lib/diffutils/ptest/tests/strcoll-0-names": 726, "/usr/lib/diffutils/ptest/tests/colliding-file-names": 358, "/usr/lib/diffutils/ptest/tests/excess-slash": 358, "/usr/lib/diffutils/ptest/tests/ignore-matching-lines": 455, "/usr/lib/diffutils/ptest/tests/binary": 359, "/usr/lib/diffutils/ptest/tests/envvar-check": 1493, "/usr/lib/diffutils/ptest/tests/bignum": 258, "/usr/lib/diffutils/ptest/tests/new-file": 833, "/usr/lib/diffutils/ptest/tests/no-dereference": 4709, "/usr/lib/diffutils/ptest/tests/Makefile.in": 68541, "/usr/lib/diffutils/ptest/tests/init.sh": 19982, "/usr/lib/diffutils/ptest/tests/function-line-vs-leading-space": 1618, "/usr/lib/diffutils/ptest/tests/brief-vs-stat-zero-kernel-lies": 1433, "/usr/lib/diffutils/ptest/tests/stdin": 369, "/usr/lib/diffutils/ptest/tests/help-version": 8116, "/usr/lib/diffutils/ptest/tests/Makefile": 60527, "/usr/lib/diffutils/ptest/tests/basic": 543}
+FILERDEPENDSFLIST_diffutils-ptest: /usr/lib/diffutils/ptest/tests/colors /usr/lib/diffutils/ptest/tests/filename-quoting /usr/lib/diffutils/ptest/tests/excess-slash /usr/lib/diffutils/ptest/run-ptest /usr/lib/diffutils/ptest/build-aux/test-driver /usr/lib/diffutils/ptest/tests/no-newline-at-eof /usr/lib/diffutils/ptest/tests/new-file /usr/lib/diffutils/ptest/tests/brief-vs-stat-zero-kernel-lies /usr/lib/diffutils/ptest/tests/colliding-file-names /usr/lib/diffutils/ptest/tests/bignum /usr/lib/diffutils/ptest/tests/stdin /usr/lib/diffutils/ptest/tests/binary /usr/lib/diffutils/ptest/tests/function-line-vs-leading-space /usr/lib/diffutils/ptest/tests/ignore-matching-lines /usr/lib/diffutils/ptest/tests/strcoll-0-names /usr/lib/diffutils/ptest/tests/basic /usr/lib/diffutils/ptest/tests/help-version /usr/lib/diffutils/ptest/tests/label-vs-func
+FILERDEPENDS_/usr/lib/diffutils/ptest/tests/colors_diffutils-ptest: /bin/sh
+FILERDEPENDS_/usr/lib/diffutils/ptest/tests/filename-quoting_diffutils-ptest: /bin/sh
+FILERDEPENDS_/usr/lib/diffutils/ptest/tests/excess-slash_diffutils-ptest: /bin/sh
+FILERDEPENDS_/usr/lib/diffutils/ptest/run-ptest_diffutils-ptest: /bin/sh
+FILERDEPENDS_/usr/lib/diffutils/ptest/build-aux/test-driver_diffutils-ptest: /bin/sh
+FILERDEPENDS_/usr/lib/diffutils/ptest/tests/no-newline-at-eof_diffutils-ptest: /bin/sh
+FILERDEPENDS_/usr/lib/diffutils/ptest/tests/new-file_diffutils-ptest: /bin/sh
+FILERDEPENDS_/usr/lib/diffutils/ptest/tests/brief-vs-stat-zero-kernel-lies_diffutils-ptest: /bin/sh
+FILERDEPENDS_/usr/lib/diffutils/ptest/tests/colliding-file-names_diffutils-ptest: /bin/sh
+FILERDEPENDS_/usr/lib/diffutils/ptest/tests/bignum_diffutils-ptest: /bin/sh
+FILERDEPENDS_/usr/lib/diffutils/ptest/tests/stdin_diffutils-ptest: /bin/sh
+FILERDEPENDS_/usr/lib/diffutils/ptest/tests/binary_diffutils-ptest: /bin/sh
+FILERDEPENDS_/usr/lib/diffutils/ptest/tests/function-line-vs-leading-space_diffutils-ptest: /bin/sh
+FILERDEPENDS_/usr/lib/diffutils/ptest/tests/ignore-matching-lines_diffutils-ptest: /bin/sh
+FILERDEPENDS_/usr/lib/diffutils/ptest/tests/strcoll-0-names_diffutils-ptest: /bin/sh
+FILERDEPENDS_/usr/lib/diffutils/ptest/tests/basic_diffutils-ptest: /bin/sh
+FILERDEPENDS_/usr/lib/diffutils/ptest/tests/help-version_diffutils-ptest: /bin/sh
+FILERDEPENDS_/usr/lib/diffutils/ptest/tests/label-vs-func_diffutils-ptest: /bin/sh
+PKGSIZE_diffutils-ptest: 183099

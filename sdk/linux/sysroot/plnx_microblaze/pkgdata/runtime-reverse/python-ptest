@@ -1,0 +1,18 @@
+PN: python
+PV: 2.7.12
+PR: r1
+PKGV: 2.7.12
+PKGR: r1
+LICENSE: PSFv2
+DESCRIPTION_python-ptest: The Python Programming Language.  This package contains a test directory /usr/lib/python/ptest for package test purposes.
+SUMMARY_python-ptest: The Python Programming Language - Package test files
+RDEPENDS_python-ptest: python-modules
+RRECOMMENDS_python-ptest:  ptest-runner
+SECTION_python-ptest: devel
+PKG_python-ptest: python-ptest
+ALLOW_EMPTY_python-ptest: 1
+FILES_python-ptest: /usr/lib/python/ptest
+FILES_INFO: {"/usr/lib/python/ptest/run-ptest": 392, "/usr/lib/python/ptest/Makefile": 56977}
+FILERDEPENDSFLIST_python-ptest: /usr/lib/python/ptest/run-ptest
+FILERDEPENDS_/usr/lib/python/ptest/run-ptest_python-ptest: /bin/sh
+PKGSIZE_python-ptest: 57369

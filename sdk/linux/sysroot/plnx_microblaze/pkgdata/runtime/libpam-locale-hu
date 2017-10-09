@@ -1,0 +1,15 @@
+PN: libpam
+PV: 1.3.0
+PR: r5
+PKGV: 1.3.0
+PKGR: r5
+LICENSE: GPLv2+ | BSD
+DESCRIPTION_libpam-locale-hu: Linux-PAM (Pluggable Authentication Modules for Linux), a flexible mechanism for authenticating users  This package contains language translation files for the hu locale.
+SUMMARY_libpam-locale-hu: Linux-PAM (Pluggable Authentication Modules) - hu translations
+RPROVIDES_libpam-locale-hu: libpam-locale hu-translation
+RRECOMMENDS_libpam-locale-hu: virtual-locale-hu
+SECTION: base
+PKG_libpam-locale-hu: libpam-locale-hu
+FILES_libpam-locale-hu: /usr/share/locale/hu
+FILES_INFO: {"/usr/share/locale/hu/LC_MESSAGES/Linux-PAM.mo": 11373}
+PKGSIZE_libpam-locale-hu: 11373

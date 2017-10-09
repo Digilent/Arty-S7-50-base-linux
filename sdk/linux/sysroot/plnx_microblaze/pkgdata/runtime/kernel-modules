@@ -1,0 +1,14 @@
+PN: linux-xlnx
+PV: 4.9-xilinx-v2017.2+gitAUTOINC+5d029fdc25
+PR: r0
+PKGV: 4.9-xilinx-v2017.2+git0+5d029fdc25
+PKGR: r0
+LICENSE: GPLv2
+DESCRIPTION_kernel-modules: Kernel modules meta package
+SUMMARY: Linux kernel
+RDEPENDS_kernel-modules: kernel-module-bridge kernel-module-drbg kernel-module-echainiv kernel-module-jitterentropy-rng kernel-module-llc kernel-module-p8022 kernel-module-psnap kernel-module-stp
+SECTION: kernel
+PKG_kernel-modules: kernel-modules
+ALLOW_EMPTY_kernel-modules: 1
+FILES_INFO: {}
+PKGSIZE_kernel-modules: 0

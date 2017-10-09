@@ -1,0 +1,13 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-doc: Perl scripting language.  This package contains documentation.
+SUMMARY_perl-doc: Perl scripting language - Documentation files
+SECTION_perl-doc: doc
+PKG_perl-doc: perl-doc
+FILES_perl-doc: /usr/lib/perl/5.22.1/*/*.txt                    /usr/lib/perl/5.22.1/*/*/*.txt                    /usr/lib/perl/5.22.1/auto/XS/Typemap                    /usr/lib/perl/5.22.1/B/assemble                    /usr/lib/perl/5.22.1/B/cc_harness                    /usr/lib/perl/5.22.1/B/disassemble                    /usr/lib/perl/5.22.1/B/makeliblinks                    /usr/lib/perl/5.22.1/CGI/eg                    /usr/lib/perl/5.22.1/CPAN/PAUSE2003.pub                    /usr/lib/perl/5.22.1/CPAN/SIGNATURE \t\t   /usr/lib/perl/5.22.1/CPANPLUS/Shell/Default/Plugins/HOWTO.pod                    /usr/lib/perl/5.22.1/Encode/encode.h                    /usr/lib/perl/5.22.1/ExtUtils/MANIFEST.SKIP                    /usr/lib/perl/5.22.1/ExtUtils/NOTES                    /usr/lib/perl/5.22.1/ExtUtils/PATCHING                    /usr/lib/perl/5.22.1/ExtUtils/typemap                    /usr/lib/perl/5.22.1/ExtUtils/xsubpp \t\t   /usr/lib/perl/5.22.1/ExtUtils/Changes_EU-Install                    /usr/lib/perl/5.22.1/Net/*.eg                    /usr/lib/perl/5.22.1/unicore/mktables                    /usr/lib/perl/5.22.1/unicore/mktables.lst                    /usr/lib/perl/5.22.1/unicore/version 
+FILES_INFO: {"/usr/lib/perl/5.22.1/Encode/encode.h": 3967, "/usr/lib/perl/5.22.1/ExtUtils/MANIFEST.SKIP": 971, "/usr/lib/perl/5.22.1/ExtUtils/xsubpp": 5071, "/usr/lib/perl/5.22.1/unicore/version": 6, "/usr/lib/perl/5.22.1/ExtUtils/typemap": 9875}
+PKGSIZE_perl-doc: 19890

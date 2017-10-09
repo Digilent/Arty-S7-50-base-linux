@@ -1,0 +1,13 @@
+PN: fs-boot
+PV: 2017.2+gitAUTOINC+122565ec40
+PR: r0
+PKGV: 2017.2+git0+122565ec40
+PKGR: r0
+LICENSE: BSD
+DESCRIPTION: FS-BOOT generator
+SUMMARY: fs-boot version 2017.2+gitAUTOINC+122565ec40-r0
+SECTION: base
+PKG_fs-boot-locale: fs-boot-locale
+FILES_fs-boot-locale: /usr/share/locale
+FILES_INFO: {}
+PKGSIZE_fs-boot-locale: 0

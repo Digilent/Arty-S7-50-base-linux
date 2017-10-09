@@ -1,0 +1,15 @@
+PN: libpam
+PV: 1.3.0
+PR: r5
+PKGV: 1.3.0
+PKGR: r5
+LICENSE: GPLv2+ | BSD
+DESCRIPTION_libpam-locale-brx: Linux-PAM (Pluggable Authentication Modules for Linux), a flexible mechanism for authenticating users  This package contains language translation files for the brx locale.
+SUMMARY_libpam-locale-brx: Linux-PAM (Pluggable Authentication Modules) - brx translations
+RPROVIDES_libpam-locale-brx: libpam-locale brx-translation
+RRECOMMENDS_libpam-locale-brx: virtual-locale-brx
+SECTION: base
+PKG_libpam-locale-brx: libpam-locale-brx
+FILES_libpam-locale-brx: /usr/share/locale/brx
+FILES_INFO: {"/usr/share/locale/brx/LC_MESSAGES/Linux-PAM.mo": 522}
+PKGSIZE_libpam-locale-brx: 522

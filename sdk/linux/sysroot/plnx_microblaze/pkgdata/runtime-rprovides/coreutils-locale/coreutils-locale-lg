@@ -1,0 +1,15 @@
+PN: coreutils
+PV: 8.25
+PR: r0
+PKGV: 8.25
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_coreutils-locale-lg: The GNU Core Utilities provide the basic file, shell and text manipulation utilities. These are the core utilities which are expected to exist on every system.  This package contains language translation files for the lg locale.
+SUMMARY_coreutils-locale-lg: The basic file, shell and text manipulation utilities - lg translations
+RPROVIDES_coreutils-locale-lg: coreutils-locale lg-translation
+RRECOMMENDS_coreutils-locale-lg: virtual-locale-lg
+SECTION: base
+PKG_coreutils-locale-lg: coreutils-locale-lg
+FILES_coreutils-locale-lg: /usr/share/locale/lg
+FILES_INFO: {"/usr/share/locale/lg/LC_MESSAGES/coreutils.mo": 229514, "/usr/share/locale/lg/LC_TIME/coreutils.mo": 27}
+PKGSIZE_coreutils-locale-lg: 229541

@@ -1,0 +1,14 @@
+PN: u-boot-xlnx
+PV: v2017.01-xilinx-v2017.2+gitAUTOINC+5290eb544b
+PR: r0
+PKGV: v2017.01-xilinx-v2017.2+git0+5290eb544b
+PKGR: r0
+LICENSE: GPLv2+
+DESCRIPTION_u-boot-xlnx-dbg: Universal Boot Loader for embedded devices.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_u-boot-xlnx-dbg: Universal Boot Loader for embedded devices - Debugging files
+SECTION_u-boot-xlnx-dbg: devel
+PKG_u-boot-xlnx-dbg: u-boot-xlnx-dbg
+ALLOW_EMPTY_u-boot-xlnx-dbg: 1
+FILES_u-boot-xlnx-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {}
+PKGSIZE_u-boot-xlnx-dbg: 0

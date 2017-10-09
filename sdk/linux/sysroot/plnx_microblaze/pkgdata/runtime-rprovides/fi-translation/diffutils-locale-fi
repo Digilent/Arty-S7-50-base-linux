@@ -1,0 +1,15 @@
+PN: diffutils
+PV: 3.4
+PR: r0
+PKGV: 3.4
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_diffutils-locale-fi: Diffutils contains the GNU diff, diff3, sdiff, and cmp utilities. These programs are usually used for creating patch files.  This package contains language translation files for the fi locale.
+SUMMARY_diffutils-locale-fi: Diffutils contains tools used for finding differences between files - fi translations
+RPROVIDES_diffutils-locale-fi: diffutils-locale fi-translation
+RRECOMMENDS_diffutils-locale-fi: virtual-locale-fi
+SECTION: base
+PKG_diffutils-locale-fi: diffutils-locale-fi
+FILES_diffutils-locale-fi: /usr/share/locale/fi
+FILES_INFO: {"/usr/share/locale/fi/LC_MESSAGES/diffutils.mo": 16465}
+PKGSIZE_diffutils-locale-fi: 16465

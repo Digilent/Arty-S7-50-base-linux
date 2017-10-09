@@ -1,0 +1,20 @@
+PN: e2fsprogs
+PV: 1.43
+PR: r1
+PKGV: 1.43
+PKGR: r1
+LICENSE_e2fsprogs-mke2fs: GPLv2
+DESCRIPTION: The Ext2 Filesystem Utilities (e2fsprogs) contain all of the standard utilities for creating, fixing, configuring , and debugging ext2 filesystems.
+SUMMARY: Ext2 Filesystem Utilities
+RDEPENDS_e2fsprogs-mke2fs: libe2p (>= 1.43) libext2fs (>= 1.43) glibc-xilinx (>= 2.23) libcomerr (>= 1.43) util-linux-libblkid (>= 2.28.1) util-linux-libuuid (>= 2.28.1)
+SECTION: base
+PKG_e2fsprogs-mke2fs: e2fsprogs-mke2fs
+FILES_e2fsprogs-mke2fs: /sbin/mke2fs /sbin/mkfs.ext* /etc/mke2fs.conf
+FILES_INFO: {"/sbin/mkfs.ext3": 133916, "/sbin/mkfs.ext4dev": 133916, "/etc/mke2fs.conf": 975, "/sbin/mkfs.ext4": 133916, "/sbin/mkfs.ext2": 133916, "/sbin/mke2fs": 133916}
+FILERDEPENDSFLIST_e2fsprogs-mke2fs: /sbin/mkfs.ext3 /sbin/mkfs.ext2 /sbin/mke2fs /sbin/mkfs.ext4 /sbin/mkfs.ext4dev
+FILERDEPENDS_/sbin/mkfs.ext3_e2fsprogs-mke2fs: libblkid.so.1 libblkid.so.1(BLKID_1.0) libblkid.so.1(BLKID_2.15) libblkid.so.1(BLKID_2.17) libc.so.6 libc.so.6(GLIBC_2.18) libcom_err.so.2 libe2p.so.2 libext2fs.so.2 libuuid.so.1 libuuid.so.1(UUID_1.0) rtld(GNU_HASH)
+FILERDEPENDS_/sbin/mkfs.ext2_e2fsprogs-mke2fs: libblkid.so.1 libblkid.so.1(BLKID_1.0) libblkid.so.1(BLKID_2.15) libblkid.so.1(BLKID_2.17) libc.so.6 libc.so.6(GLIBC_2.18) libcom_err.so.2 libe2p.so.2 libext2fs.so.2 libuuid.so.1 libuuid.so.1(UUID_1.0) rtld(GNU_HASH)
+FILERDEPENDS_/sbin/mke2fs_e2fsprogs-mke2fs: libblkid.so.1 libblkid.so.1(BLKID_1.0) libblkid.so.1(BLKID_2.15) libblkid.so.1(BLKID_2.17) libc.so.6 libc.so.6(GLIBC_2.18) libcom_err.so.2 libe2p.so.2 libext2fs.so.2 libuuid.so.1 libuuid.so.1(UUID_1.0) rtld(GNU_HASH)
+FILERDEPENDS_/sbin/mkfs.ext4_e2fsprogs-mke2fs: libblkid.so.1 libblkid.so.1(BLKID_1.0) libblkid.so.1(BLKID_2.15) libblkid.so.1(BLKID_2.17) libc.so.6 libc.so.6(GLIBC_2.18) libcom_err.so.2 libe2p.so.2 libext2fs.so.2 libuuid.so.1 libuuid.so.1(UUID_1.0) rtld(GNU_HASH)
+FILERDEPENDS_/sbin/mkfs.ext4dev_e2fsprogs-mke2fs: libblkid.so.1 libblkid.so.1(BLKID_1.0) libblkid.so.1(BLKID_2.15) libblkid.so.1(BLKID_2.17) libc.so.6 libc.so.6(GLIBC_2.18) libcom_err.so.2 libe2p.so.2 libext2fs.so.2 libuuid.so.1 libuuid.so.1(UUID_1.0) rtld(GNU_HASH)
+PKGSIZE_e2fsprogs-mke2fs: 670555

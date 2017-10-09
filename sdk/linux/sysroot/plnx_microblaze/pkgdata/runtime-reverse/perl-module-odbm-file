@@ -1,0 +1,18 @@
+PN: perl
+PV: 5.22.1
+PR: r0
+PKGV: 5.22.1
+PKGR: r0
+LICENSE: Artistic-1.0 | GPL-1.0+
+DESCRIPTION_perl-module-odbm-file: perl module odbm-file
+SUMMARY_perl-module-odbm-file: perl module odbm-file
+RDEPENDS_perl-module-odbm-file: perl perl-module-strict perl-module-tie-hash perl-module-warnings perl-module-xsloader gdbm-compat (>= 1.12) glibc-xilinx (>= 2.23)
+SECTION: devel
+PKG_perl-module-odbm-file: perl-module-odbm-file
+FILES_perl-module-odbm-file: /usr/lib/perl/5.22.1/auto/ODBM_File/ODBM_File.so /usr/lib/perl/5.22.1/ODBM_File.pm
+FILERPROVIDESFLIST_perl-module-odbm-file: /usr/lib/perl/5.22.1/auto/ODBM@underscore@File/ODBM@underscore@File.so
+FILES_INFO: {"/usr/lib/perl/5.22.1/auto/ODBM_File/ODBM_File.so": 15692, "/usr/lib/perl/5.22.1/ODBM_File.pm": 2383}
+FILERPROVIDES_/usr/lib/perl/5.22.1/auto/ODBM@underscore@File/ODBM@underscore@File.so_perl-module-odbm-file: ODBM_File.so
+FILERDEPENDSFLIST_perl-module-odbm-file: /usr/lib/perl/5.22.1/auto/ODBM@underscore@File/ODBM@underscore@File.so
+FILERDEPENDS_/usr/lib/perl/5.22.1/auto/ODBM@underscore@File/ODBM@underscore@File.so_perl-module-odbm-file: libc.so.6 libc.so.6(GLIBC_2.18) libgdbm_compat.so.4 rtld(GNU_HASH)
+PKGSIZE_perl-module-odbm-file: 18075

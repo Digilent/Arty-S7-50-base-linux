@@ -1,0 +1,15 @@
+PN: diffutils
+PV: 3.4
+PR: r0
+PKGV: 3.4
+PKGR: r0
+LICENSE: GPLv3+
+DESCRIPTION_diffutils-dbg: Diffutils contains the GNU diff, diff3, sdiff, and cmp utilities. These programs are usually used for creating patch files.  This package contains ELF symbols and related sources for debugging purposes.
+SUMMARY_diffutils-dbg: Diffutils contains tools used for finding differences between files - Debugging files
+RRECOMMENDS_diffutils-dbg: glibc-xilinx-dbg
+SECTION_diffutils-dbg: devel
+PKG_diffutils-dbg: diffutils-dbg
+ALLOW_EMPTY_diffutils-dbg: 1
+FILES_diffutils-dbg: /usr/lib/debug /usr/src/debug
+FILES_INFO: {"/usr/bin/.debug/diff3": 206804, "/usr/bin/.debug/cmp.diffutils": 190720, "/usr/bin/.debug/diff.diffutils": 810432, "/usr/bin/.debug/sdiff": 158152}
+PKGSIZE_diffutils-dbg: 1366108
