@@ -44,6 +44,7 @@ and libraries. This hello.elf file just needs to be copied to the running system
    the Hello World program, run the following at the terminal:
 
 ```
+chmod +x ./hello.elf
 ./hello.elf
 ```
 
